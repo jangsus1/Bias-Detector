@@ -1,0 +1,12 @@
+
+
+
+*.png
+*.jpeg
+*.jpg
+*.out
+*.pt
+*.json
+
+
+**/__pycache__/
