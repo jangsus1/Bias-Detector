@@ -6,7 +6,15 @@
 *.jpg
 *.out
 *.pt
-*.json
+
+backend/urbancars/
+backend/waterbirds/
+
+frontend/public/val/
+frontend/src/data/
+
+UrbanCars/
+Waterbirds/
 
 
 **/__pycache__/

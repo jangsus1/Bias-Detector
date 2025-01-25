@@ -107,9 +107,9 @@ def manual_mask():
 
 from diffusers import AutoPipelineForInpainting
 pipe1 = AutoPipelineForInpainting.from_pretrained("kandinsky-community/kandinsky-2-1-inpaint", torch_dtype=torch.float32)
-pipe1.to("cuda:1")
-pipe3 = AutoPipelineForInpainting.from_pretrained("kandinsky-community/kandinsky-2-1-inpaint", torch_dtype=torch.float32)
-pipe3.to("cuda:2")
+pipe1.to("cuda:2")
+# pipe3 = AutoPipelineForInpainting.from_pretrained("kandinsky-community/kandinsky-2-1-inpaint", torch_dtype=torch.float32)
+# pipe3.to("cuda:2")
 
 from inpaint import batch_inpaint_imgs
 inpaint_folder = "static/inpainted"
@@ -154,11 +154,13 @@ def inpaint():
     new_task_id = generate_unique_task_id()
     global_results[new_task_id] = [[], []]
     half = len(args) // 2
-    thread1 = threading.Thread(target=handle_start_inpainting, args=(args[:half], new_task_id, pipe1, global_results[new_task_id][0]))
-    thread1.start()
+    thread = threading.Thread(target=handle_start_inpainting, args=(args, new_task_id, pipe1, global_results[new_task_id][0]))
+    thread.start()
+    # thread1 = threading.Thread(target=handle_start_inpainting, args=(args[:half], new_task_id, pipe1, global_results[new_task_id][0]))
+    # thread1.start()
     
-    thread2 = threading.Thread(target=handle_start_inpainting, args=(args[half:], new_task_id, pipe3, global_results[new_task_id][1]))
-    thread2.start()
+    # thread2 = threading.Thread(target=handle_start_inpainting, args=(args[half:], new_task_id, pipe3, global_results[new_task_id][1]))
+    # thread2.start()
     
     
     return {"task_id": new_task_id}
@@ -208,7 +210,7 @@ waterbirds_df['image'] = waterbirds_df['image'].apply(lambda x: x.replace("../Wa
 def list_chunk(lst, n):
     return [lst[i:i+n] for i in range(0, len(lst), n)]
 
-model, preprocess = clip.load('ViT-B/32', "cuda:3")
+model, preprocess = clip.load('ViT-B/32', "cuda:0")
 
 
 def cache_image(prefix, image_path):
@@ -229,10 +231,10 @@ def clip_keyword_similarity(keyword, df, prefix):
     image_list_chunked = list_chunk(image_paths, 64)
     with torch.no_grad():
         for chunk in tqdm(image_list_chunked):
-            image_inputs = torch.cat([cache_image(prefix, image) for image in chunk]).to("cuda:3")
+            image_inputs = torch.cat([cache_image(prefix, image) for image in chunk]).to("cuda:0")
             image_features = model.encode_image(image_inputs)
             embedding_list.append(image_features)
-        keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:3")).detach()
+        keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
     image_embeddings = torch.cat(embedding_list)
     image_embeddings /= image_embeddings.norm(dim=-1, keepdim=True)
     keyword_embedding /= keyword_embedding.norm(dim=-1, keepdim=True)
@@ -258,10 +260,10 @@ def caption_similarity_generate(keyword, df):
     embedding_list = []
     with torch.no_grad():
         for caption, image_path in tqdm(zip(captions, image_paths)):
-            tokens = cache_caption(image_path, caption).to("cuda:3")
+            tokens = cache_caption(image_path, caption).to("cuda:0")
             keyword_embedding = model.encode_text(tokens).detach()
             embedding_list.append(keyword_embedding)
-        keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:3")).detach()
+        keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
     
     caption_embeddings = torch.cat(embedding_list)
     similarity = []
