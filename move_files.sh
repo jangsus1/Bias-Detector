@@ -12,8 +12,8 @@ cp backend/waterbirds/panoptic_categories.json frontend/src/data/waterbirds/pano
 cp backend/urbancars/panoptic.json frontend/src/data/urbancars/panoptic.json 
 cp backend/waterbirds/panoptic.json frontend/src/data/waterbirds/panoptic.json
 
-cp dimensionality-reduction/urbancars/coordinates.json frontend/src/data/urbancars/coordinates.json
-cp dimensionality-reduction/waterbirds/coordinates.json frontend/src/data/waterbirds/coordinates.json
+cp Dgrid/urbancars/coordinates.json frontend/src/data/urbancars/coordinates.json
+cp Dgrid/waterbirds/coordinates.json frontend/src/data/waterbirds/coordinates.json
 
 cp UrbanCars/file_list.json frontend/src/data/urbancars/file_list.json
 cp Waterbirds/file_list.json frontend/src/data/waterbirds/file_list.json

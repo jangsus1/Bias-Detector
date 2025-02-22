@@ -23,7 +23,9 @@
     "react-transition-group": "^4.4.5",
     "react-zoom-pan-pinch": "^3.4.2",
     "reagraph": "^4.15.24",
+    "recharts": "^2.15.1",
     "socket.io-client": "^4.7.4",
+    "textures": "^1.2.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

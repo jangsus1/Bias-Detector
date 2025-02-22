@@ -12,7 +12,7 @@ const Draw = ({ modalOpen, onClose, referenceImage, handleRegister }) => {
 
 
     useEffect(() => {
-        fetch('/api/static/' + referenceImage, { method: 'GET' })
+        fetch('/api/static/' + referenceImage, { method: 'GET', mode: "cors", })
             .then(response => response.blob()) // Convert the response to a blob
             .then(blob => {
                 // Create a new FileReader to read this image as base64

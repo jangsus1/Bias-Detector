@@ -6,7 +6,7 @@ import Rule from './Rule';
 
 
 
-function Solver({ predictions, onSolved, show, draggedKeywordObj, registerComplete, addKeyword, selectedTrainData}) {
+function Solver({ predictions, setSolutions, draggedKeywordObj, registerComplete, setKeywords, selectedTrainData}) {
 
 
   const initialRule = { keywords: [], biasName: "" };
@@ -61,7 +61,7 @@ function Solver({ predictions, onSolved, show, draggedKeywordObj, registerComple
       return rule;
     });
     setRules(updatedRules);
-    addKeyword(removedKeyword);
+    setKeywords(k => [...k, removedKeyword]);
   };
 
   const changeBiasName = (event, ruleIndex) => {
@@ -138,15 +138,11 @@ function Solver({ predictions, onSolved, show, draggedKeywordObj, registerComple
         solutions.push(solution);
       }
     })
-    // const normalImages = predictions.filter((prediction, index) => biasTable[index].every(bias => bias === "Others")).map(p => p.image);
-    // onSolved(solutions, normalImages);
-    onSolved(solutions, selectedTrainData);
+    setSolutions(solutions);
   }
-
-  if (!show) return null;
-
+  
   return (
-    <Grid item xs={3}>
+    <Grid item xs={12}>
       <Paper 
         sx={{
           p: 2,
@@ -157,8 +153,9 @@ function Solver({ predictions, onSolved, show, draggedKeywordObj, registerComple
         }}>
         <div>
           <h3>Bias Solver</h3>
-          <Container>
-            <Button variant="contained" onClick={generateSolutions} sx={{ mb: 2, mx: 1 }}>Solve</Button>
+          <Button variant="contained" onClick={generateSolutions} sx={{ mb: 2, mx: 1 }}>Solve</Button>
+          <Button variant="outlined" onClick={addRule} sx={{ mb: 2, mx: 1 }}>Add Rule</Button>  
+          <Container sx={{display: 'flex', flexDirection: 'column'}}>
             {rules.map((rule, ruleIndex) => (
               <Rule
                 rule={rule}
@@ -172,7 +169,6 @@ function Solver({ predictions, onSolved, show, draggedKeywordObj, registerComple
                 registerComplete={registerComplete}
               />
             ))}
-            <Button variant="outlined" onClick={addRule} sx={{ mb: 2, mx: 1 }}>Add Rule</Button>
           </Container>
         </div>
       </Paper>

@@ -4,11 +4,7 @@ import _ from 'lodash';
 
 import InpaintBlock from './InpaintBlock';
 
-const Inpainter = ({dataset, solutions, normalImages, setLoading, panoptic, panopticCategories, show, label}) => {
-
-
-
-    if (!show) return null;
+const Inpainter = ({dataset, solutions, normalImages, panoptic, panopticCategories, label}) => {
 
     return (
         <Grid item xs={12}>
@@ -21,7 +17,6 @@ const Inpainter = ({dataset, solutions, normalImages, setLoading, panoptic, pano
                         solution={sol}
                         solIndex={solIndex}
                         normalImages={normalImages}
-                        setLoading={setLoading}
                         panopticCategories={panopticCategories}
                         panoptic={panoptic}
                         label={label}

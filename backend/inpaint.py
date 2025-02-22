@@ -34,16 +34,3 @@ def batch_inpaint_imgs(images, masks, prompts, pipe):
         )
     # Extract the images from the outputs
     return outputs.images
-
-
-# with open("test_data/processed.pkl", "rb") as f:
-#     mask = pickle.load(f)
-# mask = resize(mask.reshape(512, 512, 1), (256, 256), anti_aliasing=True).reshape(256, 256)
-# mask = 1 - mask
-
-# img = Image.open("test_data/000.jpg")
-# img = img.resize((256, 256))
-
-# inpainted = inpaint_img(img, mask, " a car in a forest with an animal")
-# inpainted.save("test_data/inpainted.png")
-

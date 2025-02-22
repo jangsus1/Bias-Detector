@@ -27,11 +27,11 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
     const intervalIdRef = useRef(null);
     const seemQueryRef = useRef(null);
     const queryRef = useRef(null);
-    
+
     useEffect(() => {
         if (!taskId) return;
         const fetchStatus = () => {
-            fetch(`/api/inpaint_check/${taskId}`)
+            fetch(`/api/inpaint_check/${taskId}`, { mode: "cors" })
                 .then(response => response.json())
                 .then(data => {
                     setInpaintedList(data);
@@ -99,7 +99,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
     const scrollRef1 = useRef(null);
     const scrollRef2 = useRef(null);
 
-    // Scroll handler for the first element
+    // Scroll handler for the image
     const handleScroll1 = () => {
         const scrollElement1 = scrollRef1.current;
         const scrollElement2 = scrollRef2.current;
@@ -109,8 +109,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
             scrollElement2.scrollLeft = scrollElement1.scrollLeft;
         }
     };
-
-    // Scroll handler for the second element (optional, if you want bi-directional syncing)
+    //scroll handler for masks
     const handleScroll2 = () => {
         const scrollElement1 = scrollRef1.current;
         const scrollElement2 = scrollRef2.current;
@@ -126,6 +125,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
         fetch('/api/manual_mask', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
+            mode: "cors",
             body: pako.deflate(JSON.stringify({ image: image }), { to: 'string' }),
         })
             .then(response => response.json())
@@ -164,6 +164,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                 invert: "false",
                 dataset: dataset
             }),
+            mode: "cors",
         })
             .then(response => response.json())
             .then(data => {
@@ -207,6 +208,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                 invert: invert ? "true" : "false",
                 dataset: dataset
             }), { to: 'string' }),
+            mode: "cors",
         })
             .then(response => response.json())
             .then(data => { setTaskId(data.task_id) })
@@ -235,6 +237,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                 inpaintedPaths: inpaintedList,
                 dataset: dataset
             }),
+            mode: "cors",
         })
             .then(data => { setFinished(true) })
             .catch(error => console.error(error))
@@ -314,7 +317,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                     ref={scrollRef1}
                     onScroll={handleScroll1}>
 
-                    {imageList && imageList.slice(0, numImages).map((image, imageIndex) => (
+                    {imageList && imageList.slice(0, 5).map((image, imageIndex) => (
                         <Stack
                             direction="column"
                             spacing={1}>
@@ -383,7 +386,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                     ref={scrollRef2}
                     onScroll={handleScroll2}
                 >
-                    {inpaintedList.slice(0, numImages).map((image, index) => (
+                    {inpaintedList.slice(0, 5).map((image, index) => (
                         <Box
                             key={`${solIndex}-${index}`}
                             component="img"

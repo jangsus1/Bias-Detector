@@ -11,7 +11,7 @@ from transformers import BlipProcessor, BlipForImageTextRetrieval
 def list_chunk(lst, n):
     return [lst[i:i+n] for i in range(0, len(lst), n)]
 
-device = "cuda:3" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 model, preprocess = clip.load('ViT-B/32', device)
 
 def calc_similarity(image_dir, images, keywords):

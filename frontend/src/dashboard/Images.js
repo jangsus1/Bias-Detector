@@ -1,51 +1,121 @@
-import React from 'react';
-import { useState, useEffect, useRef } from 'react';
-import { Box, Grid, Paper, ToggleButtonGroup, Typography, ToggleButton, CircularProgress, Slider } from '@mui/material';
-import _, { set } from 'lodash';
-import * as d3 from "d3"
+import React, { useRef, useEffect, useState, useMemo, useCallback } from "react";
+import { Box, Grid, Paper, Typography, CircularProgress, IconButton, Divider } from '@mui/material';
+import _, { range, set } from 'lodash';
+import * as d3 from "d3";
+import { PieChart, Pie, Tooltip, Cell } from "recharts";
+import textures from 'textures';
 
-const highlightKeywords = (text, keywords) => {
-  if (!keywords) return text;
-  // Escape special characters and join keywords into a regex pattern
-  const regexPattern = keywords.map(keyword => keyword.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')).join('|');
-  const regex = new RegExp(`(${regexPattern})`, 'gi');
+const scoreColor = d3.scaleDiverging([2, 0, -2], d3.interpolateRdBu);
+const red = scoreColor(1);
+const blue = scoreColor(-1);
 
-  // Split the text into parts and map through them, applying bold style to keywords
-  return text.split(regex).map((part, index) =>
-    regex.test(part) ? <span style={{ color: "red", fontWeight: "bold" }} key={index}>{part}</span> : part
-  );
+// Highlighting helper (unchanged)
+const highlightKeywords = (text, clickedKeywords, generalKeywords) => {
+  if (!clickedKeywords || clickedKeywords.length === 0) {
+    const colormap = {};
+    generalKeywords.forEach(({ keyword, score }) => {
+      const color = _.mean(score) > 0 ? red : blue;
+      keyword.forEach(k => {
+        colormap[k] = color;
+      });
+    });
+    const regexPattern = Object.keys(colormap)
+      .map(word => _.escapeRegExp(word))
+      .join("|");
+    const regex = new RegExp(`(${regexPattern})`, "gi");
+    return text.split(regex).map((part, index) =>
+      colormap[part.toLowerCase()] ? (
+        <span
+          key={index}
+          style={{
+            color: colormap[part.toLowerCase()],
+            fontWeight: "bold",
+          }}
+        >
+          {part}
+        </span>
+      ) : (
+        part
+      )
+    );
+  } else {
+    const regexPattern = clickedKeywords
+      .map(k => k.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&"))
+      .join("|");
+    const regex = new RegExp(`(${regexPattern})`, "gi");
+    return text.split(regex).map((part, index) =>
+      regex.test(part) ? (
+        <span style={{ color: "red", fontWeight: "bold" }} key={index}>
+          {part}
+        </span>
+      ) : (
+        part
+      )
+    );
+  }
 };
 
-const Images = ({ prediction, opacity, clickedObj, coordinates, show, selectedImages, setSelectedImages, keywordMode, ensembleInfo, setPopover }) => {
-  const glyphSize = 1
-  const canvasRef = useRef(null);
-  const imagesRef = useRef({});
-  const eventRef = useRef({});
+const Images = ({
+  prediction,
+  hoveredImages,
+  clickedImage,
+  setClickedImage,
+  clickedObj,
+  coordinates,
+  selectedImages,
+  setSelectedImages,
+  keywordMode,
+  setPopover,
+  keywords
+}) => {
+  // Use an SVG ref instead of a canvas ref
+  const svgRef = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 2000, height: 2000 });
-  // const [popover, setPopover] = useState(null);
-  const [viewToggle, setViewToggle] = useState("prediction"); // image, prediction
+  const [viewToggle, setViewToggle] = useState("prediction"); // "image" or "prediction"
   const [allImagesLoaded, setAllImagesLoaded] = useState(false);
-  const [slider, setSlider] = useState(0.5);
-  const [quantiles, setQuantiles] = useState(null)
+  const [quantiles, setQuantiles] = useState(null);
+  const [pattern, setPattern] = useState("#C9C9C9");
 
 
+  const toggle = () => {
+    setViewToggle(prev => (prev === "prediction" ? "image" : "prediction"));
+  };
+
+  const totalCorrect = prediction.reduce((acc, curr) => acc + curr.correct, 0);
+  const totalWrong = prediction.length - totalCorrect;
+
+  // Update dimensions (similar to resizing canvas)
   useEffect(() => {
     function updateSize() {
-      if (canvasRef.current) {
-        const { width, height } = canvasRef.current.getBoundingClientRect();
-        canvasRef.current.width = width;
-        canvasRef.current.height = height;
+      if (svgRef.current) {
+        const { width, height } = svgRef.current.getBoundingClientRect();
         setDimensions({ width, height });
       }
     }
     updateSize();
-    window.addEventListener('resize', updateSize);
-    return () => window.removeEventListener('resize', updateSize);
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
 
-  const getPaths = function (points) {
-    const squares = {}
-    points.forEach((p, i) => {
+  // Preload images (to mimic the original loading state)
+  useEffect(() => {
+    let loadedCount = 0;
+    prediction.forEach(d => {
+      const img = new Image();
+      img.src = `/${d.image}`;
+      img.onload = () => {
+        loadedCount += 1;
+        if (loadedCount === prediction.length) {
+          setAllImagesLoaded(true);
+        }
+      };
+    });
+  }, [prediction]);
+
+  // Helper to build shape edges for quantile paths (unchanged)
+  const getPaths = useCallback(points => {
+    const squares = {};
+    points.forEach(p => {
       const p1 = `${p[0]},${p[1]},${p[0] + 1},${p[1]}`;
       const p2 = `${p[0]},${p[1]},${p[0]},${p[1] + 1}`;
       const p3 = `${p[0] + 1},${p[1]},${p[0] + 1},${p[1] + 1}`;
@@ -54,240 +124,288 @@ const Images = ({ prediction, opacity, clickedObj, coordinates, show, selectedIm
       if (!squares[p2]) squares[p2] = 0;
       if (!squares[p3]) squares[p3] = 0;
       if (!squares[p4]) squares[p4] = 0;
-      squares[p1] = squares[p1] + 1;
-      squares[p2] = squares[p2] + 1;
-      squares[p3] = squares[p3] + 1;
-      squares[p4] = squares[p4] + 1;
-
-    })
-    // const uniquePoints = Array.from(new Set(augmented.map(point => JSON.stringify(point)))).map(str => JSON.parse(str));
-    const finalPaths = []
-    Object.entries(squares).forEach(([key, value]) => {
-      if (value == 1) {
-        const [x1, y1, x2, y2] = key.split(",").map(p => parseInt(p));
-        finalPaths.push([[x1, y1], [x2, y2]])
-      }
-    })
-    return finalPaths
-  }
-
-  const calculateDistanceGroup = function (clicked, rawPoints, tsnePoints, gridPoints, scaler) {
-
-    const clickedPoints = tsnePoints.filter((p, i) => clicked[i])
-    const centroid = Array.from({ length: 2 }, (_, i) =>
-      clickedPoints.reduce((acc, p) => acc + p[i], 0) / clickedPoints.length
-    );
-    const distanceFromCentroid = tsnePoints.map(p => Math.sqrt(p.reduce((acc, val, i) => acc + (val - centroid[i]) ** 2, 0)));
-
-    const numDimensions = rawPoints[0].length; // Assuming all points have the same number of dimensions
-    const rawClickedPoints = rawPoints.filter((p, i) => clicked[i]);
-    const rawCentroid = Array.from({ length: numDimensions }, (_, i) =>
-      rawClickedPoints.reduce((acc, p) => acc + p[i], 0) / rawClickedPoints.length
-    );
-    const rawDistanceFromCentroid = rawPoints.map(p =>
-      Math.sqrt(p.reduce((acc, val, i) => acc + (val - rawCentroid[i]) ** 2, 0))
-    );
-
-    const top = [...rawDistanceFromCentroid].sort((a, b) => a - b)[clickedPoints.length + 3];
-
-    const q1 = d3.quantile(distanceFromCentroid, 0.1)
-    const q2 = d3.quantile(distanceFromCentroid, 0.3)
-    const q3 = d3.quantile(distanceFromCentroid, 0.5)
-
-    const q = {}
-    const topPoints = gridPoints.filter((p, i) => rawDistanceFromCentroid[i] < top);
-    q.top = getPaths(topPoints).map(([p1, p2]) => {
-      return [scaler(p1[0]), scaler(p1[1]), scaler(p2[0]), scaler(p2[1])]
-      // return `M ${x0},${y0} L ${x1},${y1}`
-    })
-
-    const q1Points = gridPoints.filter((p, i) => distanceFromCentroid[i] < q1);
-    q.q1 = getPaths(q1Points).map(([p1, p2]) => {
-      return [scaler(p1[0]), scaler(p1[1]), scaler(p2[0]), scaler(p2[1])]
-      // return `M ${x0},${y0} L ${x1},${y1}`
-    })
-
-    const q2Points = gridPoints.filter((p, i) => distanceFromCentroid[i] < q2)
-    q.q2 = getPaths(q2Points).map(([p1, p2]) => {
-      return [scaler(p1[0]), scaler(p1[1]), scaler(p2[0]), scaler(p2[1])]
-      // return `M ${x0},${y0} L ${x1},${y1}`
-    })
-
-    const q3Points = gridPoints.filter((p, i) => distanceFromCentroid[i] < q3)
-    q.q3 = getPaths(q3Points).map(([p1, p2]) => {
-      return [scaler(p1[0]), scaler(p1[1]), scaler(p2[0]), scaler(p2[1])]
-      // return `M ${x0},${y0} L ${x1},${y1}`
-    })
-
-    setQuantiles(q)
-  }
-
-  useEffect(() => {
-    let loadedCount = 0;
-    prediction.forEach((d) => {
-      const img = new Image();
-      img.src = `/${d.image}`;
-      img.onload = () => {
-        imagesRef.current[d.image] = img; // Cache the loaded image
-        loadedCount += 1;
-        if (loadedCount === prediction.length) {
-          setAllImagesLoaded(true); // All images are loaded
-        }
-      };
+      squares[p1] += 1;
+      squares[p2] += 1;
+      squares[p3] += 1;
+      squares[p4] += 1;
     });
-  }, [prediction]);
+    const finalPaths = [];
+    Object.entries(squares).forEach(([key, value]) => {
+      if (value === 1) {
+        const [x1, y1, x2, y2] = key.split(",").map(p => parseInt(p, 10));
+        finalPaths.push([[x1, y1], [x2, y2]]);
+      }
+    });
+    return finalPaths;
+  }, []);
+
+  // Compute quantile groups (unchanged)
+  const calculateDistanceGroup = useCallback(
+    (clicked, rawPoints, tsnePoints, gridPoints, scaler) => {
+      const clickedPoints = tsnePoints.filter((_, i) => clicked[i]);
+      if (clickedPoints.length === 0) {
+        setQuantiles(null);
+        return;
+      }
+      const centroid = Array.from({ length: 2 }, (_, i) =>
+        clickedPoints.reduce((acc, p) => acc + p[i], 0) / clickedPoints.length
+      );
+      const distanceFromCentroid = tsnePoints.map(p =>
+        Math.sqrt(p.reduce((acc, val, i) => acc + (val - centroid[i]) ** 2, 0))
+      );
+      const quantileLevels = [0.1, 0.3, 0.5, 0.7, 0.9];
+      const q = [];
+      const clickedGridPoints = gridPoints.filter((_, i) => clicked[i]);
+      q.push({
+        level: "clicked",
+        paths: getPaths(clickedGridPoints).map(([p1, p2]) => [
+          scaler(p1[0]),
+          scaler(p1[1]),
+          scaler(p2[0]),
+          scaler(p2[1]),
+        ]),
+      });
+      const computedQ = quantileLevels.map(level => ({
+        level,
+        value: d3.quantile(distanceFromCentroid, level),
+      }));
+      computedQ.forEach(({ level, value }) => {
+        const inRangePoints = gridPoints.filter((_, i) => distanceFromCentroid[i] < value);
+        q.push({
+          level,
+          paths: getPaths(inRangePoints).map(([p1, p2]) => [
+            scaler(p1[0]),
+            scaler(p1[1]),
+            scaler(p2[0]),
+            scaler(p2[1]),
+          ]),
+        });
+      });
+      setQuantiles(q);
+    },
+    [getPaths]
+  );
+
+  // Prepare full data (unchanged)
+  const fullData = useMemo(() => {
+    let data = prediction.map((pred, idx) => ({
+      ...pred,
+      opacity: hoveredImages ? (hoveredImages.includes(pred.image) ? 1 : 0) : 1,
+    }));
+    if (clickedObj.keyword) {
+      const imagesSelected = clickedObj.images.flat();
+      data = data.filter(pred => imagesSelected.includes(pred.image));
+    }
+    return data;
+  }, [prediction, hoveredImages, clickedObj]);
+
+  // Build lookup for quick mouse detection (unchanged)
+  const gridDict = useMemo(() => {
+    const dict = {};
+    fullData.forEach(d => {
+      const [gx, gy] = coordinates[d.image].grid;
+      dict[`${gx},${gy}`] = d;
+    });
+    return dict;
+  }, [fullData, coordinates]);
+
+  // Compute scale and image size – note we now use the svg dimensions
+  const { scale, imageSize } = useMemo(() => {
+    if (!coordinates) {
+      return {
+        scale: d3.scaleLinear().range([0, 0]),
+        imageSize: 0,
+      };
+    }
+    const xvals = Object.keys(coordinates).map(img => coordinates[img].grid[0]);
+    const yvals = Object.keys(coordinates).map(img => coordinates[img].grid[1]);
+    const xRange = d3.max(xvals) - d3.min(xvals);
+    const yRange = d3.max(yvals) - d3.min(yvals);
+    let s, imgSize;
+    if (dimensions.width < dimensions.height) {
+      s = d3.scaleLinear().domain([d3.min(xvals), d3.max(xvals)]).range([0, dimensions.width]);
+      imgSize = 1 * (dimensions.width / xRange);
+    } else {
+      s = d3.scaleLinear().domain([d3.min(yvals), d3.max(yvals)]).range([0, dimensions.height]);
+      imgSize = 1 * (dimensions.height / yRange);
+    }
+    return { scale: s, imageSize: imgSize };
+  }, [coordinates, dimensions]);
+
+  // These helpers remain the same
+  const calculateOpacity = useCallback(
+    (data, type) => {
+      if (type === "image") {
+        if (!allImagesLoaded) return 0;
+        if (clickedImage) return clickedImage.image === data.image ? 1 : 0.1;
+        return data.opacity;
+      } else if (type === "rect") {
+        if (viewToggle === "image") return data.opacity;
+        if (keywordMode === "Manual") return 1;
+        if (clickedImage) return clickedImage.image === data.image ? 1 : 0.1;
+        if (!allImagesLoaded) return 0;
+        return data.opacity;
+      }
+      return 0;
+    },
+    [allImagesLoaded, viewToggle, keywordMode, clickedImage]
+  );
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const d3Canvas = d3.select(canvas);
+    const svg = d3.select(svgRef.current);
+    const texture = textures
+      .lines()
+      .size(4)
+      .strokeWidth(1)
+      .background("#C9C9C9");
 
-    let fullData = prediction.map((pred, index) => ({ ...pred, opacity: opacity[index] }));
+    svg.call(texture);
+    setPattern(texture.url());
+  }, [])
 
-    if (clickedObj.keyword) {
-      const imagesSelected = clickedObj.images.flat()
-      fullData = fullData.filter(pred => imagesSelected.includes(pred.image));
-    }
-    const gridDict = {}
-    fullData.forEach((d, i) => {
-      const x = coordinates[d.image].grid[0];
-      const y = coordinates[d.image].grid[1];
-      gridDict[`${x},${y}`] = d;
-    })
+  const calculateColor = useCallback(
+    (data, isClicked) => {
+      if (keywordMode) return isClicked ? "#CF5972" : "none";
+      return data.correct ? "#C9C9C9" : pattern;
+    },
+    [keywordMode, pattern]
+  );
 
-    const xval = Object.keys(coordinates).map((img) => coordinates[img].grid[0]);
-    const yval = Object.keys(coordinates).map((img) => coordinates[img].grid[1]);
-    let scale, imageSize;
-    if (d3.max(xval) - d3.min(xval) < d3.max(yval) - d3.min(yval)) {
-      scale = d3.scaleLinear()
-        .domain([d3.min(yval), d3.max(yval)])
-        .range([0, canvas.width]);
-      imageSize = glyphSize * (canvas.width / (d3.max(yval) - d3.min(yval)));
-    } else {
-      scale = d3.scaleLinear()
-        .domain([d3.min(xval), d3.max(xval)])
-        .range([0, canvas.height]);
-      imageSize = glyphSize * (canvas.height / (d3.max(xval) - d3.min(xval)));
+  // ─── D3 DRAWING (replacing the canvas drawing) ───────────────────────────
+  useEffect(() => {
+    if (!svgRef.current) return;
+    const svg = d3.select(svgRef.current);
+
+    // Ensure a group exists for all drawn elements and zoom transformations
+    let zoomGroup = svg.select("g.zoom-group");
+    if (zoomGroup.empty()) {
+      zoomGroup = svg.append("g").attr("class", "zoom-group");
     }
 
-    const calculateOpacity = function (data, type) {
-      if (type == "image") {
-        if (keywordMode == "Ensemble") return slider * (ensembleInfo.clipSimilarities[data.image]) + (1 - slider) * (ensembleInfo.captionSimilarities[data.image])
-        if (allImagesLoaded) return data.opacity
-      } else if (type == "rect") {
-        if (viewToggle == 'image') return 0;
-        if (keywordMode == "Ensemble") return 1;
-        if (keywordMode == "Manual") return 1;
-        if (allImagesLoaded) return data.opacity * 0.4
+    // Data–join for each image group (which will contain the image and overlay rect)
+    const groups = zoomGroup.selectAll("g.image-group")
+      .data(fullData, d => d.image);
 
-      }
-      return 0
-    }
+    groups.exit().remove();
 
-    const calculateColor = function (data, clicked) {
-      if (keywordMode) {
-        if (clicked) return "red"
-        return "none"
-      }
-      if (data.correct) return "blue"
-      return "red"
-    }
+    const groupsEnter = groups.enter().append("g")
+      .attr("class", "image-group");
 
-    const clicked = fullData.map(d => selectedImages[d.image] || false);
-
-
-    function reDraw(ctx) {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      fullData.forEach((d, i) => {
-        const x = scale(coordinates[d.image].grid[0]);
-        const y = scale(coordinates[d.image].grid[1]);
-        ctx.globalAlpha = calculateOpacity(d, "image");
-        const img = imagesRef.current[d.image];
-        if (img) {
-          ctx.drawImage(img, x, y, imageSize, imageSize);
-        }
-
-        if (keywordMode) {
-          ctx.strokeStyle = "black"
-          ctx.lineWidth = 1; // Set the border width. Adjust as needed.
-          ctx.strokeRect(x, y, imageSize, imageSize);
-        }
-        ctx.globalAlpha = calculateOpacity(d, "rect");
-        if (!keywordMode || clicked[i]) {
-          ctx.fillStyle = calculateColor(d, clicked[i]);
-          ctx.fillRect(x, y, imageSize, imageSize);
-        }
+    // Merge and update transform for all groups
+    groupsEnter.merge(groups)
+      .attr("transform", d => {
+        const [gx, gy] = coordinates[d.image].grid;
+        return `translate(${scale(gx)}, ${scale(gy)})`;
       });
 
-      if (keywordMode && quantiles) {
-        // Function to draw lines for quantiles
-        const drawQuantileLines = (quantileData, strokeStyle, lineWidth) => {
-          ctx.beginPath();
-          quantileData.forEach(([x1, y1, x2, y2]) => {
-            // Assuming d is a line represented by start and end points {x1, y1, x2, y2}
-            ctx.moveTo(x1, y1);
-            ctx.lineTo(x2, y2);
-          });
-          ctx.strokeStyle = strokeStyle;
-          ctx.lineWidth = lineWidth;
-          ctx.globalAlpha = 0.7; // Set opacity
-          ctx.stroke();
-        };
+    // Append an <image> element for each datum
+    groupsEnter.append("image")
+      .attr("xlink:href", d => `/${d.image}`)
+      .attr("width", imageSize)
+      .attr("height", imageSize)
+      .style("opacity", d => calculateOpacity(d, "image"));
+    groups.select("image")
+      .attr("xlink:href", d => `/${d.image}`)
+      .attr("width", imageSize)
+      .attr("height", imageSize)
+      .style("opacity", d => calculateOpacity(d, "image"));
 
-        // Draw each quantile
-        drawQuantileLines(quantiles.top, "red", 5);
-        drawQuantileLines(quantiles.q1, "orange", 5);
-        drawQuantileLines(quantiles.q2, "yellow", 5);
-        drawQuantileLines(quantiles.q3, "white", 5);
-      }
+    // If not in keyword mode, add/update an overlay rectangle
+    if (!keywordMode) {
+      const rects = groups.selectAll("rect.overlay").data(d => [d]);
+      rects.enter().append("rect")
+        .attr("class", "overlay")
+        .attr("width", imageSize)
+        .attr("height", imageSize)
+        .merge(rects)
+        .attr("x", d => viewToggle === "image" ? 1.5 : 0)
+        .attr("y", d => viewToggle === "image" ? 1.5 : 0)
+        .attr("width", d => viewToggle === "image" ? imageSize - 3 : imageSize)
+        .attr("height", d => viewToggle === "image" ? imageSize - 3 : imageSize)
+        .style("fill", d => viewToggle === "prediction" ? calculateColor(d, selectedImages[d.image] ? true : false) : "none")
+        .style("stroke", d => viewToggle === "prediction" ? "black" : calculateColor(d, selectedImages[d.image] ? true : false))
+        .style("stroke-width", d => viewToggle === "prediction" ? 1 : 3)
+        .style("opacity", d => calculateOpacity(d, "rect"))
+        .style("cursor", "pointer");
+      rects.exit().remove();
+    } else {
+      zoomGroup.selectAll("rect.overlay").remove();
     }
-    const ctx = canvas.getContext('2d');
 
-    canvas.removeEventListener('mousemove', eventRef["mousemove"]);
-    eventRef["mousemove"] = function (e) {
-      function handler(e) {
-        console.log("mouse move")
-        const rect = canvas.getBoundingClientRect();
-        const mouseX = e.clientX - rect.left;
-        const mouseY = e.clientY - rect.top;
+    // If in keyword mode and quantiles exist, draw quantile lines.
+    if (keywordMode && quantiles) {
+      const colors = ["#8F003B", "#C40F58", "#E32977", "#E95694", "#ED8580", "#F2ACCA", "#F9D8E6"];
+      // Flatten the quantile groups into a list of line segments.
+      const quantileLines = quantiles.flatMap((q, i) =>
+        q.paths.map(path => ({ coords: path, color: colors[i] }))
+      );
+      const lines = zoomGroup.selectAll("line.quantile-line")
+        .data(quantileLines);
+      lines.enter().append("line")
+        .attr("class", "quantile-line")
+        .merge(lines)
+        .attr("x1", d => d.coords[0])
+        .attr("y1", d => d.coords[1])
+        .attr("x2", d => d.coords[2])
+        .attr("y2", d => d.coords[3])
+        .style("stroke", d => d.color)
+        .style("stroke-width", 3)
+        .style("opacity", 1);
+      lines.exit().remove();
+    } else {
+      zoomGroup.selectAll("line.quantile-line").remove();
+    }
+  }, [fullData, coordinates, scale, imageSize, keywordMode, viewToggle, quantiles, selectedImages, calculateOpacity, calculateColor]);
 
-        const x = scale.invert(mouseX);
-        const y = scale.invert(mouseY);
-        const xIndex = Math.floor(x);
-        const yIndex = Math.floor(y);
-        const d = gridDict[`${xIndex},${yIndex}`];
-
-        if (!d) return;
-        if (e.shiftKey) {
-          if (keywordMode) {
-            if (!selectedImages[d.image]) {
-              setSelectedImages({ ...selectedImages, [d.image]: true });
-            }
-          }
-        } else {
-          setPopover({ image: `/${d.image}`, caption: highlightKeywords(d.caption, clickedObj.keyword) });
-        }
-      }
-      _.debounce(handler, 300)(e)
+  // ─── D3 ZOOM BEHAVIOR ───────────────────────────────────────────────────────
+  useEffect(() => {
+    if (!svgRef.current) return;
+    const svg = d3.select(svgRef.current);
+    const zoomGroup = svg.select("g.zoom-group");
+    const zoomBehavior = d3.zoom()
+      .scaleExtent([0.8, 8])
+      .filter((event) => {
+        // Prevent zooming on double-click while allowing scroll zoom
+        return !event.ctrlKey && event.type !== "dblclick";
+      })
+      .on("zoom", (event) => {
+        zoomGroup.attr("transform", event.transform);
+      });
+    svg.call(zoomBehavior);
+    return () => {
+      svg.on(".zoom", null);
     };
+  }, []);
 
-    
-    canvas.addEventListener('mousemove', eventRef["mousemove"]);
-    canvas.removeEventListener('click', eventRef["click"]);
-    eventRef["click"] = function clickMouse(e) {
-      console.log("mouse click")
-      const rect = canvas.getBoundingClientRect();
-      const mouseX = e.clientX - rect.left;
-      const mouseY = e.clientY - rect.top;
-
-      const x = scale.invert(mouseX);
-      const y = scale.invert(mouseY);
-      const xIndex = Math.floor(x);
-      const yIndex = Math.floor(y);
-
+  // ─── MOUSE EVENTS (using d3.pointer and the zoom transform) ───────────────
+  useEffect(() => {
+    if (!svgRef.current) return;
+    const svg = d3.select(svgRef.current);
+    const mousemoveFn = (event) => {
+      if (clickedImage) return;
+      const [mouseX, mouseY] = d3.pointer(event);
+      const transform = d3.zoomTransform(svg.node());
+      const xData = scale.invert((mouseX - transform.x) / transform.k);
+      const yData = scale.invert((mouseY - transform.y) / transform.k);
+      const xIndex = Math.floor(xData);
+      const yIndex = Math.floor(yData);
       const d = gridDict[`${xIndex},${yIndex}`];
+      if (!d) return;
+      setPopover({
+        image: `/${d.image}`,
+        caption: highlightKeywords(d.caption, clickedObj.keyword, keywords),
+      });
+    };
+    svg.on("mousemove", mousemoveFn);
 
+    const clickFn = (event) => {
+      const [mouseX, mouseY] = d3.pointer(event);
+      const transform = d3.zoomTransform(svg.node());
+      const xData = scale.invert((mouseX - transform.x) / transform.k);
+      const yData = scale.invert((mouseY - transform.y) / transform.k);
+      const xIndex = Math.floor(xData);
+      const yIndex = Math.floor(yData);
+      const d = gridDict[`${xIndex},${yIndex}`];
       if (!d) return;
       if (keywordMode) {
         let newSelectedImages;
@@ -295,104 +413,131 @@ const Images = ({ prediction, opacity, clickedObj, coordinates, show, selectedIm
           const { [d.image]: _, ...rest } = selectedImages;
           newSelectedImages = { ...rest };
         } else {
-          newSelectedImages = {...selectedImages, [d.image]: true};
+          newSelectedImages = { ...selectedImages, [d.image]: true };
         }
         setSelectedImages(newSelectedImages);
-        const rawEmbeddings = fullData
-          .map(img => coordinates[img.image].original)
-          .map(coords => coords.map(coord => parseFloat(coord)));
-        const tsneEmbeddings = fullData
-          .map(img => coordinates[img.image].tsne)
-          .map(coords => coords.map(coord => parseFloat(coord)));
-        const gridEmbeddings = fullData
-          .map(img => coordinates[img.image].grid)
-          .map(([x, y]) => [parseInt(x), parseInt(y)]);
-        const newClicked = fullData.map(d => newSelectedImages[d.image]);
-        calculateDistanceGroup(newClicked, rawEmbeddings, tsneEmbeddings, gridEmbeddings, scale)
-      }
-    }
-
-    canvas.addEventListener('click', eventRef["click"]);
-
-    if (!keywordMode) {
-      const zoom = d3.zoom()
-        .scaleExtent([1, 10]) // Example scale extent
-        .on("zoom", (event) => {
-          ctx.save();
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          ctx.translate(event.transform.x, event.transform.y);
-          ctx.scale(event.transform.k, event.transform.k);
-
-          reDraw(ctx); // You need to define this function to redraw the content
-          ctx.restore();
+        const rawEmbeddings = fullData.map(img => coordinates[img.image].original.map(coord => parseFloat(coord)));
+        const tsneEmbeddings = fullData.map(img => coordinates[img.image].tsne.map(coord => parseFloat(coord)));
+        const gridEmbeddings = fullData.map(img => {
+          const [gx, gy] = coordinates[img.image].grid;
+          return [parseInt(gx, 10), parseInt(gy, 10)];
         });
+        const newClicked = fullData.map(fd => newSelectedImages[fd.image]);
+        calculateDistanceGroup(newClicked, rawEmbeddings, tsneEmbeddings, gridEmbeddings, scale);
+      } else {
+        if (clickedImage && (clickedImage.image === d.image)) {
+          setClickedImage(null);
+        } else {
+          setClickedImage(d);
+          setPopover({
+            image: `/${d.image}`,
+            caption: highlightKeywords(d.caption, clickedObj.keyword, keywords),
+          });
+        }
+      }
+    };
+    svg.on("click", clickFn);
+    return () => {
+      svg.on("mousemove", null).on("click", null);
+    };
+  }, [scale, gridDict, clickedObj, setPopover, keywordMode, coordinates, selectedImages, fullData, calculateDistanceGroup, highlightKeywords, keywords, clickedImage]);
 
-      d3Canvas.call(zoom);
-    }
-
-
-    reDraw(ctx)
-
-  }, [dimensions, coordinates, prediction, opacity, clickedObj, show, viewToggle, selectedImages, keywordMode, allImagesLoaded, ensembleInfo, slider, quantiles]);
-
-  if (!show) {
-    return null;
-  }
   return (
     <Grid item lg={6}>
-      {!allImagesLoaded &&
-        <div style={{
-          position: 'relative', // Use fixed to cover the entire screen
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: 1000, // Ensure it sits above other content (adjust as necessary)
-        }}>
+      {!allImagesLoaded && (
+        <div
+          style={{
+            position: "relative",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 1000
+          }}
+        >
           <CircularProgress />
-        </div>}
+        </div>
+      )}
       <Paper
         sx={{
           p: 2,
           display: "relative",
-          height: '80vh', // Example max height
-          overflow: 'hidden', // Enables vertical scrolling
+          height: "85vh",
+          overflow: "hidden",
+          borderRadius: "12px"
         }}
       >
-        <ToggleButtonGroup
-          color="primary"
-          value={viewToggle}
-          exclusive
-          onChange={e => setViewToggle(e.target.value)}
-          aria-label="Platform"
-          size="small"
-          sx={{ mb: 1 }}
+        <Box
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "relative",
+            width: "100%",
+            height: "40px",
+            borderBottom: "2px solid #ddd"
+          }}
         >
-          <ToggleButton value="prediction">Prediction</ToggleButton>
-          <ToggleButton value="image">Image</ToggleButton>
-        </ToggleButtonGroup>
-        {keywordMode == "Ensemble" && <Slider
-          step={0.01}
-          value={slider}
-          valueLabelDisplay="auto"
-          min={0}
-          max={1}
-          onChange={(e, val) => setSlider(val)}
-        />}
-        <canvas ref={canvasRef} style={{ width: '100%', height: '100%' }}></canvas>
-
-        {/* <svg width="100%" height="100%" ref={canvasRef}>
-          <g className='container'></g>
-          <g className="q3"></g>
-          <g className="q2"></g>
-          <g className="q1"></g>
-          <g className="top"></g>
-        </svg> */}
-
+          <IconButton
+            onClick={toggle}
+            sx={{
+              position: "absolute",
+              left: "10px",
+              padding: "8px 12px",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer"
+            }}
+          >
+            {viewToggle === "prediction" ? (
+              <img src="/fill.png" alt="icon" width="24" height="24" />
+            ) : (
+              <img src="/border.png" alt="icon" width="24" height="24" />
+            )}
+          </IconButton>
+          <Typography variant="h6">Explore Panel</Typography>
+          <PieChart style={{ marginLeft: 10 }} width={40} height={40}>
+            <Pie
+              data={[
+                {
+                  name: `Correct (${parseInt((totalCorrect / (totalCorrect + totalWrong)) * 100)}%)`,
+                  value: totalCorrect,
+                  color: "#C9C9C9"
+                },
+                {
+                  name: `Wrong (${parseInt((totalWrong / (totalCorrect + totalWrong)) * 100)}%)`,
+                  value: totalWrong,
+                  color: pattern
+                }
+              ]}
+              dataKey="value"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              outerRadius={15}
+              stroke="black" // Adds black border
+              strokeWidth={1}
+            >
+              <Cell key="cell0" fill="#C9C9C9" />
+              <Cell key="cell1" fill={pattern} />
+            </Pie>
+            <Tooltip />
+          </PieChart>
+        </Box>
+        <Divider />
+        <svg
+          ref={svgRef}
+          width={dimensions.width}
+          height={dimensions.height}
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "block"  // Prevent extra margins
+          }}
+        />
       </Paper>
     </Grid>
   );
 };
 
 export default Images;
-
