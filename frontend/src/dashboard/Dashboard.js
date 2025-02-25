@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { styled, createTheme, ThemeProvider, CssBaseline, Tabs, Tab, Drawer as MuiDrawer, Box, AppBar as MuiAppBar, Toolbar, List, Typography, Divider, IconButton, Badge, Container, Grid, Paper, Link, CircularProgress } from '@mui/material';
-import { Menu as MenuIcon, ChevronLeft as ChevronLeftIcon, Notifications as NotificationsIcon } from '@mui/icons-material';
+import { 
+  Box,
+  Typography,
+  Container,
+  Grid,
+} from '@mui/material';
 import { useParams } from 'react-router-dom';
 import _ from 'lodash';
 
@@ -11,17 +15,48 @@ import Images from './Images';
 import Inpainter from './Inpainter';
 import PopoverPanel from './Popover';
 
+// Create promise for extract json file given path
+const returnFetchPromise = async (path) => {
+  const response = await fetch(`${process.env.PUBLIC_URL}/${path}`);
+  return await response.json()
+};
+
 export default function Dashboard() {
   const { dataset, label } = useParams();
 
-  var selectedKeywords = require(`../data/${dataset}/keywords.json`)[label]
-  var selectedPrediction = require(`../data/${dataset}/prediction.json`)[label]
-  var selectedPanoptic = require(`../data/${dataset}/panoptic.json`)[label]
-  var selectedPanopticCategories = require(`../data/${dataset}/panoptic_categories.json`)[label]
-  var selectedCoordinates = require(`../data/${dataset}/coordinates.json`)[label]
-  var selectedTrainData = require(`../data/${dataset}/file_list.json`)['train'][label]
+  // Define the source data
+  const [selectedKeywords, setSelectedKeywords] = useState(null);
+  const [selectedPrediction, setSelectedPrediction] = useState(null);
+  const [selectedPanoptic, setSelectedPanoptic] = useState(null);
+  const [selectedPanopticCategories, setSelectedPanopticCategories] = useState(null);
+  const [selectedCoordinates, setSelectedCoordinates] = useState(null);
+  const [selectedTrainData, setSelectedTrainData] = useState(null);
 
+  useEffect(() => {
+    const [
+      keywords, 
+      predictions,
+      panoptic,
+      panopticCategories,
+      coordinates,
+      trainData,
+    ] = await.Promise.all([
+      returnFetchPromise(`${dataset}/keywords.json`),
+      returnFetchPromise(`${dataset}/prediction.json`),
+      returnFetchPromise(`${dataset}/panoptic.json`),
+      returnFetchPromise(`${dataset}/panoptic_categories.json`),
+      returnFetchPromise(`${dataset}/coordinates.json`),
+      returnFetchPromise(`${dataset}/file_list.json`),
+    ]);
 
+    setSelectedKeywords(keywords[label]);
+    setSelectedPrediction(predictions[label]);
+    setSelectedPanoptic(panoptic[label]);
+    setSelectedPanopticCategories(panopticCategories[label]);
+    setSelectedCoordinates(coordinates[label]);
+    setSelectedTrainData(trainData['train'][label]);
+  }, []);
+  
   const [hoveredImages, setHoveredImages] = useState(null);
   const [clickedObj, setClickedObj] = useState({})
   const [solutions, setSolutions] = useState([])
