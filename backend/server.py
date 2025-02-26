@@ -94,81 +94,6 @@ def manual_mask():
     
     return [local_mask_path]
 
-from FLUX_Controlnet_Inpainting.main import inpaint_image  # Ensure this import works
-
-inpaint_folder = "static/inpainted"
-os.makedirs(inpaint_folder, exist_ok=True)
-batch_size = 4
-
-@app.route("/api/inpaint_check/<task_id>", methods=["GET"])
-def inpaint_check(task_id):
-    global global_results
-    if task_id in global_results:
-        return global_results[task_id]
-    else:
-        return []
-
-@app.route("/api/inpaint", methods=["POST"])
-def inpaint():
-    global global_results
-    compressed_data = request.data  # Data sent in the request body
-    print(f"Received {len(compressed_data)} bytes for inpainting")
-    decompressed_data = zlib.decompress(compressed_data)
-    print(f"Decompressed to {len(decompressed_data)} bytes")
-    data = json.loads(decompressed_data)
-    
-    image_files = data.get('imagePaths', [])
-    mask_files = data.get('maskPaths', [])
-    prompt = data.get('prompt', '')
-    invert_flag = data.get('invert', 'false').lower() == 'true'
-    dataset = data.get('dataset', '')
-    
-    prefix = "../Waterbirds" if dataset == 'waterbirds' else "../UrbanCars"
-    
-    print(f"Received {len(image_files)} images for inpainting")
-    
-    # Organize images into batches
-    args = [[]]
-    for image_path, mask_path_list in tqdm(zip(image_files, mask_files), total=len(image_files), desc="Preparing inpainting"):
-        image_path = os.path.join(prefix, image_path)
-        if len(args[-1]) == batch_size:
-            args.append([])
-        args[-1].append((image_path, mask_path_list, invert_flag, prompt))
-    
-    new_task_id = generate_unique_task_id()
-    global_results[new_task_id] = []
-    # Process inpainting sequentially (single-threaded)
-    handle_start_inpainting(args, new_task_id, global_results[new_task_id])
-    
-    return {"task_id": new_task_id, "results": global_results[new_task_id]}
-
-def handle_start_inpainting(args, task_id, result_list):
-    # Process each batch sequentially; each tuple is (image_path, mask_path_list, invert_flag, prompt)
-    for batch in tqdm(args, total=len(args), desc=f"Inpainting for task {task_id}"):
-        for image_path, mask_path_list, invert_flag, prompt in batch:
-            merged_alpha = np.zeros((256, 256))
-            if mask_path_list:
-                for mask_path in mask_path_list:
-                    mask = Image.open(mask_path).resize((256, 256))
-                    try:
-                        alpha = np.array(mask.getchannel('A'))
-                    except Exception:
-                        alpha = np.array(mask.convert("L"))
-                    merged_alpha = np.maximum(merged_alpha, alpha)
-            binary_mask = np.where(merged_alpha > 0, 255, 0).astype(np.uint8)
-            mask_image = Image.fromarray(binary_mask, 'L')
-            if invert_flag:
-                mask_image = ImageOps.invert(mask_image)
-            # Save temporary mask image
-            temp_mask_path = f"temp_mask_{uuid.uuid4().hex}.png"
-            mask_image.save(temp_mask_path)
-            index = len(glob(f"{inpaint_folder}/*"))
-            output_path = f"{inpaint_folder}/{index}.png"
-            # Process one image at a time using the inpaint_image function
-            inpaint_image(image_path, temp_mask_path, prompt, output_path=output_path, seed=24, size=(256, 256))
-            result_list.append(output_path)
-            os.remove(temp_mask_path)
-
 from calculate_similarity import calc_similarity
 
 urbancars_df = pd.read_csv("../b2t/result/urbancars_urbancars_.csv")
@@ -297,21 +222,6 @@ def manual_keyword_generate():
         "accuracy": str(df_class['correct'].mean()),
         "score": str(dist_class_0[0]),
     }
-
-@app.route("/api/upload", methods=["POST"])  
-def upload_inpainted():
-    data = request.json
-    inpainted_paths = data['inpaintedPaths']
-    classname = data['classname']
-    
-    target_folder = f"./augmented_data/{classname}/"
-    os.makedirs(target_folder, exist_ok=True)
-    
-    for inpainted in inpainted_paths:
-        index = len(glob(f"{target_folder}/*"))
-        filename = f"{index}.png"
-        shutil.copy(inpainted, os.path.join(target_folder, filename))
-    return "Completed"
     
 if __name__ == '__main__':
     print(f"Startup time: {time.time() - start} seconds")
