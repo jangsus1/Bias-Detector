@@ -92,6 +92,7 @@ export default function Dashboard() {
 
         // Set loading flag
         setDataLoad(true);
+        console.info('ALL JSON File Loaded!')
       } catch(err) {
         console.error('Loading Json File Failed', err)
       }
@@ -262,5 +263,5 @@ export default function Dashboard() {
       </Box>
     </div >
     // </ThemeProvider>
-  ) : null
+  ) : <div>Loading------Loading</div>
 }
