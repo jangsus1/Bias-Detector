@@ -22,34 +22,9 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
     const [numImages, setNumImages] = useState(solution[0]);
     const [finished, setFinished] = useState(false);
     const [imageList, setImageList] = useState(_.sampleSize(normalImages, solution[0]));
-    const [taskId, setTaskId] = useState(null);
     const [modalOpen, setModalOpen] = useState(false);
-    const intervalIdRef = useRef(null);
     const seemQueryRef = useRef(null);
     const queryRef = useRef(null);
-
-    useEffect(() => {
-        if (!taskId) return;
-        const fetchStatus = () => {
-            fetch(`/api/inpaint_check/${taskId}`, { mode: "cors" })
-                .then(response => response.json())
-                .then(data => {
-                    setInpaintedList(data);
-                    setLoading(`Image inpainting: ${data.length}/${numImages}`)
-                    if (data.length === numImages) {
-                        clearInterval(intervalIdRef.current); // Use current to access the ref's value
-                        setLoading(false); // Optionally update loading state
-                    }
-                })
-                .catch(error => {
-                    console.error("Failed to fetch status:", error);
-                    setLoading(false);
-                });
-        };
-        fetchStatus();
-        intervalIdRef.current = setInterval(fetchStatus, 4000);
-        return () => clearInterval(intervalIdRef.current);
-    }, [taskId]);
 
     const categoriesShortcutInitial = panopticCategories.map(category => {
         const shortcuts = []
@@ -197,6 +172,8 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                 })
             }
         })
+        // TODO: record the user action rather than directly inpainitng
+        // TODO: send the collected data and save on database
         setLoading("Inpainting the Images...");
         fetch('/api/inpaint', {
             method: 'POST',
@@ -211,7 +188,6 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
             mode: "cors",
         })
             .then(response => response.json())
-            .then(data => { setTaskId(data.task_id) })
             .catch(error => console.error(error))
     }
 
@@ -226,23 +202,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
         const target = shortcuts.filter(([image, idx]) => total.includes(image));
         return target.length
     }
-
-    const uploadInpainted = function () {
-        fetch('/api/upload', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                classname: label,
-                // imagePaths: imageList.slice(0, numImages),
-                inpaintedPaths: inpaintedList,
-                dataset: dataset
-            }),
-            mode: "cors",
-        })
-            .then(data => { setFinished(true) })
-            .catch(error => console.error(error))
-    }
-
+    
     return (
         <Paper key={solIndex}>
             <Paper elevation={4} sx={{ p: 2, mb: 2 }}>
@@ -395,11 +355,6 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                             alt={`Image ${index}`}
                         />
                     ))}
-                    {inpaintedList.length > 0 && (
-                        <Box sx={{ width: '100px', maxHeight: '150px' }}>
-                            <Button variant="contained" onClick={uploadInpainted}>Upload</Button>
-                        </Box>
-                    )}
                 </Box>
             </Paper>
             <Draw anchor="right" modalOpen={modalOpen} referenceImage={imageList[0]} onClose={() => setModalOpen(false)} handleRegister={drawMask} />

@@ -39,10 +39,6 @@ const Keywords = ({
   const [order, setOrder] = useState('desc');
   const [orderBy, setOrderBy] = useState('score');
 
-
-
-
-
   const onClick = function (e, data) {
     if (clickedKeyword == data.keyword) {
       setClickedKeyword("")
@@ -78,7 +74,7 @@ const Keywords = ({
   }
 
   const onKeywordChange = function (e, index1, index2) {
-    const updatedKeywords = keywords.map((keywordGroup, i) => {
+    const updatedKeywords = keywords?.map((keywordGroup, i) => {
       if (i === index1) {
         return {
           ...keywordGroup,
@@ -165,8 +161,8 @@ const Keywords = ({
 
   const sortedIndices = useMemo(() => {
     return keywords
-      .map((_, index) => index)
-      .sort((a, b) => {
+      ?.map((_, index) => index)
+      ?.sort((a, b) => {
         let aVal, bVal;
         if (orderBy === 'score') {
           aVal = weightedSumScore(keywords[a]);
@@ -261,7 +257,7 @@ const Keywords = ({
             </TableHead>
 
             <TableBody>
-              {sortedIndices.map((sortedIndex) => {
+              {sortedIndices?.map((sortedIndex) => {
                 const data = keywords[sortedIndex];
                 const index = keywords.indexOf(data);
                 return <TableRow

@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { styled, createTheme, ThemeProvider, CssBaseline, Tabs, Tab, Drawer as MuiDrawer, Box, AppBar as MuiAppBar, Toolbar, List, Typography, Divider, IconButton, Badge, Container, Grid, Paper, Link, CircularProgress } from '@mui/material';
-import { Menu as MenuIcon, ChevronLeft as ChevronLeftIcon, Notifications as NotificationsIcon } from '@mui/icons-material';
+import { 
+  Box,
+  Typography,
+  Container,
+  Grid,
+} from '@mui/material';
 import { useParams } from 'react-router-dom';
 import _ from 'lodash';
 
@@ -11,17 +15,92 @@ import Images from './Images';
 import Inpainter from './Inpainter';
 import PopoverPanel from './Popover';
 
+/**
+ * Create promise for extract json file given path
+ * @param {String} path 
+ * @returns 
+ */
+const returnFetchPromise = async (path) => {
+  const response = await fetch(`${process.env.PUBLIC_URL}/json/${path}`, {
+    headers: {
+      accept: 'application/json',
+    },
+  });
+
+  return await response.json();
+};
+
+/**
+ * Parse received keywords
+ * @param {*} selectedKeywords 
+ * @returns 
+ */
+const parseKeywords = (selectedKeywords) => {
+  return selectedKeywords?.map((data, index) => ({
+    keyword: [data.keyword],
+    score: [parseFloat(data.score)],
+    accuracy: [parseFloat(data.accuracy)],
+    images: [data.images]
+  }));
+}
+
 export default function Dashboard() {
   const { dataset, label } = useParams();
 
-  var selectedKeywords = require(`../data/${dataset}/keywords.json`)[label]
-  var selectedPrediction = require(`../data/${dataset}/prediction.json`)[label]
-  var selectedPanoptic = require(`../data/${dataset}/panoptic.json`)[label]
-  var selectedPanopticCategories = require(`../data/${dataset}/panoptic_categories.json`)[label]
-  var selectedCoordinates = require(`../data/${dataset}/coordinates.json`)[label]
-  var selectedTrainData = require(`../data/${dataset}/file_list.json`)['train'][label]
+  // Define loading data
+  const [isDataLoad, setDataLoad] = useState(false);
 
+  // Define the source data
+  const [selectedKeywords, setSelectedKeywords] = useState(null);
+  const [selectedPrediction, setSelectedPrediction] = useState(null);
+  const [selectedPanoptic, setSelectedPanoptic] = useState(null);
+  const [selectedPanopticCategories, setSelectedPanopticCategories] = useState(null);
+  const [selectedCoordinates, setSelectedCoordinates] = useState(null);
+  const [selectedTrainData, setSelectedTrainData] = useState(null);
 
+  // Define postprocessing data
+  const [keywords, setKeywords] = useState(null)
+
+  useEffect(() => {
+    const fetchJson = async () => {
+      try {
+        const [
+          keywords, 
+          predictions,
+          panoptic,
+          panopticCategories,
+          coordinates,
+          trainData,
+        ] = await Promise.all([
+          returnFetchPromise(`${dataset}/keywords.json`),
+          returnFetchPromise(`${dataset}/prediction.json`),
+          returnFetchPromise(`${dataset}/panoptic.json`),
+          returnFetchPromise(`${dataset}/panoptic_categories.json`),
+          returnFetchPromise(`${dataset}/coordinates.json`),
+          returnFetchPromise(`${dataset}/file_list.json`),
+        ]);
+    
+        setSelectedKeywords(keywords[label]);
+        setSelectedPrediction(predictions[label]);
+        setSelectedPanoptic(panoptic[label]);
+        setSelectedPanopticCategories(panopticCategories[label]);
+        setSelectedCoordinates(coordinates[label]);
+        setSelectedTrainData(trainData['train'][label]);
+
+        // Set post processing keywords
+        setKeywords(parseKeywords(keywords[label]))
+
+        // Set loading flag
+        setDataLoad(true);
+        console.info('ALL JSON File Loaded!')
+      } catch(err) {
+        console.error('Loading Json File Failed', err)
+      }
+    };
+
+    fetchJson();
+  }, []);
+  
   const [hoveredImages, setHoveredImages] = useState(null);
   const [clickedObj, setClickedObj] = useState({})
   const [solutions, setSolutions] = useState([])
@@ -68,14 +147,6 @@ export default function Dashboard() {
     }
   }
 
-  const parsedKeywords = selectedKeywords.map((data, index) => ({
-    keyword: [data.keyword],
-    score: [parseFloat(data.score)],
-    accuracy: [parseFloat(data.accuracy)],
-    images: [data.images]
-  }))
-  const [keywords, setKeywords] = useState(parsedKeywords)
-
   const registerComplete = (dragCompletedKeywordObj) => {
     setKeywords(keywords.filter((k, index) => index != dragCompletedKeywordObj.index))
     setDraggedKeywordObj(null)
@@ -85,8 +156,7 @@ export default function Dashboard() {
     setDraggedKeywordObj(null)
   }
 
-
-  return (
+  return isDataLoad ? (
     // <ThemeProvider theme={defaultTheme}>
     <div className="App">
       <Box sx={{
@@ -193,5 +263,5 @@ export default function Dashboard() {
       </Box>
     </div >
     // </ThemeProvider>
-  );
+  ) : <div>Loading------Loading</div>
 }

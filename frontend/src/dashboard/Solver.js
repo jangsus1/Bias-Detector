@@ -158,6 +158,7 @@ function Solver({ predictions, setSolutions, draggedKeywordObj, registerComplete
           <Container sx={{display: 'flex', flexDirection: 'column'}}>
             {rules.map((rule, ruleIndex) => (
               <Rule
+                key={String(ruleIndex)}
                 rule={rule}
                 ruleIndex={ruleIndex}
                 totalImageCounts={predictions.length}

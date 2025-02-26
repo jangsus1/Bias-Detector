@@ -11,9 +11,9 @@ const blue = scoreColor(-1);
 
 // Highlighting helper (unchanged)
 const highlightKeywords = (text, clickedKeywords, generalKeywords) => {
-  if (!clickedKeywords || clickedKeywords.length === 0) {
+  if (!clickedKeywords || clickedKeywords?.length === 0) {
     const colormap = {};
-    generalKeywords.forEach(({ keyword, score }) => {
+    generalKeywords?.forEach(({ keyword, score }) => {
       const color = _.mean(score) > 0 ? red : blue;
       keyword.forEach(k => {
         colormap[k] = color;
@@ -81,7 +81,7 @@ const Images = ({
     setViewToggle(prev => (prev === "prediction" ? "image" : "prediction"));
   };
 
-  const totalCorrect = prediction.reduce((acc, curr) => acc + curr.correct, 0);
+  const totalCorrect = prediction?.reduce((acc, curr) => acc + curr.correct, 0);
   const totalWrong = prediction.length - totalCorrect;
 
   // Update dimensions (similar to resizing canvas)
