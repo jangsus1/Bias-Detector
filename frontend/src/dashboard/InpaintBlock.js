@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Paper, TextField, Stack, LinearProgress, Typography, Box, Button, Checkbox, FormControlLabel, Divider, Modal } from '@mui/material';
 import _ from 'lodash';
 import pako from 'pako';
-
 import Draw from './Draw';
+import API_URL from '../common/api';
 
 const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, setLoading, panopticCategories, label }) => {
 
@@ -97,7 +97,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
 
     const drawMask = async function (canvasRef, prompt) {
         const image = await canvasRef.current.exportImage("png")
-        fetch('/api/manual_mask', {
+        fetch(`${API_URL}/api/manual_mask`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             mode: "cors",
@@ -121,15 +121,15 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
             })
             .catch(error => console.error(error))
             .finally(() => {
-                setLoading(false);
+                setLoading?.(false);
                 setModalOpen(false);
             });
     }
 
     const generateMask = function (e) {
-        setLoading("Generating Masks...");
+        setLoading?.("Generating Masks...");
         const prompt = seemQueryRef.current.value
-        fetch('/api/seem', {
+        fetch(`${API_URL}/api/seem`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -158,7 +158,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
 
             })
             .catch(error => console.error(error))
-            .finally(() => setLoading(false));
+            .finally(() => setLoading?.(false));
 
     }
 
@@ -174,8 +174,8 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
         })
         // TODO: record the user action rather than directly inpainitng
         // TODO: send the collected data and save on database
-        setLoading("Inpainting the Images...");
-        fetch('/api/inpaint', {
+        setLoading?.("Inpainting the Images...");
+        fetch(`${API_URL}/api/inpaint`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: pako.deflate(JSON.stringify({
@@ -285,7 +285,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                                 key={`Image${solIndex}-${imageIndex}`}
                                 sx={{ position: 'relative', width: '150px', height: '150px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <img
-                                    src={"/api/static/" + image}
+                                    src={`${API_URL}/api/static/` + image}
                                     style={{ width: '150px', maxHeight: '150px', marginBottom: '8px' }} // Adjust marginBottom as needed
                                     alt={`Image ${solIndex}-${imageIndex}`}
                                 />
@@ -293,7 +293,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                                     <Box
                                         key={`Panoptic${solIndex}-${imageIndex}-${idx}`}
                                         component="img"
-                                        src={"/api/" + mask} // Adjust the path to your colored mask
+                                        src={`${API_URL}/api/` + mask} // Adjust the path to your colored mask
                                         sx={{
                                             position: 'absolute',
                                             top: 0,
@@ -312,7 +312,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                                     <Box
                                         key={`Inpainted${solIndex}-${imageIndex}-${idx}`}
                                         component="img"
-                                        src={"/api/" + mask} // Adjust the path to your colored mask
+                                        src={`${API_URL}/api/` + mask} // Adjust the path to your colored mask
                                         sx={{
                                             position: 'absolute',
                                             top: 0,
@@ -350,7 +350,7 @@ const InpaintBlock = ({ dataset, solution, solIndex, normalImages, panoptic, set
                         <Box
                             key={`${solIndex}-${index}`}
                             component="img"
-                            src={"/api/" + image}
+                            src={`${API_URL}/api/` + image}
                             sx={{ width: '150px', maxHeight: '150px' }}
                             alt={`Image ${index}`}
                         />

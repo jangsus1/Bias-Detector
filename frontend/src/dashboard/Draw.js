@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { ReactSketchCanvas } from "react-sketch-canvas";
 import { Button, Slider, Modal, Box, Typography, Stack, TextField } from "@mui/material";
+import API_URL from '../common/api'
 
 const Draw = ({ modalOpen, onClose, referenceImage, handleRegister }) => {
     const canvasRef = useRef(null);
@@ -12,7 +13,7 @@ const Draw = ({ modalOpen, onClose, referenceImage, handleRegister }) => {
 
 
     useEffect(() => {
-        fetch('/api/static/' + referenceImage, { method: 'GET', mode: "cors", })
+        fetch(`${API_URL}/api/static/` + referenceImage, { method: 'GET', mode: "cors", })
             .then(response => response.blob()) // Convert the response to a blob
             .then(blob => {
                 // Create a new FileReader to read this image as base64

@@ -15,6 +15,9 @@ import Images from './Images';
 import Inpainter from './Inpainter';
 import PopoverPanel from './Popover';
 
+// API
+import API_URL from '../common/api';
+
 /**
  * Create promise for extract json file given path
  * @param {String} path 
@@ -117,7 +120,7 @@ export default function Dashboard() {
       const newKeyword = prompt("Please enter the new bias keyword", "e.g. grassfield")
       if (newKeyword != null) {
         const images = Object.entries(selectedImages).filter(([key, value]) => value).map(([key, value]) => key)
-        fetch("/api/manual_keyword", {
+        fetch(`${API_URL}/api/manual_keyword`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
