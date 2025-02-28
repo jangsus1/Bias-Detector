@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { ReactSketchCanvas } from "react-sketch-canvas";
 import { Button, Slider, Modal, Box, Typography, Stack, TextField } from "@mui/material";
-import API_URL from '../common/api'
+import API_URL from '../../../common/api';
 
 const Draw = ({ modalOpen, onClose, referenceImage, handleRegister }) => {
     const canvasRef = useRef(null);
