@@ -15,37 +15,52 @@ import clip
 import nltk
 import time
 from flask import request, Flask
+from flask_cors import CORS
 import zlib
-
-start = time.time()
-
-nltk.download("punkt")
+from SEEM.demo.seem.app import inference
+# nltk.download("punkt")
 from nltk.tokenize import sent_tokenize
 
+# ---------------------------- Define Flask APP ---------------------------------
+start = time.time()
+app = Flask(__name__, static_url_path='/api/static', static_folder='static/')
+CORS(app)
+
+
+# ---------------------------- Define Constant variable ---------------------------------
 def generate_unique_task_id():
     return str(uuid.uuid4())
 
-app = Flask(__name__, static_url_path='/api/static', static_folder='static/')
+def get_prefix_by_dataset(dataset: str):
+    match dataset:
+        case 'waterbirds':
+            return '../Waterbirds'
+        case 'urbancars':
+            return '../UrbanCars'
+        case _:
+            return None
 
 global_results = {}
-from SEEM.demo.seem.app import inference
 
-base_folder = "static/generated_masks"
-os.makedirs(base_folder, exist_ok=True)
+# ---------------------------- API /api/seem ---------------------------------
 
-black = np.array([0, 0, 0])  # Background color
-red = np.array([255, 0, 0])    # Foreground color
+# ------- Base variable -------
+black = np.array([0, 0, 0]) # Background color
+red = np.array([255, 0, 0]) # Foreground color
 
+base_folder = "static/generated_masks"  # Mask folder
+os.makedirs(base_folder, exist_ok=True) 
+
+# ------- API -------
 @app.route('/api/seem', methods=["POST"])
 def seem():
     data = request.json
     image_files = data['imagePaths']
     prompt = data['prompt']
     dataset = data['dataset']
-    
-    prefix = "../Waterbirds" if dataset == 'waterbirds' else "../UrbanCars"
-    
+    prefix = get_prefix_by_dataset(dataset)    
     mask_paths = []
+
     for image_file in tqdm(image_files):
         image_file = os.path.join(prefix, image_file)
         image = Image.open(image_file).convert("RGB")
@@ -67,6 +82,8 @@ def seem():
     
     return mask_paths
 
+
+# ---------------------------- API /api/manual_mask ---------------------------------
 @app.route('/api/manual_mask', methods=["POST"])
 def manual_mask():
     compressed_data = request.data  # Data sent in the request body
@@ -94,79 +111,81 @@ def manual_mask():
     
     return [local_mask_path]
 
-from calculate_similarity import calc_similarity
 
-urbancars_df = pd.read_csv("../b2t/result/urbancars_urbancars_.csv")
-waterbirds_df = pd.read_csv("../b2t/result/waterbirds_waterbirds.csv")
-# Process captions for similarity
-urbancars_df["caption"] = urbancars_df["caption"].apply(lambda x: x.split(".")[0][3:].lower())
-urbancars_df['image'] = urbancars_df['image'].apply(lambda x: x.replace("../UrbanCars/", ""))
+# ---------------------------- API /api/keyword ---------------------------------
+# from calculate_similarity import calc_similarity
 
-waterbirds_df["caption"] = waterbirds_df["caption"].apply(lambda x: x.split(".")[0][3:].lower())
-waterbirds_df['image'] = waterbirds_df['image'].apply(lambda x: x.replace("../Waterbirds/", ""))
+# urbancars_df = pd.read_csv("../b2t/result/urbancars_urbancars_.csv")
+# waterbirds_df = pd.read_csv("../b2t/result/waterbirds_waterbirds.csv")
+# # Process captions for similarity
+# urbancars_df["caption"] = urbancars_df["caption"].apply(lambda x: x.split(".")[0][3:].lower())
+# urbancars_df['image'] = urbancars_df['image'].apply(lambda x: x.replace("../UrbanCars/", ""))
 
-def list_chunk(lst, n):
-    return [lst[i:i+n] for i in range(0, len(lst), n)]
+# waterbirds_df["caption"] = waterbirds_df["caption"].apply(lambda x: x.split(".")[0][3:].lower())
+# waterbirds_df['image'] = waterbirds_df['image'].apply(lambda x: x.replace("../Waterbirds/", ""))
 
-model, preprocess = clip.load('ViT-B/32', "cuda")
+# def list_chunk(lst, n):
+#     return [lst[i:i+n] for i in range(0, len(lst), n)]
 
-def cache_image(prefix, image_path):
-    filename = f"cache/image/{image_path}.pkl"
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
-    if os.path.exists(filename):
-        preprocessed = torch.load(filename)
-    else:
-        image = Image.open(f"{prefix}/{image_path}").convert("RGB")
-        preprocessed = preprocess(image).unsqueeze(0)
-        torch.save(preprocessed, filename)
-    return preprocessed
+# model, preprocess = clip.load('ViT-B/32', "cuda")
 
-def clip_keyword_similarity(keyword, df, prefix):
-    image_paths = df['image'].tolist()
-    embedding_list = []
-    image_list_chunked = list_chunk(image_paths, 64)
-    with torch.no_grad():
-        for chunk in tqdm(image_list_chunked):
-            image_inputs = torch.cat([cache_image(prefix, image) for image in chunk]).to("cuda:0")
-            image_features = model.encode_image(image_inputs)
-            embedding_list.append(image_features)
-        keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
-    image_embeddings = torch.cat(embedding_list)
-    image_embeddings /= image_embeddings.norm(dim=-1, keepdim=True)
-    keyword_embedding /= keyword_embedding.norm(dim=-1, keepdim=True)
-    similarity = (100.0 * image_embeddings @ keyword_embedding.T)
-    return similarity.cpu().numpy().flatten()
+# def cache_image(prefix, image_path):
+#     filename = f"cache/image/{image_path}.pkl"
+#     os.makedirs(os.path.dirname(filename), exist_ok=True)
+#     if os.path.exists(filename):
+#         preprocessed = torch.load(filename)
+#     else:
+#         image = Image.open(f"{prefix}/{image_path}").convert("RGB")
+#         preprocessed = preprocess(image).unsqueeze(0)
+#         torch.save(preprocessed, filename)
+#     return preprocessed
 
-def cache_caption(image_path, caption):
-    filename = f"cache/caption/{image_path}.pkl"
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
-    if os.path.exists(filename):
-        tokens = torch.load(filename)
-    else:
-        tokens = clip.tokenize(sent_tokenize(caption))
-        torch.save(tokens, filename)
-    return tokens
+# def clip_keyword_similarity(keyword, df, prefix):
+#     image_paths = df['image'].tolist()
+#     embedding_list = []
+#     image_list_chunked = list_chunk(image_paths, 64)
+#     with torch.no_grad():
+#         for chunk in tqdm(image_list_chunked):
+#             image_inputs = torch.cat([cache_image(prefix, image) for image in chunk]).to("cuda:0")
+#             image_features = model.encode_image(image_inputs)
+#             embedding_list.append(image_features)
+#         keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
+#     image_embeddings = torch.cat(embedding_list)
+#     image_embeddings /= image_embeddings.norm(dim=-1, keepdim=True)
+#     keyword_embedding /= keyword_embedding.norm(dim=-1, keepdim=True)
+#     similarity = (100.0 * image_embeddings @ keyword_embedding.T)
+#     return similarity.cpu().numpy().flatten()
 
-def caption_similarity_generate(keyword, df):
-    captions = df['caption'].tolist()
-    image_paths = df['image'].tolist()
-    embedding_list = []
-    with torch.no_grad():
-        for caption, image_path in tqdm(zip(captions, image_paths)):
-            tokens = cache_caption(image_path, caption).to("cuda:0")
-            keyword_embedding = model.encode_text(tokens).detach()
-            embedding_list.append(keyword_embedding)
-        keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
+# def cache_caption(image_path, caption):
+#     filename = f"cache/caption/{image_path}.pkl"
+#     os.makedirs(os.path.dirname(filename), exist_ok=True)
+#     if os.path.exists(filename):
+#         tokens = torch.load(filename)
+#     else:
+#         tokens = clip.tokenize(sent_tokenize(caption))
+#         torch.save(tokens, filename)
+#     return tokens
+
+# def caption_similarity_generate(keyword, df):
+    # captions = df['caption'].tolist()
+    # image_paths = df['image'].tolist()
+    # embedding_list = []
+    # with torch.no_grad():
+    #     for caption, image_path in tqdm(zip(captions, image_paths)):
+    #         tokens = cache_caption(image_path, caption).to("cuda:0")
+    #         keyword_embedding = model.encode_text(tokens).detach()
+    #         embedding_list.append(keyword_embedding)
+    #     keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
     
-    caption_embeddings = torch.cat(embedding_list)
-    similarity = []
-    keyword_embedding /= keyword_embedding.norm(dim=-1, keepdim=True)
-    for sentence_embeddings in caption_embeddings:
-        sentence_embeddings /= sentence_embeddings.norm(dim=-1, keepdim=True)
-        sent_sim_list = (100.0 * sentence_embeddings @ keyword_embedding.T)
-        max_sim = sent_sim_list.max().item()
-        similarity.append(max_sim)
-    return np.array(similarity)
+    # caption_embeddings = torch.cat(embedding_list)
+    # similarity = []
+    # keyword_embedding /= keyword_embedding.norm(dim=-1, keepdim=True)
+    # for sentence_embeddings in caption_embeddings:
+    #     sentence_embeddings /= sentence_embeddings.norm(dim=-1, keepdim=True)
+    #     sent_sim_list = (100.0 * sentence_embeddings @ keyword_embedding.T)
+    #     max_sim = sent_sim_list.max().item()
+    #     similarity.append(max_sim)
+    # return np.array(similarity)
 
 @app.route("/api/keyword", methods=["POST"])  
 def keyword_generate():
@@ -198,6 +217,8 @@ def keyword_generate():
         "caption_similarity": caption_similarity,
     }
 
+
+# ---------------------------- API /api/manual_keyword ---------------------------------
 @app.route("/api/manual_keyword", methods=["POST"])  
 def manual_keyword_generate():
     data = request.json
