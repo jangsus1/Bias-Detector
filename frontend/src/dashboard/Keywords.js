@@ -30,7 +30,8 @@ const Keywords = ({
   registerManualKeyword,
   clickedImage,
   hoveredCaptionKeyword,
-  popoverCollapsed
+  popoverCollapsed,
+  keywordMode,
 }) => {
 
 
@@ -216,7 +217,11 @@ const Keywords = ({
             <TableHead sx={{ position: "sticky", top: 0, backgroundColor: "#A8A8A8", zIndex: 2 }}>
               <TableRow>
                 <TableCell sx={{ fontWeight: 'bold' }}>
-                  <Button onClick={registerManualKeyword}>Add Keyword</Button>
+                  <Button onClick={registerManualKeyword}>
+                    {
+                      keywordMode === false ? 'Add Keyword' : 'Select Images Done'
+                    }
+                  </Button>
                   <TableSortLabel
                     active={orderBy === 'keyword'}
                     direction={orderBy === 'keyword' ? order : 'asc'}

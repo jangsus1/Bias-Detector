@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { 
   Box,
   Typography,
@@ -14,6 +14,7 @@ import Keywords from './Keywords';
 import Images from './Images';
 import Inpainter from './Inpainter';
 import PopoverPanel from './Popover';
+import Message from './InpainterBlock/Message'
 
 // API
 import API_URL from '../common/api';
@@ -114,11 +115,16 @@ export default function Dashboard() {
   const [clickedImage, setClickedImage] = useState(null)
   const [hoveredCaptionKeyword, setHoveredCaptionKeyword] = useState(null)
   const [popoverCollapsed, setPopoverCollapsed] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
+  const modalContent = useRef('');
 
   const registerManualKeyword = function () { // User add new keyword 
     if (keywordMode == "Manual") {
       const newKeyword = prompt("Please enter the new bias keyword", "e.g. grassfield")
       if (newKeyword != null) {
+        setModalOpen(true)
+        modalContent.current = 'Keyword CLIP Score calculating..., please wait';
+
         const images = Object.entries(selectedImages).filter(([key, value]) => value).map(([key, value]) => key)
         fetch(`${API_URL}/api/manual_keyword`, {
           method: "POST",
@@ -136,13 +142,15 @@ export default function Dashboard() {
           .then(data => {
             const newKeywordObj = {
               keyword: [newKeyword],
-              score: [data["score"]],
-              accuracy: [data["accuracy"]],
+              score: [Number(data["score"])],
+              accuracy: [Number(data["accuracy"])],
               images: [images]
             }
             setSelectedImages({})
             setKeywords([...keywords, newKeywordObj])
             setKeywordMode(false)
+            setModalOpen(false)
+           modalContent.current = '';
           })
       }
     } else if (keywordMode == false) {
@@ -264,6 +272,7 @@ export default function Dashboard() {
           </Box>
         </Box>
       </Box>
+      <Message modalOpen={modalOpen} modalContent={modalContent}></Message>
     </div >
     // </ThemeProvider>
   ) : <div>Loading------Loading</div>
