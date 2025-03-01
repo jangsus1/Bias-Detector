@@ -57,10 +57,10 @@ def ensure_unique_cookie():
     if not request.endpoint == 'static':
         if request.is_json:
             original_payload = request.get_json(silent = True)
-            user_id = original_payload['user_id']
+            has_user_id = bool("user_id" in original_payload)
 
             # If not user_id, set in paylod
-            if not user_id:
+            if not has_user_id:
                 user_id = str(uuid.uuid4())
                 modified_payload = original_payload.copy()
                 modified_payload['user_id'] = user_id
@@ -142,109 +142,109 @@ def manual_mask():
 
 
 # ---------------------------- API /api/keyword ---------------------------------
-# from calculate_similarity import calc_similarity
+from calculate_similarity import calc_similarity
 
-# urbancars_df = pd.read_csv("../b2t/result/urbancars_urbancars_.csv")
-# waterbirds_df = pd.read_csv("../b2t/result/waterbirds_waterbirds.csv")
-# # Process captions for similarity
-# urbancars_df["caption"] = urbancars_df["caption"].apply(lambda x: x.split(".")[0][3:].lower())
-# urbancars_df['image'] = urbancars_df['image'].apply(lambda x: x.replace("../UrbanCars/", ""))
+urbancars_df = pd.read_csv("b2t_result/urbancars_vis_urbancars_best.pth.csv")
+waterbirds_df = pd.read_csv("b2t_result/waterbirds_vis_waterbirds_best.pth.csv")
+# rocess captions for similarity
+urbancars_df["caption"] = urbancars_df["caption"].apply(lambda x: x.lower())
+urbancars_df['image'] = urbancars_df['image']
 
-# waterbirds_df["caption"] = waterbirds_df["caption"].apply(lambda x: x.split(".")[0][3:].lower())
-# waterbirds_df['image'] = waterbirds_df['image'].apply(lambda x: x.replace("../Waterbirds/", ""))
+waterbirds_df["caption"] = waterbirds_df["caption"].apply(lambda x: x.lower())
+waterbirds_df['image'] = waterbirds_df['image']
 
-# def list_chunk(lst, n):
-#     return [lst[i:i+n] for i in range(0, len(lst), n)]
+def list_chunk(lst, n):
+    return [lst[i:i+n] for i in range(0, len(lst), n)]
 
-# model, preprocess = clip.load('ViT-B/32', "cuda")
+model, preprocess = clip.load('ViT-B/32', "cuda")
 
-# def cache_image(prefix, image_path):
-#     filename = f"cache/image/{image_path}.pkl"
-#     os.makedirs(os.path.dirname(filename), exist_ok=True)
-#     if os.path.exists(filename):
-#         preprocessed = torch.load(filename)
-#     else:
-#         image = Image.open(f"{prefix}/{image_path}").convert("RGB")
-#         preprocessed = preprocess(image).unsqueeze(0)
-#         torch.save(preprocessed, filename)
-#     return preprocessed
-
-# def clip_keyword_similarity(keyword, df, prefix):
-#     image_paths = df['image'].tolist()
-#     embedding_list = []
-#     image_list_chunked = list_chunk(image_paths, 64)
-#     with torch.no_grad():
-#         for chunk in tqdm(image_list_chunked):
-#             image_inputs = torch.cat([cache_image(prefix, image) for image in chunk]).to("cuda:0")
-#             image_features = model.encode_image(image_inputs)
-#             embedding_list.append(image_features)
-#         keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
-#     image_embeddings = torch.cat(embedding_list)
-#     image_embeddings /= image_embeddings.norm(dim=-1, keepdim=True)
-#     keyword_embedding /= keyword_embedding.norm(dim=-1, keepdim=True)
-#     similarity = (100.0 * image_embeddings @ keyword_embedding.T)
-#     return similarity.cpu().numpy().flatten()
-
-# def cache_caption(image_path, caption):
-#     filename = f"cache/caption/{image_path}.pkl"
-#     os.makedirs(os.path.dirname(filename), exist_ok=True)
-#     if os.path.exists(filename):
-#         tokens = torch.load(filename)
-#     else:
-#         tokens = clip.tokenize(sent_tokenize(caption))
-#         torch.save(tokens, filename)
-#     return tokens
-
-# def caption_similarity_generate(keyword, df):
-    # captions = df['caption'].tolist()
-    # image_paths = df['image'].tolist()
-    # embedding_list = []
-    # with torch.no_grad():
-    #     for caption, image_path in tqdm(zip(captions, image_paths)):
-    #         tokens = cache_caption(image_path, caption).to("cuda:0")
-    #         keyword_embedding = model.encode_text(tokens).detach()
-    #         embedding_list.append(keyword_embedding)
-    #     keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
-    
-    # caption_embeddings = torch.cat(embedding_list)
-    # similarity = []
-    # keyword_embedding /= keyword_embedding.norm(dim=-1, keepdim=True)
-    # for sentence_embeddings in caption_embeddings:
-    #     sentence_embeddings /= sentence_embeddings.norm(dim=-1, keepdim=True)
-    #     sent_sim_list = (100.0 * sentence_embeddings @ keyword_embedding.T)
-    #     max_sim = sent_sim_list.max().item()
-    #     similarity.append(max_sim)
-    # return np.array(similarity)
-
-@app.route("/api/keyword", methods=["POST"])  
-def keyword_generate():
-    data = request.json
-    keyword = data['keyword']
-    classname = data['classname']
-    dataset = data['dataset']
-    
-    if dataset == 'urbancars':
-        prefix = "../UrbanCars"
-        df = urbancars_df
+def cache_image(prefix, image_path):
+    filename = f"b2t_cache/image/{image_path}.pkl"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    if os.path.exists(filename):
+        preprocessed = torch.load(filename)
     else:
-        prefix = "../Waterbirds"
-        df = waterbirds_df
-    df = df[df['image'].str.contains(f"/{classname}/")]
+        image = Image.open(f"{prefix}/{image_path}").convert("RGB")
+        preprocessed = preprocess(image).unsqueeze(0)
+        torch.save(preprocessed, filename)
+    return preprocessed
+
+def clip_keyword_similarity(keyword, df, prefix):
+    image_paths = df['image'].tolist()
+    embedding_list = []
+    image_list_chunked = list_chunk(image_paths, 64)
+    with torch.no_grad():
+        for chunk in tqdm(image_list_chunked):
+            image_inputs = torch.cat([cache_image(prefix, image) for image in chunk]).to("cuda:0")
+            image_features = model.encode_image(image_inputs)
+            embedding_list.append(image_features)
+        keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
+    image_embeddings = torch.cat(embedding_list)
+    image_embeddings /= image_embeddings.norm(dim=-1, keepdim=True)
+    keyword_embedding /= keyword_embedding.norm(dim=-1, keepdim=True)
+    similarity = (100.0 * image_embeddings @ keyword_embedding.T)
+    return similarity.cpu().numpy().flatten()
+
+def cache_caption(image_path, caption):
+    filename = f"b2t_cache/caption/{image_path}.pkl"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    if os.path.exists(filename):
+        tokens = torch.load(filename)
+    else:
+        tokens = clip.tokenize(sent_tokenize(caption))
+        torch.save(tokens, filename)
+    return tokens
+
+def caption_similarity_generate(keyword, df):
+    captions = df['caption'].tolist()
+    image_paths = df['image'].tolist()
+    embedding_list = []
+    with torch.no_grad():
+        for caption, image_path in tqdm(zip(captions, image_paths)):
+            tokens = cache_caption(image_path, caption).to("cuda:0")
+            keyword_embedding = model.encode_text(tokens).detach()
+            embedding_list.append(keyword_embedding)
+        keyword_embedding = model.encode_text(clip.tokenize([f"A photo of {keyword}"]).to("cuda:0")).detach()
     
-    caption_similarity = caption_similarity_generate(keyword, df)
-    caption_similarity = (caption_similarity - caption_similarity.min()) / (caption_similarity.max() - caption_similarity.min())
-    caption_similarity = [str(s) for s in caption_similarity]
+    caption_embeddings = torch.cat(embedding_list)
+    similarity = []
+    keyword_embedding /= keyword_embedding.norm(dim=-1, keepdim=True)
+    for sentence_embeddings in caption_embeddings:
+        sentence_embeddings /= sentence_embeddings.norm(dim=-1, keepdim=True)
+        sent_sim_list = (100.0 * sentence_embeddings @ keyword_embedding.T)
+        max_sim = sent_sim_list.max().item()
+        similarity.append(max_sim)
+    return np.array(similarity)
+
+# @app.route("/api/keyword", methods=["POST"])  
+# def keyword_generate():
+#     data = request.json
+#     keyword = data['keyword']
+#     classname = data['classname']
+#     dataset = data['dataset']
     
-    clip_similarity = clip_keyword_similarity(keyword, df, prefix)
-    clip_similarity = (clip_similarity - clip_similarity.min()) / (clip_similarity.max() - clip_similarity.min())
-    clip_similarity = [str(s) for s in clip_similarity]
+#     if dataset == 'urbancars':
+#         prefix = "../UrbanCars"
+#         df = urbancars_df
+#     else:
+#         prefix = "../Waterbirds"
+#         df = waterbirds_df
+#     df = df[df['image'].str.contains(f"/{classname}/")]
     
-    return {
-        "keyword": keyword,
-        "images": df['image'].tolist(),
-        "clip_similarity": clip_similarity,
-        "caption_similarity": caption_similarity,
-    }
+#     caption_similarity = caption_similarity_generate(keyword, df)
+#     caption_similarity = (caption_similarity - caption_similarity.min()) / (caption_similarity.max() - caption_similarity.min())
+#     caption_similarity = [str(s) for s in caption_similarity]
+    
+#     clip_similarity = clip_keyword_similarity(keyword, df, prefix)
+#     clip_similarity = (clip_similarity - clip_similarity.min()) / (clip_similarity.max() - clip_similarity.min())
+#     clip_similarity = [str(s) for s in clip_similarity]
+    
+#     return {
+#         "keyword": keyword,
+#         "images": df['image'].tolist(),
+#         "clip_similarity": clip_similarity,
+#         "caption_similarity": caption_similarity,
+#     }
 
 
 # ---------------------------- API /api/manual_keyword ---------------------------------
@@ -256,23 +256,41 @@ def manual_keyword_generate():
     keyword = data['keyword']
     dataset = data['dataset']
     images = data['images']
-    
+
     if dataset == 'urbancars':
-        prefix = "../UrbanCars"
         df = urbancars_df
+        classname = 1 if data['classname'] == 'urban' else 0
     else:
-        prefix = "../Waterbirds"
         df = waterbirds_df
+        classname = 1 if data['classname'] == 'waterbird' else 0
     
-    df_class = df[df['image'].isin(images)]
+    # Calculate CLIP score
+    df_class = df[df['actual'] == classname]
     df_wrong = df_class[df_class['correct'] == 0]
     df_correct = df_class[df_class['correct'] == 1]
-    similarity_wrong_class_0 = calc_similarity(f"{prefix}/", df_wrong['image'], [keyword])
-    similarity_correct_class_0 = calc_similarity(f"{prefix}/", df_correct['image'], [keyword])
-    dist_class_0 = similarity_wrong_class_0 - similarity_correct_class_0
+    similarity_wrong_class = calc_similarity(df_wrong['image'], [keyword])
+    similarity_correct_class = calc_similarity(df_correct['image'], [keyword])
+    dist_class = similarity_wrong_class - similarity_correct_class
+
+    print(similarity_wrong_class, similarity_correct_class)
+
+    # Calculate accuracy
+    if len(images) != 0:
+        def is_in_selected_image(value):
+            for image in images:
+                if image in value:
+                    return True
+            return False
+
+        df_image = df['image'].apply(lambda x: is_in_selected_image(x))
+        df_image_correct = df_image[df_image['correct'] == 1].shape[0]
+        accuracy = df_image_correct / df_image.shape[0]
+    else:
+        accuracy = 0
+
     return {
-        "accuracy": str(df_class['correct'].mean()),
-        "score": str(dist_class_0[0]),
+        "accuracy": "{:.2f}".format(accuracy),
+        "score": str(dist_class[0]),
     }
 
 # ---------------------------- API /api/inpaint ---------------------------------

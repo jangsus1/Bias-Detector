@@ -14,9 +14,8 @@ def list_chunk(lst, n):
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model, preprocess = clip.load('ViT-B/32', device)
 
-def calc_similarity(image_dir, images, keywords):
+def calc_similarity(images, keywords):
     # Load the model
-    images = [image_dir + image for image in images]
     images = [Image.fromarray(io.imread(image)) for image in images]
     
     similarity_list = []
@@ -26,8 +25,7 @@ def calc_similarity(image_dir, images, keywords):
 
         # Prepare the inputs
         image_inputs = torch.cat([preprocess(pil_image).unsqueeze(0) for pil_image in image_list]).to(device) # (1909, 3, 224, 224)
-        text_inputs = torch.cat([clip.tokenize(f"a photo of a {c}") for c in keywords]).to(device)
-
+        text_inputs = torch.cat([clip.tokenize(f"a photo of {c}") for c in keywords]).to(device)
 
         # Calculate features
         with torch.no_grad():
