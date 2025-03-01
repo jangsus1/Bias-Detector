@@ -14,18 +14,27 @@ import torch
 import clip
 import nltk
 import time
-from flask import request, Flask
+from flask import request, Flask, jsonify, make_response
 from flask_cors import CORS
 import zlib
 from SEEM.demo.seem.app import inference
 # nltk.download("punkt")
 from nltk.tokenize import sent_tokenize
+from flask_sqlalchemy import SQLAlchemy
+import uuid
+from database import db, save_to_db
 
 # ---------------------------- Define Flask APP ---------------------------------
 start = time.time()
 app = Flask(__name__, static_url_path='/api/static', static_folder='static/')
-CORS(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/pureblackkkk/my_volume/Bias-Detector/backend/data.db'  # Use sqlite
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+CORS(app, supports_credentials=True)
 
+# Start database
+db.init_app(app)
+with app.app_context():
+    db.create_all()
 
 # ---------------------------- Define Constant variable ---------------------------------
 def generate_unique_task_id():
@@ -41,6 +50,21 @@ def get_prefix_by_dataset(dataset: str):
             return None
 
 global_results = {}
+
+# ---------------------------- Cookie user_id setting (For http need to be set manually)---------------------------------
+@app.before_request
+def ensure_unique_cookie():
+    if not request.endpoint == 'static':
+        if request.is_json:
+            original_payload = request.get_json(silent = True)
+            user_id = original_payload['user_id']
+
+            # If not user_id, set in paylod
+            if not user_id:
+                user_id = str(uuid.uuid4())
+                modified_payload = original_payload.copy()
+                modified_payload['user_id'] = user_id
+                request._cached_json = (modified_payload, modified_payload)
 
 # ---------------------------- API /api/seem ---------------------------------
 
@@ -80,7 +104,12 @@ def seem():
         final_mask.save(local_mask_path)
         mask_paths.append(local_mask_path)
     
-    return mask_paths
+    data = {
+        'mask_paths': mask_paths,
+        'user_id': data['user_id'],
+    }
+
+    return jsonify(data), 200
 
 
 # ---------------------------- API /api/manual_mask ---------------------------------
@@ -222,6 +251,8 @@ def keyword_generate():
 @app.route("/api/manual_keyword", methods=["POST"])  
 def manual_keyword_generate():
     data = request.json
+    print(data)
+
     keyword = data['keyword']
     dataset = data['dataset']
     images = data['images']
@@ -243,7 +274,44 @@ def manual_keyword_generate():
         "accuracy": str(df_class['correct'].mean()),
         "score": str(dist_class_0[0]),
     }
+
+# ---------------------------- API /api/inpaint ---------------------------------
+@app.route("/api/inpaint", methods=["POST"])
+def save_inpaint_action():
+    data = request.json
     
+    required_fields = [
+        'user_id', 
+        'batch_mask', 
+        'keywords', 
+        'invert', 
+        'solution',
+        'solution_query',
+        'dataset',
+        'class_name',
+    ]
+
+    if not all(field in data for field in required_fields):
+        return jsonify({"error": "Missing required fields"}, 400)
+    
+    success = save_to_db(
+        user_id=data['user_id'],
+        batch_mask=json.dumps(data['batch_mask']),
+        keywords=json.dumps(data['keywords']),
+        invert=data['invert'],
+        solution=data['solution'],
+        solution_query=data['solution_query'],
+        dataset=data['dataset'],
+        class_name=data['class_name'],
+    )
+
+    if success:
+        return jsonify({
+            "message": "Data saved successfully",
+            "user_id": data['user_id'],
+        }), 200
+    return jsonify({"error": "Failed to save data"}), 500
+
 if __name__ == '__main__':
     print(f"Startup time: {time.time() - start} seconds")
     app.run(host='0.0.0.0', port=6000)
