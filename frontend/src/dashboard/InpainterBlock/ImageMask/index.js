@@ -102,4 +102,7 @@ const ImageMask = ({
     )
 };
 
-export default ImageMask;
+export {
+    ImageMask,
+    getMaskPathFromKeywords,
+}

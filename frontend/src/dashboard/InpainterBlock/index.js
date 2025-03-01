@@ -11,14 +11,12 @@ import {
     Divider,
 } from '@mui/material';
 import _ from 'lodash';
-import pako from 'pako';
-import Draw from './Drawer/index';
-import API_URL from '../../common/api';
-import ImageMask from './ImageMask/index';
+import { ImageMask, getMaskPathFromKeywords } from './ImageMask/index';
 import Shortcut from './Shortcut/index';
 import useImagePanoptic from './hooks/image-panoptic';
 import Message from './Message/index';
 import {
+    callInpaintAPI,
     callGenerateMaskAPI,
 } from './api';
 
@@ -40,6 +38,7 @@ const InpaintBlock = ({
     normalImages,
     panoptic,
     panopticCategories,
+    label,
 }) => {
     const [invert, setInvert] = useState(false);
     const [finished, setFinished] = useState(false);
@@ -109,25 +108,30 @@ const InpaintBlock = ({
     }
 
     const inpaint = function (e) {
-        // Create action
-        
-        // // TODO: record the user action rather than directly inpainitng
-        // // TODO: send the collected data and save on database
-        // setLoading?.("Inpainting the Images...");
-        // fetch(`${API_URL}/api/inpaint`, {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: pako.deflate(JSON.stringify({
-        //         imagePaths: imageList.slice(0, numImages),
-        //         maskPaths: imageList.slice(0, numImages).map(image => turnedOn[image]),
-        //         prompt: queryRef.current.value,
-        //         invert: invert ? "true" : "false",
-        //         dataset: dataset
-        //     }), { to: 'string' }),
-        //     mode: "cors",
-        // })
-        //     .then(response => response.json())
-        //     .catch(error => console.error(error))
+        updateModal(
+            true,
+            'Recording inpaint command..., please wait',
+        );
+        callInpaintAPI({
+            batch_mask: selectedImgURL.map((imgURL) => {
+                if (selectedKeywords.size > 0) {
+                    return getMaskPathFromKeywords(
+                        selectedKeywords,
+                        panopticInUse[imgURL],
+                    );
+                }
+                return '';
+            }),
+            keywords: Array.from(selectedKeywords),
+            invert,
+            solution: solution[0],
+            solution_query: generateQuery(solution),
+            dataset: dataset,
+            class_name: label,
+        })
+        .then(() => {
+            updateModal(false, '');
+        });
     }
 
     return (
