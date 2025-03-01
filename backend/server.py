@@ -282,7 +282,7 @@ def manual_keyword_generate():
                     return True
             return False
 
-        df_image = df['image'].apply(lambda x: is_in_selected_image(x))
+        df_image = df[df['image'].apply(lambda x: is_in_selected_image(x))]
         df_image_correct = df_image[df_image['correct'] == 1].shape[0]
         accuracy = df_image_correct / df_image.shape[0]
     else:
