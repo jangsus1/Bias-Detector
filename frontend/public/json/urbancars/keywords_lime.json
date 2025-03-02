@@ -7,6 +7,7 @@
             "bias": "S",
             "sepcificity": -3.797,
             "class": 5,
+            "coefficient": 0.1757884362892098,
             "images": [
                 "val/urban/0329_bg-urban_co_occur_obj-urban.jpg",
                 "val/urban/0066_bg-urban_co_occur_obj-urban.jpg",
@@ -31,7 +32,7 @@
             "accuracy": 0.5,
             "bias": "S",
             "sepcificity": -3.281,
-            "class": 0,
+            "coefficient": -0.0261434133947015,
             "images": [
                 "val/urban/0000_bg-country_co_occur_obj-country.jpg",
                 "val/urban/0034_bg-urban_co_occur_obj-country.jpg",
@@ -46,6 +47,7 @@
             "bias": "S",
             "sepcificity": -2.0,
             "class": 1,
+            "coefficient": -0.1754920138242229,
             "images": [
                 "val/urban/0015_bg-country_co_occur_obj-urban.jpg",
                 "val/urban/0021_bg-country_co_occur_obj-urban.jpg"
@@ -58,6 +60,7 @@
             "bias": "S",
             "sepcificity": -3.203,
             "class": 2,
+            "coefficient": 0.2950778319247125,
             "images": [
                 "val/urban/0041_bg-urban_co_occur_obj-country.jpg",
                 "val/urban/0045_bg-urban_co_occur_obj-country.jpg",
@@ -74,6 +77,7 @@
             "bias": "S",
             "sepcificity": -1.016,
             "class": 5,
+            "coefficient": 0.0349191955780259,
             "images": [
                 "val/urban/0015_bg-country_co_occur_obj-urban.jpg",
                 "val/urban/0329_bg-urban_co_occur_obj-urban.jpg",
@@ -128,6 +132,7 @@
             "bias": "M",
             "sepcificity": -0.3906,
             "class": 3,
+            "coefficient": 0.0753528710949645,
             "images": [
                 "val/urban/0098_bg-urban_co_occur_obj-urban.jpg",
                 "val/urban/0147_bg-urban_co_occur_obj-urban.jpg",
@@ -146,6 +151,7 @@
             "bias": "S",
             "sepcificity": -2.016,
             "class": 4,
+            "coefficient": 0.2172262378941627,
             "images": [
                 "val/urban/0011_bg-country_co_occur_obj-urban.jpg"
             ]
@@ -158,7 +164,7 @@
             "accuracy": 0.0,
             "bias": "S",
             "sepcificity": -2.61,
-            "class": 0,
+            "coefficient": 0.1867665158695699,
             "images": [
                 "val/country/0460_bg-country_co_occur_obj-urban.jpg",
                 "val/country/0458_bg-country_co_occur_obj-urban.jpg",
@@ -176,6 +182,7 @@
             "bias": "S",
             "sepcificity": -4.36,
             "class": 1,
+            "coefficient": 0.1200139082943041,
             "images": [
                 "val/country/0490_bg-urban_co_occur_obj-country.jpg"
             ]
@@ -187,6 +194,7 @@
             "bias": "S",
             "sepcificity": -1.406,
             "class": 2,
+            "coefficient": 0.2517710941601981,
             "images": [
                 "val/country/0375_bg-country_co_occur_obj-country.jpg"
             ]
@@ -198,6 +206,7 @@
             "bias": "S",
             "sepcificity": -3.406,
             "class": 5,
+            "coefficient": 0.0159413096256834,
             "images": [
                 "val/country/0479_bg-urban_co_occur_obj-country.jpg",
                 "val/country/0481_bg-urban_co_occur_obj-country.jpg",
@@ -216,6 +225,7 @@
             "bias": "S",
             "sepcificity": -2.61,
             "class": 5,
+            "coefficient": 0.0874216903697843,
             "images": [
                 "val/country/0464_bg-country_co_occur_obj-urban.jpg"
             ]
@@ -227,6 +237,7 @@
             "bias": "S",
             "sepcificity": -1.766,
             "class": 5,
+            "coefficient": -0.1426702258958782,
             "images": [
                 "val/country/0495_bg-urban_co_occur_obj-country.jpg"
             ]
@@ -238,6 +249,7 @@
             "bias": "M",
             "sepcificity": -1.281,
             "class": 3,
+            "coefficient": -0.0940489822190974,
             "images": [
                 "val/country/0482_bg-urban_co_occur_obj-country.jpg",
                 "val/country/0352_bg-country_co_occur_obj-country.jpg",
@@ -252,6 +264,7 @@
             "bias": "S",
             "sepcificity": -0.4844,
             "class": 4,
+            "coefficient": 0.1013662735654844,
             "images": [
                 "val/country/0484_bg-urban_co_occur_obj-country.jpg"
             ]
