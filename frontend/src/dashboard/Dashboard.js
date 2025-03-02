@@ -48,6 +48,18 @@ const parseKeywords = (selectedKeywords) => {
   }));
 }
 
+const parseLimeKeywords = (selectedKeywords) => {
+  return selectedKeywords?.map((data, index) => ({
+    keyword: [data.keyword],
+    score: [parseFloat(data.score)],
+    accuracy: [parseFloat(data.accuracy)],
+    images: [data.images],
+    sepcificity: [data.sepcificity],
+    class: [data.class],
+    coffiecent: [data.coefficient],
+  }));
+}
+
 export default function Dashboard() {
   const { dataset, label } = useParams();
 
@@ -55,7 +67,6 @@ export default function Dashboard() {
   const [isDataLoad, setDataLoad] = useState(false);
 
   // Define the source data
-  const [selectedKeywords, setSelectedKeywords] = useState(null);
   const [selectedPrediction, setSelectedPrediction] = useState(null);
   const [selectedPanoptic, setSelectedPanoptic] = useState(null);
   const [selectedPanopticCategories, setSelectedPanopticCategories] = useState(null);
@@ -63,28 +74,30 @@ export default function Dashboard() {
   const [selectedTrainData, setSelectedTrainData] = useState(null);
 
   // Define postprocessing data
-  const [keywords, setKeywords] = useState(null)
+  const [keywords, setKeywords] = useState(null);
+  const [limeKeywords, setLimeKeywords] = useState(null);
 
   useEffect(() => {
     const fetchJson = async () => {
       try {
         const [
-          keywords, 
+          keywords,
+          limeKeywords,
           predictions,
           panoptic,
           panopticCategories,
           coordinates,
           trainData,
         ] = await Promise.all([
-          returnFetchPromise(`${dataset}/keywords.json`),
+          returnFetchPromise(`${dataset}/keywords_all.json`),
+          returnFetchPromise(`${dataset}/keywords_lime.json`),
           returnFetchPromise(`${dataset}/prediction.json`),
           returnFetchPromise(`${dataset}/panoptic.json`),
           returnFetchPromise(`${dataset}/panoptic_categories.json`),
           returnFetchPromise(`${dataset}/coordinates.json`),
           returnFetchPromise(`${dataset}/file_list.json`),
         ]);
-    
-        setSelectedKeywords(keywords[label]);
+        
         setSelectedPrediction(predictions[label]);
         setSelectedPanoptic(panoptic[label]);
         setSelectedPanopticCategories(panopticCategories[label]);
@@ -92,7 +105,8 @@ export default function Dashboard() {
         setSelectedTrainData(trainData['train'][label]);
 
         // Set post processing keywords
-        setKeywords(parseKeywords(keywords[label]))
+        setKeywords(parseKeywords(keywords[label]));
+        setLimeKeywords(parseLimeKeywords(keywords[label]));
 
         // Set loading flag
         setDataLoad(true);
@@ -211,8 +225,8 @@ export default function Dashboard() {
                   setPopover={setPopover}
                   keywords={keywords}
                 />
-                {/* Keywords */}
 
+                {/* PopoverPanel */}
                 <PopoverPanel
                   popover={popover}
                   setHoveredCaptionKeyword={setHoveredCaptionKeyword}
@@ -220,13 +234,15 @@ export default function Dashboard() {
                   setPopoverCollapsed={setPopoverCollapsed}
                 />
 
-
+                {/* Keywords */}
                 <Keywords
                   dataset={dataset}
                   popoverCollapsed={popoverCollapsed}
                   label={label}
                   keywords={keywords}
+                  limeKeywords={limeKeywords}
                   setKeywords={setKeywords}
+                  setLimeKeywords={setLimeKeywords}
                   setHoveredImages={setHoveredImages}
                   prediction={selectedPrediction}
                   setClickedObj={setClickedObj}

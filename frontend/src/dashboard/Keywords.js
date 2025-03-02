@@ -11,11 +11,29 @@ import {
   TableCell,
   TableHead,
   TableRow,
-  IconButton,
+  Stack,
+  Switch,
   TableSortLabel
 } from '@mui/material';
 import _, { set } from 'lodash';
 import * as d3 from "d3";
+
+/**
+ * Calculate compachness
+ */
+const calculateCentroid = (points) => {
+  const sum = points.reduce((acc, point) => [acc[0] + point[0], acc[1] + point[1]], [0, 0]);
+  return [sum[0] / points.length, sum[1] / points.length];
+};
+
+/**
+ * Calculate weighted score
+ */
+const weightedSumScore = function (data) {
+  const lengths = data.images.map(ls => ls.length);
+  const weights = lengths.map(l => l / _.sum(lengths));
+  return _.sum(data.score.map((s, i) => s * weights[i]));
+}
 
 const Keywords = ({
   keywords,
@@ -33,13 +51,14 @@ const Keywords = ({
   popoverCollapsed,
   keywordMode,
 }) => {
-
-
   const [focusKeyword, setFocusKeyword] = useState("")
   const [clickedKeyword, setClickedKeyword] = useState("")
   const [order, setOrder] = useState('desc');
   const [orderBy, setOrderBy] = useState('score');
 
+  /**
+   * On click action
+   */
   const onClick = function (e, data) {
     if (clickedKeyword == data.keyword) {
       setClickedKeyword("")
@@ -51,19 +70,27 @@ const Keywords = ({
     }
   }
 
+  /**
+   * On mouse over action
+   */
   const onMouseOver = function (e, data) {
     const images = data.images.flat()
     setHoveredImages(images)
     setFocusKeyword(data.keyword)
   }
 
+  /**
+   * On mouse out action
+   */
   const onMouseOut = function (e) {
     setHoveredImages(null)
     setFocusKeyword("")
   }
 
+  /**
+   * On focus action
+   */
   const focus = function (data) {
-
     const keyword = data.keyword;
     if (clickedImage) { // When image is clicked in explorer
       if (keyword == hoveredCaptionKeyword) return "#d0d0d0"
@@ -74,6 +101,9 @@ const Keywords = ({
     return clickedKeyword == keyword ? "#d0d0d0" : "white" // when keyword is clicked here
   }
 
+  /**
+   * On keyword change action
+   */
   const onKeywordChange = function (e, index1, index2) {
     const updatedKeywords = keywords?.map((keywordGroup, i) => {
       if (i === index1) {
@@ -95,10 +125,16 @@ const Keywords = ({
     setKeywords(updatedKeywords);
   }
 
+  /**
+   * On drag start action
+   */
   const onDragStart = function (e, data, index) {
     setDraggedKeywordObj({ index, data });
   }
 
+  /**
+   * On drop action
+   */
   const onDrop = function (e, droppedKeyword, droppedIndex) {
     e.preventDefault();
     if (!draggedKeywordObj) return;
@@ -115,13 +151,7 @@ const Keywords = ({
     const uncheckedKeywords = keywords.filter((keyword, index) => index !== draggedKeywordObj.index && index !== droppedIndex);
     setKeywords([...uncheckedKeywords, newKeyword].sort((a, b) => _.mean(b.score) - _.mean(a.score)));
     mergeComplete();
-
   }
-
-  const calculateCentroid = (points) => {
-    const sum = points.reduce((acc, point) => [acc[0] + point[0], acc[1] + point[1]], [0, 0]);
-    return [sum[0] / points.length, sum[1] / points.length];
-  };
 
   const distanceFromCentroid = (images) => {
     const points = images.map(i => coordinates[i].tsne)
@@ -133,25 +163,18 @@ const Keywords = ({
       max: _.max(distances)
     };
   };
+  
   const totalCorrect = prediction.reduce((acc, curr) => acc + curr.correct, 0);
-  const totalWrong = prediction.length - totalCorrect;
   const overallAccuracy = totalCorrect / prediction.length;
   const accuracyColor = d3.scaleDiverging([0, overallAccuracy, 1], d3.interpolateRdBu);
 
   const overallCD = distanceFromCentroid(prediction.map(d => d.image));
   const centroidColor = d3.scaleDiverging([overallCD.min, overallCD.average, overallCD.max], d3.interpolateRdBu);
-
   const scoreColor = d3.scaleDiverging([2, 0, -2], d3.interpolateRdBu);
 
   const calculateAccuracy = function (data) {
     const filteredPredictions = prediction.filter(d => data.images.flat().includes(d.image));
     return filteredPredictions.reduce((acc, curr) => acc + curr.correct, 0) / filteredPredictions.length;
-  }
-
-  const weightedSumScore = function (data) {
-    const lengths = data.images.map(ls => ls.length);
-    const weights = lengths.map(l => l / _.sum(lengths));
-    return _.sum(data.score.map((s, i) => s * weights[i]));
   }
 
   const handleSortRequest = (property) => {
@@ -185,19 +208,6 @@ const Keywords = ({
       });
   }, [keywords, order, orderBy]);
 
-
-  const sortedKeywords = _.orderBy(
-    keywords,
-    (data) => {
-      if (orderBy === 'score') return weightedSumScore(data);
-      if (orderBy === 'accuracy') return calculateAccuracy(data);
-      if (orderBy === 'compactness') return distanceFromCentroid(data.images.flat()).average;
-      if (orderBy === 'keyword') return data.keyword[0] || "";
-      return 0;
-    },
-    order
-  );
-
   return (
     <Grid item lg={popoverCollapsed ? 5.8 : 4}>
       <Paper
@@ -211,6 +221,17 @@ const Keywords = ({
         }}
       >
         <Typography sx={{ mb: 1 }} variant='h6'>Bias Candidates</Typography>
+
+        {/* Switch button for lime */}
+        <Stack direction="row" spacing={1} sx={{ w: '100%', mb: 1, alignItems: 'center', justifyContent: "center"}}>
+          <Typography>ALL Keywords</Typography>
+          <Switch onChange={(e) => {
+            console.log('xixixiix', e.target.checked);
+          }} name="jason" />
+          <Typography>Concept LIME</Typography>
+        </Stack>
+
+
         <Paper sx={{ my: 1, }}>
           <Table aria-label="customized table">
             {/* Fixed Header */}
@@ -254,13 +275,14 @@ const Keywords = ({
                     active={orderBy === 'compactness'}
                     direction={orderBy === 'compactness' ? order : 'asc'}
                     onClick={() => handleSortRequest('compactness')}
-                  >
+                >
                     Compactness
-                  </TableSortLabel>
+                </TableSortLabel>
                 </TableCell>
               </TableRow>
             </TableHead>
-
+            
+            {/* Table body */}
             <TableBody>
               {sortedIndices?.map((sortedIndex) => {
                 const data = keywords[sortedIndex];
@@ -283,6 +305,7 @@ const Keywords = ({
 
                   }}
                 >
+                  {/* Keyword */}
                   <TableCell component="th" scope="row">
                     {data.keyword.map((k, index2) => (
                       <TextField
@@ -295,12 +318,15 @@ const Keywords = ({
                       />
                     ))}
                   </TableCell>
+                  {/* Score */}
                   <TableCell sx={{ backgroundColor: scoreColor(weightedSumScore(data)) }} align="right">
                     <Typography>{weightedSumScore(data).toFixed(2)}</Typography>
                   </TableCell>
+                  {/* Accuracy */}
                   <TableCell sx={{ backgroundColor: accuracyColor(calculateAccuracy(data)) }} align="right">
                     <Typography>{calculateAccuracy(data).toFixed(2)}</Typography>
                   </TableCell>
+                  {/* Compactness */}
                   <TableCell sx={{ backgroundColor: centroidColor(distanceFromCentroid(data.images.flat()).average) }} align="right">
                     <Typography>{distanceFromCentroid(data.images.flat()).average.toFixed(2)}</Typography>
                   </TableCell>
