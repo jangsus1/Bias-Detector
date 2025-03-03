@@ -15,8 +15,9 @@ import {
   Switch,
   TableSortLabel
 } from '@mui/material';
-import _, { set } from 'lodash';
+import _ from 'lodash';
 import * as d3 from "d3";
+import RevertedImage from './RevertedImage';
 
 /**
  * Calculate compachness
@@ -64,6 +65,12 @@ const Keywords = ({
   const [order, setOrder] = useState('desc');
   const [orderBy, setOrderBy] = useState('score');
   const [useLimeKeyword, setUseLimeKeyword] = useState(false);
+  const [fixedLimeKeyword, setFixedLimeKeyword] = useState(undefined);
+
+  useEffect(() => {
+    const limeKeyword = keywords?.filter((data) => data?.coefficient?.[0] !== undefined)
+    setFixedLimeKeyword(limeKeyword);
+  }, []);
 
   /**
    * On click action
@@ -366,115 +373,120 @@ const Keywords = ({
               </Table>
             ) : (
               // LIME keywords
-              <Table aria-label="customized table">
-                {/* Fixed Header */}
-                <TableHead sx={{ position: "sticky", top: 0, backgroundColor: "#A8A8A8", zIndex: 2 }}>
-                  <TableRow>
-                    <TableCell sx={{ fontWeight: 'bold' }}>
-                      <TableSortLabel
-                        active={orderBy === 'keyword'}
-                        direction={orderBy === 'keyword' ? order : 'asc'}
-                        onClick={() => handleSortRequest('keyword')}
-                      >
-                        Keywords
-                      </TableSortLabel>
-                    </TableCell>
-                    <TableCell sx={{ fontWeight: 'bold' }} align="right">
-                      <TableSortLabel
-                        active={orderBy === 'coefficient'}
-                        direction={orderBy === 'coefficient' ? order : 'asc'}
-                        onClick={() => handleSortRequest('coefficient')}
-                      >
-                        Coefficient
-                      </TableSortLabel>
-                    </TableCell>
-                    <TableCell sx={{ fontWeight: 'bold' }} align="right">
-                      <TableSortLabel
-                        active={orderBy === 'score'}
-                        direction={orderBy === 'score' ? order : 'asc'}
-                        onClick={() => handleSortRequest('score')}
-                      >
-                        CLIP Score
-                      </TableSortLabel>
-                    </TableCell>
-                    <TableCell sx={{ fontWeight: 'bold' }} align="right">
-                      <TableSortLabel
-                        active={orderBy === 'accuracy'}
-                        direction={orderBy === 'accuracy' ? order : 'asc'}
-                        onClick={() => handleSortRequest('accuracy')}
-                      >
-                        Accuracy
-                      </TableSortLabel>
-                    </TableCell>
-                    <TableCell sx={{ fontWeight: 'bold' }} align="right">
-                      <TableSortLabel
-                        active={orderBy === 'compactness'}
-                        direction={orderBy === 'compactness' ? order : 'asc'}
-                        onClick={() => handleSortRequest('compactness')}
-                      >
-                        Compactness
-                      </TableSortLabel>
-                    </TableCell>
-                  </TableRow>
-                </TableHead>
-                
-                {/* Table body */}
-                <TableBody>
-                  {sortedIndices?.map((sortedIndex) => {
-                    const data = keywords[sortedIndex];
-                    const index = keywords.indexOf(data);
-
-                    return <TableRow
-                      key={index}
-                      draggable
-                      onDragStart={(e) => onDragStart(e, data, index)}
-                      onMouseOver={(e) => onMouseOver(e, data)}
-                      onMouseOut={onMouseOut}
-                      onDragOver={(e) => e.preventDefault()}
-                      onDrop={(e) => onDrop(e, data, index)}
-                      onClick={(e) => onClick(e, data)}
-                      sx={{
-                        // '&:last-child td, &:last-child th': { border: 0 },
-                        cursor: "pointer",
-                        backgroundColor: focus(data),
-                        // border: 1,
-                        borderColor: "gray",
-    
-                      }}
-                    >
-                      {/* Keyword */}
-                      <TableCell component="th" scope="row">
-                        {data.keyword.map((k, index2) => (
-                          <TextField
-                            key={index2}
-                            variant="standard"
-                            value={k}
-                            onChange={(e) => onKeywordChange(e, index, index2)}
-                            onClick={(e) => e.stopPropagation()}
-                            sx={{ width: "100%" }}
-                          />
-                        ))}
+              <>
+                <Table aria-label="customized table">
+                  {/* Fixed Header */}
+                  <TableHead sx={{ position: "sticky", top: 0, backgroundColor: "#A8A8A8", zIndex: 2 }}>
+                    <TableRow>
+                      <TableCell sx={{ fontWeight: 'bold' }}>
+                        <TableSortLabel
+                          active={orderBy === 'keyword'}
+                          direction={orderBy === 'keyword' ? order : 'asc'}
+                          onClick={() => handleSortRequest('keyword')}
+                        >
+                          Keywords
+                        </TableSortLabel>
                       </TableCell>
-                      {/* Coefficient */}
-                      <TableCell sx={{ backgroundColor: centroidColor(distanceFromCentroid(data.images.flat()).average) }} align="right">
-                        <Typography>{avgLimeCoefficient(data).toFixed(2)}</Typography>
+                      <TableCell sx={{ fontWeight: 'bold' }} align="right">
+                        <TableSortLabel
+                          active={orderBy === 'coefficient'}
+                          direction={orderBy === 'coefficient' ? order : 'asc'}
+                          onClick={() => handleSortRequest('coefficient')}
+                        >
+                          Coefficient
+                        </TableSortLabel>
                       </TableCell>
-                      {/* CLIP Score */}
-                      <TableCell sx={{ backgroundColor: scoreColor(weightedSumScore(data)) }} align="right">
-                        <Typography>{weightedSumScore(data).toFixed(2)}</Typography>
+                      <TableCell sx={{ fontWeight: 'bold' }} align="right">
+                        <TableSortLabel
+                          active={orderBy === 'score'}
+                          direction={orderBy === 'score' ? order : 'asc'}
+                          onClick={() => handleSortRequest('score')}
+                        >
+                          CLIP Score
+                        </TableSortLabel>
                       </TableCell>
-                      {/* Accuracy */}
-                      <TableCell sx={{ backgroundColor: accuracyColor(calculateAccuracy(data)) }} align="right">
-                        <Typography>{calculateAccuracy(data).toFixed(2)}</Typography>
+                      <TableCell sx={{ fontWeight: 'bold' }} align="right">
+                        <TableSortLabel
+                          active={orderBy === 'accuracy'}
+                          direction={orderBy === 'accuracy' ? order : 'asc'}
+                          onClick={() => handleSortRequest('accuracy')}
+                        >
+                          Accuracy
+                        </TableSortLabel>
                       </TableCell>
-                      {/* Compactness */}
-                      <TableCell sx={{ backgroundColor: centroidColor(distanceFromCentroid(data.images.flat()).average) }} align="right">
-                        <Typography>{distanceFromCentroid(data.images.flat()).average.toFixed(2)}</Typography>
+                      <TableCell sx={{ fontWeight: 'bold' }} align="right">
+                        <TableSortLabel
+                          active={orderBy === 'compactness'}
+                          direction={orderBy === 'compactness' ? order : 'asc'}
+                          onClick={() => handleSortRequest('compactness')}
+                        >
+                          Compactness
+                        </TableSortLabel>
                       </TableCell>
                     </TableRow>
-                  })}
-                </TableBody>
-              </Table>
+                  </TableHead>
+                  
+                  {/* Table body */}
+                  <TableBody>
+                    {sortedIndices?.map((sortedIndex) => {
+                      const data = keywords[sortedIndex];
+                      const index = keywords.indexOf(data);
+
+                      return <TableRow
+                        key={index}
+                        draggable
+                        onDragStart={(e) => onDragStart(e, data, index)}
+                        onMouseOver={(e) => onMouseOver(e, data)}
+                        onMouseOut={onMouseOut}
+                        onDragOver={(e) => e.preventDefault()}
+                        onDrop={(e) => onDrop(e, data, index)}
+                        onClick={(e) => onClick(e, data)}
+                        sx={{
+                          // '&:last-child td, &:last-child th': { border: 0 },
+                          cursor: "pointer",
+                          backgroundColor: focus(data),
+                          // border: 1,
+                          borderColor: "gray",
+      
+                        }}
+                      >
+                        {/* Keyword */}
+                        <TableCell component="th" scope="row">
+                          {data.keyword.map((k, index2) => (
+                            <TextField
+                              key={index2}
+                              variant="standard"
+                              value={k}
+                              onChange={(e) => onKeywordChange(e, index, index2)}
+                              onClick={(e) => e.stopPropagation()}
+                              sx={{ width: "100%" }}
+                            />
+                          ))}
+                        </TableCell>
+                        {/* Coefficient */}
+                        <TableCell sx={{ backgroundColor: centroidColor(distanceFromCentroid(data.images.flat()).average) }} align="right">
+                          <Typography>{avgLimeCoefficient(data).toFixed(2)}</Typography>
+                        </TableCell>
+                        {/* CLIP Score */}
+                        <TableCell sx={{ backgroundColor: scoreColor(weightedSumScore(data)) }} align="right">
+                          <Typography>{weightedSumScore(data).toFixed(2)}</Typography>
+                        </TableCell>
+                        {/* Accuracy */}
+                        <TableCell sx={{ backgroundColor: accuracyColor(calculateAccuracy(data)) }} align="right">
+                          <Typography>{calculateAccuracy(data).toFixed(2)}</Typography>
+                        </TableCell>
+                        {/* Compactness */}
+                        <TableCell sx={{ backgroundColor: centroidColor(distanceFromCentroid(data.images.flat()).average) }} align="right">
+                          <Typography>{distanceFromCentroid(data.images.flat()).average.toFixed(2)}</Typography>
+                        </TableCell>
+                      </TableRow>
+                    })}
+                  </TableBody>
+                </Table>
+                <RevertedImage
+                  limeKeywords={fixedLimeKeyword}
+                />
+              </>
             )
           }
         </Paper>

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Paper, TextField, FormControl, Typography, Box, Button, Checkbox, FormControlLabel, Grid } from '@mui/material';
+import React from 'react';
+import { Container, Paper, Grid } from '@mui/material';
 import _ from 'lodash';
 import InpaintBlock from './InpainterBlock/index';
 
