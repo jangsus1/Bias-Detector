@@ -35,29 +35,26 @@ const returnFetchPromise = async (path) => {
 };
 
 /**
- * Parse received keywords
+ * Parse received keywords and lime keywords, then merge
  * @param {*} selectedKeywords 
  * @returns 
  */
-const parseKeywords = (selectedKeywords) => {
-  return selectedKeywords?.map((data, index) => ({
-    keyword: [data.keyword],
-    score: [parseFloat(data.score)],
-    accuracy: [parseFloat(data.accuracy)],
-    images: [data.images]
-  }));
-}
+const parseKeywordsAndLimeKeywords = (allKeywords, limeKeywords) => {
+  return allKeywords?.map((data) => {
+    const filerRes = limeKeywords.filter((item) => data.keyword === item.keyword);
+    const limeData = filerRes.length === 1 ? filerRes[0] : undefined;
+    const hasLimeData = limeData !== undefined;
 
-const parseLimeKeywords = (selectedKeywords) => {
-  return selectedKeywords?.map((data, index) => ({
-    keyword: [data.keyword],
-    score: [parseFloat(data.score)],
-    accuracy: [parseFloat(data.accuracy)],
-    images: [data.images],
-    sepcificity: [data.sepcificity],
-    class: [data.class],
-    coffiecent: [data.coefficient],
-  }));
+    return {
+      keyword: [data.keyword],
+      score: [parseFloat(data.score)],
+      accuracy: [parseFloat(data.accuracy)],
+      images: [data.images],
+      sepcificity: hasLimeData ? [limeData?.sepcificity] : undefined,
+      class: hasLimeData ? [limeData?.class] : undefined,
+      coefficient: hasLimeData ? [limeData?.coefficient] : undefined,
+    };
+  });
 }
 
 export default function Dashboard() {
@@ -75,7 +72,6 @@ export default function Dashboard() {
 
   // Define postprocessing data
   const [keywords, setKeywords] = useState(null);
-  const [limeKeywords, setLimeKeywords] = useState(null);
 
   useEffect(() => {
     const fetchJson = async () => {
@@ -105,8 +101,7 @@ export default function Dashboard() {
         setSelectedTrainData(trainData['train'][label]);
 
         // Set post processing keywords
-        setKeywords(parseKeywords(keywords[label]));
-        setLimeKeywords(parseLimeKeywords(keywords[label]));
+        setKeywords(parseKeywordsAndLimeKeywords(keywords[label], limeKeywords[label]));
 
         // Set loading flag
         setDataLoad(true);
@@ -240,9 +235,7 @@ export default function Dashboard() {
                   popoverCollapsed={popoverCollapsed}
                   label={label}
                   keywords={keywords}
-                  limeKeywords={limeKeywords}
                   setKeywords={setKeywords}
-                  setLimeKeywords={setLimeKeywords}
                   setHoveredImages={setHoveredImages}
                   prediction={selectedPrediction}
                   setClickedObj={setClickedObj}

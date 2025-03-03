@@ -66,7 +66,7 @@ const Images = ({
   setSelectedImages,
   keywordMode,
   setPopover,
-  keywords
+  keywords,
 }) => {
   // Use an SVG ref instead of a canvas ref
   const svgRef = useRef(null);
