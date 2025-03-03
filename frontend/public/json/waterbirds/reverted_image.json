@@ -1,0 +1,2302 @@
+{
+    "landbird": {
+        "chinese writing": {
+            "landbird": 4,
+            "waterbird": 13
+        },
+        "tombstone": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "mountains": {
+            "landbird": 11,
+            "waterbird": 5
+        },
+        "statue": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "lake": {
+            "landbird": 3,
+            "waterbird": 4
+        },
+        "person": {
+            "landbird": 11,
+            "waterbird": 5
+        },
+        "beach": {
+            "landbird": 2,
+            "waterbird": 12
+        },
+        "water": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "air": {
+            "landbird": 4,
+            "waterbird": 3
+        },
+        "chinese writing_tombstone": {
+            "landbird": 7,
+            "waterbird": 0
+        },
+        "chinese writing_mountains": {
+            "landbird": 14,
+            "waterbird": 2
+        },
+        "chinese writing_statue": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "chinese writing_lake": {
+            "landbird": 6,
+            "waterbird": 4
+        },
+        "chinese writing_person": {
+            "landbird": 4,
+            "waterbird": 11
+        },
+        "beach_chinese writing": {
+            "landbird": 6,
+            "waterbird": 16
+        },
+        "chinese writing_water": {
+            "landbird": 11,
+            "waterbird": 0
+        },
+        "air_chinese writing": {
+            "landbird": 6,
+            "waterbird": 11
+        },
+        "mountains_tombstone": {
+            "landbird": 6,
+            "waterbird": 2
+        },
+        "statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "lake_tombstone": {
+            "landbird": 1,
+            "waterbird": 0
+        },
+        "person_tombstone": {
+            "landbird": 10,
+            "waterbird": 0
+        },
+        "beach_tombstone": {
+            "landbird": 2,
+            "waterbird": 2
+        },
+        "tombstone_water": {
+            "landbird": 2,
+            "waterbird": 0
+        },
+        "air_tombstone": {
+            "landbird": 11,
+            "waterbird": 2
+        },
+        "mountains_statue": {
+            "landbird": 6,
+            "waterbird": 0
+        },
+        "lake_mountains": {
+            "landbird": 8,
+            "waterbird": 1
+        },
+        "mountains_person": {
+            "landbird": 27,
+            "waterbird": 2
+        },
+        "beach_mountains": {
+            "landbird": 10,
+            "waterbird": 5
+        },
+        "mountains_water": {
+            "landbird": 5,
+            "waterbird": 5
+        },
+        "air_mountains": {
+            "landbird": 9,
+            "waterbird": 1
+        },
+        "lake_statue": {
+            "landbird": 2,
+            "waterbird": 5
+        },
+        "person_statue": {
+            "landbird": 2,
+            "waterbird": 5
+        },
+        "beach_statue": {
+            "landbird": 6,
+            "waterbird": 3
+        },
+        "statue_water": {
+            "landbird": 3,
+            "waterbird": 2
+        },
+        "air_statue": {
+            "landbird": 6,
+            "waterbird": 2
+        },
+        "lake_person": {
+            "landbird": 6,
+            "waterbird": 2
+        },
+        "beach_lake": {
+            "landbird": 5,
+            "waterbird": 5
+        },
+        "lake_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake": {
+            "landbird": 8,
+            "waterbird": 4
+        },
+        "beach_person": {
+            "landbird": 3,
+            "waterbird": 12
+        },
+        "person_water": {
+            "landbird": 8,
+            "waterbird": 0
+        },
+        "air_person": {
+            "landbird": 10,
+            "waterbird": 2
+        },
+        "beach_water": {
+            "landbird": 1,
+            "waterbird": 8
+        },
+        "air_beach": {
+            "landbird": 2,
+            "waterbird": 12
+        },
+        "air_water": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "chinese writing_mountains_tombstone": {
+            "landbird": 4,
+            "waterbird": 2
+        },
+        "chinese writing_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_lake_tombstone": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "chinese writing_person_tombstone": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "beach_chinese writing_tombstone": {
+            "landbird": 2,
+            "waterbird": 4
+        },
+        "chinese writing_tombstone_water": {
+            "landbird": 1,
+            "waterbird": 1
+        },
+        "air_chinese writing_tombstone": {
+            "landbird": 7,
+            "waterbird": 0
+        },
+        "chinese writing_mountains_statue": {
+            "landbird": 5,
+            "waterbird": 0
+        },
+        "chinese writing_lake_mountains": {
+            "landbird": 8,
+            "waterbird": 0
+        },
+        "chinese writing_mountains_person": {
+            "landbird": 12,
+            "waterbird": 1
+        },
+        "beach_chinese writing_mountains": {
+            "landbird": 15,
+            "waterbird": 5
+        },
+        "chinese writing_mountains_water": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "air_chinese writing_mountains": {
+            "landbird": 8,
+            "waterbird": 2
+        },
+        "chinese writing_lake_statue": {
+            "landbird": 1,
+            "waterbird": 1
+        },
+        "chinese writing_person_statue": {
+            "landbird": 5,
+            "waterbird": 4
+        },
+        "beach_chinese writing_statue": {
+            "landbird": 3,
+            "waterbird": 3
+        },
+        "chinese writing_statue_water": {
+            "landbird": 3,
+            "waterbird": 4
+        },
+        "air_chinese writing_statue": {
+            "landbird": 7,
+            "waterbird": 3
+        },
+        "chinese writing_lake_person": {
+            "landbird": 3,
+            "waterbird": 5
+        },
+        "beach_chinese writing_lake": {
+            "landbird": 1,
+            "waterbird": 5
+        },
+        "chinese writing_lake_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake": {
+            "landbird": 6,
+            "waterbird": 1
+        },
+        "beach_chinese writing_person": {
+            "landbird": 6,
+            "waterbird": 13
+        },
+        "chinese writing_person_water": {
+            "landbird": 1,
+            "waterbird": 4
+        },
+        "air_chinese writing_person": {
+            "landbird": 6,
+            "waterbird": 5
+        },
+        "beach_chinese writing_water": {
+            "landbird": 0,
+            "waterbird": 4
+        },
+        "air_beach_chinese writing": {
+            "landbird": 4,
+            "waterbird": 14
+        },
+        "air_chinese writing_water": {
+            "landbird": 8,
+            "waterbird": 0
+        },
+        "mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "lake_mountains_tombstone": {
+            "landbird": 0,
+            "waterbird": 1
+        },
+        "mountains_person_tombstone": {
+            "landbird": 7,
+            "waterbird": 0
+        },
+        "beach_mountains_tombstone": {
+            "landbird": 7,
+            "waterbird": 3
+        },
+        "mountains_tombstone_water": {
+            "landbird": 6,
+            "waterbird": 0
+        },
+        "air_mountains_tombstone": {
+            "landbird": 4,
+            "waterbird": 2
+        },
+        "lake_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "lake_person_tombstone": {
+            "landbird": 1,
+            "waterbird": 0
+        },
+        "beach_lake_tombstone": {
+            "landbird": 5,
+            "waterbird": 3
+        },
+        "lake_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_tombstone": {
+            "landbird": 3,
+            "waterbird": 0
+        },
+        "beach_person_tombstone": {
+            "landbird": 1,
+            "waterbird": 7
+        },
+        "person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 1
+        },
+        "air_person_tombstone": {
+            "landbird": 10,
+            "waterbird": 1
+        },
+        "beach_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 3
+        },
+        "air_beach_tombstone": {
+            "landbird": 6,
+            "waterbird": 1
+        },
+        "air_tombstone_water": {
+            "landbird": 6,
+            "waterbird": 0
+        },
+        "lake_mountains_statue": {
+            "landbird": 2,
+            "waterbird": 1
+        },
+        "mountains_person_statue": {
+            "landbird": 8,
+            "waterbird": 2
+        },
+        "beach_mountains_statue": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "mountains_statue_water": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "air_mountains_statue": {
+            "landbird": 6,
+            "waterbird": 0
+        },
+        "lake_mountains_person": {
+            "landbird": 5,
+            "waterbird": 4
+        },
+        "beach_lake_mountains": {
+            "landbird": 1,
+            "waterbird": 3
+        },
+        "lake_mountains_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains": {
+            "landbird": 4,
+            "waterbird": 1
+        },
+        "beach_mountains_person": {
+            "landbird": 10,
+            "waterbird": 7
+        },
+        "mountains_person_water": {
+            "landbird": 9,
+            "waterbird": 1
+        },
+        "air_mountains_person": {
+            "landbird": 13,
+            "waterbird": 3
+        },
+        "beach_mountains_water": {
+            "landbird": 2,
+            "waterbird": 5
+        },
+        "air_beach_mountains": {
+            "landbird": 12,
+            "waterbird": 3
+        },
+        "air_mountains_water": {
+            "landbird": 6,
+            "waterbird": 1
+        },
+        "lake_person_statue": {
+            "landbird": 4,
+            "waterbird": 2
+        },
+        "beach_lake_statue": {
+            "landbird": 1,
+            "waterbird": 1
+        },
+        "lake_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_statue": {
+            "landbird": 5,
+            "waterbird": 4
+        },
+        "beach_person_statue": {
+            "landbird": 6,
+            "waterbird": 4
+        },
+        "person_statue_water": {
+            "landbird": 3,
+            "waterbird": 3
+        },
+        "air_person_statue": {
+            "landbird": 11,
+            "waterbird": 0
+        },
+        "beach_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_statue": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "air_statue_water": {
+            "landbird": 2,
+            "waterbird": 0
+        },
+        "beach_lake_person": {
+            "landbird": 6,
+            "waterbird": 6
+        },
+        "lake_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_person": {
+            "landbird": 10,
+            "waterbird": 1
+        },
+        "beach_lake_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake": {
+            "landbird": 2,
+            "waterbird": 2
+        },
+        "air_lake_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_person_water": {
+            "landbird": 8,
+            "waterbird": 6
+        },
+        "air_beach_person": {
+            "landbird": 3,
+            "waterbird": 10
+        },
+        "air_person_water": {
+            "landbird": 7,
+            "waterbird": 2
+        },
+        "air_beach_water": {
+            "landbird": 1,
+            "waterbird": 6
+        },
+        "chinese writing_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_lake_mountains_tombstone": {
+            "landbird": 3,
+            "waterbird": 0
+        },
+        "chinese writing_mountains_person_tombstone": {
+            "landbird": 6,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_tombstone": {
+            "landbird": 4,
+            "waterbird": 2
+        },
+        "chinese writing_mountains_tombstone_water": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "air_chinese writing_mountains_tombstone": {
+            "landbird": 5,
+            "waterbird": 3
+        },
+        "chinese writing_lake_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_lake_person_tombstone": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_tombstone": {
+            "landbird": 2,
+            "waterbird": 2
+        },
+        "chinese writing_lake_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_tombstone": {
+            "landbird": 5,
+            "waterbird": 0
+        },
+        "beach_chinese writing_person_tombstone": {
+            "landbird": 3,
+            "waterbird": 2
+        },
+        "chinese writing_person_tombstone_water": {
+            "landbird": 2,
+            "waterbird": 0
+        },
+        "air_chinese writing_person_tombstone": {
+            "landbird": 7,
+            "waterbird": 0
+        },
+        "beach_chinese writing_tombstone_water": {
+            "landbird": 2,
+            "waterbird": 2
+        },
+        "air_beach_chinese writing_tombstone": {
+            "landbird": 7,
+            "waterbird": 2
+        },
+        "air_chinese writing_tombstone_water": {
+            "landbird": 6,
+            "waterbird": 0
+        },
+        "chinese writing_lake_mountains_statue": {
+            "landbird": 5,
+            "waterbird": 0
+        },
+        "chinese writing_mountains_person_statue": {
+            "landbird": 9,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_statue": {
+            "landbird": 4,
+            "waterbird": 3
+        },
+        "chinese writing_mountains_statue_water": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "air_chinese writing_mountains_statue": {
+            "landbird": 11,
+            "waterbird": 0
+        },
+        "chinese writing_lake_mountains_person": {
+            "landbird": 5,
+            "waterbird": 2
+        },
+        "beach_chinese writing_lake_mountains": {
+            "landbird": 2,
+            "waterbird": 2
+        },
+        "chinese writing_lake_mountains_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains": {
+            "landbird": 7,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_person": {
+            "landbird": 9,
+            "waterbird": 8
+        },
+        "chinese writing_mountains_person_water": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "air_chinese writing_mountains_person": {
+            "landbird": 14,
+            "waterbird": 1
+        },
+        "beach_chinese writing_mountains_water": {
+            "landbird": 4,
+            "waterbird": 4
+        },
+        "air_beach_chinese writing_mountains": {
+            "landbird": 15,
+            "waterbird": 9
+        },
+        "air_chinese writing_mountains_water": {
+            "landbird": 5,
+            "waterbird": 3
+        },
+        "chinese writing_lake_person_statue": {
+            "landbird": 0,
+            "waterbird": 1
+        },
+        "beach_chinese writing_lake_statue": {
+            "landbird": 0,
+            "waterbird": 3
+        },
+        "chinese writing_lake_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_statue": {
+            "landbird": 2,
+            "waterbird": 2
+        },
+        "beach_chinese writing_person_statue": {
+            "landbird": 6,
+            "waterbird": 3
+        },
+        "chinese writing_person_statue_water": {
+            "landbird": 1,
+            "waterbird": 2
+        },
+        "air_chinese writing_person_statue": {
+            "landbird": 6,
+            "waterbird": 4
+        },
+        "beach_chinese writing_statue_water": {
+            "landbird": 3,
+            "waterbird": 3
+        },
+        "air_beach_chinese writing_statue": {
+            "landbird": 4,
+            "waterbird": 4
+        },
+        "air_chinese writing_statue_water": {
+            "landbird": 2,
+            "waterbird": 1
+        },
+        "beach_chinese writing_lake_person": {
+            "landbird": 3,
+            "waterbird": 7
+        },
+        "chinese writing_lake_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_person": {
+            "landbird": 5,
+            "waterbird": 3
+        },
+        "beach_chinese writing_lake_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake": {
+            "landbird": 8,
+            "waterbird": 6
+        },
+        "air_chinese writing_lake_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_person_water": {
+            "landbird": 5,
+            "waterbird": 3
+        },
+        "air_beach_chinese writing_person": {
+            "landbird": 2,
+            "waterbird": 14
+        },
+        "air_chinese writing_person_water": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "air_beach_chinese writing_water": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "lake_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "lake_mountains_person_tombstone": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "beach_lake_mountains_tombstone": {
+            "landbird": 3,
+            "waterbird": 3
+        },
+        "lake_mountains_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains_tombstone": {
+            "landbird": 2,
+            "waterbird": 3
+        },
+        "beach_mountains_person_tombstone": {
+            "landbird": 1,
+            "waterbird": 1
+        },
+        "mountains_person_tombstone_water": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "air_mountains_person_tombstone": {
+            "landbird": 6,
+            "waterbird": 3
+        },
+        "beach_mountains_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 4
+        },
+        "air_beach_mountains_tombstone": {
+            "landbird": 7,
+            "waterbird": 8
+        },
+        "air_mountains_tombstone_water": {
+            "landbird": 5,
+            "waterbird": 0
+        },
+        "lake_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "lake_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_person_tombstone": {
+            "landbird": 2,
+            "waterbird": 3
+        },
+        "lake_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_person_tombstone": {
+            "landbird": 2,
+            "waterbird": 0
+        },
+        "beach_lake_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_tombstone": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "air_lake_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_person_tombstone_water": {
+            "landbird": 1,
+            "waterbird": 1
+        },
+        "air_beach_person_tombstone": {
+            "landbird": 2,
+            "waterbird": 6
+        },
+        "air_person_tombstone_water": {
+            "landbird": 3,
+            "waterbird": 0
+        },
+        "air_beach_tombstone_water": {
+            "landbird": 3,
+            "waterbird": 4
+        },
+        "lake_mountains_person_statue": {
+            "landbird": 1,
+            "waterbird": 2
+        },
+        "beach_lake_mountains_statue": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "lake_mountains_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains_statue": {
+            "landbird": 3,
+            "waterbird": 0
+        },
+        "beach_mountains_person_statue": {
+            "landbird": 6,
+            "waterbird": 3
+        },
+        "mountains_person_statue_water": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "air_mountains_person_statue": {
+            "landbird": 7,
+            "waterbird": 2
+        },
+        "beach_mountains_statue_water": {
+            "landbird": 2,
+            "waterbird": 1
+        },
+        "air_beach_mountains_statue": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "air_mountains_statue_water": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "beach_lake_mountains_person": {
+            "landbird": 5,
+            "waterbird": 2
+        },
+        "lake_mountains_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains_person": {
+            "landbird": 4,
+            "waterbird": 2
+        },
+        "beach_lake_mountains_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains": {
+            "landbird": 5,
+            "waterbird": 3
+        },
+        "air_lake_mountains_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_mountains_person_water": {
+            "landbird": 9,
+            "waterbird": 2
+        },
+        "air_beach_mountains_person": {
+            "landbird": 13,
+            "waterbird": 2
+        },
+        "air_mountains_person_water": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "air_beach_mountains_water": {
+            "landbird": 4,
+            "waterbird": 8
+        },
+        "beach_lake_person_statue": {
+            "landbird": 1,
+            "waterbird": 2
+        },
+        "lake_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_person_statue": {
+            "landbird": 1,
+            "waterbird": 0
+        },
+        "beach_lake_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_statue": {
+            "landbird": 3,
+            "waterbird": 0
+        },
+        "air_lake_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_person_statue_water": {
+            "landbird": 2,
+            "waterbird": 0
+        },
+        "air_beach_person_statue": {
+            "landbird": 4,
+            "waterbird": 3
+        },
+        "air_person_statue_water": {
+            "landbird": 4,
+            "waterbird": 3
+        },
+        "air_beach_statue_water": {
+            "landbird": 2,
+            "waterbird": 1
+        },
+        "beach_lake_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_person": {
+            "landbird": 4,
+            "waterbird": 4
+        },
+        "air_lake_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_person_water": {
+            "landbird": 5,
+            "waterbird": 4
+        },
+        "chinese writing_lake_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_lake_mountains_person_tombstone": {
+            "landbird": 4,
+            "waterbird": 1
+        },
+        "beach_chinese writing_lake_mountains_tombstone": {
+            "landbird": 1,
+            "waterbird": 2
+        },
+        "chinese writing_lake_mountains_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_tombstone": {
+            "landbird": 4,
+            "waterbird": 1
+        },
+        "beach_chinese writing_mountains_person_tombstone": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "chinese writing_mountains_person_tombstone_water": {
+            "landbird": 5,
+            "waterbird": 0
+        },
+        "air_chinese writing_mountains_person_tombstone": {
+            "landbird": 7,
+            "waterbird": 2
+        },
+        "beach_chinese writing_mountains_tombstone_water": {
+            "landbird": 5,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_tombstone": {
+            "landbird": 6,
+            "waterbird": 1
+        },
+        "air_chinese writing_mountains_tombstone_water": {
+            "landbird": 1,
+            "waterbird": 1
+        },
+        "chinese writing_lake_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_lake_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_person_tombstone": {
+            "landbird": 3,
+            "waterbird": 2
+        },
+        "chinese writing_lake_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_person_tombstone": {
+            "landbird": 3,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_tombstone": {
+            "landbird": 4,
+            "waterbird": 1
+        },
+        "air_chinese writing_lake_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 2
+        },
+        "air_beach_chinese writing_person_tombstone": {
+            "landbird": 6,
+            "waterbird": 3
+        },
+        "air_chinese writing_person_tombstone_water": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_tombstone_water": {
+            "landbird": 4,
+            "waterbird": 3
+        },
+        "chinese writing_lake_mountains_person_statue": {
+            "landbird": 4,
+            "waterbird": 2
+        },
+        "beach_chinese writing_lake_mountains_statue": {
+            "landbird": 4,
+            "waterbird": 1
+        },
+        "chinese writing_lake_mountains_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_statue": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "beach_chinese writing_mountains_person_statue": {
+            "landbird": 6,
+            "waterbird": 3
+        },
+        "chinese writing_mountains_person_statue_water": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "air_chinese writing_mountains_person_statue": {
+            "landbird": 12,
+            "waterbird": 1
+        },
+        "beach_chinese writing_mountains_statue_water": {
+            "landbird": 4,
+            "waterbird": 3
+        },
+        "air_beach_chinese writing_mountains_statue": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "air_chinese writing_mountains_statue_water": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_person": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "chinese writing_lake_mountains_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_person": {
+            "landbird": 6,
+            "waterbird": 2
+        },
+        "beach_chinese writing_lake_mountains_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains": {
+            "landbird": 9,
+            "waterbird": 1
+        },
+        "air_chinese writing_lake_mountains_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_person_water": {
+            "landbird": 3,
+            "waterbird": 3
+        },
+        "air_beach_chinese writing_mountains_person": {
+            "landbird": 6,
+            "waterbird": 7
+        },
+        "air_chinese writing_mountains_person_water": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "air_beach_chinese writing_mountains_water": {
+            "landbird": 7,
+            "waterbird": 1
+        },
+        "beach_chinese writing_lake_person_statue": {
+            "landbird": 0,
+            "waterbird": 3
+        },
+        "chinese writing_lake_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_person_statue": {
+            "landbird": 2,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_statue": {
+            "landbird": 1,
+            "waterbird": 1
+        },
+        "air_chinese writing_lake_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_person_statue_water": {
+            "landbird": 2,
+            "waterbird": 2
+        },
+        "air_beach_chinese writing_person_statue": {
+            "landbird": 2,
+            "waterbird": 4
+        },
+        "air_chinese writing_person_statue_water": {
+            "landbird": 2,
+            "waterbird": 1
+        },
+        "air_beach_chinese writing_statue_water": {
+            "landbird": 0,
+            "waterbird": 1
+        },
+        "beach_chinese writing_lake_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_person": {
+            "landbird": 3,
+            "waterbird": 3
+        },
+        "air_chinese writing_lake_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_person_water": {
+            "landbird": 3,
+            "waterbird": 2
+        },
+        "lake_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "lake_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_mountains_person_tombstone": {
+            "landbird": 1,
+            "waterbird": 0
+        },
+        "lake_mountains_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains_person_tombstone": {
+            "landbird": 2,
+            "waterbird": 2
+        },
+        "beach_lake_mountains_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_tombstone": {
+            "landbird": 2,
+            "waterbird": 2
+        },
+        "air_lake_mountains_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_mountains_person_tombstone_water": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "air_beach_mountains_person_tombstone": {
+            "landbird": 3,
+            "waterbird": 2
+        },
+        "air_mountains_person_tombstone_water": {
+            "landbird": 3,
+            "waterbird": 0
+        },
+        "air_beach_mountains_tombstone_water": {
+            "landbird": 4,
+            "waterbird": 4
+        },
+        "beach_lake_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "lake_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_person_tombstone": {
+            "landbird": 2,
+            "waterbird": 8
+        },
+        "air_lake_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_person_tombstone_water": {
+            "landbird": 2,
+            "waterbird": 0
+        },
+        "beach_lake_mountains_person_statue": {
+            "landbird": 0,
+            "waterbird": 3
+        },
+        "lake_mountains_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains_person_statue": {
+            "landbird": 1,
+            "waterbird": 2
+        },
+        "beach_lake_mountains_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_statue": {
+            "landbird": 1,
+            "waterbird": 0
+        },
+        "air_lake_mountains_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_mountains_person_statue_water": {
+            "landbird": 4,
+            "waterbird": 1
+        },
+        "air_beach_mountains_person_statue": {
+            "landbird": 6,
+            "waterbird": 1
+        },
+        "air_mountains_person_statue_water": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "air_beach_mountains_statue_water": {
+            "landbird": 3,
+            "waterbird": 2
+        },
+        "beach_lake_mountains_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_person": {
+            "landbird": 2,
+            "waterbird": 4
+        },
+        "air_lake_mountains_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_mountains_person_water": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "beach_lake_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_person_statue": {
+            "landbird": 0,
+            "waterbird": 1
+        },
+        "air_lake_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_person_statue_water": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "air_beach_lake_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_lake_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_lake_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_person_tombstone": {
+            "landbird": 2,
+            "waterbird": 0
+        },
+        "chinese writing_lake_mountains_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_person_tombstone": {
+            "landbird": 7,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_tombstone": {
+            "landbird": 1,
+            "waterbird": 1
+        },
+        "air_chinese writing_lake_mountains_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_person_tombstone_water": {
+            "landbird": 2,
+            "waterbird": 1
+        },
+        "air_beach_chinese writing_mountains_person_tombstone": {
+            "landbird": 8,
+            "waterbird": 0
+        },
+        "air_chinese writing_mountains_person_tombstone_water": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_tombstone_water": {
+            "landbird": 2,
+            "waterbird": 1
+        },
+        "beach_chinese writing_lake_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_lake_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_person_tombstone": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "air_chinese writing_lake_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_person_tombstone_water": {
+            "landbird": 2,
+            "waterbird": 7
+        },
+        "beach_chinese writing_lake_mountains_person_statue": {
+            "landbird": 2,
+            "waterbird": 1
+        },
+        "chinese writing_lake_mountains_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_person_statue": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_statue": {
+            "landbird": 4,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_person_statue_water": {
+            "landbird": 3,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_person_statue": {
+            "landbird": 8,
+            "waterbird": 0
+        },
+        "air_chinese writing_mountains_person_statue_water": {
+            "landbird": 4,
+            "waterbird": 2
+        },
+        "air_beach_chinese writing_mountains_statue_water": {
+            "landbird": 1,
+            "waterbird": 2
+        },
+        "beach_chinese writing_lake_mountains_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_person": {
+            "landbird": 4,
+            "waterbird": 3
+        },
+        "air_chinese writing_lake_mountains_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_person_water": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "beach_chinese writing_lake_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_person_statue": {
+            "landbird": 1,
+            "waterbird": 3
+        },
+        "air_chinese writing_lake_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_person_statue_water": {
+            "landbird": 1,
+            "waterbird": 2
+        },
+        "air_beach_chinese writing_lake_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "lake_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_mountains_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_person_tombstone": {
+            "landbird": 0,
+            "waterbird": 1
+        },
+        "air_lake_mountains_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_mountains_person_tombstone_water": {
+            "landbird": 3,
+            "waterbird": 1
+        },
+        "beach_lake_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_mountains_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_person_statue": {
+            "landbird": 3,
+            "waterbird": 2
+        },
+        "air_lake_mountains_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_mountains_person_statue_water": {
+            "landbird": 5,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "chinese writing_lake_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_person_tombstone": {
+            "landbird": 1,
+            "waterbird": 1
+        },
+        "air_chinese writing_lake_mountains_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_person_tombstone_water": {
+            "landbird": 5,
+            "waterbird": 1
+        },
+        "beach_chinese writing_lake_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_person_statue": {
+            "landbird": 1,
+            "waterbird": 2
+        },
+        "air_chinese writing_lake_mountains_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_person_statue_water": {
+            "landbird": 1,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_person_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_lake_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_lake_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "beach_chinese writing_lake_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_person_statue_tombstone": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_chinese writing_lake_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_person_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_person_statue_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_lake_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "air_beach_chinese writing_lake_mountains_person_statue_tombstone_water": {
+            "landbird": 0,
+            "waterbird": 0
+        }
+    },
+    "waterbird": {
+        "grass": {
+            "landbird": 52,
+            "waterbird": 8
+        },
+        "pathway": {
+            "landbird": 70,
+            "waterbird": 0
+        },
+        "fence": {
+            "landbird": 57,
+            "waterbird": 6
+        },
+        "branch": {
+            "landbird": 16,
+            "waterbird": 19
+        },
+        "shadow": {
+            "landbird": 51,
+            "waterbird": 6
+        },
+        "tree": {
+            "landbird": 15,
+            "waterbird": 19
+        },
+        "grass_pathway": {
+            "landbird": 47,
+            "waterbird": 4
+        },
+        "fence_grass": {
+            "landbird": 51,
+            "waterbird": 3
+        },
+        "branch_grass": {
+            "landbird": 26,
+            "waterbird": 1
+        },
+        "grass_shadow": {
+            "landbird": 60,
+            "waterbird": 0
+        },
+        "grass_tree": {
+            "landbird": 29,
+            "waterbird": 8
+        },
+        "fence_pathway": {
+            "landbird": 60,
+            "waterbird": 5
+        },
+        "branch_pathway": {
+            "landbird": 29,
+            "waterbird": 0
+        },
+        "pathway_shadow": {
+            "landbird": 58,
+            "waterbird": 4
+        },
+        "pathway_tree": {
+            "landbird": 38,
+            "waterbird": 0
+        },
+        "branch_fence": {
+            "landbird": 30,
+            "waterbird": 4
+        },
+        "fence_shadow": {
+            "landbird": 41,
+            "waterbird": 10
+        },
+        "fence_tree": {
+            "landbird": 22,
+            "waterbird": 7
+        },
+        "branch_shadow": {
+            "landbird": 12,
+            "waterbird": 19
+        },
+        "branch_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "shadow_tree": {
+            "landbird": 13,
+            "waterbird": 12
+        },
+        "fence_grass_pathway": {
+            "landbird": 66,
+            "waterbird": 4
+        },
+        "branch_grass_pathway": {
+            "landbird": 30,
+            "waterbird": 3
+        },
+        "grass_pathway_shadow": {
+            "landbird": 54,
+            "waterbird": 1
+        },
+        "grass_pathway_tree": {
+            "landbird": 27,
+            "waterbird": 2
+        },
+        "branch_fence_grass": {
+            "landbird": 34,
+            "waterbird": 0
+        },
+        "fence_grass_shadow": {
+            "landbird": 86,
+            "waterbird": 0
+        },
+        "fence_grass_tree": {
+            "landbird": 24,
+            "waterbird": 6
+        },
+        "branch_grass_shadow": {
+            "landbird": 26,
+            "waterbird": 1
+        },
+        "branch_grass_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "grass_shadow_tree": {
+            "landbird": 27,
+            "waterbird": 6
+        },
+        "branch_fence_pathway": {
+            "landbird": 25,
+            "waterbird": 3
+        },
+        "fence_pathway_shadow": {
+            "landbird": 47,
+            "waterbird": 4
+        },
+        "fence_pathway_tree": {
+            "landbird": 27,
+            "waterbird": 2
+        },
+        "branch_pathway_shadow": {
+            "landbird": 28,
+            "waterbird": 8
+        },
+        "branch_pathway_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "pathway_shadow_tree": {
+            "landbird": 33,
+            "waterbird": 2
+        },
+        "branch_fence_shadow": {
+            "landbird": 24,
+            "waterbird": 11
+        },
+        "branch_fence_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "fence_shadow_tree": {
+            "landbird": 19,
+            "waterbird": 11
+        },
+        "branch_shadow_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "branch_fence_grass_pathway": {
+            "landbird": 26,
+            "waterbird": 3
+        },
+        "fence_grass_pathway_shadow": {
+            "landbird": 73,
+            "waterbird": 1
+        },
+        "fence_grass_pathway_tree": {
+            "landbird": 19,
+            "waterbird": 2
+        },
+        "branch_grass_pathway_shadow": {
+            "landbird": 32,
+            "waterbird": 2
+        },
+        "branch_grass_pathway_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "grass_pathway_shadow_tree": {
+            "landbird": 27,
+            "waterbird": 4
+        },
+        "branch_fence_grass_shadow": {
+            "landbird": 24,
+            "waterbird": 1
+        },
+        "branch_fence_grass_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "fence_grass_shadow_tree": {
+            "landbird": 26,
+            "waterbird": 6
+        },
+        "branch_grass_shadow_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "branch_fence_pathway_shadow": {
+            "landbird": 29,
+            "waterbird": 1
+        },
+        "branch_fence_pathway_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "fence_pathway_shadow_tree": {
+            "landbird": 29,
+            "waterbird": 3
+        },
+        "branch_pathway_shadow_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "branch_fence_shadow_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "branch_fence_grass_pathway_shadow": {
+            "landbird": 35,
+            "waterbird": 1
+        },
+        "branch_fence_grass_pathway_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "fence_grass_pathway_shadow_tree": {
+            "landbird": 31,
+            "waterbird": 1
+        },
+        "branch_grass_pathway_shadow_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "branch_fence_grass_shadow_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "branch_fence_pathway_shadow_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        },
+        "branch_fence_grass_pathway_shadow_tree": {
+            "landbird": 0,
+            "waterbird": 0
+        }
+    }
+}
