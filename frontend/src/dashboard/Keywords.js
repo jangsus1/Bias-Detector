@@ -46,6 +46,7 @@ const avgLimeCoefficient = function (data) {
 
 const Keywords = ({
   keywords,
+  label,
   setKeywords,
   prediction,
   setHoveredImages,
@@ -59,6 +60,7 @@ const Keywords = ({
   hoveredCaptionKeyword,
   popoverCollapsed,
   keywordMode,
+  selectedRevertedImgInfo,
 }) => {
   const [focusKeyword, setFocusKeyword] = useState("")
   const [clickedKeyword, setClickedKeyword] = useState("")
@@ -484,6 +486,8 @@ const Keywords = ({
                   </TableBody>
                 </Table>
                 <RevertedImage
+                  label={label}
+                  selectedRevertedImgInfo={selectedRevertedImgInfo}
                   limeKeywords={fixedLimeKeyword}
                 />
               </>

@@ -69,6 +69,7 @@ export default function Dashboard() {
   const [selectedPanopticCategories, setSelectedPanopticCategories] = useState(null);
   const [selectedCoordinates, setSelectedCoordinates] = useState(null);
   const [selectedTrainData, setSelectedTrainData] = useState(null);
+  const [selectedRevertedImgInfo, setSelectedRevertedImgInfo] = useState(null);
 
   // Define postprocessing data
   const [keywords, setKeywords] = useState(null);
@@ -84,6 +85,7 @@ export default function Dashboard() {
           panopticCategories,
           coordinates,
           trainData,
+          revertedImgInfo,
         ] = await Promise.all([
           returnFetchPromise(`${dataset}/keywords_all.json`),
           returnFetchPromise(`${dataset}/keywords_lime.json`),
@@ -92,6 +94,7 @@ export default function Dashboard() {
           returnFetchPromise(`${dataset}/panoptic_categories.json`),
           returnFetchPromise(`${dataset}/coordinates.json`),
           returnFetchPromise(`${dataset}/file_list.json`),
+          returnFetchPromise(`${dataset}/reverted_image.json`),
         ]);
         
         setSelectedPrediction(predictions[label]);
@@ -99,6 +102,7 @@ export default function Dashboard() {
         setSelectedPanopticCategories(panopticCategories[label]);
         setSelectedCoordinates(coordinates[label]);
         setSelectedTrainData(trainData['train'][label]);
+        setSelectedRevertedImgInfo(revertedImgInfo[label]);
 
         // Set post processing keywords
         setKeywords(parseKeywordsAndLimeKeywords(keywords[label], limeKeywords[label]));
@@ -248,6 +252,7 @@ export default function Dashboard() {
                   popover={popover}
                   clickedImage={clickedImage}
                   hoveredCaptionKeyword={hoveredCaptionKeyword}
+                  selectedRevertedImgInfo={selectedRevertedImgInfo}
                 />
 
               </Grid>
