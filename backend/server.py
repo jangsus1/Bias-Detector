@@ -316,7 +316,7 @@ def save_inpaint_action():
         user_id=data['user_id'],
         batch_mask=json.dumps(data['batch_mask']),
         keywords=json.dumps(data['keywords']),
-        invert=data['invert'],
+        invert=bool(data['invert']),
         solution=data['solution'],
         solution_query=data['solution_query'],
         dataset=data['dataset'],
