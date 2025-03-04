@@ -1,0 +1,327 @@
+{
+    "landbird": [
+        {
+            "keyword": "chinese writing",
+            "score": 4.266,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -3.969,
+            "coefficient": -0.1406610302704134,
+            "images": [
+                "val/landbird/land_O_Downy_Woodpecker_0116_184326.jpg"
+            ]
+        },
+        {
+            "keyword": "tombstone",
+            "score": 2.047,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -1.047,
+            "class": 6,
+            "coefficient": 0.0523081054425918,
+            "images": [
+                "val/landbird/land_O_Whip_Poor_Will_0027_796441.jpg"
+            ]
+        },
+        {
+            "keyword": "mountains",
+            "score": 1.078,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -1.484,
+            "class": 1,
+            "coefficient": -0.0919418154114864,
+            "images": [
+                "val/landbird/water_X_Red_Bellied_Woodpecker_0074_180936.jpg"
+            ]
+        },
+        {
+            "keyword": "statue",
+            "score": 1.0,
+            "accuracy": 0.6666666666666666,
+            "bias": "S",
+            "sepcificity": -0.672,
+            "class": 6,
+            "coefficient": 0.1378938984221993,
+            "images": [
+                "val/landbird/land_O_Belted_Kingfisher_0034_70329.jpg",
+                "val/landbird/land_X_Fish_Crow_0035_26081.jpg",
+                "val/landbird/land_X_Bobolink_0056_9080.jpg"
+            ]
+        },
+        {
+            "keyword": "lake",
+            "score": 0.5625,
+            "accuracy": 0.8,
+            "bias": "S",
+            "sepcificity": -3.375,
+            "class": 5,
+            "coefficient": -0.0648572680943871,
+            "images": [
+                "val/landbird/water_X_Red_Bellied_Woodpecker_0074_180936.jpg",
+                "val/landbird/land_X_Purple_Finch_0023_27986.jpg",
+                "val/landbird/land_X_Scott_Oriole_0046_92371.jpg",
+                "val/landbird/water_X_Indigo_Bunting_0058_12207.jpg",
+                "val/landbird/water_X_Northern_Flicker_0055_28344.jpg"
+            ]
+        },
+        {
+            "keyword": "person",
+            "score": 0.5312,
+            "accuracy": 0.6666666666666666,
+            "bias": "S",
+            "sepcificity": -0.4375,
+            "class": 2,
+            "coefficient": -0.1468094468693629,
+            "images": [
+                "val/landbird/land_X_Groove_Billed_Ani_0009_1522.jpg",
+                "val/landbird/land_O_Brown_Creeper_0027_24729.jpg",
+                "val/landbird/land_X_Olive_Sided_Flycatcher_0026_30525.jpg",
+                "val/landbird/land_X_Loggerhead_Shrike_0021_104885.jpg",
+                "val/landbird/land_X_Chipping_Sparrow_0091_108308.jpg",
+                "val/landbird/land_X_Mockingbird_0095_81177.jpg",
+                "val/landbird/land_X_Summer_Tanager_0017_140173.jpg",
+                "val/landbird/land_X_Tree_Sparrow_0109_123802.jpg",
+                "val/landbird/land_O_American_Three_Toed_Woodpecker_0040_796180.jpg"
+            ]
+        },
+        {
+            "keyword": "beach",
+            "score": 0.4062,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -3.438,
+            "class": 3,
+            "coefficient": 0.0893422223917464,
+            "images": [
+                "val/landbird/water_O_Mangrove_Cuckoo_0049_794631.jpg"
+            ]
+        },
+        {
+            "keyword": "water",
+            "score": 0.3594,
+            "accuracy": 0.875,
+            "bias": "S",
+            "sepcificity": -2.39,
+            "class": 5,
+            "coefficient": 0.144964262608517,
+            "images": [
+                "val/landbird/land_X_Pied_Kingfisher_0059_72492.jpg",
+                "val/landbird/water_X_Nelson_Sharp_Tailed_Sparrow_0044_796932.jpg",
+                "val/landbird/water_X_Tree_Swallow_0075_136081.jpg",
+                "val/landbird/land_X_Henslow_Sparrow_0109_796577.jpg",
+                "val/landbird/land_X_White_Breasted_Kingfisher_0003_73195.jpg",
+                "val/landbird/water_X_Black_Throated_Blue_Warbler_0047_161511.jpg",
+                "val/landbird/land_X_Brewer_Blackbird_0028_2682.jpg",
+                "val/landbird/water_X_Boat_Tailed_Grackle_0088_33448.jpg",
+                "val/landbird/water_X_Worm_Eating_Warbler_0021_795545.jpg",
+                "val/landbird/land_X_Green_Kingfisher_0039_71037.jpg",
+                "val/landbird/water_X_Grasshopper_Sparrow_0077_116127.jpg",
+                "val/landbird/water_O_Least_Flycatcher_0009_30303.jpg",
+                "val/landbird/water_X_Northern_Waterthrush_0023_177002.jpg",
+                "val/landbird/land_X_Green_Violetear_0029_60808.jpg",
+                "val/landbird/water_X_Gray_Kingbird_0043_795032.jpg",
+                "val/landbird/water_X_Louisiana_Waterthrush_0081_795283.jpg",
+                "val/landbird/water_X_Cactus_Wren_0077_186003.jpg"
+            ]
+        },
+        {
+            "keyword": "air",
+            "score": 0.0781,
+            "accuracy": 0.8,
+            "bias": "S",
+            "sepcificity": -0.2812,
+            "class": 4,
+            "coefficient": -0.1312219504892955,
+            "images": [
+                "val/landbird/land_X_Rose_Breasted_Grosbeak_0101_39495.jpg",
+                "val/landbird/land_X_Chestnut_Sided_Warbler_0033_163607.jpg",
+                "val/landbird/land_X_Le_Conte_Sparrow_0011_117038.jpg",
+                "val/landbird/land_X_Bewick_Wren_0082_185021.jpg",
+                "val/landbird/land_X_Henslow_Sparrow_0068_796615.jpg",
+                "val/landbird/land_O_Red_Headed_Woodpecker_0065_182863.jpg",
+                "val/landbird/land_X_Gray_Kingbird_0010_70057.jpg",
+                "val/landbird/land_O_Groove_Billed_Ani_0082_1697.jpg",
+                "val/landbird/water_O_Mangrove_Cuckoo_0049_794631.jpg",
+                "val/landbird/land_X_Spotted_Catbird_0048_796817.jpg",
+                "val/landbird/land_X_Grasshopper_Sparrow_0016_115695.jpg",
+                "val/landbird/land_X_Blue_Headed_Vireo_0103_156382.jpg",
+                "val/landbird/land_X_Henslow_Sparrow_0073_116803.jpg",
+                "val/landbird/land_X_Red_Winged_Blackbird_0013_5762.jpg",
+                "val/landbird/land_X_Nighthawk_0084_84510.jpg",
+                "val/landbird/land_X_Least_Flycatcher_0018_30462.jpg",
+                "val/landbird/land_X_Tree_Swallow_0050_135104.jpg",
+                "val/landbird/land_O_Black_Throated_Blue_Warbler_0009_161534.jpg",
+                "val/landbird/land_X_Carolina_Wren_0069_186230.jpg",
+                "val/landbird/land_X_Bewick_Wren_0070_184892.jpg",
+                "val/landbird/land_X_Ruby_Throated_Hummingbird_0131_57813.jpg",
+                "val/landbird/land_X_Bohemian_Waxwing_0034_796646.jpg",
+                "val/landbird/land_X_Belted_Kingfisher_0019_70744.jpg",
+                "val/landbird/land_X_Kentucky_Warbler_0036_795872.jpg",
+                "val/landbird/land_X_Worm_Eating_Warbler_0090_795523.jpg"
+            ]
+        }
+    ],
+    "waterbird": [
+        {
+            "keyword": "grass",
+            "score": 0.8438,
+            "accuracy": 0.7142857142857143,
+            "bias": "S",
+            "sepcificity": -1.359,
+            "coefficient": -0.085996208361758,
+            "images": [
+                "val/waterbird/water_O_Gadwall_0065_31659.jpg",
+                "val/waterbird/water_O_Rhinoceros_Auklet_0042_2101.jpg",
+                "val/waterbird/land_O_Western_Meadowlark_0111_78674.jpg",
+                "val/waterbird/water_O_Least_Tern_0128_153732.jpg",
+                "val/waterbird/land_X_Pied_Billed_Grebe_0062_35955.jpg",
+                "val/waterbird/water_O_Ivory_Gull_0014_48983.jpg",
+                "val/waterbird/water_O_Mallard_0087_77499.jpg",
+                "val/waterbird/water_O_Parakeet_Auklet_0026_795962.jpg",
+                "val/waterbird/water_O_Artic_Tern_0036_142447.jpg",
+                "val/waterbird/water_O_Herring_Gull_0012_46654.jpg",
+                "val/waterbird/water_O_Black_Tern_0073_144638.jpg",
+                "val/waterbird/water_O_Least_Tern_0096_153868.jpg",
+                "val/waterbird/water_O_Pomarine_Jaeger_0054_795791.jpg",
+                "val/waterbird/water_O_Western_Grebe_0105_36542.jpg",
+                "val/waterbird/water_O_Heermann_Gull_0121_45375.jpg"
+            ]
+        },
+        {
+            "keyword": "pathway",
+            "score": 0.6562,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -0.547,
+            "class": 1,
+            "coefficient": -0.1942978291275283,
+            "images": [
+                "val/waterbird/land_O_Northern_Fulmar_0053_43843.jpg"
+            ]
+        },
+        {
+            "keyword": "fence",
+            "score": 0.5938,
+            "accuracy": 0.75,
+            "bias": "M",
+            "sepcificity": -1.156,
+            "class": 2,
+            "coefficient": 0.2752315746332748,
+            "images": [
+                "val/waterbird/water_O_Western_Wood_Pewee_0017_795041.jpg",
+                "val/waterbird/water_O_Pomarine_Jaeger_0051_795738.jpg",
+                "val/waterbird/water_O_Hooded_Merganser_0072_78973.jpg",
+                "val/waterbird/water_X_Herring_Gull_0115_47123.jpg",
+                "val/waterbird/water_O_Eastern_Towhee_0080_22303.jpg",
+                "val/waterbird/water_X_Pigeon_Guillemot_0007_40313.jpg",
+                "val/waterbird/water_O_Western_Meadowlark_0029_78832.jpg",
+                "val/waterbird/water_O_Common_Tern_0103_149733.jpg"
+            ]
+        },
+        {
+            "keyword": "branch",
+            "score": 0.4844,
+            "accuracy": 0.8181818181818182,
+            "bias": "M",
+            "sepcificity": -2.422,
+            "class": 4,
+            "coefficient": 0.0867425594752928,
+            "images": [
+                "val/waterbird/water_X_Common_Tern_0097_148874.jpg",
+                "val/waterbird/water_O_Western_Wood_Pewee_0013_98268.jpg",
+                "val/waterbird/water_O_Forsters_Tern_0029_151228.jpg",
+                "val/waterbird/water_O_Glaucous_Winged_Gull_0117_44298.jpg",
+                "val/waterbird/water_O_Mallard_0106_77568.jpg",
+                "val/waterbird/water_O_Horned_Grebe_0014_34968.jpg",
+                "val/waterbird/water_O_Glaucous_Winged_Gull_0076_44744.jpg",
+                "val/waterbird/water_O_Western_Wood_Pewee_0070_98225.jpg",
+                "val/waterbird/land_O_Horned_Puffin_0083_100649.jpg",
+                "val/waterbird/water_O_Herring_Gull_0103_45996.jpg",
+                "val/waterbird/water_O_Western_Wood_Pewee_0053_98186.jpg",
+                "val/waterbird/water_O_Hooded_Merganser_0076_796756.jpg"
+            ]
+        },
+        {
+            "keyword": "shadow",
+            "score": 0.4219,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -0.2344,
+            "class": 3,
+            "coefficient": 0.2419857064892402,
+            "images": [
+                "val/waterbird/water_X_Caspian_Tern_0010_145667.jpg"
+            ]
+        },
+        {
+            "keyword": "tree",
+            "score": 0.2969,
+            "accuracy": 0.8125,
+            "bias": "M",
+            "sepcificity": -2.281,
+            "class": 4,
+            "coefficient": 0.1157461219129056,
+            "images": [
+                "val/waterbird/water_O_Horned_Puffin_0077_100671.jpg",
+                "val/waterbird/water_O_Least_Tern_0025_153678.jpg",
+                "val/waterbird/land_O_Elegant_Tern_0058_150853.jpg",
+                "val/waterbird/water_X_Common_Tern_0097_148874.jpg",
+                "val/waterbird/water_O_Mallard_0044_76317.jpg",
+                "val/waterbird/water_O_Long_Tailed_Jaeger_0046_797103.jpg",
+                "val/waterbird/water_O_Frigatebird_0058_43251.jpg",
+                "val/waterbird/land_O_Brandt_Cormorant_0028_22892.jpg",
+                "val/waterbird/land_O_Eared_Grebe_0037_34169.jpg",
+                "val/waterbird/water_O_Frigatebird_0052_43411.jpg",
+                "val/waterbird/land_O_Pied_Billed_Grebe_0023_35687.jpg",
+                "val/waterbird/water_O_Pigeon_Guillemot_0089_40008.jpg",
+                "val/waterbird/water_O_Western_Grebe_0011_36522.jpg",
+                "val/waterbird/land_O_Horned_Puffin_0027_100906.jpg",
+                "val/waterbird/water_O_Northern_Fulmar_0042_43739.jpg",
+                "val/waterbird/land_O_Long_Tailed_Jaeger_0034_797102.jpg",
+                "val/waterbird/water_O_Pied_Billed_Grebe_0045_35962.jpg",
+                "val/waterbird/water_O_Western_Gull_0050_54425.jpg",
+                "val/waterbird/water_O_Mallard_0106_77568.jpg",
+                "val/waterbird/water_O_Western_Gull_0035_55703.jpg",
+                "val/waterbird/land_O_Ring_Billed_Gull_0107_51306.jpg",
+                "val/waterbird/water_O_Horned_Grebe_0014_34968.jpg",
+                "val/waterbird/land_O_Mallard_0004_76958.jpg",
+                "val/waterbird/water_O_Pigeon_Guillemot_0075_40159.jpg",
+                "val/waterbird/water_O_Artic_Tern_0030_141816.jpg",
+                "val/waterbird/land_O_Red_Faced_Cormorant_0047_796330.jpg",
+                "val/waterbird/water_O_Glaucous_Winged_Gull_0076_44744.jpg",
+                "val/waterbird/water_O_Western_Meadowlark_0103_78500.jpg",
+                "val/waterbird/water_O_Eared_Grebe_0065_34049.jpg",
+                "val/waterbird/water_O_Pomarine_Jaeger_0045_795750.jpg",
+                "val/waterbird/land_O_Caspian_Tern_0048_145672.jpg",
+                "val/waterbird/water_O_Caspian_Tern_0102_145928.jpg",
+                "val/waterbird/water_O_Red_Breasted_Merganser_0045_79358.jpg",
+                "val/waterbird/land_O_Eared_Grebe_0047_34204.jpg",
+                "val/waterbird/water_O_Frigatebird_0118_43189.jpg",
+                "val/waterbird/water_O_Pomarine_Jaeger_0010_61457.jpg",
+                "val/waterbird/water_O_Mallard_0033_76565.jpg",
+                "val/waterbird/land_O_Horned_Puffin_0083_100649.jpg",
+                "val/waterbird/water_O_Mallard_0038_76902.jpg",
+                "val/waterbird/land_O_Eastern_Towhee_0105_22675.jpg",
+                "val/waterbird/water_O_Herring_Gull_0103_45996.jpg",
+                "val/waterbird/water_O_Western_Wood_Pewee_0053_98186.jpg",
+                "val/waterbird/water_O_Northern_Fulmar_0064_43710.jpg",
+                "val/waterbird/water_O_Slaty_Backed_Gull_0022_796022.jpg",
+                "val/waterbird/water_O_Caspian_Tern_0022_144922.jpg",
+                "val/waterbird/water_O_Ring_Billed_Gull_0021_51300.jpg",
+                "val/waterbird/water_O_Sooty_Albatross_0044_1105.jpg",
+                "val/waterbird/water_O_Elegant_Tern_0093_150534.jpg",
+                "val/waterbird/water_O_Gadwall_0052_30915.jpg",
+                "val/waterbird/water_O_Brown_Pelican_0074_93692.jpg",
+                "val/waterbird/land_O_Brown_Pelican_0110_93622.jpg",
+                "val/waterbird/water_O_Horned_Grebe_0100_34462.jpg",
+                "val/waterbird/water_O_Frigatebird_0091_43066.jpg",
+                "val/waterbird/water_O_Eared_Grebe_0069_34199.jpg",
+                "val/waterbird/water_O_Laysan_Albatross_0098_621.jpg",
+                "val/waterbird/water_O_Ring_Billed_Gull_0029_52613.jpg",
+                "val/waterbird/land_O_Frigatebird_0031_42979.jpg",
+                "val/waterbird/water_X_Pied_Billed_Grebe_0049_35980.jpg"
+            ]
+        }
+    ]
+}

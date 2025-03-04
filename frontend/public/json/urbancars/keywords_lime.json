@@ -1,0 +1,273 @@
+{
+    "urban": [
+        {
+            "keyword": "dirt road",
+            "score": 1.516,
+            "accuracy": 0.8666666666666667,
+            "bias": "S",
+            "sepcificity": -3.797,
+            "class": 5,
+            "coefficient": 0.1757884362892098,
+            "images": [
+                "val/urban/0329_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0066_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0014_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0283_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0020_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0009_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0011_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0138_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0117_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0010_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0463_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0046_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0190_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0194_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0001_bg-country_co_occur_obj-urban.jpg"
+            ]
+        },
+        {
+            "keyword": "sheep",
+            "score": 1.375,
+            "accuracy": 0.5,
+            "bias": "S",
+            "sepcificity": -3.281,
+            "coefficient": -0.0261434133947015,
+            "images": [
+                "val/urban/0000_bg-country_co_occur_obj-country.jpg",
+                "val/urban/0034_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0036_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0044_bg-urban_co_occur_obj-country.jpg"
+            ]
+        },
+        {
+            "keyword": "mountains",
+            "score": 1.234,
+            "accuracy": 0.5,
+            "bias": "S",
+            "sepcificity": -2.0,
+            "class": 1,
+            "coefficient": -0.1754920138242229,
+            "images": [
+                "val/urban/0015_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0021_bg-country_co_occur_obj-urban.jpg"
+            ]
+        },
+        {
+            "keyword": "cow",
+            "score": 1.203,
+            "accuracy": 0.6666666666666666,
+            "bias": "S",
+            "sepcificity": -3.203,
+            "class": 2,
+            "coefficient": 0.2950778319247125,
+            "images": [
+                "val/urban/0041_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0045_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0028_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0043_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0027_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0046_bg-urban_co_occur_obj-country.jpg"
+            ]
+        },
+        {
+            "keyword": "road",
+            "score": 1.016,
+            "accuracy": 0.813953488372093,
+            "bias": "S",
+            "sepcificity": -1.016,
+            "class": 5,
+            "coefficient": 0.0349191955780259,
+            "images": [
+                "val/urban/0015_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0329_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0033_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0000_bg-country_co_occur_obj-country.jpg",
+                "val/urban/0098_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0023_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0093_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0318_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0067_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0034_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0004_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0147_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0302_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0008_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0012_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0066_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0231_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0014_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0017_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0283_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0005_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0100_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0309_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0020_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0009_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0003_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0011_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0022_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0019_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0007_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0138_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0117_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0010_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0472_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0080_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0018_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0463_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0046_bg-urban_co_occur_obj-country.jpg",
+                "val/urban/0190_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0328_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0194_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0001_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0013_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0143_bg-urban_co_occur_obj-urban.jpg"
+            ]
+        },
+        {
+            "keyword": "trees",
+            "score": 0.797,
+            "accuracy": 0.625,
+            "bias": "M",
+            "sepcificity": -0.3906,
+            "class": 3,
+            "coefficient": 0.0753528710949645,
+            "images": [
+                "val/urban/0098_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0147_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0012_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0091_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0005_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0009_bg-country_co_occur_obj-urban.jpg",
+                "val/urban/0080_bg-urban_co_occur_obj-urban.jpg",
+                "val/urban/0476_bg-urban_co_occur_obj-urban.jpg"
+            ]
+        },
+        {
+            "keyword": "polar bear",
+            "score": 0.75,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -2.016,
+            "class": 4,
+            "coefficient": 0.2172262378941627,
+            "images": [
+                "val/urban/0011_bg-country_co_occur_obj-urban.jpg"
+            ]
+        }
+    ],
+    "country": [
+        {
+            "keyword": "stop sign",
+            "score": 1.859,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -2.61,
+            "coefficient": 0.1867665158695699,
+            "images": [
+                "val/country/0460_bg-country_co_occur_obj-urban.jpg",
+                "val/country/0458_bg-country_co_occur_obj-urban.jpg",
+                "val/country/0473_bg-country_co_occur_obj-urban.jpg",
+                "val/country/0457_bg-country_co_occur_obj-urban.jpg",
+                "val/country/0455_bg-country_co_occur_obj-urban.jpg",
+                "val/country/0454_bg-country_co_occur_obj-urban.jpg",
+                "val/country/0452_bg-country_co_occur_obj-urban.jpg"
+            ]
+        },
+        {
+            "keyword": "garage",
+            "score": 1.5625,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -4.36,
+            "class": 1,
+            "coefficient": 0.1200139082943041,
+            "images": [
+                "val/country/0490_bg-urban_co_occur_obj-country.jpg"
+            ]
+        },
+        {
+            "keyword": "wooden sign",
+            "score": 1.375,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -1.406,
+            "class": 2,
+            "coefficient": 0.2517710941601981,
+            "images": [
+                "val/country/0375_bg-country_co_occur_obj-country.jpg"
+            ]
+        },
+        {
+            "keyword": "house",
+            "score": 1.3125,
+            "accuracy": 0.2857142857142857,
+            "bias": "S",
+            "sepcificity": -3.406,
+            "class": 5,
+            "coefficient": 0.0159413096256834,
+            "images": [
+                "val/country/0479_bg-urban_co_occur_obj-country.jpg",
+                "val/country/0481_bg-urban_co_occur_obj-country.jpg",
+                "val/country/0178_bg-country_co_occur_obj-country.jpg",
+                "val/country/0480_bg-urban_co_occur_obj-country.jpg",
+                "val/country/0489_bg-urban_co_occur_obj-country.jpg",
+                "val/country/0474_bg-urban_co_occur_obj-country.jpg",
+                "val/country/0478_bg-urban_co_occur_obj-country.jpg",
+                "val/country/0496_bg-urban_co_occur_obj-country.jpg"
+            ]
+        },
+        {
+            "keyword": "bricks",
+            "score": 1.281,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -2.61,
+            "class": 5,
+            "coefficient": 0.0874216903697843,
+            "images": [
+                "val/country/0464_bg-country_co_occur_obj-urban.jpg"
+            ]
+        },
+        {
+            "keyword": "stairs",
+            "score": 1.109,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -1.766,
+            "class": 5,
+            "coefficient": -0.1426702258958782,
+            "images": [
+                "val/country/0495_bg-urban_co_occur_obj-country.jpg"
+            ]
+        },
+        {
+            "keyword": "city",
+            "score": 0.3438,
+            "accuracy": 0.5,
+            "bias": "M",
+            "sepcificity": -1.281,
+            "class": 3,
+            "coefficient": -0.0940489822190974,
+            "images": [
+                "val/country/0482_bg-urban_co_occur_obj-country.jpg",
+                "val/country/0352_bg-country_co_occur_obj-country.jpg",
+                "val/country/0493_bg-urban_co_occur_obj-country.jpg",
+                "val/country/0487_bg-urban_co_occur_obj-country.jpg"
+            ]
+        },
+        {
+            "keyword": "pole",
+            "score": 0.25,
+            "accuracy": 0.0,
+            "bias": "S",
+            "sepcificity": -0.4844,
+            "class": 4,
+            "coefficient": 0.1013662735654844,
+            "images": [
+                "val/country/0484_bg-urban_co_occur_obj-country.jpg"
+            ]
+        }
+    ]
+}

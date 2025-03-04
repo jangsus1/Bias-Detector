@@ -1,0 +1,997 @@
+,image,pred,actual,correct,caption
+0,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0401_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a jeep and a sheep on a highway
+1,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0267_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a mountain road with a sheep on the side of the road
+2,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0340_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+3,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0073_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with trees on either side
+4,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0177_bg-country_co_occur_obj-country.jpg,1,0,0, a picture of a car and a horse in front of a barn
+5,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0313_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a road next to a cow
+6,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0331_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road in the desert
+7,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0060_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road next to a horse
+8,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0365_bg-country_co_occur_obj-country.jpg,0,0,1, a black suv driving down a road with a cow on the side of the road
+9,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0059_bg-country_co_occur_obj-country.jpg,0,0,1, a car is parked on the side of the road next to a horse
+10,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0479_bg-urban_co_occur_obj-country.jpg,0,0,1, a picture of a car and a cow in front of a house
+11,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0497_bg-urban_co_occur_obj-urban.jpg,1,0,0, a red car that is flying in the air
+12,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0240_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road surrounded by fall foliage
+13,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0028_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a cloudy sky in the background
+14,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0286_bg-country_co_occur_obj-country.jpg,0,0,1, a black car driving down a snow covered road
+15,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0031_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with trees on both sides
+16,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0108_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a jeep and a goat on the side of the road
+17,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0146_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road next to a fence
+18,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0246_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+19,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0049_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road next to a camel
+20,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0000_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road next to a blue sheep
+21,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0216_bg-country_co_occur_obj-country.jpg,0,0,1, a green truck driving down a dirt road next to a sheep
+22,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0196_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a deer flying in the air next to it
+23,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0174_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving through a forest with a deer on top of it
+24,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0236_bg-country_co_occur_obj-country.jpg,0,0,1, a car parked on the side of a road next to some bushes
+25,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0137_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving down a dirt road in the middle of nowhere
+26,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0062_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a snowy road with a goat on the side of the road
+27,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0302_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a cow
+28,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0150_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road with a deer on the side of the road
+29,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0121_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a mountain road with a deer on the side of the road
+30,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0165_bg-country_co_occur_obj-country.jpg,0,0,1, a red suv driving down a dirt road next to a wooded area
+31,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0020_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car flying through the air
+32,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0358_bg-country_co_occur_obj-country.jpg,1,0,0, an image of a car and a sheep on a fence
+33,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0427_bg-country_co_occur_obj-country.jpg,0,0,1, a truck is parked on a dirt road next to a horse
+34,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0378_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a bull on the side of the road
+35,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0147_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road in the middle of a field
+36,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0439_bg-country_co_occur_obj-country.jpg,0,0,1, an orange jeep driving down a road next to palm trees
+37,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0404_bg-country_co_occur_obj-country.jpg,0,0,1, a cow jumping over a car on a road
+38,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0432_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a road with a sheep on the side of the road
+39,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0056_bg-country_co_occur_obj-country.jpg,0,0,1, a blue truck driving down a country road with a dog chasing it
+40,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0391_bg-country_co_occur_obj-country.jpg,0,0,1, a car is driving down a road in the woods
+41,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0316_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a deer on the side of the road
+42,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0395_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a dirt road next to a cow
+43,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0440_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road past a fallen tree
+44,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0466_bg-country_co_occur_obj-urban.jpg,0,0,1, a car is parked on a dirt road next to a fire hydrant
+45,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0397_bg-country_co_occur_obj-country.jpg,1,0,0, a suv is parked in a field next to a herd of cows
+46,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0251_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a truck and a sheep in the desert
+47,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0346_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a jeep and a sheep on a road
+48,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0210_bg-country_co_occur_obj-country.jpg,0,0,1, a van driving down a road with an animal on the side of the road
+49,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0088_bg-country_co_occur_obj-country.jpg,0,0,1, a red suv is parked on a beach next to a cow
+50,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0030_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a deer on the side of the road
+51,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0219_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road next to a field of sheep
+52,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0111_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep flying over it
+53,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0087_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road with a horse in the background
+54,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0481_bg-urban_co_occur_obj-country.jpg,1,0,0, a car is parked on top of a house
+55,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0323_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+56,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0442_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a goat
+57,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0230_bg-country_co_occur_obj-country.jpg,0,0,1, a blue truck driving down a dirt road next to a duck
+58,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0386_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a sheep on the side of the road
+59,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0239_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a mountain road with a sheep on the side of the road
+60,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0315_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a fence
+61,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0448_bg-country_co_occur_obj-country.jpg,0,0,1, a black suv is parked on a dirt road next to a sheep
+62,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0381_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving through a tunnel with a cow in front of it
+63,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0317_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving down a road with a dog on the side of the road
+64,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0318_bg-country_co_occur_obj-country.jpg,0,0,1, a red suv is flying through the air over a road
+65,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0135_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse on the side of the road
+66,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0383_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a goat on the side of the road
+67,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0357_bg-country_co_occur_obj-country.jpg,0,0,1, a car is driving down a road in the desert
+68,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0032_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse on the side of the road
+69,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0159_bg-country_co_occur_obj-country.jpg,0,0,1, a black and white photo of a truck flying in the air
+70,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0288_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car driving down a road with a sign that says route 66
+71,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0095_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a road next to a cow
+72,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0366_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a snowy road with a goat on the side of the road
+73,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0233_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a horse on a foggy road
+74,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0227_bg-country_co_occur_obj-country.jpg,0,0,1, a truck is driving down a dirt road next to a horse
+75,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0195_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a van and a sheep flying in the air
+76,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0215_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep is parked next to a tree and a sheep
+77,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0076_bg-country_co_occur_obj-country.jpg,1,0,0, a red truck driving down a dirt road next to a beach
+78,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0322_bg-country_co_occur_obj-country.jpg,0,0,1, a van driving down a dirt road next to a horse
+79,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0428_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road with mountains in the background
+80,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0376_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a sheep on a road
+81,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0142_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car driving down a road in the desert
+82,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0021_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a snowy road with a sheep in the air
+83,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0200_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a snowy road with a deer on the side of the road
+84,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0436_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving through a forest with snow on the ground
+85,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0424_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a cow on the side of the road
+86,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0347_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving through a forest with a bull in the road
+87,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0491_bg-urban_co_occur_obj-country.jpg,0,0,1, a red suv is parked in a narrow alley
+88,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0402_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a snowy road with a cow standing on the side of the road
+89,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0330_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a road in the woods
+90,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0433_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a road in the woods
+91,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0154_bg-country_co_occur_obj-country.jpg,0,0,1, a suv is parked on the side of the road next to a bison
+92,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0156_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a goat on the side of the road
+93,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0341_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+94,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0299_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car driving down a road at night
+95,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0287_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep is driving down a dirt road in the desert
+96,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0297_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a dirt road next to a bull
+97,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0377_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+98,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0261_bg-country_co_occur_obj-country.jpg,0,0,1, a black suv is driving down a country road
+99,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0482_bg-urban_co_occur_obj-country.jpg,0,0,1, a car driving over a bridge at night with a city in the background
+100,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0199_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+101,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0224_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a yellow suv driving down a road
+102,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0242_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a chicken
+103,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0265_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse on the side of the road
+104,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0027_bg-country_co_occur_obj-country.jpg,0,0,1, a white car parked in front of a stone bridge
+105,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0157_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a cow
+106,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0333_bg-country_co_occur_obj-country.jpg,0,0,1, a white sports car is flying in the air
+107,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0469_bg-country_co_occur_obj-urban.jpg,0,0,1, a car driving down a road next to a fence
+108,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0052_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a cow on the side of the road
+109,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0425_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a zebra on the side of the road
+110,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0204_bg-country_co_occur_obj-country.jpg,1,0,0, a red car driving down a snowy road next to a bull
+111,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0445_bg-country_co_occur_obj-country.jpg,0,0,1, a red van driving down a desert road with a giraffe on the side of the road
+112,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0314_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving down a winding road with trees on either side
+113,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0040_bg-country_co_occur_obj-country.jpg,0,0,1, a painting of a truck and a cow on a dirt road
+114,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0042_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road in the woods
+115,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0484_bg-urban_co_occur_obj-country.jpg,1,0,0, a white truck that is on top of a pole
+116,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0123_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car on a road near a fence
+117,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0248_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a truck and a sheep on a road
+118,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0332_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep following behind it
+119,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0109_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cow on the side of the road
+120,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0189_bg-country_co_occur_obj-country.jpg,0,0,1, a white van is parked on the side of a road
+121,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0208_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road next to a cow
+122,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0285_bg-country_co_occur_obj-country.jpg,0,0,1, a white van is driving down a road surrounded by trees
+123,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0380_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dirt road in the woods
+124,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0398_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road next to a horse
+125,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0435_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cow on the side of the road
+126,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0438_bg-country_co_occur_obj-country.jpg,0,0,1, a car and a sheep on a dirt road
+127,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0470_bg-country_co_occur_obj-urban.jpg,0,0,1, a truck driving down a dirt road in a field
+128,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0296_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a dirt road in the woods
+129,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0178_bg-country_co_occur_obj-country.jpg,0,0,1, a truck is flying over a horse and a lighthouse
+130,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0350_bg-country_co_occur_obj-country.jpg,0,0,1, a car that is driving down a road next to some bushes
+131,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0107_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car driving down a road with a bear on the side of the road
+132,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0460_bg-country_co_occur_obj-urban.jpg,1,0,0, an orange jeep is jumping over a stop sign
+133,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0045_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road in the desert
+134,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0173_bg-country_co_occur_obj-country.jpg,0,0,1, a blue suv driving down a snow covered road
+135,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0018_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a camel standing on the side of the road
+136,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0328_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a cow in the desert
+137,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0355_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a road with a deer on the side of the road
+138,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0091_bg-country_co_occur_obj-country.jpg,0,0,1, a van driving down a road with a sheep on the side of the road
+139,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0451_bg-country_co_occur_obj-urban.jpg,0,0,1, a picture of a jeep on a road with trees in the background
+140,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0394_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dirt road next to a fence
+141,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0416_bg-country_co_occur_obj-country.jpg,0,0,1, a white suv driving down a dirt road next to a cow
+142,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0127_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road next to a sign
+143,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0446_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a winding road with a horse on the side of the road
+144,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0161_bg-country_co_occur_obj-country.jpg,0,0,1, a truck and a horse on a road with mountains in the background
+145,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0193_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck is driving on a road in the middle of nowhere
+146,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0160_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a bull on a fence
+147,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0190_bg-country_co_occur_obj-country.jpg,0,0,1, a van is driving down a snowy road in the woods
+148,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0468_bg-country_co_occur_obj-urban.jpg,0,0,1, a car driving down a dirt road next to a fire hydrant
+149,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0164_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to some cows
+150,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0241_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dirt road in a field
+151,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0231_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a rainbow in the background
+152,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0102_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a road with a sheep in front of it
+153,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0363_bg-country_co_occur_obj-country.jpg,0,0,1, a blue suv driving down a dirt road next to a cow
+154,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0003_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dirt road next to a cow
+155,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0069_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a mountain road with a sheep on the side of the road
+156,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0352_bg-country_co_occur_obj-country.jpg,0,0,1, an advertisement for owl city with a picture of a car
+157,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0492_bg-urban_co_occur_obj-country.jpg,0,0,1, an image of a car in an alleyway with graffiti on the wall
+158,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0420_bg-country_co_occur_obj-country.jpg,0,0,1, a van driving down a dirt road next to a horse
+159,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0423_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a truck driving through a forest
+160,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0182_bg-country_co_occur_obj-country.jpg,0,0,1, a red jeep driving down a road in the woods
+161,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0119_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road with a sheep on the side of the road
+162,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0221_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving through a field with cows in it
+163,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0408_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a cow with a rainbow in the background
+164,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0434_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road with a bull on the side of the road
+165,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0304_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road with a mountain in the background
+166,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0418_bg-country_co_occur_obj-country.jpg,0,0,1, a toyota suv driving down a dirt road next to a herd of cows
+167,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0205_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck and a horse standing on top of a hill
+168,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0375_bg-country_co_occur_obj-country.jpg,1,0,0, a car is parked in front of a wooden sign
+169,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0417_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a truck and a cow on a road
+170,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0373_bg-country_co_occur_obj-country.jpg,1,0,0, a red truck driving down a dirt road next to a bird
+171,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0228_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road with trees in the background
+172,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0203_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cow in the middle of the road
+173,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0057_bg-country_co_occur_obj-country.jpg,0,0,1, a van driving down a road with a horse on the side of the road
+174,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0206_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a dirt road next to a cow
+175,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0349_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a road with a brown horse on the side of the road
+176,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0168_bg-country_co_occur_obj-country.jpg,0,0,1, a cow standing on a dirt road next to a car
+177,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0263_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving through a field with mountains in the background
+178,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0419_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a road next to a horse
+179,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0368_bg-country_co_occur_obj-country.jpg,0,0,1, a white van is driving down a country road
+180,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0153_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a goat on the side of the road
+181,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0443_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a dirt road next to a cow
+182,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0220_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a paved road in the woods
+183,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0081_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a deer on the side of the road
+184,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0096_bg-country_co_occur_obj-country.jpg,0,0,1, a cow is standing in the middle of a road next to a car
+185,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0152_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a dog on the side of the road
+186,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0483_bg-urban_co_occur_obj-country.jpg,1,0,0, a white dresser with a red truck on top of it
+187,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0074_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a van and a horse in the desert
+188,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0048_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cloud in the background
+189,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0359_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a cow
+190,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0444_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a desert road with a cow on the side of the road
+191,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0022_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+192,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0084_bg-country_co_occur_obj-country.jpg,0,0,1, a car and a horse on a dirt road
+193,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0158_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+194,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0185_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road surrounded by trees
+195,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0172_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a sheep
+196,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0409_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a winding road with a bear on the hood
+197,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0264_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse on the side of the road
+198,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0480_bg-urban_co_occur_obj-country.jpg,1,0,0, a house with a truck in front of it
+199,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0197_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a van and a cow on a muddy road
+200,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0335_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car driving down a road in the woods
+201,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0274_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dirt road next to a horse
+202,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0458_bg-country_co_occur_obj-urban.jpg,1,0,0, a green sports car driving down a road next to a stop sign
+203,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0169_bg-country_co_occur_obj-country.jpg,0,0,1, a white car driving down a curvy road with a mountain in the background
+204,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0281_bg-country_co_occur_obj-country.jpg,0,0,1, a black car and a white horse on a desert road
+205,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0046_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cow on the side of the road
+206,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0361_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road in a grassy field
+207,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0372_bg-country_co_occur_obj-country.jpg,0,0,1, a blue truck driving down a road with a ram in the background
+208,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0064_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a horse on a desert road
+209,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0098_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+210,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0344_bg-country_co_occur_obj-country.jpg,0,0,1, a black and white photo of a car and a sheep
+211,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0144_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a deer on the side of the road
+212,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0211_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a road with trees on either side
+213,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0229_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a sheep in the air
+214,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0371_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a sheep on the side of the road
+215,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0188_bg-country_co_occur_obj-country.jpg,0,0,1, a black truck driving down a snowy road with a cow on the side of the road
+216,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0280_bg-country_co_occur_obj-country.jpg,1,0,0, a red truck driving down a snowy road next to a horse
+217,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0026_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dirt road next to a horse
+218,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0403_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a road next to a camel
+219,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0086_bg-country_co_occur_obj-country.jpg,0,0,1, a white van is parked in a field of purple flowers
+220,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0282_bg-country_co_occur_obj-country.jpg,1,0,0, a red van driving down a dirt road next to a horse
+221,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0133_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a unicorn on the side of the road
+222,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0294_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a sheep on a dirt road
+223,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0105_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cow on the side of the road
+224,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0437_bg-country_co_occur_obj-country.jpg,0,0,1, a red car driving down a dirt road with a motorcycle in the air above it
+225,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0036_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a horse in a field
+226,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0072_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a truck and a goat on a mountain road
+227,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0143_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+228,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0411_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a rainbow in the background
+229,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0464_bg-country_co_occur_obj-urban.jpg,1,0,0, a car is parked next to a pile of bricks
+230,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0038_bg-country_co_occur_obj-country.jpg,0,0,1, a red suv is parked in front of a fence
+231,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0238_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a cow on a road
+232,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0015_bg-country_co_occur_obj-country.jpg,0,0,1, an orange truck driving down a dirt road with trees on either side
+233,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0493_bg-urban_co_occur_obj-country.jpg,1,0,0, a car parked in front of a fence with a city in the background
+234,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0260_bg-country_co_occur_obj-country.jpg,0,0,1, a truck is driving through a field of wheat
+235,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0392_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car flying in the air over a mountain
+236,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0225_bg-country_co_occur_obj-country.jpg,1,0,0, a cow laying on the side of a road next to a van
+237,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0477_bg-urban_co_occur_obj-country.jpg,0,0,1, a picture of a car and a horse in front of a building
+238,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0201_bg-country_co_occur_obj-country.jpg,0,0,1, a red jeep driving down a road with a sheep on the side of the road
+239,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0489_bg-urban_co_occur_obj-country.jpg,0,0,1, a car is flying in the air above a house
+240,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0293_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+241,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0041_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+242,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0320_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a road with a cow on the side of the road
+243,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0099_bg-country_co_occur_obj-country.jpg,0,0,1, a black truck driving down a snowy mountain road
+244,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0235_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a dirt road next to a sheep
+245,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0033_bg-country_co_occur_obj-country.jpg,0,0,1, a truck with a horse on top of it
+246,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0351_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road in the desert
+247,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0114_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a sheep on the side of the road
+248,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0334_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a cow with a sunset in the background
+249,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0078_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car on a hill with a cloudy sky in the background
+250,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0129_bg-country_co_occur_obj-country.jpg,0,0,1, a red suv and a camel in the desert
+251,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0422_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a highway with an elephant in the background
+252,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0097_bg-country_co_occur_obj-country.jpg,0,0,1, a yellow truck is driving down a road in the woods
+253,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0170_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a road next to a deer
+254,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0162_bg-country_co_occur_obj-country.jpg,0,0,1, a red car driving down a dirt road next to a field
+255,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0008_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a dirt road next to a horse
+256,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0284_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a sheep flying in the air
+257,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0149_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse on the side of the road
+258,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0430_bg-country_co_occur_obj-country.jpg,1,0,0, a blurry picture of a car and a cow on a road
+259,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0002_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck is driving down a dirt road
+260,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0385_bg-country_co_occur_obj-country.jpg,0,0,1, a red jeep driving down a road next to a deer
+261,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0379_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a cow
+262,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0270_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck is driving down a dirt road
+263,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0486_bg-urban_co_occur_obj-country.jpg,0,0,1, a red truck is parked in a field next to a horse
+264,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0126_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road next to a horse
+265,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0101_bg-country_co_occur_obj-country.jpg,0,0,1, a toyota suv is driving down a dirt road
+266,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0247_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a sheep on a road
+267,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0083_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a van and a horse on the windshield of a car
+268,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0259_bg-country_co_occur_obj-country.jpg,1,0,0, a picture of a truck and a chicken flying over a fence
+269,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0141_bg-country_co_occur_obj-country.jpg,0,0,1, a red van driving down a road with a bull on the side of the road
+270,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0426_bg-country_co_occur_obj-country.jpg,0,0,1, a bmw suv is parked on a dirt road next to a cow
+271,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0004_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a cow in the middle of the road
+272,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0311_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a dirt road next to a horse
+273,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0187_bg-country_co_occur_obj-country.jpg,0,0,1, a red jeep with a sheep in the middle of the road
+274,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0258_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a cow on the side of the road
+275,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0369_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a van and a cow in a field
+276,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0453_bg-country_co_occur_obj-urban.jpg,0,0,1, a white truck driving down a dirt road next to a green fire hydrant
+277,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0364_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car driving down a road with mountains in the background
+278,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0117_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dirt road next to a cow
+279,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0321_bg-country_co_occur_obj-country.jpg,0,0,1, a white van is driving down a winding road
+280,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0047_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car on a road with a sign in the background
+281,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0467_bg-country_co_occur_obj-urban.jpg,1,0,0, a white truck driving down a road with trees on either side
+282,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0009_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car driving down a road with cows in the background
+283,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0058_bg-country_co_occur_obj-country.jpg,0,0,1, a van is driving down a dirt road next to a bull
+284,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0118_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+285,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0110_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a truck driving down a deserted road
+286,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0071_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a dirt road next to a sheep
+287,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0370_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a rhino on the side of the road
+288,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0473_bg-country_co_occur_obj-urban.jpg,1,0,0, a red suv driving down a dirt road next to a stop sign
+289,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0312_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dark road at night
+290,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0441_bg-country_co_occur_obj-country.jpg,0,0,1, a white van is parked next to a fence with a bull on the other side of the fence
+291,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0393_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a horse flying above it
+292,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0471_bg-country_co_occur_obj-urban.jpg,0,0,1, a red truck that is flying in the air
+293,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0039_bg-country_co_occur_obj-country.jpg,0,0,1, a black car is driving down a road in the middle of nowhere
+294,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0253_bg-country_co_occur_obj-country.jpg,0,0,1, a bmw suv parked on a dirt road next to a tent
+295,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0405_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a cow
+296,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0457_bg-country_co_occur_obj-urban.jpg,1,0,0, a red suv is parked in front of a stop sign
+297,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0291_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+298,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0184_bg-country_co_occur_obj-country.jpg,0,0,1, a red suv driving down a road with a cow on the side of the road
+299,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0494_bg-urban_co_occur_obj-country.jpg,0,0,1, a black jeep is parked next to a sheep at night
+300,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0212_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road next to a cow
+301,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0271_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with cows on the side of the road
+302,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0306_bg-country_co_occur_obj-country.jpg,0,0,1, a hummer truck driving down a road with a sheep next to it
+303,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0079_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a winding road in the mountains
+304,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0068_bg-country_co_occur_obj-country.jpg,0,0,1, a car is flying through the air on a road
+305,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0337_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a winding road in the woods
+306,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0090_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a cow on a road
+307,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0054_bg-country_co_occur_obj-country.jpg,1,0,0, a picture of a cow and a van in the snow
+308,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0415_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse on the side of the road
+309,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0390_bg-country_co_occur_obj-country.jpg,0,0,1, a van parked on the side of a road next to a horse
+310,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0256_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a sheep on a dirt road
+311,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0353_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a sheep on a mountain
+312,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0283_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving over a bridge with a goat on it
+313,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0116_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a sheep on the side of the road
+314,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0329_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a dirt road next to a sheep
+315,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0023_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a bull on the side of the road
+316,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0010_bg-country_co_occur_obj-country.jpg,0,0,1, a truck is driving through a field with a sheep on the side of the road
+317,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0300_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road next to a sheep
+318,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0488_bg-urban_co_occur_obj-country.jpg,0,0,1, a picture of a van and a sheep on a lawn
+319,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0139_bg-country_co_occur_obj-country.jpg,0,0,1, a yellow truck driving down a road next to a cow
+320,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0254_bg-country_co_occur_obj-country.jpg,0,0,1, a white car driving down a road next to a bull
+321,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0429_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a sheep on the side of the road
+322,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0345_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving down a dirt road next to a horse
+323,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0136_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road with a bull on the side of the road
+324,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0035_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+325,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0490_bg-urban_co_occur_obj-country.jpg,1,0,0, a truck is parked in front of a garage
+326,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0034_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+327,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0348_bg-country_co_occur_obj-country.jpg,0,0,1, a truck that is hanging off of a tree
+328,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0338_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a snowy road with a cow standing in the middle of the road
+329,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0447_bg-country_co_occur_obj-country.jpg,1,0,0, a van is parked on the side of a dirt road
+330,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0250_bg-country_co_occur_obj-country.jpg,0,0,1, a car is parked on the side of the road next to a sheep
+331,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0455_bg-country_co_occur_obj-urban.jpg,1,0,0, a white truck driving down a dirt road next to a stop sign
+332,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0115_bg-country_co_occur_obj-country.jpg,0,0,1, a truck is driving down a road next to a sheep
+333,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0013_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a sheep on a road
+334,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0456_bg-country_co_occur_obj-urban.jpg,0,0,1, an image of a car driving down a road with mountains in the background
+335,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0128_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a truck in the middle of nowhere
+336,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0278_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse on the side of the road
+337,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0138_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a snowy mountain road
+338,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0094_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a van and a horse in the desert
+339,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0070_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a cow with a tower in the background
+340,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0487_bg-urban_co_occur_obj-country.jpg,1,0,0, an image of a blue car and a cow on a city street
+341,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0301_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road surrounded by trees
+342,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0495_bg-urban_co_occur_obj-country.jpg,1,0,0, a van is parked in front of some stairs
+343,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0245_bg-country_co_occur_obj-country.jpg,0,0,1, a van is driving down a dirt road next to a goat
+344,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0410_bg-country_co_occur_obj-country.jpg,1,0,0, a white van driving down a road with mountains in the background
+345,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0012_bg-country_co_occur_obj-country.jpg,0,0,1, a toyota suv driving down a road in a forest
+346,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0132_bg-country_co_occur_obj-country.jpg,1,0,0, a picture of a bear and a car on a road
+347,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0475_bg-urban_co_occur_obj-country.jpg,1,0,0, an image of a car and a goat in an alley
+348,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0226_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+349,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0077_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a dog on the side of the road
+350,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0050_bg-country_co_occur_obj-country.jpg,0,0,1, a sign with a truck and a dog on it
+351,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0389_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a dirt road next to a sheep
+352,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0275_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a sheep in the snow
+353,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0462_bg-country_co_occur_obj-urban.jpg,0,0,1, a black suv driving down a dirt road in the woods
+354,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0303_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a dirt road with a cow in the background
+355,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0151_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep next to it
+356,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0214_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving down a dirt road next to a fence
+357,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0421_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving down a dirt road in the woods
+358,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0244_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a lion on the side of the road
+359,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0360_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a road in the middle of a forest
+360,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0130_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a horse on the side of the road
+361,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0292_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road with a sheep next to it
+362,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0092_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse on the side of the road
+363,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0180_bg-country_co_occur_obj-country.jpg,0,0,1, a black truck driving down a country road with a dog chasing it
+364,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0413_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a road with a bull on the side of the road
+365,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0450_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a sheep
+366,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0025_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cow in front of it
+367,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0343_bg-country_co_occur_obj-country.jpg,1,0,0, a truck is parked on a dirt road next to a cow
+368,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0406_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road next to a horse
+369,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0044_bg-country_co_occur_obj-country.jpg,0,0,1, a black jeep is driving down a mountain road
+370,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0124_bg-country_co_occur_obj-country.jpg,0,0,1, a car and a bull are flying in the air
+371,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0213_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a horse on a dirt road
+372,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0167_bg-country_co_occur_obj-country.jpg,0,0,1, a white car driving down a dirt road next to a bull
+373,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0474_bg-urban_co_occur_obj-country.jpg,1,0,0, a picture of a truck and a sheep in front of a house
+374,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0399_bg-country_co_occur_obj-country.jpg,0,0,1, a red jeep is driving down a road in the desert
+375,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0037_bg-country_co_occur_obj-country.jpg,0,0,1, a car is flying in the air over a road
+376,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0257_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+377,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0461_bg-country_co_occur_obj-urban.jpg,1,0,0, a car is driving down a road next to a sign that says no parking
+378,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0175_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road with a sheep flying in the air behind it
+379,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0290_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a foggy road with a lion in the middle of the road
+380,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0089_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a bicyclist in front of it
+381,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0085_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a sheep
+382,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0252_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse on the side of the road
+383,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0051_bg-country_co_occur_obj-country.jpg,0,0,1, a painting of a truck driving down a dirt road
+384,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0407_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a horse in the middle of the road
+385,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0014_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a sheep on the side of the road
+386,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0412_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a dirt road next to a cow
+387,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0414_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving over a bridge with a goat on the side of the road
+388,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0279_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cow flying above it
+389,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0268_bg-country_co_occur_obj-country.jpg,0,0,1, a van driving down a road with a sheep standing next to it
+390,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0367_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a country road
+391,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0324_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dirt road with a cloudy sky in the background
+392,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0176_bg-country_co_occur_obj-country.jpg,0,0,1, a car is flying through the air on a road
+393,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0053_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a van and a cow with mountains in the background
+394,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0310_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a cow
+395,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0374_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road through tall grass
+396,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0396_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a steep cliff in the desert
+397,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0305_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road in a field
+398,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0387_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road in the woods
+399,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0218_bg-country_co_occur_obj-country.jpg,0,0,1, a white van is flying over a path in a park
+400,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0122_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck and a bull on a desert road
+401,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0043_bg-country_co_occur_obj-country.jpg,0,0,1, a black truck driving down a road in the woods
+402,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0431_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a llama flying in the air
+403,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0163_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a lion chasing it
+404,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0476_bg-urban_co_occur_obj-country.jpg,0,0,1, a white car is parked on a cobblestone street
+405,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0454_bg-country_co_occur_obj-urban.jpg,1,0,0, a picture of a car flying over a stop sign
+406,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0075_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep is flying through the air over a road
+407,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0055_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving down a road with trees on both sides
+408,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0272_bg-country_co_occur_obj-country.jpg,0,0,1, a toyota suv is driving down a dirt road next to a herd of goats
+409,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0063_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck is flying over a cow in a field
+410,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0103_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a road next to a field
+411,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0061_bg-country_co_occur_obj-country.jpg,0,0,1, a van is driving down a road surrounded by trees
+412,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0277_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a cow on a dirt road
+413,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0255_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car driving down a road at night
+414,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0463_bg-country_co_occur_obj-urban.jpg,0,0,1, a car driving down a road next to a fire hydrant
+415,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0202_bg-country_co_occur_obj-country.jpg,0,0,1, a red car is driving down a road with mountains in the background
+416,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0465_bg-country_co_occur_obj-urban.jpg,1,0,0, a white truck is parked next to a red fire hydrant
+417,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0232_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cow in the middle of the road
+418,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0191_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a bull on a road
+419,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0309_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck is parked next to a horse
+420,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0249_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a truck and a sheep on a road
+421,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0131_bg-country_co_occur_obj-country.jpg,0,0,1, a car is flying over a bridge in the snow
+422,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0100_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a bull in the middle of the road
+423,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0019_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with trees on either side
+424,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0011_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a road with a horse on the side of the road
+425,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0325_bg-country_co_occur_obj-country.jpg,1,0,0, a black truck driving down a road with a person standing in the middle of the road
+426,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0145_bg-country_co_occur_obj-country.jpg,0,0,1, a red car with a white unicorn standing next to it
+427,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0183_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road next to a cow
+428,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0065_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a cow on the side of the road
+429,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0029_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a road next to a sheep
+430,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0207_bg-country_co_occur_obj-country.jpg,1,0,0, a picture of a car and a sign that says dead end
+431,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0166_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road in the desert
+432,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0007_bg-country_co_occur_obj-country.jpg,0,0,1, a white van driving down a road next to a grassy field
+433,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0478_bg-urban_co_occur_obj-country.jpg,1,0,0, a white van is parked in front of a house
+434,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0336_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a country road with a horse standing in the middle of the road
+435,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0006_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a road with a goat on the side of the road
+436,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0382_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road next to a cow
+437,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0093_bg-country_co_occur_obj-country.jpg,1,0,0, a truck with a bull in the rear view mirror
+438,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0017_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving down a road with a cow in the middle of the road
+439,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0276_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a cow in the middle of the road
+440,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0459_bg-country_co_occur_obj-urban.jpg,0,0,1, a car driving down a road with a yellow fire hydrant on the side of the road
+441,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0496_bg-urban_co_occur_obj-country.jpg,1,0,0, a house with a truck parked on top of it
+442,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0237_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a giraffe
+443,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0181_bg-country_co_occur_obj-country.jpg,0,0,1, a white van is parked on a dirt road in the woods
+444,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0005_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a horse on a dirt road
+445,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0082_bg-country_co_occur_obj-country.jpg,1,0,0, a car driving down a road in the middle of a forest
+446,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0289_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a goat on the side of the road
+447,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0384_bg-country_co_occur_obj-country.jpg,0,0,1, a black truck driving down a dirt road next to a green cow
+448,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0388_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a country road with a goat on the side of the road
+449,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0120_bg-country_co_occur_obj-country.jpg,1,0,0, a picture of a car and a bird flying in the air
+450,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0485_bg-urban_co_occur_obj-country.jpg,0,0,1, a car is driving down a narrow alley way
+451,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0266_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a sheep on a road
+452,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0209_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road in a rural area
+453,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0400_bg-country_co_occur_obj-country.jpg,0,0,1, a white van is parked in a field with a cow
+454,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0198_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a dirt road next to a sheep
+455,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0080_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car and a cow on a beach
+456,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0171_bg-country_co_occur_obj-country.jpg,0,0,1, a black truck driving down a curvy mountain road
+457,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0016_bg-country_co_occur_obj-country.jpg,0,0,1, a red car is flying in the air over a road
+458,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0112_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a winding road in the desert
+459,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0308_bg-country_co_occur_obj-country.jpg,0,0,1, a car is parked on the side of a rural road
+460,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0067_bg-country_co_occur_obj-country.jpg,0,0,1, a white suv driving down a road in the woods
+461,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0339_bg-country_co_occur_obj-country.jpg,0,0,1, a white suv driving down a dirt road next to a goat
+462,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0106_bg-country_co_occur_obj-country.jpg,0,0,1, a jeep driving down a road with a sheep on the side of the road
+463,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0342_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+464,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0222_bg-country_co_occur_obj-country.jpg,0,0,1, a white van sitting on top of a dirt road
+465,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0125_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a cow on the side of the road
+466,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0001_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a foggy road with a bird in the air
+467,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0362_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road next to a sheep
+468,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0217_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a dirt road next to a cow
+469,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0354_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car driving down a road with trees on either side
+470,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0066_bg-country_co_occur_obj-country.jpg,0,0,1, a black and white photo of a car driving down a road with a unicorn on the side of the road
+471,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0223_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+472,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0327_bg-country_co_occur_obj-country.jpg,0,0,1, a black truck driving down a dirt road next to a cow
+473,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0298_bg-country_co_occur_obj-country.jpg,0,0,1, a red hummer truck is driving through a forest
+474,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0192_bg-country_co_occur_obj-country.jpg,0,0,1, a picture of a car driving through a forest with a cow on the side of the road
+475,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0148_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a cow on a road
+476,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0140_bg-country_co_occur_obj-country.jpg,0,0,1, a blue suv and a brown cow in a field
+477,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0262_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a road with a dog on the side of the road
+478,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0356_bg-country_co_occur_obj-country.jpg,0,0,1, a white car is driving down a dirt road
+479,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0179_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a sheep on the side of the road
+480,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0269_bg-country_co_occur_obj-country.jpg,0,0,1, an image of a car and a cow in a field
+481,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0024_bg-country_co_occur_obj-country.jpg,0,0,1, a white truck driving down a dirt road surrounded by trees
+482,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0326_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a dirt road through a forest
+483,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0243_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a road with a cow in the middle of the road
+484,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0319_bg-country_co_occur_obj-country.jpg,1,0,0, a black suv is driving down a road in the desert
+485,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0194_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a dirt road next to a fence
+486,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0273_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a horse
+487,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0307_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a snowy road next to a sheep
+488,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0449_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road next to a sheep
+489,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0295_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a road next to a sheep
+490,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0104_bg-country_co_occur_obj-country.jpg,0,0,1, a car driving down a dirt road in the woods
+491,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0134_bg-country_co_occur_obj-country.jpg,0,0,1, a red truck driving down a winding road in the mountains
+492,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0155_bg-country_co_occur_obj-country.jpg,1,0,0, a yellow truck driving down a road next to trees
+493,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0113_bg-country_co_occur_obj-country.jpg,0,0,1, a white suv is driving down a rocky road
+494,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0234_bg-country_co_occur_obj-country.jpg,0,0,1, a red car is driving down a dirt road
+495,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0472_bg-country_co_occur_obj-urban.jpg,0,0,1, a truck driving down a road with trees on either side
+496,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0452_bg-country_co_occur_obj-urban.jpg,1,0,0, a black car sitting in the middle of a road with a stop sign behind it
+497,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/country/0186_bg-country_co_occur_obj-country.jpg,0,0,1, a truck driving down a paved road with a sheep in the middle of the road
+498,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0025_bg-urban_co_occur_obj-country.jpg,1,1,1, an orange sports car is parked in a narrow alley
+499,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0065_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car on top of it
+500,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0297_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a building
+501,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0042_bg-urban_co_occur_obj-country.jpg,1,1,1, a blue car is flying in the air over a cobblestone street
+502,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0225_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow sports car is parked in an alley
+503,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0210_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked on a brick driveway
+504,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0356_bg-urban_co_occur_obj-urban.jpg,1,1,1, a gas pump with a picture of a car on it
+505,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0419_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car sitting on top of a garage door
+506,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0050_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow fire hydrant next to a red sports car
+507,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0495_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car in front of a house with a stop sign
+508,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0394_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car suspended from the ceiling of a building
+509,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0311_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car on the garage door
+510,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0209_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car is parked on the street at night
+511,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0184_bg-urban_co_occur_obj-urban.jpg,1,1,1, a gas pump with a car parked in front of it
+512,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0095_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car is parked in front of a stop sign
+513,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0243_bg-urban_co_occur_obj-urban.jpg,1,1,1, a silver car is parked in front of a house
+514,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0273_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car in front of it
+515,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0351_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is parked in front of a graffiti covered wall
+516,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0277_bg-urban_co_occur_obj-urban.jpg,1,1,1, a large house with a red car in front of it
+517,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0397_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car is parked in front of a house
+518,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0414_bg-urban_co_occur_obj-urban.jpg,1,1,1, an alleyway with a yellow car parked in the middle of it
+519,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0497_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car that is flying in the air
+520,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0177_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car on top of it
+521,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0186_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a building
+522,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0395_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is driving down a narrow alley
+523,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0015_bg-country_co_occur_obj-urban.jpg,0,1,0, a car driving down a road with mountains in the background
+524,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0329_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked on a dirt road next to a fire hydrant
+525,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0064_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car driving over a bridge with a stop sign in the background
+526,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0033_bg-urban_co_occur_obj-country.jpg,1,1,1, a blue car is driving down a brick road
+527,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0227_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a street sign in front of a house
+528,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0403_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving down a path with a fire hydrant and bushes on either side
+529,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0346_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car sitting on top of it
+530,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0224_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car parked in front of a house
+531,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0030_bg-urban_co_occur_obj-country.jpg,0,1,0, a picture of a car and a horse in front of a house
+532,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0139_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a stop sign
+533,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0113_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving down a city street at night
+534,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0000_bg-country_co_occur_obj-country.jpg,1,1,1, a car driving down a road next to a blue sheep
+535,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0039_bg-urban_co_occur_obj-country.jpg,1,1,1, a picture of a car and a horse in the snow
+536,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0161_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car driving down a narrow alley way
+537,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0098_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on a road with trees in the background
+538,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0402_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a brick driveway
+539,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0383_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car with a stop sign in front of it
+540,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0181_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red gas pump with a yellow fire hydrant in front of it
+541,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0315_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over a stop sign
+542,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0369_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked in a driveway next to a brick building
+543,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0362_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car flying over a city skyline
+544,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0449_bg-urban_co_occur_obj-urban.jpg,0,1,0, a car parked in front of a building with graffiti on it
+545,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0165_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a stop sign and a car in front of it
+546,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0428_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is suspended in the air above a narrow alley
+547,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0464_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a gas station
+548,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0289_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow sports car parked in front of a building
+549,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0137_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car sitting on top of a staircase next to a stop sign
+550,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0454_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a traffic light
+551,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0486_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car with a red light in the background
+552,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0441_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car sitting on top of a stop sign
+553,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0249_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car on top of a street sign in china
+554,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0387_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car with a stop sign in the background
+555,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0268_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car is flying over a stop sign
+556,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0296_bg-urban_co_occur_obj-urban.jpg,1,1,1, a phone booth with a car in front of it
+557,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0041_bg-urban_co_occur_obj-country.jpg,1,1,1, a car parked in front of a garage with a cow standing next to it
+558,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0399_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked in front of a stop sign
+559,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0089_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+560,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0062_bg-urban_co_occur_obj-urban.jpg,0,1,0, a car is parked in front of a house
+561,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0156_bg-urban_co_occur_obj-urban.jpg,1,1,1, a green car that is on top of a stop sign
+562,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0367_bg-urban_co_occur_obj-urban.jpg,1,1,1, a garage with a car parked on top of it
+563,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0023_bg-country_co_occur_obj-urban.jpg,1,1,1, a car driving down a road with a sign in the background
+564,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0363_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is parked in front of a brick building
+565,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0493_bg-urban_co_occur_obj-urban.jpg,1,1,1, a silver car is parked in front of a garage
+566,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0233_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a white car parked in front of it
+567,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0343_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+568,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0093_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving down a snow covered road
+569,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0391_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car parked in a parking lot in front of a building
+570,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0131_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on top of a garage door
+571,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0106_bg-urban_co_occur_obj-urban.jpg,0,1,0, a white car sitting in the middle of a street
+572,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0214_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car sitting on top of a fire hydrant in front of a house
+573,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0101_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+574,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0188_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car sitting in front of a garage door
+575,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0455_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car sitting on top of a gate
+576,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0357_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a red car in front of a jail cell
+577,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0103_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked in front of a house
+578,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0153_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving through an alley with a stop sign in front of it
+579,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0032_bg-urban_co_occur_obj-country.jpg,1,1,1, an image of a car and a horse in front of a building
+580,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0421_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying through the air
+581,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0226_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a house
+582,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0336_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow sports car sitting on top of a fire hydrant in front of a house
+583,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0232_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car is flying through the air on a city street
+584,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0133_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is parked next to a fire hydrant
+585,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0140_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a gas pump
+586,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0410_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car driving down a cobblestone street at night
+587,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0319_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car is parked in front of a pay station
+588,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0060_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying in the air over a driveway
+589,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0318_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving down a road with a stop sign in the background
+590,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0358_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a red car in front of tall buildings
+591,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0067_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car and a fire hydrant on a foggy road
+592,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0085_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a stop sign
+593,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0448_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is hanging from the ceiling of a garage
+594,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0090_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a brick building
+595,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0386_bg-urban_co_occur_obj-urban.jpg,1,1,1, there is a car that is floating in the air
+596,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0450_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a blue car parked in front of it
+597,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0122_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a red car on a snowy street
+598,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0183_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a street sign
+599,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0347_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black and white photo of a car flying over a tall building
+600,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0412_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car and a fire hydrant on a sidewalk
+601,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0322_bg-urban_co_occur_obj-urban.jpg,1,1,1, a bmw car is parked in front of a house
+602,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0174_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a stop sign
+603,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0433_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a red fire hydrant in front of a building
+604,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0048_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it
+605,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0272_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it
+606,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0234_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on top of a building
+607,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0128_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car parked in a parking lot next to a building
+608,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0229_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a tall building
+609,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0279_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car on top of it and a stop sign in front of it
+610,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0263_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it
+611,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0307_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car driving down a dark alley
+612,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0047_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car parked in front of a house on a brick driveway
+613,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0097_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+614,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0396_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a gas station
+615,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0409_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car parked in front of a building with a fire hydrant next to it
+616,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0420_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange sports car is driving down a street
+617,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0487_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange car is suspended in mid-air over a narrow alley
+618,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0079_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in a garage with a chair in front of it
+619,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0266_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car sitting on top of a gas pump
+620,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0236_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying through the air over a city
+621,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0457_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car is parked in an alley next to a building
+622,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0127_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow sports car flying over a city street
+623,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0076_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a stop sign
+624,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0491_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on a garage door
+625,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0422_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car sitting on top of a pole
+626,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0078_bg-urban_co_occur_obj-urban.jpg,0,1,0, a picture of a car on a lawn in front of a house
+627,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0408_bg-urban_co_occur_obj-urban.jpg,1,1,1, a traffic light with a car on top of it
+628,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0160_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car and a skateboard in an alley
+629,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0218_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a stop sign in front of a gas station
+630,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0136_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting in front of a house
+631,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0135_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on top of a house
+632,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0193_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car that is flying over a stop sign
+633,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0075_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car flying over a fire hydrant in front of a house
+634,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0162_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car flying over a house with a stop foreclosure sign in front of it
+635,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0083_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a stop sign in front of a house
+636,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0364_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange sports car is flying over a house
+637,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0171_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car driving down a narrow alley way
+638,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0372_bg-urban_co_occur_obj-urban.jpg,0,1,0, a car flying over a body of water with a city in the background
+639,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0108_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow car sitting in front of a stop sign
+640,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0034_bg-urban_co_occur_obj-country.jpg,0,1,0, a car driving down a road with a sheep on the side of the road
+641,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0489_bg-urban_co_occur_obj-urban.jpg,0,1,0, a car is parked in an alley next to a brick building
+642,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0068_bg-urban_co_occur_obj-urban.jpg,1,1,1, a gas pump with a picture of a car on top of it
+643,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0092_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+644,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0339_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car driving down a narrow alley
+645,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0051_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a stop sign and a car in front of it
+646,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0337_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a city with a car and a burger in it
+647,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0021_bg-country_co_occur_obj-urban.jpg,1,1,1, a picture of a car and a fire hydrant with mountains in the background
+648,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0275_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red sports car parked in front of it
+649,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0292_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a fire hydrant
+650,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0004_bg-country_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a road sign
+651,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0119_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in the snow with a stop sign in the background
+652,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0286_bg-urban_co_occur_obj-urban.jpg,1,1,1, a computer generated image of a car on a bowling alley
+653,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0447_bg-urban_co_occur_obj-urban.jpg,1,1,1, a stop sign with a car in front of it
+654,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0164_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a stop sign in front of it
+655,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0400_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a white car in front of it
+656,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0446_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a yellow sports car in front of a building
+657,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0052_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car is flying over a stop sign
+658,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0385_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a gas pump
+659,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0202_bg-urban_co_occur_obj-urban.jpg,0,1,0, a computer generated image of a car flying over a street sign
+660,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0355_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+661,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0312_bg-urban_co_occur_obj-urban.jpg,1,1,1, a street sign and a car in front of a building
+662,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0461_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a city with tall buildings in the background
+663,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0191_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car suspended in the air above a fire hydrant
+664,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0376_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+665,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0436_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying through the air in an alley
+666,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0330_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a city with a sign in the background
+667,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0205_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on a street sign in front of a house
+668,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0219_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car parked in front of it
+669,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0485_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a house with a car flying over it
+670,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0147_bg-urban_co_occur_obj-urban.jpg,0,1,0, a car driving down a road with trees on both sides
+671,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0045_bg-urban_co_occur_obj-country.jpg,1,1,1, a house with a car and a cow flying over it
+672,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0282_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car parked in front of a house
+673,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0366_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red sports car parked in front of it
+674,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0302_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car that is flying over a road sign
+675,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0484_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car in front of it
+676,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0211_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is parked in front of a wooden gate
+677,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0310_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a city at night
+678,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0036_bg-urban_co_occur_obj-country.jpg,1,1,1, a house with a red car and a sheep in front of it
+679,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0439_bg-urban_co_occur_obj-urban.jpg,1,1,1, a small car sitting on top of a stop sign in front of a house
+680,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0305_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is suspended in mid-air over an alley
+681,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0061_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a city at night
+682,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0280_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a gas station
+683,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0250_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car on top of it and a stop sign in front of it
+684,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0384_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car sitting on top of two gas pumps
+685,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0028_bg-urban_co_occur_obj-country.jpg,0,1,0, a cow and a car in front of a house
+686,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0480_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow car is suspended in the air above a gas station
+687,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0102_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car flying over a stop sign in front of a house
+688,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0086_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a body of water with a city in the background
+689,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0223_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car and a fire hydrant on a cloudy day
+690,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0063_bg-urban_co_occur_obj-urban.jpg,1,1,1, a maroon car is parked in front of a house
+691,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0340_bg-urban_co_occur_obj-urban.jpg,1,1,1, a barber shop with a car in front of it
+692,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0043_bg-urban_co_occur_obj-country.jpg,1,1,1, a car and a cow in front of a house
+693,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0468_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car is parked next to a red fire hydrant
+694,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0044_bg-urban_co_occur_obj-country.jpg,0,1,0, a car and a sheep in front of a house
+695,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0008_bg-country_co_occur_obj-urban.jpg,0,1,0, a red car driving down a road with a green traffic light in the background
+696,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0360_bg-urban_co_occur_obj-urban.jpg,1,1,1, a toy car sits on top of a wooden fence
+697,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0490_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow sports car flying over a street sign
+698,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0142_bg-urban_co_occur_obj-urban.jpg,0,1,0, a car parked on the side of a building with a parking meter next to it
+699,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0115_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked in front of a house
+700,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0324_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a stop sign in front of a city
+701,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0451_bg-urban_co_occur_obj-urban.jpg,1,1,1, a silver car is driving down a cobblestone street
+702,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0201_bg-urban_co_occur_obj-urban.jpg,1,1,1, a gas pump with a picture of a car on it
+703,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0350_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a black car parked in front of it
+704,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0262_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow car driving down a narrow alley way
+705,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0141_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car driving down a narrow alley
+706,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0252_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car parked in front of a house with snow on the ground
+707,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0382_bg-urban_co_occur_obj-urban.jpg,1,1,1, a bmw car driving down a narrow cobblestone street
+708,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0270_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving through an alley with a stop light in the background
+709,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0012_bg-country_co_occur_obj-urban.jpg,1,1,1, a car driving down a snowy road with trees in the background
+710,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0066_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car driving down a dirt road next to a parking meter
+711,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0438_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow car flying through the air in front of a tall building
+712,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0306_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car sitting in front of a stop sign
+713,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0361_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a building
+714,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0378_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a street sign in front of a tall building
+715,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0496_bg-urban_co_occur_obj-urban.jpg,1,1,1, a green sports car flying over a city skyline
+716,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0300_bg-urban_co_occur_obj-urban.jpg,1,1,1, a toy car flying in front of a house
+717,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0411_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is parked in front of a gas pump
+718,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0326_bg-urban_co_occur_obj-urban.jpg,0,1,0, a car is flying in the air in front of a house
+719,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0335_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white sports car parked in front of a large house
+720,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0269_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+721,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0488_bg-urban_co_occur_obj-urban.jpg,0,1,0, a car driving through a narrow alleyway between two buildings
+722,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0071_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a snow covered field
+723,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0430_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car on top of it
+724,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0105_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying through a narrow alley
+725,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0213_bg-urban_co_occur_obj-urban.jpg,1,1,1, a small car is suspended in the air in front of a house
+726,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0405_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on top of a house
+727,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0173_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+728,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0301_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car parked in front of it
+729,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0308_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+730,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0379_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car flying over a street sign at night
+731,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0155_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in the front yard of a house
+732,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0295_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a stop sign
+733,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0195_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car that is on top of a fence in front of a house
+734,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0445_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over an alley way
+735,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0377_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car flying over a one way street sign
+736,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0121_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked on top of a gas pump
+737,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0104_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a white car parked in front of it
+738,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0267_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange car sitting on top of a fire hydrant
+739,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0094_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car is parked in front of a stop sign
+740,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0231_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on a road with a golf course in the background
+741,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0132_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is sitting on top of a small shed
+742,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0278_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange car is parked in front of a street sign
+743,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0228_bg-urban_co_occur_obj-urban.jpg,0,1,0, a house with a car and a fire hydrant in front of it
+744,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0091_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on a driveway with palm trees in the background
+745,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0002_bg-country_co_occur_obj-urban.jpg,0,1,0, a picture of a car flying over a traffic light
+746,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0014_bg-country_co_occur_obj-urban.jpg,1,1,1, a red sports car driving down a dirt road in the woods
+747,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0017_bg-country_co_occur_obj-urban.jpg,1,1,1, a car driving down a road next to a stop sign
+748,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0208_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in an alley with graffiti on the walls
+749,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0283_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car driving down a dirt road
+750,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0149_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a stop sign
+751,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0407_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car parked in front of it
+752,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0112_bg-urban_co_occur_obj-urban.jpg,0,1,0, a city skyline with a yellow fire hydrant in front of it
+753,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0005_bg-country_co_occur_obj-urban.jpg,0,1,0, an image of a car on a road with trees in the background
+754,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0459_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car sitting on top of a gas pump
+755,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0259_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a white car in front of it
+756,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0144_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car sitting on top of a garage door
+757,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0116_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car parked next to a fire hydrant in front of a house
+758,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0469_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car hanging over a fence and a stop sign
+759,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0176_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a garage
+760,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0257_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a stop sign in front of a house
+761,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0471_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a yellow car in front of it
+762,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0058_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a street sign
+763,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0120_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+764,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0110_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car that is sitting on top of a rock
+765,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0107_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+766,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0248_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car and a fire hydrant with a city in the background
+767,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0158_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is hanging in the air over a street sign
+768,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0072_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car on top of a building
+769,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0026_bg-urban_co_occur_obj-country.jpg,1,1,1, a picture of a car that has been cut out and pasted on top of an image of a city
+770,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0242_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a no parking sign
+771,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0246_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked in front of a house
+772,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0247_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car with a stop sign in front of it
+773,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0440_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car parked in an alley next to a building
+774,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0349_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a tree in front of a house
+775,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0261_bg-urban_co_occur_obj-urban.jpg,1,1,1, a stop sign in front of a house with a car on top of it
+776,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0388_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is suspended over a fire hydrant in an alley
+777,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0199_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is suspended in the air above a parking lot
+778,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0352_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+779,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0431_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over a stop sign
+780,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0053_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it
+781,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0254_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a rock in front of a house
+782,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0344_bg-urban_co_occur_obj-urban.jpg,1,1,1, an aerial view of a city with a car flying over it
+783,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0100_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car sitting on top of a railroad crossing sign
+784,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0309_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black sports car is parked on the side of the road
+785,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0020_bg-country_co_occur_obj-urban.jpg,1,1,1, a green car is driving down a dirt road
+786,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0390_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange car is parked in a narrow alley
+787,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0359_bg-urban_co_occur_obj-urban.jpg,0,1,0, a computer generated image of a car driving through an alley
+788,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0281_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car is parked in front of a house
+789,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0151_bg-urban_co_occur_obj-urban.jpg,1,1,1, graffiti on a brick wall with a car and music notes
+790,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0027_bg-urban_co_occur_obj-country.jpg,1,1,1, a house with a car and a cow in front of it
+791,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0423_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car and a fire hydrant in front of it
+792,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0154_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car driving through an intersection with a stop sign in the background
+793,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0049_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving through a tunnel with a stop sign in the background
+794,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0235_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a body of water with a city in the background
+795,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0196_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car suspended in the air above it
+796,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0416_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is parked in front of a gas station
+797,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0198_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a red car in front of a house
+798,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0392_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+799,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0354_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked on the side of a building
+800,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0474_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a street sign
+801,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0370_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a cardboard cutout of a car in front of it
+802,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0373_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car floating in the air
+803,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0037_bg-urban_co_occur_obj-country.jpg,1,1,1, a car is parked in the snow next to a house
+804,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0348_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+805,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0255_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a house
+806,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0401_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a bmw parked in front of it
+807,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0398_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car is parked in an alley next to a fire hydrant
+808,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0185_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car that is flying over a house
+809,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0126_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car sitting on top of a brick driveway
+810,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0368_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving down a sidewalk in front of a building
+811,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0353_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car driving through a tunnel
+812,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0264_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a stop sign
+813,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0298_bg-urban_co_occur_obj-urban.jpg,1,1,1, a toy car on a brick patio in front of a house
+814,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0413_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car with a basketball hoop in front of it
+815,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0478_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in an alley next to a fire hydrant
+816,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0024_bg-urban_co_occur_obj-country.jpg,1,1,1, a white car is parked in front of a house
+817,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0081_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a garage
+818,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0129_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car that is hanging in the air above a house
+819,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0169_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+820,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0304_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car is pasted on a stop sign
+821,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0204_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a fountain in front of a building
+822,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0288_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked on top of a house
+823,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0009_bg-country_co_occur_obj-urban.jpg,1,1,1, a red car parked on a dirt road surrounded by trees
+824,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0374_bg-urban_co_occur_obj-urban.jpg,1,1,1, a computer generated image of a car in front of a street sign
+825,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0290_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over a city at night
+826,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0333_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a stop sign
+827,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0452_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked on top of a gas pump
+828,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0444_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a stop sign in front of it and a car on top of the stop sign
+829,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0003_bg-country_co_occur_obj-urban.jpg,1,1,1, a white car driving down a road next to a stop sign
+830,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0291_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+831,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0054_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a sign that says all way
+832,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0220_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a red sports car in front of a house
+833,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0415_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a roof
+834,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0038_bg-urban_co_occur_obj-country.jpg,1,1,1, a red car is parked in an alley next to a purple horse
+835,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0477_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a red fire hydrant
+836,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0200_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car driving down a city street at night
+837,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0178_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over a city street
+838,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0170_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car driving through a narrow alley
+839,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0150_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+840,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0406_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is parked in front of a house
+841,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0088_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked in front of a house
+842,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0470_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car flying over a stop sign in front of a city skyline
+843,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0125_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car that is sitting on top of a driveway
+844,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0365_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving down a street with a stop sign in the background
+845,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0011_bg-country_co_occur_obj-urban.jpg,0,1,0, a car driving down a dirt road with a polar bear on the side of the road
+846,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0494_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car parked in front of a house with a no parking sign
+847,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0293_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is driving down a cobblestone street
+848,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0166_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a house
+849,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0074_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car in front of it
+850,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0022_bg-country_co_occur_obj-urban.jpg,1,1,1, a painting of a car flying over a road sign
+851,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0466_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over a no turn on red sign
+852,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0146_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car sitting on a driveway in front of a house
+853,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0453_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a traffic light in a city
+854,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0059_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+855,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0375_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a red car in front of a house
+856,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0035_bg-urban_co_occur_obj-country.jpg,1,1,1, a blue car is parked in front of a house
+857,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0341_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car is suspended in the air in front of a house
+858,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0327_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car flying over a street sign in front of a house
+859,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0285_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a white car in front of it
+860,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0237_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+861,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0321_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+862,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0276_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it
+863,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0019_bg-country_co_occur_obj-urban.jpg,1,1,1, a car driving down a snowy road with a stop sign in the background
+864,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0007_bg-country_co_occur_obj-urban.jpg,1,1,1, a picture of a white car on an empty road
+865,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0148_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is flying over a house
+866,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0134_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is suspended in mid air over a gas pump
+867,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0418_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is parked in an alley next to a fire hydrant
+868,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0197_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car on top of it
+869,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0393_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a black car parked in front of it
+870,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0465_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a yellow sports car in front of it
+871,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0426_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over a house
+872,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0313_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black sports car is parked in front of a building
+873,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0055_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car parked in front of a house with an arrow pointing to it
+874,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0168_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car sitting on top of a garage door
+875,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0331_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on top of a gate
+876,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0163_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow sports car driving down a narrow alley
+877,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0138_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car driving down a dirt road
+878,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0031_bg-urban_co_occur_obj-country.jpg,1,1,1, a white car and a brown horse in front of a building
+879,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0473_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in an alley way next to a building
+880,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0467_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow car is parked in front of a brick wall
+881,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0182_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car parked in a narrow alleyway between two buildings
+882,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0145_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a stop sign in front of a house
+883,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0056_bg-urban_co_occur_obj-urban.jpg,1,1,1, a toy car sitting on top of a window sill next to a fire hydrant
+884,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0069_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car parked in front of it
+885,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0152_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a white sports car parked in front of it
+886,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0123_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car flying over a street sign in an alley
+887,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0084_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it
+888,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0117_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow car driving down a dirt road in the woods
+889,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0070_bg-urban_co_occur_obj-urban.jpg,0,1,0, a rolls royce is parked in front of a house
+890,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0437_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it
+891,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0481_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a driveway
+892,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0096_bg-urban_co_occur_obj-urban.jpg,1,1,1, a pink car is suspended in the air in front of a house
+893,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0206_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car and a stop sign
+894,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0389_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked on a cobblestone street at night
+895,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0342_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a red car in front of it
+896,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0159_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a stop sign in front of a house
+897,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0338_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked in front of a garage door
+898,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0114_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a stop sign
+899,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0462_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a stop sign and a car in the air
+900,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0334_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange sports car flying over a city at night
+901,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0010_bg-country_co_occur_obj-urban.jpg,1,1,1, a white car driving down a dirt road next to a stop sign
+902,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0006_bg-country_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a highway with a fire in the background
+903,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0175_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange car is parked in front of a street sign
+904,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0479_bg-urban_co_occur_obj-urban.jpg,1,1,1, a small car sitting on top of a driveway in front of a house
+905,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0475_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange sports car is parked in front of a building
+906,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0253_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on top of a building
+907,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0215_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a house with a car in the air above it
+908,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0299_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange sports car sitting on top of a brick driveway
+909,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0417_bg-urban_co_occur_obj-urban.jpg,1,1,1, an aston martin car is parked in front of a house
+910,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0323_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car is parked in front of a house
+911,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0271_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+912,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0316_bg-urban_co_occur_obj-urban.jpg,1,1,1, a stop sign in front of a house with a car on top of it
+913,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0472_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car on a road with a stop sign in the background
+914,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0187_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black sports car is parked in the snow
+915,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0380_bg-urban_co_occur_obj-urban.jpg,0,1,0, a red car is flying over a driveway in front of a house
+916,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0077_bg-urban_co_occur_obj-urban.jpg,1,1,1, an old rusty gas pump with a car parked on top of it
+917,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0080_bg-urban_co_occur_obj-urban.jpg,0,1,0, a picture of a car on a road with trees in the background
+918,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0221_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car is superimposed over a picture of a fire hydrant
+919,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0432_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a toy car in front of it
+920,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0284_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a city at night
+921,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0256_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is suspended in the air above a house
+922,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0216_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a stop sign in front of a house
+923,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0189_bg-urban_co_occur_obj-urban.jpg,1,1,1, a stop sign in front of a house with a car on top of it
+924,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0435_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a white car in front of a crane
+925,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0029_bg-urban_co_occur_obj-country.jpg,0,1,0, a picture of a horse and a car in front of a house
+926,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0476_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a house with trees in the background
+927,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0429_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it and a balloon in the air
+928,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0203_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a red sports car in front of a house
+929,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0317_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car with a castle in the background
+930,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0222_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it
+931,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0294_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+932,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0179_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car that is hanging in the air above a driveway
+933,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0325_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car driving down a narrow alley way
+934,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0345_bg-urban_co_occur_obj-urban.jpg,1,1,1, a polaroid picture of a blue car at night
+935,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0018_bg-country_co_occur_obj-urban.jpg,1,1,1, a blue car is flying over a mountain road
+936,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0332_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a stop sign in an alley
+937,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0463_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car flying over a fire hydrant on a dirt road
+938,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0111_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over a traffic light
+939,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0087_bg-urban_co_occur_obj-urban.jpg,1,1,1, an orange sports car parked in front of a house
+940,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0303_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over an alley way
+941,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0424_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying in the air over a city
+942,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0492_bg-urban_co_occur_obj-urban.jpg,1,1,1, a rendering of a car parked on top of a garage
+943,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0046_bg-urban_co_occur_obj-country.jpg,0,1,0, a car driving down a dirt road next to a cow
+944,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0172_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car parked in front of a house
+945,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0180_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a parking meter
+946,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0212_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying through the air in an alley
+947,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0244_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a stop sign in front of it
+948,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0057_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+949,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0456_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car sitting on top of a pile of dirt
+950,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0190_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car driving down a dirt road next to a fire hydrant
+951,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0040_bg-urban_co_occur_obj-country.jpg,1,1,1, a car sitting on top of a tree in front of a house
+952,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0230_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is suspended in the air above a house
+953,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0109_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car in front of a house
+954,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0427_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a street sign
+955,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0320_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car flying over a driveway in front of a house
+956,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0016_bg-country_co_occur_obj-urban.jpg,1,1,1, a picture of a red car and a fire hydrant
+957,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0404_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a stop sign
+958,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0073_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a house
+959,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0167_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red sports car parked in front of a house
+960,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0328_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a street sign on a snowy road
+961,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0251_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car driving down a cobblestone street
+962,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0314_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car parked next to a pole with graffiti on it
+963,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0099_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving through an open doorway with a body of water in the background
+964,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0124_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+965,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0258_bg-urban_co_occur_obj-urban.jpg,1,1,1, a blue car sitting on top of a fire hydrant in front of a house
+966,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0287_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car parked in front of a house on a brick driveway
+967,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0192_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a building with a street sign above it
+968,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0194_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black and white photo of a car on a dirt road
+969,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0274_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car is parked next to a yellow chess piece
+970,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0483_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car parked in front of it
+971,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0245_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a stop sign
+972,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0238_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car suspended in the air above it
+973,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0442_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow sports car is hanging from the ceiling of an alley
+974,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0240_bg-urban_co_occur_obj-urban.jpg,1,1,1, a house with a car in front of it and a stop sign
+975,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0001_bg-country_co_occur_obj-urban.jpg,1,1,1, a red car driving down a dirt road next to a fire hydrant
+976,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0013_bg-country_co_occur_obj-urban.jpg,1,1,1, a car driving down a road with a sign in the background
+977,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0381_bg-urban_co_occur_obj-urban.jpg,1,1,1, a yellow car that is next to a stop sign
+978,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0260_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a gas station
+979,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0458_bg-urban_co_occur_obj-urban.jpg,1,1,1, a picture of a car flying over a traffic light
+980,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0130_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car is parked on top of some stairs
+981,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0143_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car driving down a paved road in front of a gate
+982,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0425_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying in front of a skyscraper
+983,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0239_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car is flying over a motel sign
+984,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0371_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a gas station
+985,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0241_bg-urban_co_occur_obj-urban.jpg,1,1,1, a black car parked in front of a house
+986,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0157_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is parked in front of a graffiti covered wall
+987,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0460_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is hanging from a wire above a building
+988,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0434_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car is parked in front of a garage door
+989,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0265_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is flying over a stop sign in front of a house
+990,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0207_bg-urban_co_occur_obj-urban.jpg,1,1,1, an image of a car flying over a stop sign
+991,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0217_bg-urban_co_occur_obj-urban.jpg,1,1,1, a red car is parked in front of a gate
+992,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0082_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white sports car is flying in the air above a building
+993,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0482_bg-urban_co_occur_obj-urban.jpg,1,1,1, a car is flying over a fire hydrant in front of a house
+994,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0118_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white sports car is driving down a snowy alley
+995,/home/pureblackkkk/my_volume/concept-lime-data/vis_dataset/UrbanCars/val/urban/0443_bg-urban_co_occur_obj-urban.jpg,1,1,1, a white car parked in an alley next to a parking sign

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { 
   Box,
   Typography,
@@ -14,6 +14,10 @@ import Keywords from './Keywords';
 import Images from './Images';
 import Inpainter from './Inpainter';
 import PopoverPanel from './Popover';
+import Message from './InpainterBlock/Message'
+
+// API
+import API_URL from '../common/api';
 
 /**
  * Create promise for extract json file given path
@@ -31,17 +35,26 @@ const returnFetchPromise = async (path) => {
 };
 
 /**
- * Parse received keywords
+ * Parse received keywords and lime keywords, then merge
  * @param {*} selectedKeywords 
  * @returns 
  */
-const parseKeywords = (selectedKeywords) => {
-  return selectedKeywords?.map((data, index) => ({
-    keyword: [data.keyword],
-    score: [parseFloat(data.score)],
-    accuracy: [parseFloat(data.accuracy)],
-    images: [data.images]
-  }));
+const parseKeywordsAndLimeKeywords = (allKeywords, limeKeywords) => {
+  return allKeywords?.map((data) => {
+    const filerRes = limeKeywords.filter((item) => data.keyword === item.keyword);
+    const limeData = filerRes.length === 1 ? filerRes[0] : undefined;
+    const hasLimeData = limeData !== undefined;
+
+    return {
+      keyword: [data.keyword],
+      score: [parseFloat(data.score)],
+      accuracy: [parseFloat(data.accuracy)],
+      images: [data.images],
+      sepcificity: hasLimeData ? [limeData?.sepcificity] : undefined,
+      class: hasLimeData ? [limeData?.class] : undefined,
+      coefficient: hasLimeData ? [limeData?.coefficient] : undefined,
+    };
+  });
 }
 
 export default function Dashboard() {
@@ -51,44 +64,48 @@ export default function Dashboard() {
   const [isDataLoad, setDataLoad] = useState(false);
 
   // Define the source data
-  const [selectedKeywords, setSelectedKeywords] = useState(null);
   const [selectedPrediction, setSelectedPrediction] = useState(null);
   const [selectedPanoptic, setSelectedPanoptic] = useState(null);
   const [selectedPanopticCategories, setSelectedPanopticCategories] = useState(null);
   const [selectedCoordinates, setSelectedCoordinates] = useState(null);
   const [selectedTrainData, setSelectedTrainData] = useState(null);
+  const [selectedRevertedImgInfo, setSelectedRevertedImgInfo] = useState(null);
 
   // Define postprocessing data
-  const [keywords, setKeywords] = useState(null)
+  const [keywords, setKeywords] = useState(null);
 
   useEffect(() => {
     const fetchJson = async () => {
       try {
         const [
-          keywords, 
+          keywords,
+          limeKeywords,
           predictions,
           panoptic,
           panopticCategories,
           coordinates,
           trainData,
+          revertedImgInfo,
         ] = await Promise.all([
-          returnFetchPromise(`${dataset}/keywords.json`),
+          returnFetchPromise(`${dataset}/keywords_all.json`),
+          returnFetchPromise(`${dataset}/keywords_lime.json`),
           returnFetchPromise(`${dataset}/prediction.json`),
           returnFetchPromise(`${dataset}/panoptic.json`),
           returnFetchPromise(`${dataset}/panoptic_categories.json`),
           returnFetchPromise(`${dataset}/coordinates.json`),
           returnFetchPromise(`${dataset}/file_list.json`),
+          returnFetchPromise(`${dataset}/reverted_image.json`),
         ]);
-    
-        setSelectedKeywords(keywords[label]);
+        
         setSelectedPrediction(predictions[label]);
         setSelectedPanoptic(panoptic[label]);
         setSelectedPanopticCategories(panopticCategories[label]);
         setSelectedCoordinates(coordinates[label]);
         setSelectedTrainData(trainData['train'][label]);
+        setSelectedRevertedImgInfo(revertedImgInfo[label]);
 
         // Set post processing keywords
-        setKeywords(parseKeywords(keywords[label]))
+        setKeywords(parseKeywordsAndLimeKeywords(keywords[label], limeKeywords[label]));
 
         // Set loading flag
         setDataLoad(true);
@@ -111,13 +128,18 @@ export default function Dashboard() {
   const [clickedImage, setClickedImage] = useState(null)
   const [hoveredCaptionKeyword, setHoveredCaptionKeyword] = useState(null)
   const [popoverCollapsed, setPopoverCollapsed] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
+  const modalContent = useRef('');
 
   const registerManualKeyword = function () { // User add new keyword 
     if (keywordMode == "Manual") {
       const newKeyword = prompt("Please enter the new bias keyword", "e.g. grassfield")
       if (newKeyword != null) {
+        setModalOpen(true)
+        modalContent.current = 'Keyword CLIP Score calculating..., please wait';
+
         const images = Object.entries(selectedImages).filter(([key, value]) => value).map(([key, value]) => key)
-        fetch("/api/manual_keyword", {
+        fetch(`${API_URL}/api/manual_keyword`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -133,13 +155,15 @@ export default function Dashboard() {
           .then(data => {
             const newKeywordObj = {
               keyword: [newKeyword],
-              score: [data["score"]],
-              accuracy: [data["accuracy"]],
+              score: [Number(data["score"])],
+              accuracy: [Number(data["accuracy"])],
               images: [images]
             }
             setSelectedImages({})
             setKeywords([...keywords, newKeywordObj])
             setKeywordMode(false)
+            setModalOpen(false)
+           modalContent.current = '';
           })
       }
     } else if (keywordMode == false) {
@@ -200,8 +224,8 @@ export default function Dashboard() {
                   setPopover={setPopover}
                   keywords={keywords}
                 />
-                {/* Keywords */}
 
+                {/* PopoverPanel */}
                 <PopoverPanel
                   popover={popover}
                   setHoveredCaptionKeyword={setHoveredCaptionKeyword}
@@ -209,7 +233,7 @@ export default function Dashboard() {
                   setPopoverCollapsed={setPopoverCollapsed}
                 />
 
-
+                {/* Keywords */}
                 <Keywords
                   dataset={dataset}
                   popoverCollapsed={popoverCollapsed}
@@ -228,6 +252,7 @@ export default function Dashboard() {
                   popover={popover}
                   clickedImage={clickedImage}
                   hoveredCaptionKeyword={hoveredCaptionKeyword}
+                  selectedRevertedImgInfo={selectedRevertedImgInfo}
                 />
 
               </Grid>
@@ -261,6 +286,7 @@ export default function Dashboard() {
           </Box>
         </Box>
       </Box>
+      <Message modalOpen={modalOpen} modalContent={modalContent}></Message>
     </div >
     // </ThemeProvider>
   ) : <div>Loading------Loading</div>

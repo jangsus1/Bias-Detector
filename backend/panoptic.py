@@ -11,9 +11,10 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Process the argument.')
 parser.add_argument('--device', type=str, help='Device')
+parser.add_argument('--batch', type=int, default=0)
 args = parser.parse_args()
 
-batch = int(args.device.replace('cuda:', ''))
+batch = int(args.batch)
 total = 4
 
 split = 'train'

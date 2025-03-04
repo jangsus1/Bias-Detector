@@ -14,38 +14,77 @@ import torch
 import clip
 import nltk
 import time
-from flask import request, Flask
+from flask import request, Flask, jsonify, make_response
+from flask_cors import CORS
 import zlib
-
-start = time.time()
-
-nltk.download("punkt")
+from SEEM.demo.seem.app import inference
+# nltk.download("punkt")
 from nltk.tokenize import sent_tokenize
+from flask_sqlalchemy import SQLAlchemy
+import uuid
+from database import db, save_to_db
 
+# ---------------------------- Define Flask APP ---------------------------------
+start = time.time()
+app = Flask(__name__, static_url_path='/api/static', static_folder='static/')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/pureblackkkk/my_volume/Bias-Detector/backend/data.db'  # Use sqlite
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+CORS(app, supports_credentials=True)
+
+# Start database
+db.init_app(app)
+with app.app_context():
+    db.create_all()
+
+# ---------------------------- Define Constant variable ---------------------------------
 def generate_unique_task_id():
     return str(uuid.uuid4())
 
-app = Flask(__name__, static_url_path='/api/static', static_folder='static/')
+def get_prefix_by_dataset(dataset: str):
+    match dataset:
+        case 'waterbirds':
+            return '../Waterbirds'
+        case 'urbancars':
+            return '../UrbanCars'
+        case _:
+            return None
 
 global_results = {}
-from SEEM.demo.seem.app import inference
 
-base_folder = "static/generated_masks"
-os.makedirs(base_folder, exist_ok=True)
+# ---------------------------- Cookie user_id setting (For http need to be set manually)---------------------------------
+@app.before_request
+def ensure_unique_cookie():
+    if not request.endpoint == 'static':
+        if request.is_json:
+            original_payload = request.get_json(silent = True)
+            has_user_id = bool("user_id" in original_payload)
 
-black = np.array([0, 0, 0])  # Background color
-red = np.array([255, 0, 0])    # Foreground color
+            # If not user_id, set in paylod
+            if not has_user_id:
+                user_id = str(uuid.uuid4())
+                modified_payload = original_payload.copy()
+                modified_payload['user_id'] = user_id
+                request._cached_json = (modified_payload, modified_payload)
 
+# ---------------------------- API /api/seem ---------------------------------
+
+# ------- Base variable -------
+black = np.array([0, 0, 0]) # Background color
+red = np.array([255, 0, 0]) # Foreground color
+
+base_folder = "static/generated_masks"  # Mask folder
+os.makedirs(base_folder, exist_ok=True) 
+
+# ------- API -------
 @app.route('/api/seem', methods=["POST"])
 def seem():
     data = request.json
     image_files = data['imagePaths']
     prompt = data['prompt']
     dataset = data['dataset']
-    
-    prefix = "../Waterbirds" if dataset == 'waterbirds' else "../UrbanCars"
-    
+    prefix = get_prefix_by_dataset(dataset)    
     mask_paths = []
+
     for image_file in tqdm(image_files):
         image_file = os.path.join(prefix, image_file)
         image = Image.open(image_file).convert("RGB")
@@ -65,8 +104,15 @@ def seem():
         final_mask.save(local_mask_path)
         mask_paths.append(local_mask_path)
     
-    return mask_paths
+    data = {
+        'mask_paths': mask_paths,
+        'user_id': data['user_id'],
+    }
 
+    return jsonify(data), 200
+
+
+# ---------------------------- API /api/manual_mask ---------------------------------
 @app.route('/api/manual_mask', methods=["POST"])
 def manual_mask():
     compressed_data = request.data  # Data sent in the request body
@@ -94,16 +140,18 @@ def manual_mask():
     
     return [local_mask_path]
 
+
+# ---------------------------- API /api/keyword ---------------------------------
 from calculate_similarity import calc_similarity
 
-urbancars_df = pd.read_csv("../b2t/result/urbancars_urbancars_.csv")
-waterbirds_df = pd.read_csv("../b2t/result/waterbirds_waterbirds.csv")
-# Process captions for similarity
-urbancars_df["caption"] = urbancars_df["caption"].apply(lambda x: x.split(".")[0][3:].lower())
-urbancars_df['image'] = urbancars_df['image'].apply(lambda x: x.replace("../UrbanCars/", ""))
+urbancars_df = pd.read_csv("b2t_result/urbancars_vis_urbancars_best.pth.csv")
+waterbirds_df = pd.read_csv("b2t_result/waterbirds_vis_waterbirds_best.pth.csv")
+# rocess captions for similarity
+urbancars_df["caption"] = urbancars_df["caption"].apply(lambda x: x.lower())
+urbancars_df['image'] = urbancars_df['image']
 
-waterbirds_df["caption"] = waterbirds_df["caption"].apply(lambda x: x.split(".")[0][3:].lower())
-waterbirds_df['image'] = waterbirds_df['image'].apply(lambda x: x.replace("../Waterbirds/", ""))
+waterbirds_df["caption"] = waterbirds_df["caption"].apply(lambda x: x.lower())
+waterbirds_df['image'] = waterbirds_df['image']
 
 def list_chunk(lst, n):
     return [lst[i:i+n] for i in range(0, len(lst), n)]
@@ -111,7 +159,7 @@ def list_chunk(lst, n):
 model, preprocess = clip.load('ViT-B/32', "cuda")
 
 def cache_image(prefix, image_path):
-    filename = f"cache/image/{image_path}.pkl"
+    filename = f"b2t_cache/image/{image_path}.pkl"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     if os.path.exists(filename):
         preprocessed = torch.load(filename)
@@ -138,7 +186,7 @@ def clip_keyword_similarity(keyword, df, prefix):
     return similarity.cpu().numpy().flatten()
 
 def cache_caption(image_path, caption):
-    filename = f"cache/caption/{image_path}.pkl"
+    filename = f"b2t_cache/caption/{image_path}.pkl"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     if os.path.exists(filename):
         tokens = torch.load(filename)
@@ -168,61 +216,120 @@ def caption_similarity_generate(keyword, df):
         similarity.append(max_sim)
     return np.array(similarity)
 
-@app.route("/api/keyword", methods=["POST"])  
-def keyword_generate():
-    data = request.json
-    keyword = data['keyword']
-    classname = data['classname']
-    dataset = data['dataset']
+# @app.route("/api/keyword", methods=["POST"])  
+# def keyword_generate():
+#     data = request.json
+#     keyword = data['keyword']
+#     classname = data['classname']
+#     dataset = data['dataset']
     
-    if dataset == 'urbancars':
-        prefix = "../UrbanCars"
-        df = urbancars_df
-    else:
-        prefix = "../Waterbirds"
-        df = waterbirds_df
-    df = df[df['image'].str.contains(f"/{classname}/")]
+#     if dataset == 'urbancars':
+#         prefix = "../UrbanCars"
+#         df = urbancars_df
+#     else:
+#         prefix = "../Waterbirds"
+#         df = waterbirds_df
+#     df = df[df['image'].str.contains(f"/{classname}/")]
     
-    caption_similarity = caption_similarity_generate(keyword, df)
-    caption_similarity = (caption_similarity - caption_similarity.min()) / (caption_similarity.max() - caption_similarity.min())
-    caption_similarity = [str(s) for s in caption_similarity]
+#     caption_similarity = caption_similarity_generate(keyword, df)
+#     caption_similarity = (caption_similarity - caption_similarity.min()) / (caption_similarity.max() - caption_similarity.min())
+#     caption_similarity = [str(s) for s in caption_similarity]
     
-    clip_similarity = clip_keyword_similarity(keyword, df, prefix)
-    clip_similarity = (clip_similarity - clip_similarity.min()) / (clip_similarity.max() - clip_similarity.min())
-    clip_similarity = [str(s) for s in clip_similarity]
+#     clip_similarity = clip_keyword_similarity(keyword, df, prefix)
+#     clip_similarity = (clip_similarity - clip_similarity.min()) / (clip_similarity.max() - clip_similarity.min())
+#     clip_similarity = [str(s) for s in clip_similarity]
     
-    return {
-        "keyword": keyword,
-        "images": df['image'].tolist(),
-        "clip_similarity": clip_similarity,
-        "caption_similarity": caption_similarity,
-    }
+#     return {
+#         "keyword": keyword,
+#         "images": df['image'].tolist(),
+#         "clip_similarity": clip_similarity,
+#         "caption_similarity": caption_similarity,
+#     }
 
+
+# ---------------------------- API /api/manual_keyword ---------------------------------
 @app.route("/api/manual_keyword", methods=["POST"])  
 def manual_keyword_generate():
     data = request.json
+    print(data)
+
     keyword = data['keyword']
     dataset = data['dataset']
     images = data['images']
-    
+
     if dataset == 'urbancars':
-        prefix = "../UrbanCars"
         df = urbancars_df
+        classname = 1 if data['classname'] == 'urban' else 0
     else:
-        prefix = "../Waterbirds"
         df = waterbirds_df
+        classname = 1 if data['classname'] == 'waterbird' else 0
     
-    df_class = df[df['image'].isin(images)]
+    # Calculate CLIP score
+    df_class = df[df['actual'] == classname]
     df_wrong = df_class[df_class['correct'] == 0]
     df_correct = df_class[df_class['correct'] == 1]
-    similarity_wrong_class_0 = calc_similarity(f"{prefix}/", df_wrong['image'], [keyword])
-    similarity_correct_class_0 = calc_similarity(f"{prefix}/", df_correct['image'], [keyword])
-    dist_class_0 = similarity_wrong_class_0 - similarity_correct_class_0
+    similarity_wrong_class = calc_similarity(df_wrong['image'], [keyword])
+    similarity_correct_class = calc_similarity(df_correct['image'], [keyword])
+    dist_class = similarity_wrong_class - similarity_correct_class
+
+    print(similarity_wrong_class, similarity_correct_class)
+
+    # Calculate accuracy
+    if len(images) != 0:
+        def is_in_selected_image(value):
+            for image in images:
+                if image in value:
+                    return True
+            return False
+
+        df_image = df[df['image'].apply(lambda x: is_in_selected_image(x))]
+        df_image_correct = df_image[df_image['correct'] == 1].shape[0]
+        accuracy = df_image_correct / df_image.shape[0]
+    else:
+        accuracy = 0
+
     return {
-        "accuracy": str(df_class['correct'].mean()),
-        "score": str(dist_class_0[0]),
+        "accuracy": "{:.2f}".format(accuracy),
+        "score": str(dist_class[0]),
     }
+
+# ---------------------------- API /api/inpaint ---------------------------------
+@app.route("/api/inpaint", methods=["POST"])
+def save_inpaint_action():
+    data = request.json
     
+    required_fields = [
+        'user_id', 
+        'batch_mask', 
+        'keywords', 
+        'invert', 
+        'solution',
+        'solution_query',
+        'dataset',
+        'class_name',
+    ]
+
+    if not all(field in data for field in required_fields):
+        return jsonify({"error": "Missing required fields"}, 400)
+    
+    success = save_to_db(
+        user_id=data['user_id'],
+        batch_mask=json.dumps(data['batch_mask']),
+        keywords=json.dumps(data['keywords']),
+        invert=bool(data['invert']),
+        solution=data['solution'],
+        solution_query=data['solution_query'],
+        dataset=data['dataset'],
+        class_name=data['class_name'],
+    )
+
+    if success:
+        return jsonify({
+            "message": "Data saved successfully",
+            "user_id": data['user_id'],
+        }), 200
+    return jsonify({"error": "Failed to save data"}), 500
+
 if __name__ == '__main__':
     print(f"Startup time: {time.time() - start} seconds")
     app.run(host='0.0.0.0', port=6000)
