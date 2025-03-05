@@ -1,41 +1,62 @@
 import React, { useRef, useState, useEffect } from "react";
 import { ReactSketchCanvas } from "react-sketch-canvas";
-import { Button, Slider, Modal, Box, Typography, Stack, TextField } from "@mui/material";
+import {
+    Button,
+    Slider,
+    Modal,
+    Box,
+    Typography,
+    Stack,
+    TextField
+} from "@mui/material";
+import { callDrawMaskAPI } from "../api";
 import API_URL from '../../../common/api';
 
-const Draw = ({ modalOpen, onClose, referenceImage, handleRegister }) => {
+const Draw = ({
+    modalOpen,
+    setModalOpen,
+    updateManualKeyword,
+    updateMaskedImage,
+    updatePanoptic,
+    selectedImgURL,
+    updateModal,
+}) => {
     const canvasRef = useRef(null);
     const [eraseMode, setEraseMode] = useState(false);
     const [strokeWidth, setStrokeWidth] = useState(50);
-    const [prompt, setPrompt] = useState("");
-    const [image, setImage] = useState("");
-    // const [eraserWidth, setEraserWidth] = useState(50);
+    const [maskName, setMaskName] = useState("");
+    const [currentShowImageIndex, setCurrentShowImageIndex] = useState(0);
 
+    // Register new mask 
+    const handleRegisterClick = async () => {
+        updateModal(
+            true,
+            'Generating Masks..., please wait!',
+        );
 
-    useEffect(() => {
-        fetch(`${API_URL}/api/static/` + referenceImage, { method: 'GET', mode: "cors", })
-            .then(response => response.blob()) // Convert the response to a blob
-            .then(blob => {
-                // Create a new FileReader to read this image as base64
-                const reader = new FileReader();
+        const image = await canvasRef.current.exportImage('png');
+        callDrawMaskAPI(image)
+        .then((maskPath) => {
+            // Update panoptic
+            updatePanoptic(
+                undefined,
+                maskPath,
+                maskName,
+            );
 
-                reader.onloadend = () => {
-                    const base64data = reader.result;
-                    setImage(base64data)
-                };
+            // Update registered mask
+            updateManualKeyword(maskName);
 
-                // Read the blob as a data URL (base64 string)
-                reader.readAsDataURL(blob);
-            })
-            .catch(error => console.error('Error fetching and converting the image:', error));
-    }, [referenceImage])
+            // Update mannual keyword
+            updateMaskedImage(maskName, ['draw']);
 
+            // Update message modal
+            updateModal(false, '');
 
-    useEffect(() => {
-        if (image === false){
-            handleRegister(canvasRef, prompt)
-        }
-    }, [image])
+            // Close draw panel
+            setModalOpen(false);
+        })
+    };
 
 
     const handleEraserClick = () => {
@@ -70,7 +91,9 @@ const Draw = ({ modalOpen, onClose, referenceImage, handleRegister }) => {
     return (
         <Modal
             open={modalOpen}
-            onClose={onClose}
+            onClose={() => {
+                setModalOpen(false);
+            }}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
@@ -88,32 +111,41 @@ const Draw = ({ modalOpen, onClose, referenceImage, handleRegister }) => {
                 <Typography id="modal-modal-title" variant="h6" component="h2">
                     Draw a new Mask
                 </Typography>
-                <TextField id="standard-basic" label="Mask Name" variant="standard" size="small" value={prompt} onChange={(e) => { setPrompt(e.target.value) }} />
+                <TextField
+                    id="standard-basic"
+                    label="Mask Name"
+                    variant="standard" size="small"
+                    value={maskName}
+                    onChange={(e) => { setMaskName(e.target.value) }}
+                />
                 <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                    <div>
-                        <Button variant="outlined" disabled={!eraseMode} onClick={handlePenClick}>
-                            Pen
-                        </Button>
-                        <Button variant="outlined" disabled={eraseMode} onClick={handleEraserClick}>
-                            Eraser
-                        </Button>
-                        <div>
-                        </div>
-                        <Button variant="outlined" onClick={handleUndoClick}>
-                            Undo
-                        </Button>
-                        <Button variant="outlined" onClick={handleRedoClick}>
-                            Redo
-                        </Button>
-                        |
-                        <Button variant="outlined" onClick={handleClearClick}>
-                            Clear
-                        </Button>
-                        |
-                        <Button variant="outlined" onClick={() => {setImage(false)}}>
-                            Register
-                        </Button>
-                    </div>
+                    <Stack direction='column' spacing={1}>
+                        {/* First row */}
+                        <Stack direction='row' spacing={2}>
+                            <Button variant="outlined" disabled={!eraseMode} onClick={handlePenClick}>
+                                Pen
+                            </Button>
+                            <Button variant="outlined" disabled={eraseMode} onClick={handleEraserClick}>
+                                Eraser
+                            </Button>
+                        </Stack>
+
+                        {/* Second row */}
+                        <Stack direction='row' spacing={2}>
+                            <Button variant="outlined" onClick={handleUndoClick}>
+                                Undo
+                            </Button>
+                            <Button variant="outlined" onClick={handleRedoClick}>
+                                Redo
+                            </Button>
+                            <Button variant="outlined" onClick={handleClearClick}>
+                                Clear
+                            </Button>
+                            <Button variant="outlined" onClick={handleRegisterClick}>
+                                Register
+                            </Button>
+                        </Stack>
+                    </Stack>
                     {!eraseMode && <div>
                         <Typography gutterBottom>
                             Stroke width
@@ -140,18 +172,23 @@ const Draw = ({ modalOpen, onClose, referenceImage, handleRegister }) => {
                             aria-labelledby="eraser-width-slider"
                         />
                     </div>}
-                    <div style={{ width: 512, height: 512 }}>
-                        <ReactSketchCanvas
-                            width={512}
-                            height={512}
-                            ref={canvasRef}
 
-                            strokeWidth={strokeWidth}
-                            eraserWidth={strokeWidth}
-                            strokeColor="black"
-                            backgroundImage={image}
-                        />
-                    </div>
+                    {/* Preview image and mask */}
+                    {/* TODO: change the background image */}
+                    <Stack direction='row'>
+                        <div style={{ width: 512, height: 512 }}>
+                            <ReactSketchCanvas
+                                width={512}
+                                height={512}
+                                ref={canvasRef}
+                                strokeWidth={strokeWidth}
+                                eraserWidth={strokeWidth}
+                                strokeColor="black"
+                                backgroundImage={`${API_URL}/api/static/` + selectedImgURL[currentShowImageIndex]}
+                            />
+                        </div>
+                    </Stack>
+                    
                 </div>
             </Box>
         </Modal>
