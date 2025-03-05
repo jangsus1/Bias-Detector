@@ -139,7 +139,7 @@ def manual_mask():
     final_mask = Image.fromarray(img_array)
     
     index = glob(f"{base_folder}/*")
-    local_mask_path = f"{base_folder}/{len(index)}.png"
+    local_mask_path = f"{base_folder}/{len(index)}_draw.png"
     final_mask.save(local_mask_path)
     
     data = {
