@@ -55,10 +55,9 @@ global_results = {}
 @app.before_request
 def ensure_unique_cookie():
     if not request.endpoint == 'static':
-        if request.is_json:
+        if request.is_json and request.get_json(silent = True):
             original_payload = request.get_json(silent = True)
             has_user_id = bool("user_id" in original_payload)
-
             # If not user_id, set in paylod
             if not has_user_id:
                 user_id = str(uuid.uuid4())
@@ -120,26 +119,34 @@ def manual_mask():
     decompressed_data = zlib.decompress(compressed_data)
     print(f"Decompressed to {len(decompressed_data)} bytes")
     data = json.loads(decompressed_data)
-    
+
+
     image_data = data['image']
     _, image_data = image_data.split("data:image/png;base64,")
     image_bytes = base64.b64decode(image_data)
-    mask_image = Image.open(BytesIO(image_bytes)).convert("L")
-    mask_image = ImageOps.invert(mask_image)
-    mask = np.array(mask_image).astype(np.uint8)
-    alpha_channel = np.array(mask_image).astype(np.uint8)
+    mask_image = Image.open(BytesIO(image_bytes)).convert("RGBA")
     
-    mask_3d = np.stack([mask] * 3, axis=-1)
-    mask_color = np.where(mask_3d == 255, red, black).astype(np.uint8)
-    mask_rgba = np.dstack((mask_color, alpha_channel))
-    final_mask = Image.fromarray(mask_rgba)
+    img_array = np.array(mask_image)
+    r, g, b, a = img_array[:, :, 0], img_array[:, :, 1], img_array[:, :, 2], img_array[:, :, 3]
+    black_mask = (r == 0) & (g == 0) & (b == 0) & (a != 0)
+
+    img_array[black_mask] = np.column_stack([
+        np.full(black_mask.sum(), 255),
+        np.full(black_mask.sum(), 0),
+        np.full(black_mask.sum(), 0), 
+        a[black_mask],
+    ])
+    final_mask = Image.fromarray(img_array)
     
     index = glob(f"{base_folder}/*")
     local_mask_path = f"{base_folder}/{len(index)}.png"
     final_mask.save(local_mask_path)
     
-    return [local_mask_path]
-
+    data = {
+        'mask_paths': local_mask_path,
+    }
+    
+    return jsonify(data), 200
 
 # ---------------------------- API /api/keyword ---------------------------------
 from calculate_similarity import calc_similarity
