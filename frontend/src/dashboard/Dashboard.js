@@ -272,7 +272,7 @@ export default function Dashboard() {
             </Container>
             <Container sx={{ mt: 1, mb: 1, minWidth: "100vw" }}>
               <Grid container spacing={1}>
-                {/* Solver */}
+                {/* Inpainter */}
                 <Inpainter
                   dataset={dataset}
                   solutions={solutions}

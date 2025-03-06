@@ -92,13 +92,13 @@ function Solver({ predictions, setSolutions, draggedKeywordObj, registerComplete
     const keywordsInEachRule = []
     rules.forEach((rule, ruleIndex) => {
       const validKeywords = rule.keywords.filter(keyword => keyword.keyword);
-      keywordsInEachRule.push(validKeywords.map(keyword => keyword.keyword.join("/")).concat("Others"));
+      keywordsInEachRule.push(validKeywords.map(keyword => keyword.keyword.join("+")).concat("Others"));
       predictions.forEach((prediction, index) => {
         const image = prediction.image;
         const initialLength = biasTable[index].length;
         validKeywords.forEach((k, idx) => {
           if (k.images.flat().includes(image) && initialLength === biasTable[index].length) {
-            biasTable[index].push(k.keyword.join("/"));
+            biasTable[index].push(k.keyword.join("+"));
           }
         })
         if (biasTable[index].length === initialLength) {

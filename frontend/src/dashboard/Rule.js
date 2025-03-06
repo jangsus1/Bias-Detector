@@ -18,6 +18,43 @@ const calculatePieData = (nodes, totalImageCounts) => {
     return pieData;
 };
 
+const CustomLegend = (props) => {
+    const { payload, removeKeyword } = props;
+
+    return (
+        <ul style={{ listStyle: 'none', padding: 0 }}>
+          {payload.map((entry, index) => (
+            <li key={`item-${index}`} style={{ display: 'flex', alignItems: 'center', marginBottom: 4, verticalAlign: 'center'}}>
+                <span style={{
+                    width: 12,
+                    height: 12,
+                    backgroundColor: entry.color,
+                    marginRight: 8,
+                    borderRadius: 2,
+                }}/>
+                <span style={{ color: entry.color, marginRight: 8 }}>{entry.value}</span>
+                {
+                    entry.value.toLowerCase() !== 'others'
+                    && !entry.value.toLowerCase().includes('/')
+                    && <span
+                        style={{ 
+                            cursor: 'pointer',
+                            opacity: 0.6,
+                        }}
+                        onClick={() => {
+                            removeKeyword(entry.value);
+                        }}
+                    >
+                        {/* TODO: Change the emoji to iconfont maybe? */}
+                        {'❌'}
+                    </span>
+                }
+            </li>
+          ))}
+        </ul>
+    );
+}
+
 const Rule = ({
     rule,
     ruleIndex,
@@ -70,6 +107,18 @@ const Rule = ({
     edges = _.uniq(edges);
     const nodes = Object.values(nodeSet);
     const pieData = calculatePieData(nodes, totalImageCounts);
+
+    const removeKeyword = (keywordContent) => {
+        // Find keywordIndex
+        let keywordIndex = undefined;
+        rule.keywords.forEach((keyword, idx) => {
+            if (keyword.keyword?.join('+') === keywordContent) {
+                keywordIndex = idx;
+            }
+        });
+
+        removeKeywordFromRule(ruleIndex, keywordIndex);
+    };
 
     return (
         <Stack
@@ -132,7 +181,15 @@ const Rule = ({
                                     ))}
                                 </Pie>
                                 <Tooltip />
-                                <Legend layout="vertical" align="right" verticalAlign="middle" />
+                                <Legend
+                                    layout="vertical"
+                                    align="right"
+                                    verticalAlign="middle"
+                                    onClick={(e) => {
+                                        console.log(e)}
+                                    }
+                                    content={<CustomLegend removeKeyword={removeKeyword}/>}
+                                />
                             </PieChart>
                         </Box>
                     )}
@@ -143,7 +200,12 @@ const Rule = ({
                     right: 5,
                     color: 'error'
                 }}>
-                    <CloseIcon />
+                    <CloseIcon onClick={() => {
+                        // Remove all the keywords
+                        rule.keywords.forEach((_, idx) => {
+                            removeKeywordFromRule(ruleIndex, idx);
+                        })
+                    }}/>
                 </IconButton>
             </Paper>
         </Stack>
