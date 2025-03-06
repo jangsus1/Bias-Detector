@@ -14,12 +14,16 @@ import {
   Stack,
   Switch,
   TableSortLabel,
-  InputAdornment
+  Tooltip,
+  Box,
 } from '@mui/material';
 import _ from 'lodash';
 import * as d3 from "d3";
 import RevertedImage from './RevertedImage';
 import LinkOffIcon from '@mui/icons-material/LinkOff';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 /**
  * Calculate compachness
@@ -270,10 +274,29 @@ const Keywords = ({
           display: "flex",
           flexDirection: 'column',
           maxHeight: '85vh', // Example max height
-          overflowY: 'auto', // Enables vertical scrolling
-          borderRadius: "12px"
+          overflowY: !!keywordMode ? 'hidden' : 'auto',
+          overflowX: !!keywordMode ? 'hidden' : 'auto',
+          borderRadius: "12px",
+          position: 'relative',
         }}
       >
+        {/* Mask when selection keywords */}
+        {
+          (keywordMode !== false) && <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.4)",
+              pointerEvents: "none",
+              zIndex: 100,
+            }}
+          />
+        }
+
+        {/* Title */}
         <Typography sx={{ mb: 1 }} variant='h6'>Bias Candidates</Typography>
 
         {/* Switch button for lime */}
@@ -283,6 +306,8 @@ const Keywords = ({
             setUseLimeKeyword(e.target.checked);
             if (e.target.checked) {
               setOrderBy('coefficient');
+              // Cancel adding the keyword
+              registerManualKeyword(true);
             } else {
               setOrderBy('score');
             }
@@ -300,9 +325,22 @@ const Keywords = ({
                 <TableHead sx={{ position: "sticky", top: 0, backgroundColor: "#A8A8A8", zIndex: 2 }}>
                   <TableRow>
                     <TableCell sx={{ fontWeight: 'bold' }}>
-                      <Button onClick={registerManualKeyword}>
+                      <Button>
                         {
-                          keywordMode === false ? 'Add Keyword' : 'Select Images Done'
+                          keywordMode === false ? (
+                            <Tooltip title={'Add Keyword'}>
+                              <AddCircleOutlineIcon onClick={() => registerManualKeyword(false)}/>
+                            </Tooltip>
+                          ) : (
+                            <Stack direction='row'>
+                              <Tooltip title={'Select Images Done'}>
+                                <CheckCircleOutlineIcon onClick={() => registerManualKeyword(false)}/>
+                              </Tooltip>
+                              <Tooltip title={'Cancel Adding Keyword'}>
+                                <CancelIcon onClick={() => registerManualKeyword(true)}/>
+                              </Tooltip>
+                            </Stack>
+                          )
                         }
                       </Button>
                       <TableSortLabel
@@ -490,14 +528,26 @@ const Keywords = ({
                         {/* Keyword */}
                         <TableCell component="th" scope="row">
                           {data.keyword.map((k, index2) => (
-                            <TextField
-                              key={index2}
-                              variant="standard"
-                              value={k}
-                              onChange={(e) => onKeywordChange(e, index, index2)}
-                              onClick={(e) => e.stopPropagation()}
-                              sx={{ width: "100%" }}
-                            />
+                            <Stack direction='row' sx={{alignItems: 'center', justifyContent: 'space-between'}}>
+                              <TextField
+                                key={index2}
+                                variant="standard"
+                                value={k}
+                                onChange={(e) => onKeywordChange(e, index, index2)}
+                                onClick={(e) => e.stopPropagation()}
+                                sx={{ width: "100%" }}
+                              />
+                              {
+                                (index2 > 0) && <LinkOffIcon
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    onDecoupling(data, index2, index);
+                                  }}
+                                  sx={{fontSize: '15px', cursor: 'pointer'}}
+                                />
+                              }
+                            </Stack>
                           ))}
                         </TableCell>
                         {/* Coefficient */}
