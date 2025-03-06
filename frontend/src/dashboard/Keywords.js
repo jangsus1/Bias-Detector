@@ -13,11 +13,13 @@ import {
   TableRow,
   Stack,
   Switch,
-  TableSortLabel
+  TableSortLabel,
+  InputAdornment
 } from '@mui/material';
 import _ from 'lodash';
 import * as d3 from "d3";
 import RevertedImage from './RevertedImage';
+import LinkOffIcon from '@mui/icons-material/LinkOff';
 
 /**
  * Calculate compachness
@@ -174,6 +176,27 @@ const Keywords = ({
     setKeywords([...uncheckedKeywords, newKeyword].sort((a, b) => _.mean(b.score) - _.mean(a.score)));
     mergeComplete();
   }
+
+  /**
+   * On decoupling
+   */
+  const onDecoupling = (keyword, indexWithKeyword, indexOfKeywordInList) => {
+    const remainKeyword = {}
+    const restoredKeyword = {}
+
+    // Extract corresponding keyword from current keyword
+    Object.keys(keyword).forEach((property) => {
+      const propertyVal = keyword[property];
+      remainKeyword[property] = propertyVal.filter((_, index) => index != indexWithKeyword);
+      restoredKeyword[property] = propertyVal.filter((_, index) => index === indexWithKeyword);
+    });
+
+    // Delete current keyword
+    const keywordAfterDelete = keywords.filter((_, index) => index !== indexOfKeywordInList);
+
+    // Update new keywords list
+    setKeywords([...keywordAfterDelete, remainKeyword, restoredKeyword]);
+  };
 
   const distanceFromCentroid = (images) => {
     const points = images.map(i => coordinates[i].tsne)
@@ -345,16 +368,28 @@ const Keywords = ({
                       }}
                     >
                       {/* Keyword */}
-                      <TableCell component="th" scope="row">
+                      <TableCell component="th" scope="row" sx={{padding: '10px 0px 10px 10px'}}>
                         {data.keyword.map((k, index2) => (
-                          <TextField
-                            key={index2}
-                            variant="standard"
-                            value={k}
-                            onChange={(e) => onKeywordChange(e, index, index2)}
-                            onClick={(e) => e.stopPropagation()}
-                            sx={{ width: "100%" }}
-                          />
+                          <Stack direction='row' sx={{alignItems: 'center', justifyContent: 'space-between'}}>
+                            <TextField
+                              key={index2}
+                              variant="standard"
+                              value={k}
+                              onChange={(e) => onKeywordChange(e, index, index2)}
+                              onClick={(e) => e.stopPropagation()}
+                              sx={{ width: "100%" }}
+                            />
+                            {
+                              (index2 > 0) && <LinkOffIcon
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  e.stopPropagation();
+                                  onDecoupling(data, index2, index);
+                                }}
+                                sx={{fontSize: '15px', cursor: 'pointer'}}
+                              />
+                            }
+                          </Stack>
                         ))}
                       </TableCell>
                       {/* Score */}
