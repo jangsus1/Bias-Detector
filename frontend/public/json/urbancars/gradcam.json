@@ -1,0 +1,3978 @@
+{
+    "0130_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0283
+    },
+    "0383_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0199
+    },
+    "0274_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0757
+    },
+    "0304_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0398
+    },
+    "0343_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0154_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0344
+    },
+    "0233_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.084
+    },
+    "0452_bg-country_co_occur_obj-urban.jpg": {
+        "section": "down",
+        "size": 0.0455
+    },
+    "0288_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0224_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.1256
+    },
+    "0117_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.117
+    },
+    "0067_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1481
+    },
+    "0020_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0926
+    },
+    "0150_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1182
+    },
+    "0097_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0168
+    },
+    "0199_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1043
+    },
+    "0493_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0240_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0228
+    },
+    "0478_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0271
+    },
+    "0204_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0274
+    },
+    "0217_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0922
+    },
+    "0374_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1142
+    },
+    "0378_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0356
+    },
+    "0333_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0884
+    },
+    "0243_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1236
+    },
+    "0273_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0285
+    },
+    "0103_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0199
+    },
+    "0468_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0313
+    },
+    "0099_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.089
+    },
+    "0167_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1139
+    },
+    "0017_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0212
+    },
+    "0167_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0171
+    },
+    "0050_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.108
+    },
+    "0120_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0226
+    },
+    "0034_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1009
+    },
+    "0111_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0205
+    },
+    "0220_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.2448
+    },
+    "0350_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1074
+    },
+    "0317_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0301
+    },
+    "0267_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0701
+    },
+    "0399_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1141
+    },
+    "0175_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0187
+    },
+    "0143_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0922
+    },
+    "0033_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1578
+    },
+    "0074_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0748
+    },
+    "0418_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.098
+    },
+    "0104_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1275
+    },
+    "0205_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0323
+    },
+    "0261_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0306
+    },
+    "0025_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1041
+    },
+    "0359_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0729
+    },
+    "0299_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1014
+    },
+    "0466_bg-country_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.1038
+    },
+    "0236_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0225
+    },
+    "0250_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0976
+    },
+    "0320_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1196
+    },
+    "0367_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.199
+    },
+    "0217_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1258
+    },
+    "0085_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0252_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0481_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0122_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0335
+    },
+    "0391_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0198
+    },
+    "0146_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0133_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0854
+    },
+    "0043_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.2342
+    },
+    "0449_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0491
+    },
+    "0004_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0973
+    },
+    "0174_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1222
+    },
+    "0212_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0228
+    },
+    "0417_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1051
+    },
+    "0450_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1227
+    },
+    "0319_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0276_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0259
+    },
+    "0185_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1226
+    },
+    "0318_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0957
+    },
+    "0268_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1017
+    },
+    "0409_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0357
+    },
+    "0002_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0899
+    },
+    "0106_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0359
+    },
+    "0482_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.12
+    },
+    "0069_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0292
+    },
+    "0396_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1942
+    },
+    "0039_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0162_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0475
+    },
+    "0135_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0265
+    },
+    "0085_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1408
+    },
+    "0386_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0199
+    },
+    "0420_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0985
+    },
+    "0151_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.1578
+    },
+    "0013_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0221
+    },
+    "0221_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.03
+    },
+    "0092_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0493_bg-urban_co_occur_obj-country.jpg": {
+        "section": "down",
+        "size": 0.1107
+    },
+    "0028_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1058
+    },
+    "0245_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.02
+    },
+    "0296_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0602
+    },
+    "0496_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0199_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0368_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0218
+    },
+    "0218_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1117
+    },
+    "0233_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0080_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "down",
+        "size": 0.1654
+    },
+    "0443_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1165
+    },
+    "0484_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0257_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0118_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0989
+    },
+    "0404_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1002
+    },
+    "0068_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0994
+    },
+    "0338_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0229
+    },
+    "0196_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1047
+    },
+    "0048_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0528
+    },
+    "0127_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0337
+    },
+    "0428_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0206
+    },
+    "0385_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0827
+    },
+    "0394_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0311
+    },
+    "0143_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.02
+    },
+    "0096_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1257
+    },
+    "0433_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.128
+    },
+    "0168_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1006
+    },
+    "0114_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0018_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1062
+    },
+    "0170_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.055
+    },
+    "0200_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0387
+    },
+    "0475_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0215
+    },
+    "0285_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0998
+    },
+    "0264_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0187
+    },
+    "0408_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0692
+    },
+    "0064_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1233
+    },
+    "0114_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1377
+    },
+    "0153_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0854
+    },
+    "0023_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0265
+    },
+    "0370_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0207
+    },
+    "0314_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0255
+    },
+    "0477_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1025
+    },
+    "0404_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0369
+    },
+    "0064_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0460_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0254
+    },
+    "0307_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.027
+    },
+    "0277_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1067
+    },
+    "0230_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0628
+    },
+    "0340_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0948
+    },
+    "0389_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0885
+    },
+    "0138_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0266
+    },
+    "0057_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0437_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0185
+    },
+    "0014_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1373
+    },
+    "0453_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0223
+    },
+    "0164_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0904
+    },
+    "0280_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0123_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1033
+    },
+    "0053_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1246
+    },
+    "0289_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0888
+    },
+    "0343_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0525
+    },
+    "0377_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1048
+    },
+    "0207_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0184
+    },
+    "0240_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1025
+    },
+    "0330_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1219
+    },
+    "0327_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0248_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0194_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0193
+    },
+    "0030_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0536
+    },
+    "0351_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0140_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1209
+    },
+    "0107_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0847
+    },
+    "0077_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0908
+    },
+    "0189_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1029
+    },
+    "0489_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0866
+    },
+    "0335_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0349
+    },
+    "0186_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0778
+    },
+    "0469_bg-country_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.0175
+    },
+    "0425_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0359
+    },
+    "0399_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0353_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0841
+    },
+    "0223_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1167
+    },
+    "0264_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0991
+    },
+    "0011_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.066
+    },
+    "0314_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.027
+    },
+    "0491_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0818
+    },
+    "0292_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0256
+    },
+    "0441_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0416_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0194
+    },
+    "0076_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0193
+    },
+    "0119_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0195
+    },
+    "0089_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1089
+    },
+    "0472_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0309
+    },
+    "0040_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.349
+    },
+    "0130_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1197
+    },
+    "0177_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0007_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1414
+    },
+    "0362_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0229
+    },
+    "0323_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1071
+    },
+    "0253_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1027
+    },
+    "0214_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0364_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.2385
+    },
+    "0269_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0480_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0194
+    },
+    "0306_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0206
+    },
+    "0052_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0432_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0228
+    },
+    "0395_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1539
+    },
+    "0464_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0186
+    },
+    "0159_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0027_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1726
+    },
+    "0285_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0216
+    },
+    "0456_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0266
+    },
+    "0045_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0169
+    },
+    "0229_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.031
+    },
+    "0346_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0211
+    },
+    "0108_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0288
+    },
+    "0078_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0528
+    },
+    "0414_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1083
+    },
+    "0322_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0201
+    },
+    "0191_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0274
+    },
+    "0186_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0779
+    },
+    "0375_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.1865
+    },
+    "0036_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.164
+    },
+    "0295_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.108
+    },
+    "0311_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0244
+    },
+    "0401_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0186
+    },
+    "0086_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0945
+    },
+    "0178_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0601
+    },
+    "0008_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1122
+    },
+    "0423_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0718
+    },
+    "0061_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0216
+    },
+    "0465_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0269
+    },
+    "0413_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0308
+    },
+    "0308_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0925
+    },
+    "0278_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1159
+    },
+    "0073_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0386_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1041
+    },
+    "0477_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0182
+    },
+    "0178_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.1693
+    },
+    "0367_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0361
+    },
+    "0208_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0186
+    },
+    "0440_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0994
+    },
+    "0407_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1165
+    },
+    "0195_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.2167
+    },
+    "0303_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0354_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.017
+    },
+    "0088_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0335
+    },
+    "0286_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1289
+    },
+    "0330_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0378_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1138
+    },
+    "0183_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0205
+    },
+    "0208_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0778
+    },
+    "0095_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1045
+    },
+    "0420_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0187
+    },
+    "0430_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0354
+    },
+    "0444_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0299
+    },
+    "0297_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0463_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0335_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.2263
+    },
+    "0245_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1274
+    },
+    "0202_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0917
+    },
+    "0372_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0955
+    },
+    "0407_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0217
+    },
+    "0067_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0108_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0193
+    },
+    "0479_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0823
+    },
+    "0278_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.03
+    },
+    "0317_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0909
+    },
+    "0056_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1076
+    },
+    "0373_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0276
+    },
+    "0126_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0907
+    },
+    "0161_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.199
+    },
+    "0011_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1202
+    },
+    "0324_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0274
+    },
+    "0197_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0345_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0167
+    },
+    "0235_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.2146
+    },
+    "0340_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0437
+    },
+    "0272_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0916
+    },
+    "0302_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1078
+    },
+    "0026_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0892
+    },
+    "0156_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1151
+    },
+    "0111_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0842
+    },
+    "0061_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.098
+    },
+    "0450_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0283_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.1468
+    },
+    "0054_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0206
+    },
+    "0453_bg-country_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.2336
+    },
+    "0434_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0254
+    },
+    "0388_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0349
+    },
+    "0361_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0884
+    },
+    "0291_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0193
+    },
+    "0442_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.1892
+    },
+    "0211_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0918
+    },
+    "0256_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1199
+    },
+    "0326_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1106
+    },
+    "0129_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.04
+    },
+    "0426_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0467_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0336_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.035
+    },
+    "0024_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0297
+    },
+    "0259_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0185_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0195
+    },
+    "0046_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1101
+    },
+    "0352_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0255
+    },
+    "0002_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0993
+    },
+    "0172_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1252
+    },
+    "0135_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0191
+    },
+    "0429_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0936
+    },
+    "0045_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0975
+    },
+    "0305_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0334
+    },
+    "0311_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1723
+    },
+    "0261_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1594
+    },
+    "0226_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1069
+    },
+    "0356_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0789
+    },
+    "0361_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0202
+    },
+    "0035_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0187
+    },
+    "0072_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1303
+    },
+    "0102_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1061
+    },
+    "0471_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0145_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0328
+    },
+    "0035_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1153
+    },
+    "0415_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0239
+    },
+    "0075_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0974
+    },
+    "0083_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1557
+    },
+    "0321_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0362
+    },
+    "0012_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0174
+    },
+    "0426_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1205
+    },
+    "0492_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.108
+    },
+    "0192_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0181
+    },
+    "0345_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0029_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0696
+    },
+    "0099_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0376
+    },
+    "0286_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0455_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0637
+    },
+    "0290_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1496
+    },
+    "0051_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0431_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0217
+    },
+    "0259_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0329_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1151
+    },
+    "0003_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0375
+    },
+    "0466_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0231
+    },
+    "0169_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0186
+    },
+    "0483_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0038_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0208
+    },
+    "0402_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.033
+    },
+    "0411_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1076
+    },
+    "0062_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.0363
+    },
+    "0183_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0832
+    },
+    "0229_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1182
+    },
+    "0359_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.064
+    },
+    "0390_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0931
+    },
+    "0312_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0376_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0275
+    },
+    "0219_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0336
+    },
+    "0090_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0681
+    },
+    "0300_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0059_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1107
+    },
+    "0435_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0808
+    },
+    "0129_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1041
+    },
+    "0474_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.2256
+    },
+    "0364_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0474_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0238
+    },
+    "0283_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0887
+    },
+    "0410_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0070_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0469
+    },
+    "0148_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0286
+    },
+    "0447_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.021
+    },
+    "0294_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0402_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0999
+    },
+    "0445_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.083
+    },
+    "0029_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1159
+    },
+    "0159_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1905
+    },
+    "0190_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0749
+    },
+    "0423_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0206
+    },
+    "0333_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0324
+    },
+    "0180_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0186
+    },
+    "0383_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.128
+    },
+    "0238_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0224
+    },
+    "0357_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0186
+    },
+    "0490_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.026
+    },
+    "0243_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0173
+    },
+    "0348_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0278
+    },
+    "0227_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0125_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.101
+    },
+    "0055_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0439_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0866
+    },
+    "0012_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0998
+    },
+    "0094_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0348
+    },
+    "0162_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.08
+    },
+    "0157_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0294
+    },
+    "0246_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0995
+    },
+    "0336_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1363
+    },
+    "0371_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1143
+    },
+    "0458_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0241
+    },
+    "0201_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0803
+    },
+    "0133_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0236
+    },
+    "0380_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0809
+    },
+    "0155_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0449_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1262
+    },
+    "0476_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0814
+    },
+    "0025_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0946
+    },
+    "0062_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1443
+    },
+    "0112_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0917
+    },
+    "0164_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0364
+    },
+    "0100_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0877
+    },
+    "0270_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0205
+    },
+    "0236_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0383
+    },
+    "0346_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1303
+    },
+    "0301_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0999
+    },
+    "0271_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1034
+    },
+    "0214_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0806
+    },
+    "0262_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0001_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0203
+    },
+    "0481_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0171_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1262
+    },
+    "0206_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.025
+    },
+    "0001_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0926
+    },
+    "0046_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0899
+    },
+    "0369_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0272
+    },
+    "0136_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.164
+    },
+    "0479_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0212_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0198
+    },
+    "0362_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1009
+    },
+    "0325_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1087
+    },
+    "0176_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0288
+    },
+    "0255_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0952
+    },
+    "0112_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.1096
+    },
+    "0101_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0974
+    },
+    "0071_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1291
+    },
+    "0036_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1114
+    },
+    "0145_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0146_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.2283
+    },
+    "0468_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0507
+    },
+    "0299_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0010_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0263
+    },
+    "0121_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0255
+    },
+    "0392_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0202
+    },
+    "0490_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0405
+    },
+    "0251_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0207
+    },
+    "0482_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0252
+    },
+    "0262_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0938
+    },
+    "0312_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0912
+    },
+    "0235_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0206
+    },
+    "0355_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0948
+    },
+    "0225_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0167
+    },
+    "0086_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0161_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0293_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1011
+    },
+    "0105_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0187
+    },
+    "0080_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.085
+    },
+    "0425_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1327
+    },
+    "0049_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0924
+    },
+    "0275_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0139_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1071
+    },
+    "0037_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0187
+    },
+    "0211_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0208
+    },
+    "0246_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0495_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0329_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0279
+    },
+    "0393_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0887
+    },
+    "0222_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.039
+    },
+    "0091_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0344
+    },
+    "0152_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0039_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1662
+    },
+    "0059_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.018
+    },
+    "0149_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0968
+    },
+    "0026_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0276
+    },
+    "0136_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0295
+    },
+    "0465_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0649
+    },
+    "0412_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1391
+    },
+    "0180_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0883
+    },
+    "0044_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0451
+    },
+    "0439_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0202
+    },
+    "0385_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0293
+    },
+    "0140_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0299
+    },
+    "0124_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0280_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0199
+    },
+    "0397_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.038
+    },
+    "0249_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0249
+    },
+    "0339_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1156
+    },
+    "0487_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.022
+    },
+    "0451_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0894
+    },
+    "0093_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0177
+    },
+    "0254_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.093
+    },
+    "0188_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0272
+    },
+    "0436_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0597
+    },
+    "0230_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0083_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0207
+    },
+    "0239_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1023
+    },
+    "0349_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1166
+    },
+    "0308_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0288
+    },
+    "0380_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0892
+    },
+    "0267_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0203_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0234
+    },
+    "0173_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0216
+    },
+    "0401_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1056
+    },
+    "0418_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0181
+    },
+    "0446_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1039
+    },
+    "0117_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0078_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0841
+    },
+    "0193_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1372
+    },
+    "0181_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0394
+    },
+    "0332_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0367
+    },
+    "0042_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0839
+    },
+    "0463_bg-country_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.0163
+    },
+    "0132_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1101
+    },
+    "0175_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0942
+    },
+    "0005_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0961
+    },
+    "0356_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0042_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0201
+    },
+    "0239_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0321_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1425
+    },
+    "0251_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0742
+    },
+    "0216_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1131
+    },
+    "0446_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.02
+    },
+    "0295_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0337
+    },
+    "0366_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0827
+    },
+    "0298_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0842
+    },
+    "0149_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0336
+    },
+    "0422_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0265
+    },
+    "0032_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1424
+    },
+    "0142_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1097
+    },
+    "0475_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0105_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1122
+    },
+    "0419_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1016
+    },
+    "0075_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.069
+    },
+    "0071_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0031_bg-urban_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.2057
+    },
+    "0472_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0542
+    },
+    "0411_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0333
+    },
+    "0301_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0223
+    },
+    "0365_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0399
+    },
+    "0398_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0614
+    },
+    "0351_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0762
+    },
+    "0221_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.104
+    },
+    "0266_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0866
+    },
+    "0316_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.101
+    },
+    "0313_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0016_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0642
+    },
+    "0218_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0166_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1192
+    },
+    "0377_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0121_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1064
+    },
+    "0051_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1062
+    },
+    "0098_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1151
+    },
+    "0375_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0354
+    },
+    "0205_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1245
+    },
+    "0242_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1092
+    },
+    "0168_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0205
+    },
+    "0332_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0975
+    },
+    "0467_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0063_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.027
+    },
+    "0403_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0287_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0457_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0187
+    },
+    "0454_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0215
+    },
+    "0198_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1069
+    },
+    "0066_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0973
+    },
+    "0116_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1248
+    },
+    "0151_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1204
+    },
+    "0021_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0794
+    },
+    "0430_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.024
+    },
+    "0050_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0227
+    },
+    "0193_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.022
+    },
+    "0320_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0098_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.021
+    },
+    "0305_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.327
+    },
+    "0275_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1211
+    },
+    "0344_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0533
+    },
+    "0232_bg-country_co_occur_obj-country.jpg": {
+        "section": "down",
+        "size": 0.4071
+    },
+    "0342_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1568
+    },
+    "0470_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0451
+    },
+    "0074_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0414_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0442
+    },
+    "0284_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0834
+    },
+    "0432_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1038
+    },
+    "0019_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1232
+    },
+    "0304_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0434
+    },
+    "0169_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0531
+    },
+    "0097_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1528
+    },
+    "0360_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0311
+    },
+    "0384_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0735
+    },
+    "0184_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0353
+    },
+    "0258_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0207
+    },
+    "0337_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0353_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0324
+    },
+    "0290_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.033
+    },
+    "0443_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0221
+    },
+    "0022_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0427_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.028
+    },
+    "0197_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1062
+    },
+    "0442_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.092
+    },
+    "0047_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0174
+    },
+    "0069_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.14
+    },
+    "0405_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1639
+    },
+    "0119_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0224
+    },
+    "0128_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0235
+    },
+    "0451_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0282_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0271
+    },
+    "0219_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1021
+    },
+    "0389_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0225
+    },
+    "0369_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1299
+    },
+    "0435_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0249
+    },
+    "0055_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0214
+    },
+    "0297_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1005
+    },
+    "0196_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0421_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0325_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0432
+    },
+    "0084_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1118
+    },
+    "0016_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.021
+    },
+    "0496_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0671
+    },
+    "0341_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0207
+    },
+    "0316_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.036
+    },
+    "0279_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.027
+    },
+    "0397_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0717
+    },
+    "0269_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1153
+    },
+    "0319_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.021
+    },
+    "0372_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0923
+    },
+    "0462_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0195
+    },
+    "0109_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0007_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0184_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1012
+    },
+    "0066_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0308
+    },
+    "0416_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.092
+    },
+    "0487_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0385
+    },
+    "0406_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0261
+    },
+    "0252_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1632
+    },
+    "0172_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0322_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0306
+    },
+    "0365_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1013
+    },
+    "0215_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1107
+    },
+    "0079_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0208
+    },
+    "0116_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.032
+    },
+    "0419_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.287
+    },
+    "0266_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0177
+    },
+    "0005_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.093
+    },
+    "0309_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0846
+    },
+    "0485_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0195
+    },
+    "0131_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1035
+    },
+    "0041_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0845
+    },
+    "0202_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.1871
+    },
+    "0006_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1738
+    },
+    "0176_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1508
+    },
+    "0088_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1418
+    },
+    "0189_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0249
+    },
+    "0486_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0198
+    },
+    "0255_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0284
+    },
+    "0082_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0354
+    },
+    "0222_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1194
+    },
+    "0352_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0903
+    },
+    "0231_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0433
+    },
+    "0315_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1029
+    },
+    "0265_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0786
+    },
+    "0188_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1046
+    },
+    "0014_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0194
+    },
+    "0141_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0272
+    },
+    "0141_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1343
+    },
+    "0031_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0762
+    },
+    "0076_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0221
+    },
+    "0106_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1159
+    },
+    "0494_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0844
+    },
+    "0396_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.06
+    },
+    "0125_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0202
+    },
+    "0206_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1318
+    },
+    "0376_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1279
+    },
+    "0331_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1267
+    },
+    "0241_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1548
+    },
+    "0288_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0837
+    },
+    "0153_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0174
+    },
+    "0384_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0438_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0186
+    },
+    "0137_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.03
+    },
+    "0058_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0281
+    },
+    "0458_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0309
+    },
+    "0328_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0247_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0252
+    },
+    "0494_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0276
+    },
+    "0020_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0313
+    },
+    "0165_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0584
+    },
+    "0090_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0794
+    },
+    "0015_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.103
+    },
+    "0052_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.2518
+    },
+    "0122_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1105
+    },
+    "0223_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0217
+    },
+    "0274_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0210_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0303
+    },
+    "0388_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1148
+    },
+    "0276_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0965
+    },
+    "0306_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.104
+    },
+    "0341_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.077
+    },
+    "0231_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1074
+    },
+    "0160_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0295
+    },
+    "0115_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1042
+    },
+    "0065_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1011
+    },
+    "0409_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0793
+    },
+    "0022_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1015
+    },
+    "0152_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1633
+    },
+    "0104_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0209
+    },
+    "0431_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0832
+    },
+    "0250_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0229
+    },
+    "0094_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0821
+    },
+    "0483_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.1054
+    },
+    "0455_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.02
+    },
+    "0087_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0382
+    },
+    "0234_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0336
+    },
+    "0298_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0168
+    },
+    "0144_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0209_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.2432
+    },
+    "0393_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0379_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0846
+    },
+    "0287_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1161
+    },
+    "0120_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0206
+    },
+    "0177_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0198
+    },
+    "0478_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0324
+    },
+    "0194_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1066
+    },
+    "0113_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0246
+    },
+    "0441_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1197
+    },
+    "0406_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1013
+    },
+    "0263_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0286
+    },
+    "0387_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.172
+    },
+    "0279_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0884
+    },
+    "0309_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0538
+    },
+    "0368_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0319
+    },
+    "0207_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0204
+    },
+    "0470_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0965
+    },
+    "0009_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1414
+    },
+    "0179_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0898
+    },
+    "0033_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0271_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0203
+    },
+    "0422_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1104
+    },
+    "0087_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.081
+    },
+    "0215_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0319
+    },
+    "0008_bg-country_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.0229
+    },
+    "0488_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0828
+    },
+    "0165_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0101_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0205
+    },
+    "0294_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1305
+    },
+    "0459_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0203
+    },
+    "0461_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0311
+    },
+    "0040_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0156_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0261
+    },
+    "0019_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0219
+    },
+    "0381_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0339
+    },
+    "0187_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1184
+    },
+    "0415_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1196
+    },
+    "0079_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0898
+    },
+    "0109_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0697
+    },
+    "0132_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0394_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1212
+    },
+    "0491_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0386
+    },
+    "0242_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0095_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0207
+    },
+    "0226_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0275
+    },
+    "0349_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0167
+    },
+    "0201_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0308
+    },
+    "0103_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0572
+    },
+    "0073_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1811
+    },
+    "0034_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0719
+    },
+    "0144_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0226
+    },
+    "0265_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0218
+    },
+    "0115_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0207
+    },
+    "0473_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0171_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0265
+    },
+    "0030_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0908
+    },
+    "0260_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1104
+    },
+    "0310_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0784
+    },
+    "0357_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0829
+    },
+    "0227_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.101
+    },
+    "0395_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0342
+    },
+    "0429_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0221
+    },
+    "0126_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0252
+    },
+    "0049_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0279
+    },
+    "0173_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.072
+    },
+    "0003_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1125
+    },
+    "0044_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1005
+    },
+    "0428_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0646
+    },
+    "0134_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0857
+    },
+    "0142_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.0263
+    },
+    "0081_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0210_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0498
+    },
+    "0360_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1202
+    },
+    "0327_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0669
+    },
+    "0257_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0968
+    },
+    "0232_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0245
+    },
+    "0462_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.1111
+    },
+    "0043_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1453
+    },
+    "0339_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0485_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0371
+    },
+    "0256_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0233
+    },
+    "0093_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0354
+    },
+    "0157_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0905
+    },
+    "0027_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0861
+    },
+    "0060_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0934
+    },
+    "0110_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1319
+    },
+    "0220_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0256
+    },
+    "0198_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0201
+    },
+    "0244_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0205
+    },
+    "0497_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.017
+    },
+    "0456_bg-country_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.2187
+    },
+    "0387_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0215
+    },
+    "0134_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0365
+    },
+    "0234_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0981
+    },
+    "0150_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0207
+    },
+    "0344_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0903
+    },
+    "0303_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.114
+    },
+    "0273_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.2657
+    },
+    "0068_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.1372
+    },
+    "0107_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0408_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0127_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1185
+    },
+    "0057_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.119
+    },
+    "0163_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.021
+    },
+    "0010_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1084
+    },
+    "0160_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0567
+    },
+    "0244_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0975
+    },
+    "0334_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0856
+    },
+    "0373_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0332
+    },
+    "0213_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0285
+    },
+    "0203_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0965
+    },
+    "0277_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0262
+    },
+    "0318_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0262
+    },
+    "0390_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0023_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0208
+    },
+    "0382_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1532
+    },
+    "0123_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0202
+    },
+    "0448_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0216
+    },
+    "0147_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0625
+    },
+    "0084_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0187
+    },
+    "0237_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.027
+    },
+    "0358_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.024
+    },
+    "0191_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0964
+    },
+    "0403_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0312
+    },
+    "0158_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1312
+    },
+    "0253_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0191
+    },
+    "0480_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0028_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1787
+    },
+    "0444_bg-country_co_occur_obj-country.jpg": {
+        "section": "down",
+        "size": 0.0953
+    },
+    "0204_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0281
+    },
+    "0260_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0274
+    },
+    "0282_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0227
+    },
+    "0110_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0234
+    },
+    "0128_bg-country_co_occur_obj-country.jpg": {
+        "section": "down",
+        "size": 0.1062
+    },
+    "0434_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1026
+    },
+    "0058_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.119
+    },
+    "0091_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1271
+    },
+    "0174_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.042
+    },
+    "0391_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1242
+    },
+    "0102_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0261
+    },
+    "0358_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.1345
+    },
+    "0228_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0249
+    },
+    "0166_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0363
+    },
+    "0006_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0486_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1057
+    },
+    "0469_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0379_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0311
+    },
+    "0216_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0182_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1153
+    },
+    "0272_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.1956
+    },
+    "0410_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1893
+    },
+    "0096_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0225_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0234
+    },
+    "0328_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1014
+    },
+    "0017_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0258_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0286
+    },
+    "0492_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0291_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0948
+    },
+    "0241_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0186
+    },
+    "0427_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1009
+    },
+    "0382_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0285
+    },
+    "0082_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0285
+    },
+    "0131_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0342
+    },
+    "0289_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0351
+    },
+    "0155_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0201
+    },
+    "0015_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.2578
+    },
+    "0421_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0261
+    },
+    "0495_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0172
+    },
+    "0445_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0298
+    },
+    "0296_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0667
+    },
+    "0313_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1034
+    },
+    "0263_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0845
+    },
+    "0224_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0938
+    },
+    "0354_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1009
+    },
+    "0089_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0197
+    },
+    "0070_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1171
+    },
+    "0100_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1244
+    },
+    "0147_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0951
+    },
+    "0355_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0195
+    },
+    "0037_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.132
+    },
+    "0182_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0179
+    },
+    "0331_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0363_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1006
+    },
+    "0209_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0196
+    },
+    "0004_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0213_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0955
+    },
+    "0254_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1059
+    },
+    "0324_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1056
+    },
+    "0366_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0242
+    },
+    "0484_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.02
+    },
+    "0302_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0072_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0365
+    },
+    "0412_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0269
+    },
+    "0000_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0177
+    },
+    "0170_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0944
+    },
+    "0137_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.025
+    },
+    "0047_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0665
+    },
+    "0179_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0204
+    },
+    "0476_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0624
+    },
+    "0060_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.1567
+    },
+    "0400_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0347_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.1058
+    },
+    "0237_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1163
+    },
+    "0270_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0803
+    },
+    "0300_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1554
+    },
+    "0464_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0374_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0255
+    },
+    "0024_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1298
+    },
+    "0448_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1142
+    },
+    "0154_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0784
+    },
+    "0113_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1151
+    },
+    "0063_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.115
+    },
+    "0310_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0221
+    },
+    "0337_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1261
+    },
+    "0459_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.1776
+    },
+    "0247_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1007
+    },
+    "0200_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1029
+    },
+    "0370_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0886
+    },
+    "0347_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0199
+    },
+    "0228_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.121
+    },
+    "0021_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0185
+    },
+    "0190_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0273
+    },
+    "0323_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0297
+    },
+    "0433_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0201
+    },
+    "0053_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0438_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0956
+    },
+    "0054_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0124_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0781
+    },
+    "0163_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1008
+    },
+    "0284_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0193
+    },
+    "0013_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0726
+    },
+    "0457_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0335
+    },
+    "0158_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0306
+    },
+    "0363_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0392
+    },
+    "0307_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0256
+    },
+    "0192_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.089
+    },
+    "0268_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.02
+    },
+    "0400_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1207
+    },
+    "0447_bg-country_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0192
+    },
+    "0118_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0242
+    },
+    "0381_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1173
+    },
+    "0077_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0253
+    },
+    "0348_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0453
+    },
+    "0417_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.032
+    },
+    "0238_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1102
+    },
+    "0473_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0195
+    },
+    "0398_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0352
+    },
+    "0437_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0967
+    },
+    "0424_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0207
+    },
+    "0092_bg-country_co_occur_obj-country.jpg": {
+        "section": "left",
+        "size": 0.0946
+    },
+    "0293_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0353
+    },
+    "0440_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0338
+    },
+    "0350_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0195
+    },
+    "0187_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0307
+    },
+    "0454_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0296
+    },
+    "0338_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1733
+    },
+    "0248_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1144
+    },
+    "0334_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0205
+    },
+    "0488_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0597
+    },
+    "0281_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1135
+    },
+    "0342_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "left",
+        "size": 0.1362
+    },
+    "0181_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0773
+    },
+    "0195_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0256
+    },
+    "0148_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1097
+    },
+    "0249_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0864
+    },
+    "0038_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.124
+    },
+    "0326_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.1346
+    },
+    "0413_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1048
+    },
+    "0392_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.107
+    },
+    "0460_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0203
+    },
+    "0436_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0381
+    },
+    "0056_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0403
+    },
+    "0139_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0344
+    },
+    "0041_bg-urban_co_occur_obj-country.jpg": {
+        "section": "top",
+        "size": 0.0574
+    },
+    "0452_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.1903
+    },
+    "0281_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0184
+    },
+    "0018_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0201
+    },
+    "0065_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0208
+    },
+    "0138_bg-country_co_occur_obj-country.jpg": {
+        "section": "down",
+        "size": 0.1338
+    },
+    "0048_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0874
+    },
+    "0424_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1156
+    },
+    "0081_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0748
+    },
+    "0405_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.019
+    },
+    "0461_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0404
+    },
+    "0032_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1093
+    },
+    "0371_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0202
+    },
+    "0471_bg-country_co_occur_obj-urban.jpg": {
+        "section": "right",
+        "size": 0.0956
+    },
+    "0009_bg-country_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.0189
+    },
+    "0315_bg-urban_co_occur_obj-urban.jpg": {
+        "section": "top",
+        "size": 0.02
+    },
+    "0292_bg-country_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.1085
+    },
+    "0489_bg-urban_co_occur_obj-country.jpg": {
+        "section": "right",
+        "size": 0.0678
+    }
+}

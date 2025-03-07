@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, useMemo, useCallback } from "react";
-import { Box, Grid, Paper, Typography, CircularProgress, IconButton, Divider } from '@mui/material';
+import { Box, Grid, Paper, Typography, CircularProgress, IconButton, Divider, Button } from '@mui/material';
 import _, { range, set } from 'lodash';
 import * as d3 from "d3";
 import { PieChart, Pie, Tooltip, Cell } from "recharts";
@@ -67,6 +67,7 @@ const Images = ({
   keywordMode,
   setPopover,
   keywords,
+  gradcam
 }) => {
   // Use an SVG ref instead of a canvas ref
   const svgRef = useRef(null);
@@ -75,6 +76,7 @@ const Images = ({
   const [allImagesLoaded, setAllImagesLoaded] = useState(false);
   const [quantiles, setQuantiles] = useState(null);
   const [pattern, setPattern] = useState("#C9C9C9");
+  const [glyphMode, setGlyphMode] = useState("size") // "location", "size", "none"
 
 
   const toggle = () => {
@@ -191,13 +193,15 @@ const Images = ({
     let data = prediction.map((pred, idx) => ({
       ...pred,
       opacity: hoveredImages ? (hoveredImages.includes(pred.image) ? 1 : 0) : 1,
+      ...gradcam[pred.image.split("/").pop()]
     }));
+    console.log(data)
     if (clickedObj.keyword) {
       const imagesSelected = clickedObj.images.flat();
       data = data.filter(pred => imagesSelected.includes(pred.image));
     }
     return data;
-  }, [prediction, hoveredImages, clickedObj]);
+  }, [prediction, hoveredImages, clickedObj, gradcam]);
 
   // Build lookup for quick mouse detection (unchanged)
   const gridDict = useMemo(() => {
@@ -327,9 +331,57 @@ const Images = ({
         .style("stroke-width", d => viewToggle === "prediction" ? 1 : 3)
         .style("opacity", d => calculateOpacity(d, "rect"))
         .style("cursor", "pointer");
-      rects.exit().remove();
+      rects.exit().remove();  
+
+      if (glyphMode == 'location') {
+        const triangles = groups.selectAll("path.triangle").data(d => [d]);
+        triangles.enter().append("path")
+          .attr("class", "triangle")
+          .merge(triangles)
+          .attr("d", d => {
+            if (d.section === "left") {
+              // Left triangle: top left (0,0), bottom left (0,imageSize), center (imageSize/2, imageSize/2)
+              return `M0,0 L0,${imageSize} L${imageSize / 2},${imageSize / 2} Z`;
+            } else if (d.section === "right") {
+              // Right triangle: top right (imageSize,0), bottom right (imageSize,imageSize), center (imageSize/2, imageSize/2)
+              return `M${imageSize},0 L${imageSize},${imageSize} L${imageSize / 2},${imageSize / 2} Z`;
+            } else if (d.section === "top") {
+              // Top triangle: top left (0,0), top right (imageSize,0), center (imageSize/2, imageSize/2)
+              return `M0,0 L${imageSize},0 L${imageSize / 2},${imageSize / 2} Z`;
+            } else if (d.section === "down") {
+              // Down triangle: bottom left (0,imageSize), bottom right (imageSize,imageSize), center (imageSize/2, imageSize/2)
+              return `M0,${imageSize} L${imageSize},${imageSize} L${imageSize / 2},${imageSize / 2} Z`;
+            }
+            return "";
+          })
+          .attr("fill", "#606060")
+          .style("opacity", d => calculateOpacity(d, "rect"))
+          .attr("stroke", "black");
+
+        triangles.exit().remove();
+      } else {
+        groups.selectAll("path.triangle").remove();
+      }
+      
+      if (glyphMode == 'size') {
+        const rects = groups.selectAll("rect.size").data(d => [d]);
+        rects.enter().append("rect")
+          .attr("class", "size")
+          .merge(rects)
+          .attr("x", d => viewToggle === "image" ? 1.5 : imageSize*(1-d.size)/2)
+          .attr("y", d => viewToggle === "image" ? 1.5 : imageSize*(1-d.size)/2)
+          .attr("width", d => viewToggle === "image" ? imageSize - 3 : imageSize*d.size)
+          .attr("height", d => viewToggle === "image" ? imageSize - 3 : imageSize*d.size)
+          .style("fill", "#555555")
+          .style("opacity", d => calculateOpacity(d, "rect"))
+        rects.exit().remove();
+      }  else {
+        groups.selectAll("rect.size").remove();
+      }
+
     } else {
       zoomGroup.selectAll("rect.overlay").remove();
+      zoomGroup.selectAll("path.triangle").remove();
     }
 
     // If in keyword mode and quantiles exist, draw quantile lines.
@@ -355,7 +407,7 @@ const Images = ({
     } else {
       zoomGroup.selectAll("line.quantile-line").remove();
     }
-  }, [fullData, coordinates, scale, imageSize, keywordMode, viewToggle, quantiles, selectedImages, calculateOpacity, calculateColor]);
+  }, [fullData, coordinates, scale, imageSize, keywordMode, viewToggle, quantiles, selectedImages, calculateOpacity, calculateColor, glyphMode]);
 
   // ─── D3 ZOOM BEHAVIOR ───────────────────────────────────────────────────────
   useEffect(() => {
@@ -440,7 +492,7 @@ const Images = ({
     return () => {
       svg.on("mousemove", null).on("click", null);
     };
-  }, [scale, gridDict, clickedObj, setPopover, keywordMode, coordinates, selectedImages, fullData, calculateDistanceGroup, highlightKeywords, keywords, clickedImage]);
+  }, [scale, gridDict, clickedObj, setPopover, keywordMode, coordinates, selectedImages, fullData, calculateDistanceGroup, highlightKeywords, keywords, clickedImage, glyphMode]);
 
   return (
     <Grid item lg={6}>
@@ -523,6 +575,9 @@ const Images = ({
             </Pie>
             <Tooltip />
           </PieChart>
+          <Button onClick={() => setGlyphMode("location")}>Location</Button>
+          <Button onClick={() => setGlyphMode("size")}>Size</Button>
+          <Button onClick={() => setGlyphMode("none")}>Off</Button>
         </Box>
         <Divider />
         <svg
