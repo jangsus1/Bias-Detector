@@ -1,6 +1,8 @@
 **/__pycache__/
 **/node_modules/
 frontend/build/*
+backend/post-training/augmentations/*
+backend/static/generated_masks/*
 
 npm-debug.log*
 yarn-debug.log*
