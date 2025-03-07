@@ -131,7 +131,13 @@ export default function Dashboard() {
   const [modalOpen, setModalOpen] = useState(false);
   const modalContent = useRef('');
 
-  const registerManualKeyword = function () { // User add new keyword 
+  const registerManualKeyword = function (isCanel) { // User add new keyword
+    if (!!isCanel) {
+      setSelectedImages({});
+      setKeywordMode(false);
+      return;
+    }
+
     if (keywordMode == "Manual") {
       const newKeyword = prompt("Please enter the new bias keyword", "e.g. grassfield")
       if (newKeyword != null) {
@@ -272,7 +278,7 @@ export default function Dashboard() {
             </Container>
             <Container sx={{ mt: 1, mb: 1, minWidth: "100vw" }}>
               <Grid container spacing={1}>
-                {/* Solver */}
+                {/* Inpainter */}
                 <Inpainter
                   dataset={dataset}
                   solutions={solutions}

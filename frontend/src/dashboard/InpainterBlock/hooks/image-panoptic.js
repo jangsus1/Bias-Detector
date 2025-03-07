@@ -68,6 +68,11 @@ const useImagePanoptic = (
             return imgURL;
         }
 
+        // Find if it is draw mask
+        if (Array.from(generatedMaskImgPair.current[keywords])?.[0] === 'draw') {
+            return [];
+        }
+
         // Check overlap 
         const currentGeneratedImg = generatedMaskImgPair.current[keywords];
         const nonOverlap = imgURL.filter(item => !currentGeneratedImg.has(item));
@@ -121,7 +126,7 @@ const useImagePanoptic = (
                 true,
                 'Generating Masks..., please wait!',
             );
-            
+
             // Generate mask for those images and then update keywords
             callGenerateMaskAPI(
                 dataset,
@@ -157,9 +162,18 @@ const useImagePanoptic = (
         keyword,
     ) => {
         const newPanopticInUse = _.cloneDeep(panopticInUse);
-        imageURI.forEach((url, idx) => {
-            newPanopticInUse[url][keyword] = maskPathURI[idx];
-        });
+        
+        // Only update provided image url
+        if (!!imageURI) {
+            imageURI.forEach((url, idx) => {
+                newPanopticInUse[url][keyword] = maskPathURI[idx];
+            });
+        } else {
+            // Update for all the image
+            Object.keys(newPanopticInUse).forEach((url) => {
+                newPanopticInUse[url][keyword] = maskPathURI;
+            });
+        }
         setPanopticInUse(newPanopticInUse);
     }
 
@@ -183,6 +197,13 @@ const useImagePanoptic = (
         modalContent.current = content;
     }
 
+    /**
+     * Define manual keyword action
+     */
+    const updateManualKeyword = (newKeyword) => {
+        setManualKeywords(new Set(manualKeywords.add(newKeyword)));
+    }
+
     return {
         filerMaskedImage,
         updateMaskedImage,
@@ -195,7 +216,7 @@ const useImagePanoptic = (
         updateKeywords,
         categoriesNumPair,
         manualKeywords,
-        setManualKeywords,
+        updateManualKeyword,
         reloadImageBatch,
         modalOpen,
         modalContent,

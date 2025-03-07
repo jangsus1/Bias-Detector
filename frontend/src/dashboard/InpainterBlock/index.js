@@ -11,10 +11,11 @@ import {
     Divider,
 } from '@mui/material';
 import _ from 'lodash';
-import { ImageMask, getMaskPathFromKeywords } from './ImageMask/index';
-import Shortcut from './Shortcut/index';
+import { ImageMask, getMaskPathFromKeywords } from './ImageMask';
+import Shortcut from './Shortcut';
 import useImagePanoptic from './hooks/image-panoptic';
-import Message from './Message/index';
+import Message from './Message';
+import Drawer from './Drawer';
 import {
     callInpaintAPI,
     callGenerateMaskAPI,
@@ -42,6 +43,7 @@ const InpaintBlock = ({
 }) => {
     const [invert, setInvert] = useState(false);
     const [finished, setFinished] = useState(false);
+    const [drawModalOpen, setDrawModalOpen] = useState(false);
     const seemQueryRef = useRef(null);
     const queryRef = useRef(null);
 
@@ -56,7 +58,7 @@ const InpaintBlock = ({
         updateKeywords,
         categoriesNumPair,
         manualKeywords,
-        setManualKeywords,
+        updateManualKeyword,
         reloadImageBatch,
         modalOpen,
         modalContent,
@@ -97,7 +99,7 @@ const InpaintBlock = ({
             );
 
             // Update manual keywords
-            setManualKeywords(new Set(manualKeywords.add(prompt)));
+            updateManualKeyword(prompt);
 
             // Update generated mask-img pair
             updateMaskedImage(prompt, filteredURL);
@@ -149,7 +151,14 @@ const InpaintBlock = ({
                 <Stack direction="row" spacing={3} sx={{ my: 2 }}>
                     <Box key="-1" component="div" sx={{ width: '160px', maxHeight: '100px' }} >
                         <TextField inputRef={seemQueryRef} sx={{ width: '160px', mb: 1, height: "50px" }} label="New Mask Keyword" variant="standard" />
-                        <Button size="small" sx={{ width: '100px' }} variant="contained" onClick={(e) => generateMask(e, solIndex)}>Generate</Button>
+                        <Stack direction="row" spacing={1}>
+                            <Button size="small" sx={{ width: '100px', fontSize: '12px' }} variant="contained" onClick={(e) => generateMask(e, solIndex)}>
+                                Generate
+                            </Button>
+                            <Button size="small" sx={{ width: '100px', fontSize: '12px'}} variant="contained" onClick={(e) => setDrawModalOpen(true)}>
+                                Draw
+                            </Button>
+                        </Stack>
                     </Box>
                     <Shortcut
                         solIndex={solIndex}
@@ -190,6 +199,15 @@ const InpaintBlock = ({
                 anchor="right"
                 modalOpen={modalOpen}
                 modalContent={modalContent}
+            />
+            <Drawer
+                modalOpen={drawModalOpen}
+                setModalOpen={setDrawModalOpen}
+                updateManualKeyword={updateManualKeyword}
+                updateMaskedImage={updateMaskedImage}
+                selectedImgURL={selectedImgURL}
+                updateModal={updateModal}
+                updatePanoptic={updatePanoptic}
             />
         </Paper>
     );

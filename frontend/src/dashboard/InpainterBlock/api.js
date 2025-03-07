@@ -1,4 +1,5 @@
 import API_URL from '../../common/api';
+import pako from 'pako';
 
 const setUserIdInLocalStorage = (user_id) => {
     // Save user_id in localStorage
@@ -72,7 +73,30 @@ const callInpaintAPI = (data) => {
     .catch(error => console.error(error))
 };
 
+/**
+ * Call API /api/manual_mask
+ * Save the mask which is manually generated
+ */
+const callDrawMaskAPI = (image) => {
+    return fetch(`${API_URL}/api/manual_mask`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        mode: "cors",
+        body: pako.deflate(JSON.stringify({ image: image }), { to: 'string' }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if ('user_id' in data) {
+            setUserIdInLocalStorage(data['user_id'])
+        }
+        // TODO: Return mask path
+        return data['mask_paths']
+    })
+    .catch(error => console.error(error))
+};
+
 export {
     callInpaintAPI,
     callGenerateMaskAPI,
+    callDrawMaskAPI,
 };
