@@ -15,7 +15,6 @@
         },
         "train/landbird/land_X_Pileated_Woodpecker_0089_179969.jpg": {
             "ceiling-merged": "static/phanoptic/train/landbird/land_X_Pileated_Woodpecker_0089_179969/ceiling-merged.png",
-            "building-other-merged": "static/phanoptic/train/landbird/land_X_Pileated_Woodpecker_0089_179969/building-other-merged.png",
             "bird": "static/phanoptic/train/landbird/land_X_Pileated_Woodpecker_0089_179969/bird.png",
             "tree-merged": "static/phanoptic/train/landbird/land_X_Pileated_Woodpecker_0089_179969/tree-merged.png"
         },
@@ -1052,7 +1051,6 @@
             "tree-merged": "static/phanoptic/train/landbird/land_X_Pied_Kingfisher_0024_71560/tree-merged.png"
         },
         "train/landbird/land_X_Chuck_Will_Widow_0012_796956.jpg": {
-            "grass-merged": "static/phanoptic/train/landbird/land_X_Chuck_Will_Widow_0012_796956/grass-merged.png",
             "bird": "static/phanoptic/train/landbird/land_X_Chuck_Will_Widow_0012_796956/bird.png",
             "tree-merged": "static/phanoptic/train/landbird/land_X_Chuck_Will_Widow_0012_796956/tree-merged.png"
         },
@@ -3136,7 +3134,6 @@
         },
         "train/landbird/land_X_Kentucky_Warbler_0035_795878.jpg": {
             "person": "static/phanoptic/train/landbird/land_X_Kentucky_Warbler_0035_795878/person.png",
-            "bridge": "static/phanoptic/train/landbird/land_X_Kentucky_Warbler_0035_795878/bridge.png",
             "bird": "static/phanoptic/train/landbird/land_X_Kentucky_Warbler_0035_795878/bird.png",
             "tree-merged": "static/phanoptic/train/landbird/land_X_Kentucky_Warbler_0035_795878/tree-merged.png"
         },
@@ -5651,8 +5648,7 @@
         },
         "train/landbird/land_X_Yellow_Breasted_Chat_0102_21696.jpg": {
             "person": "static/phanoptic/train/landbird/land_X_Yellow_Breasted_Chat_0102_21696/person.png",
-            "bird": "static/phanoptic/train/landbird/land_X_Yellow_Breasted_Chat_0102_21696/bird.png",
-            "tree-merged": "static/phanoptic/train/landbird/land_X_Yellow_Breasted_Chat_0102_21696/tree-merged.png"
+            "bird": "static/phanoptic/train/landbird/land_X_Yellow_Breasted_Chat_0102_21696/bird.png"
         },
         "train/landbird/land_X_Nighthawk_0014_82624.jpg": {
             "sky-other-merged": "static/phanoptic/train/landbird/land_X_Nighthawk_0014_82624/sky-other-merged.png",
@@ -5872,7 +5868,6 @@
         },
         "train/waterbird/land_O_Black_Footed_Albatross_0019_796104.jpg": {
             "grass-merged": "static/phanoptic/train/waterbird/land_O_Black_Footed_Albatross_0019_796104/grass-merged.png",
-            "fence-merged": "static/phanoptic/train/waterbird/land_O_Black_Footed_Albatross_0019_796104/fence-merged.png",
             "tree-merged": "static/phanoptic/train/waterbird/land_O_Black_Footed_Albatross_0019_796104/tree-merged.png",
             "river": "static/phanoptic/train/waterbird/land_O_Black_Footed_Albatross_0019_796104/river.png",
             "skis": "static/phanoptic/train/waterbird/land_O_Black_Footed_Albatross_0019_796104/skis.png"
@@ -5952,7 +5947,6 @@
             "sea": "static/phanoptic/train/waterbird/water_O_Brandt_Cormorant_0017_23141/sea.png"
         },
         "train/waterbird/water_O_Ivory_Gull_0052_50013.jpg": {
-            "snow": "static/phanoptic/train/waterbird/water_O_Ivory_Gull_0052_50013/snow.png",
             "bird": "static/phanoptic/train/waterbird/water_O_Ivory_Gull_0052_50013/bird.png",
             "tree-merged": "static/phanoptic/train/waterbird/water_O_Ivory_Gull_0052_50013/tree-merged.png",
             "water-other": "static/phanoptic/train/waterbird/water_O_Ivory_Gull_0052_50013/water-other.png"
@@ -11025,7 +11019,6 @@
             "water-other": "static/phanoptic/train/waterbird/water_O_Crested_Auklet_0062_794968/water-other.png"
         },
         "train/waterbird/water_O_Red_Breasted_Merganser_0081_79396.jpg": {
-            "boat": "static/phanoptic/train/waterbird/water_O_Red_Breasted_Merganser_0081_79396/boat.png",
             "person": "static/phanoptic/train/waterbird/water_O_Red_Breasted_Merganser_0081_79396/person.png",
             "sky-other-merged": "static/phanoptic/train/waterbird/water_O_Red_Breasted_Merganser_0081_79396/sky-other-merged.png",
             "rock-merged": "static/phanoptic/train/waterbird/water_O_Red_Breasted_Merganser_0081_79396/rock-merged.png",
@@ -12688,7 +12681,6 @@
             "sea": "static/phanoptic/train/waterbird/water_O_Eastern_Towhee_0073_22247/sea.png"
         },
         "train/waterbird/water_O_Ring_Billed_Gull_0017_51412.jpg": {
-            "boat": "static/phanoptic/train/waterbird/water_O_Ring_Billed_Gull_0017_51412/boat.png",
             "person": "static/phanoptic/train/waterbird/water_O_Ring_Billed_Gull_0017_51412/person.png",
             "sky-other-merged": "static/phanoptic/train/waterbird/water_O_Ring_Billed_Gull_0017_51412/sky-other-merged.png",
             "mountain-merged": "static/phanoptic/train/waterbird/water_O_Ring_Billed_Gull_0017_51412/mountain-merged.png",

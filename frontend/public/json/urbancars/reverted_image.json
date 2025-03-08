@@ -1,1456 +1,552 @@
 {
     "country": {
         "stop sign": {
-            "country": 1,
-            "urban": 40
+            "country": 89,
+            "urban": 111
         },
-        "garage": {
-            "country": 12,
-            "urban": 13
+        "fire hydrant": {
+            "country": 39,
+            "urban": 161
         },
-        "wooden sign": {
-            "country": 6,
-            "urban": 24
+        "traffic light": {
+            "country": 37,
+            "urban": 163
         },
         "house": {
-            "country": 1,
-            "urban": 7
-        },
-        "bricks": {
-            "country": 1,
-            "urban": 6
-        },
-        "stairs": {
-            "country": 4,
-            "urban": 10
+            "country": 20,
+            "urban": 78
         },
         "city": {
-            "country": 5,
-            "urban": 28
+            "country": 19,
+            "urban": 83
         },
-        "pole": {
-            "country": 20,
-            "urban": 11
+        "fire hydrant_stop sign": {
+            "country": 39,
+            "urban": 161
         },
-        "garage_stop sign": {
-            "country": 0,
-            "urban": 27
-        },
-        "stop sign_wooden sign": {
-            "country": 4,
-            "urban": 30
+        "stop sign_traffic light": {
+            "country": 29,
+            "urban": 171
         },
         "house_stop sign": {
-            "country": 0,
-            "urban": 8
-        },
-        "bricks_stop sign": {
-            "country": 0,
-            "urban": 11
-        },
-        "stairs_stop sign": {
-            "country": 3,
-            "urban": 6
+            "country": 9,
+            "urban": 77
         },
         "city_stop sign": {
-            "country": 0,
-            "urban": 27
+            "country": 29,
+            "urban": 85
         },
-        "pole_stop sign": {
-            "country": 6,
-            "urban": 23
+        "fire hydrant_traffic light": {
+            "country": 31,
+            "urban": 169
         },
-        "garage_wooden sign": {
-            "country": 3,
-            "urban": 36
-        },
-        "garage_house": {
-            "country": 3,
-            "urban": 6
-        },
-        "bricks_garage": {
-            "country": 5,
-            "urban": 5
-        },
-        "garage_stairs": {
-            "country": 3,
-            "urban": 9
-        },
-        "city_garage": {
+        "fire hydrant_house": {
             "country": 4,
-            "urban": 20
+            "urban": 102
         },
-        "garage_pole": {
-            "country": 9,
-            "urban": 24
+        "city_fire hydrant": {
+            "country": 12,
+            "urban": 82
         },
-        "house_wooden sign": {
-            "country": 0,
-            "urban": 12
+        "house_traffic light": {
+            "country": 17,
+            "urban": 92
         },
-        "bricks_wooden sign": {
-            "country": 1,
-            "urban": 13
-        },
-        "stairs_wooden sign": {
-            "country": 2,
-            "urban": 7
-        },
-        "city_wooden sign": {
-            "country": 1,
-            "urban": 30
-        },
-        "pole_wooden sign": {
-            "country": 7,
-            "urban": 21
-        },
-        "bricks_house": {
-            "country": 0,
-            "urban": 0
-        },
-        "house_stairs": {
-            "country": 0,
-            "urban": 0
+        "city_traffic light": {
+            "country": 10,
+            "urban": 81
         },
         "city_house": {
-            "country": 1,
-            "urban": 10
-        },
-        "house_pole": {
-            "country": 6,
-            "urban": 5
-        },
-        "bricks_stairs": {
             "country": 0,
             "urban": 0
         },
-        "bricks_city": {
-            "country": 1,
-            "urban": 11
+        "fire hydrant_stop sign_traffic light": {
+            "country": 35,
+            "urban": 165
         },
-        "bricks_pole": {
-            "country": 9,
-            "urban": 5
-        },
-        "city_stairs": {
-            "country": 5,
-            "urban": 8
-        },
-        "pole_stairs": {
-            "country": 7,
-            "urban": 5
-        },
-        "city_pole": {
+        "fire hydrant_house_stop sign": {
             "country": 12,
-            "urban": 20
+            "urban": 77
         },
-        "garage_stop sign_wooden sign": {
-            "country": 3,
-            "urban": 26
+        "city_fire hydrant_stop sign": {
+            "country": 33,
+            "urban": 78
         },
-        "garage_house_stop sign": {
-            "country": 0,
-            "urban": 8
+        "house_stop sign_traffic light": {
+            "country": 14,
+            "urban": 82
         },
-        "bricks_garage_stop sign": {
-            "country": 0,
-            "urban": 9
-        },
-        "garage_stairs_stop sign": {
-            "country": 0,
-            "urban": 4
-        },
-        "city_garage_stop sign": {
-            "country": 2,
-            "urban": 33
-        },
-        "garage_pole_stop sign": {
-            "country": 3,
-            "urban": 21
-        },
-        "house_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 12
-        },
-        "bricks_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 7
-        },
-        "stairs_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 12
-        },
-        "city_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 23
-        },
-        "pole_stop sign_wooden sign": {
-            "country": 3,
-            "urban": 26
-        },
-        "bricks_house_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "house_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
+        "city_stop sign_traffic light": {
+            "country": 21,
+            "urban": 83
         },
         "city_house_stop sign": {
-            "country": 1,
-            "urban": 16
-        },
-        "house_pole_stop sign": {
-            "country": 0,
-            "urban": 8
-        },
-        "bricks_stairs_stop sign": {
             "country": 0,
             "urban": 0
         },
-        "bricks_city_stop sign": {
-            "country": 0,
-            "urban": 9
-        },
-        "bricks_pole_stop sign": {
-            "country": 3,
-            "urban": 13
-        },
-        "city_stairs_stop sign": {
-            "country": 1,
-            "urban": 8
-        },
-        "pole_stairs_stop sign": {
-            "country": 3,
-            "urban": 1
-        },
-        "city_pole_stop sign": {
-            "country": 1,
-            "urban": 32
-        },
-        "garage_house_wooden sign": {
-            "country": 1,
-            "urban": 8
-        },
-        "bricks_garage_wooden sign": {
-            "country": 1,
-            "urban": 7
-        },
-        "garage_stairs_wooden sign": {
-            "country": 1,
-            "urban": 2
-        },
-        "city_garage_wooden sign": {
-            "country": 0,
-            "urban": 40
-        },
-        "garage_pole_wooden sign": {
-            "country": 0,
-            "urban": 37
-        },
-        "bricks_garage_house": {
-            "country": 0,
-            "urban": 0
-        },
-        "garage_house_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house": {
-            "country": 0,
-            "urban": 11
-        },
-        "garage_house_pole": {
-            "country": 3,
-            "urban": 4
-        },
-        "bricks_garage_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage": {
-            "country": 0,
-            "urban": 10
-        },
-        "bricks_garage_pole": {
-            "country": 2,
-            "urban": 12
-        },
-        "city_garage_stairs": {
-            "country": 2,
-            "urban": 11
-        },
-        "garage_pole_stairs": {
-            "country": 3,
-            "urban": 6
-        },
-        "city_garage_pole": {
-            "country": 9,
-            "urban": 16
-        },
-        "bricks_house_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "house_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_wooden sign": {
-            "country": 1,
-            "urban": 10
-        },
-        "house_pole_wooden sign": {
-            "country": 2,
-            "urban": 5
-        },
-        "bricks_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_wooden sign": {
-            "country": 0,
-            "urban": 12
-        },
-        "bricks_pole_wooden sign": {
-            "country": 0,
-            "urban": 9
-        },
-        "city_stairs_wooden sign": {
-            "country": 3,
-            "urban": 8
-        },
-        "pole_stairs_wooden sign": {
-            "country": 1,
-            "urban": 2
-        },
-        "city_pole_wooden sign": {
-            "country": 3,
-            "urban": 25
-        },
-        "bricks_house_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_house_pole": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "house_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_pole": {
-            "country": 1,
-            "urban": 10
-        },
-        "bricks_city_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_pole": {
-            "country": 2,
-            "urban": 8
-        },
-        "city_pole_stairs": {
-            "country": 5,
-            "urban": 7
-        },
-        "garage_house_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 7
-        },
-        "bricks_garage_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 9
-        },
-        "garage_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 11
-        },
-        "city_garage_stop sign_wooden sign": {
-            "country": 2,
-            "urban": 44
-        },
-        "garage_pole_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 27
-        },
-        "bricks_garage_house_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "garage_house_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_stop sign": {
-            "country": 0,
-            "urban": 16
-        },
-        "garage_house_pole_stop sign": {
-            "country": 3,
-            "urban": 19
-        },
-        "bricks_garage_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_stop sign": {
-            "country": 0,
-            "urban": 11
-        },
-        "bricks_garage_pole_stop sign": {
-            "country": 0,
-            "urban": 19
-        },
-        "city_garage_stairs_stop sign": {
-            "country": 0,
-            "urban": 7
-        },
-        "garage_pole_stairs_stop sign": {
-            "country": 1,
-            "urban": 7
-        },
-        "city_garage_pole_stop sign": {
+        "fire hydrant_house_traffic light": {
             "country": 4,
-            "urban": 27
+            "urban": 83
         },
-        "bricks_house_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "house_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 10
-        },
-        "house_pole_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 13
-        },
-        "bricks_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 10
-        },
-        "bricks_pole_stop sign_wooden sign": {
-            "country": 3,
-            "urban": 14
-        },
-        "city_stairs_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 13
-        },
-        "pole_stairs_stop sign_wooden sign": {
-            "country": 2,
-            "urban": 7
-        },
-        "city_pole_stop sign_wooden sign": {
-            "country": 2,
-            "urban": 18
-        },
-        "bricks_house_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_house_pole_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "house_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_pole_stop sign": {
-            "country": 0,
-            "urban": 10
-        },
-        "bricks_city_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_pole_stop sign": {
-            "country": 0,
-            "urban": 13
-        },
-        "city_pole_stairs_stop sign": {
-            "country": 2,
-            "urban": 7
-        },
-        "bricks_garage_house_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "garage_house_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_wooden sign": {
-            "country": 0,
-            "urban": 5
-        },
-        "garage_house_pole_wooden sign": {
-            "country": 0,
-            "urban": 15
-        },
-        "bricks_garage_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_wooden sign": {
-            "country": 0,
-            "urban": 9
-        },
-        "bricks_garage_pole_wooden sign": {
-            "country": 0,
-            "urban": 16
-        },
-        "city_garage_stairs_wooden sign": {
-            "country": 0,
-            "urban": 6
-        },
-        "garage_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 16
-        },
-        "city_garage_pole_wooden sign": {
-            "country": 3,
-            "urban": 26
-        },
-        "bricks_garage_house_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_pole": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "garage_house_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_pole": {
-            "country": 0,
-            "urban": 8
-        },
-        "bricks_city_garage_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_pole": {
-            "country": 2,
-            "urban": 13
-        },
-        "city_garage_pole_stairs": {
-            "country": 1,
-            "urban": 9
-        },
-        "bricks_house_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_house_pole_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "house_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_pole_wooden sign": {
-            "country": 0,
-            "urban": 12
-        },
-        "bricks_city_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_pole_wooden sign": {
-            "country": 4,
-            "urban": 9
-        },
-        "city_pole_stairs_wooden sign": {
-            "country": 2,
-            "urban": 7
-        },
-        "bricks_city_house_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_house_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_pole": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "garage_house_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 8
-        },
-        "garage_house_pole_stop sign_wooden sign": {
-            "country": 2,
-            "urban": 10
-        },
-        "bricks_garage_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 5
-        },
-        "bricks_garage_pole_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 5
-        },
-        "city_garage_stairs_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 16
-        },
-        "garage_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 11
-        },
-        "city_garage_pole_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 44
-        },
-        "bricks_garage_house_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_pole_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "garage_house_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_pole_stop sign": {
-            "country": 1,
-            "urban": 11
-        },
-        "bricks_city_garage_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_pole_stop sign": {
-            "country": 1,
-            "urban": 8
-        },
-        "city_garage_pole_stairs_stop sign": {
-            "country": 1,
-            "urban": 4
-        },
-        "bricks_house_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_house_pole_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "house_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_pole_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 9
-        },
-        "bricks_city_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_pole_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 8
-        },
-        "city_pole_stairs_stop sign_wooden sign": {
-            "country": 1,
-            "urban": 12
-        },
-        "bricks_city_house_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_house_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_pole_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_pole_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "garage_house_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_pole_wooden sign": {
-            "country": 0,
-            "urban": 10
-        },
-        "bricks_city_garage_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_pole_wooden sign": {
-            "country": 0,
-            "urban": 11
-        },
-        "city_garage_pole_stairs_wooden sign": {
-            "country": 1,
-            "urban": 7
-        },
-        "bricks_city_garage_house_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house_pole": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_house_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_pole_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_pole_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "garage_house_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_pole_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 4
-        },
-        "bricks_city_garage_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_pole_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 6
-        },
-        "city_garage_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 11
-        },
-        "bricks_city_garage_house_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house_pole_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_house_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_pole_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_house_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_pole_stairs_stop sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_garage_house_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house_pole_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "city_garage_house_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house_pole_stairs": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_house_pole_stairs_wooden sign": {
-            "country": 0,
-            "urban": 0
-        },
-        "bricks_city_garage_house_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
+        "city_fire hydrant_traffic light": {
+            "country": 13,
+            "urban": 100
         },
-        "bricks_garage_house_pole_stairs_stop sign_wooden sign": {
+        "city_fire hydrant_house": {
             "country": 0,
             "urban": 0
         },
-        "bricks_city_garage_house_pole_stop sign_wooden sign": {
+        "city_house_traffic light": {
             "country": 0,
             "urban": 0
         },
-        "city_garage_house_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
+        "fire hydrant_house_stop sign_traffic light": {
+            "country": 13,
+            "urban": 88
         },
-        "bricks_city_garage_pole_stairs_stop sign_wooden sign": {
-            "country": 0,
-            "urban": 0
+        "city_fire hydrant_stop sign_traffic light": {
+            "country": 18,
+            "urban": 81
         },
-        "bricks_city_garage_house_pole_stairs_stop sign": {
+        "city_fire hydrant_house_stop sign": {
             "country": 0,
             "urban": 0
         },
-        "bricks_city_house_pole_stairs_stop sign_wooden sign": {
+        "city_house_stop sign_traffic light": {
             "country": 0,
             "urban": 0
         },
-        "bricks_city_garage_house_pole_stairs_wooden sign": {
+        "city_fire hydrant_house_traffic light": {
             "country": 0,
             "urban": 0
         },
-        "bricks_city_garage_house_pole_stairs_stop sign_wooden sign": {
+        "city_fire hydrant_house_stop sign_traffic light": {
             "country": 0,
             "urban": 0
         }
     },
     "urban": {
         "dirt road": {
-            "country": 20,
-            "urban": 0
-        },
-        "sheep": {
-            "country": 30,
-            "urban": 0
+            "country": 28,
+            "urban": 1
         },
         "mountains": {
-            "country": 37,
-            "urban": 4
+            "country": 12,
+            "urban": 38
+        },
+        "sheep": {
+            "country": 14,
+            "urban": 36
         },
         "cow": {
-            "country": 14,
-            "urban": 14
+            "country": 8,
+            "urban": 42
         },
-        "road": {
-            "country": 10,
-            "urban": 1
+        "fields": {
+            "country": 28,
+            "urban": 22
         },
         "trees": {
-            "country": 25,
-            "urban": 13
+            "country": 7,
+            "urban": 43
         },
-        "polar bear": {
-            "country": 26,
-            "urban": 1
-        },
-        "dirt road_sheep": {
-            "country": 10,
-            "urban": 6
+        "road": {
+            "country": 12,
+            "urban": 9
         },
         "dirt road_mountains": {
-            "country": 20,
-            "urban": 0
+            "country": 19,
+            "urban": 7
+        },
+        "dirt road_sheep": {
+            "country": 9,
+            "urban": 16
         },
         "cow_dirt road": {
-            "country": 16,
-            "urban": 1
+            "country": 18,
+            "urban": 4
+        },
+        "dirt road_fields": {
+            "country": 7,
+            "urban": 8
+        },
+        "dirt road_trees": {
+            "country": 6,
+            "urban": 12
         },
         "dirt road_road": {
             "country": 0,
             "urban": 0
         },
-        "dirt road_trees": {
-            "country": 13,
-            "urban": 0
-        },
-        "dirt road_polar bear": {
-            "country": 12,
-            "urban": 11
-        },
         "mountains_sheep": {
-            "country": 19,
-            "urban": 5
-        },
-        "cow_sheep": {
-            "country": 23,
-            "urban": 4
-        },
-        "road_sheep": {
-            "country": 9,
-            "urban": 3
-        },
-        "sheep_trees": {
-            "country": 31,
-            "urban": 12
-        },
-        "polar bear_sheep": {
-            "country": 28,
-            "urban": 6
+            "country": 22,
+            "urban": 28
         },
         "cow_mountains": {
-            "country": 28,
-            "urban": 3
+            "country": 26,
+            "urban": 24
         },
-        "mountains_road": {
-            "country": 14,
-            "urban": 1
+        "fields_mountains": {
+            "country": 27,
+            "urban": 23
         },
         "mountains_trees": {
-            "country": 35,
-            "urban": 1
+            "country": 24,
+            "urban": 26
         },
-        "mountains_polar bear": {
-            "country": 21,
-            "urban": 7
+        "mountains_road": {
+            "country": 20,
+            "urban": 4
         },
-        "cow_road": {
-            "country": 15,
-            "urban": 1
+        "cow_sheep": {
+            "country": 24,
+            "urban": 26
+        },
+        "fields_sheep": {
+            "country": 17,
+            "urban": 33
+        },
+        "sheep_trees": {
+            "country": 16,
+            "urban": 34
+        },
+        "road_sheep": {
+            "country": 12,
+            "urban": 13
+        },
+        "cow_fields": {
+            "country": 14,
+            "urban": 36
         },
         "cow_trees": {
-            "country": 25,
-            "urban": 3
+            "country": 13,
+            "urban": 37
         },
-        "cow_polar bear": {
-            "country": 11,
+        "cow_road": {
+            "country": 18,
             "urban": 10
         },
-        "road_trees": {
+        "fields_trees": {
+            "country": 29,
+            "urban": 21
+        },
+        "fields_road": {
             "country": 18,
-            "urban": 0
+            "urban": 17
         },
-        "polar bear_road": {
-            "country": 14,
-            "urban": 0
-        },
-        "polar bear_trees": {
-            "country": 20,
-            "urban": 9
+        "road_trees": {
+            "country": 13,
+            "urban": 19
         },
         "dirt road_mountains_sheep": {
-            "country": 14,
-            "urban": 1
-        },
-        "cow_dirt road_sheep": {
-            "country": 18,
-            "urban": 3
-        },
-        "dirt road_road_sheep": {
-            "country": 0,
-            "urban": 0
-        },
-        "dirt road_sheep_trees": {
-            "country": 8,
-            "urban": 1
-        },
-        "dirt road_polar bear_sheep": {
-            "country": 12,
-            "urban": 2
+            "country": 20,
+            "urban": 6
         },
         "cow_dirt road_mountains": {
-            "country": 18,
-            "urban": 0
+            "country": 14,
+            "urban": 11
+        },
+        "dirt road_fields_mountains": {
+            "country": 15,
+            "urban": 11
+        },
+        "dirt road_mountains_trees": {
+            "country": 17,
+            "urban": 7
         },
         "dirt road_mountains_road": {
             "country": 0,
             "urban": 0
         },
-        "dirt road_mountains_trees": {
-            "country": 11,
+        "cow_dirt road_sheep": {
+            "country": 10,
+            "urban": 17
+        },
+        "dirt road_fields_sheep": {
+            "country": 6,
+            "urban": 18
+        },
+        "dirt road_sheep_trees": {
+            "country": 14,
+            "urban": 15
+        },
+        "dirt road_road_sheep": {
+            "country": 0,
             "urban": 0
         },
-        "dirt road_mountains_polar bear": {
-            "country": 15,
-            "urban": 3
+        "cow_dirt road_fields": {
+            "country": 10,
+            "urban": 16
+        },
+        "cow_dirt road_trees": {
+            "country": 7,
+            "urban": 14
         },
         "cow_dirt road_road": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_trees": {
-            "country": 17,
-            "urban": 1
+        "dirt road_fields_trees": {
+            "country": 15,
+            "urban": 6
         },
-        "cow_dirt road_polar bear": {
-            "country": 9,
-            "urban": 5
+        "dirt road_fields_road": {
+            "country": 0,
+            "urban": 0
         },
         "dirt road_road_trees": {
             "country": 0,
             "urban": 0
         },
-        "dirt road_polar bear_road": {
-            "country": 0,
-            "urban": 0
-        },
-        "dirt road_polar bear_trees": {
-            "country": 16,
-            "urban": 0
-        },
         "cow_mountains_sheep": {
-            "country": 29,
-            "urban": 3
+            "country": 19,
+            "urban": 31
         },
-        "mountains_road_sheep": {
-            "country": 14,
-            "urban": 2
+        "fields_mountains_sheep": {
+            "country": 25,
+            "urban": 25
         },
         "mountains_sheep_trees": {
-            "country": 30,
-            "urban": 3
+            "country": 23,
+            "urban": 27
         },
-        "mountains_polar bear_sheep": {
+        "mountains_road_sheep": {
+            "country": 12,
+            "urban": 12
+        },
+        "cow_fields_mountains": {
+            "country": 24,
+            "urban": 26
+        },
+        "cow_mountains_trees": {
             "country": 25,
-            "urban": 13
+            "urban": 25
         },
-        "cow_road_sheep": {
-            "country": 9,
-            "urban": 6
-        },
-        "cow_sheep_trees": {
-            "country": 17,
-            "urban": 6
-        },
-        "cow_polar bear_sheep": {
-            "country": 18,
-            "urban": 7
-        },
-        "road_sheep_trees": {
-            "country": 11,
-            "urban": 1
-        },
-        "polar bear_road_sheep": {
-            "country": 11,
-            "urban": 6
-        },
-        "polar bear_sheep_trees": {
+        "cow_mountains_road": {
             "country": 16,
             "urban": 9
         },
-        "cow_mountains_road": {
+        "fields_mountains_trees": {
+            "country": 29,
+            "urban": 21
+        },
+        "fields_mountains_road": {
             "country": 10,
-            "urban": 1
-        },
-        "cow_mountains_trees": {
-            "country": 28,
-            "urban": 5
-        },
-        "cow_mountains_polar bear": {
-            "country": 18,
-            "urban": 7
+            "urban": 14
         },
         "mountains_road_trees": {
-            "country": 11,
-            "urban": 0
+            "country": 18,
+            "urban": 8
         },
-        "mountains_polar bear_road": {
+        "cow_fields_sheep": {
+            "country": 16,
+            "urban": 34
+        },
+        "cow_sheep_trees": {
+            "country": 16,
+            "urban": 34
+        },
+        "cow_road_sheep": {
             "country": 8,
-            "urban": 5
+            "urban": 15
         },
-        "mountains_polar bear_trees": {
-            "country": 23,
-            "urban": 7
+        "fields_sheep_trees": {
+            "country": 16,
+            "urban": 34
+        },
+        "fields_road_sheep": {
+            "country": 9,
+            "urban": 17
+        },
+        "road_sheep_trees": {
+            "country": 5,
+            "urban": 16
+        },
+        "cow_fields_trees": {
+            "country": 11,
+            "urban": 39
+        },
+        "cow_fields_road": {
+            "country": 9,
+            "urban": 15
         },
         "cow_road_trees": {
-            "country": 26,
-            "urban": 0
+            "country": 9,
+            "urban": 20
         },
-        "cow_polar bear_road": {
-            "country": 11,
-            "urban": 6
-        },
-        "cow_polar bear_trees": {
-            "country": 15,
-            "urban": 13
-        },
-        "polar bear_road_trees": {
-            "country": 14,
-            "urban": 7
+        "fields_road_trees": {
+            "country": 18,
+            "urban": 11
         },
         "cow_dirt road_mountains_sheep": {
-            "country": 15,
-            "urban": 4
+            "country": 19,
+            "urban": 12
+        },
+        "dirt road_fields_mountains_sheep": {
+            "country": 11,
+            "urban": 15
+        },
+        "dirt road_mountains_sheep_trees": {
+            "country": 17,
+            "urban": 10
         },
         "dirt road_mountains_road_sheep": {
             "country": 0,
             "urban": 0
         },
-        "dirt road_mountains_sheep_trees": {
-            "country": 15,
-            "urban": 1
-        },
-        "dirt road_mountains_polar bear_sheep": {
-            "country": 6,
-            "urban": 3
-        },
-        "cow_dirt road_road_sheep": {
-            "country": 0,
-            "urban": 0
-        },
-        "cow_dirt road_sheep_trees": {
-            "country": 14,
-            "urban": 1
-        },
-        "cow_dirt road_polar bear_sheep": {
+        "cow_dirt road_fields_mountains": {
             "country": 13,
+            "urban": 19
+        },
+        "cow_dirt road_mountains_trees": {
+            "country": 14,
             "urban": 9
-        },
-        "dirt road_road_sheep_trees": {
-            "country": 0,
-            "urban": 0
-        },
-        "dirt road_polar bear_road_sheep": {
-            "country": 0,
-            "urban": 0
-        },
-        "dirt road_polar bear_sheep_trees": {
-            "country": 5,
-            "urban": 4
         },
         "cow_dirt road_mountains_road": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_mountains_trees": {
-            "country": 9,
-            "urban": 1
+        "dirt road_fields_mountains_trees": {
+            "country": 16,
+            "urban": 9
         },
-        "cow_dirt road_mountains_polar bear": {
-            "country": 12,
-            "urban": 7
+        "dirt road_fields_mountains_road": {
+            "country": 0,
+            "urban": 0
         },
         "dirt road_mountains_road_trees": {
             "country": 0,
             "urban": 0
         },
-        "dirt road_mountains_polar bear_road": {
+        "cow_dirt road_fields_sheep": {
+            "country": 6,
+            "urban": 12
+        },
+        "cow_dirt road_sheep_trees": {
+            "country": 6,
+            "urban": 15
+        },
+        "cow_dirt road_road_sheep": {
             "country": 0,
             "urban": 0
         },
-        "dirt road_mountains_polar bear_trees": {
-            "country": 14,
-            "urban": 2
+        "dirt road_fields_sheep_trees": {
+            "country": 16,
+            "urban": 11
+        },
+        "dirt road_fields_road_sheep": {
+            "country": 0,
+            "urban": 0
+        },
+        "dirt road_road_sheep_trees": {
+            "country": 0,
+            "urban": 0
+        },
+        "cow_dirt road_fields_trees": {
+            "country": 11,
+            "urban": 16
+        },
+        "cow_dirt road_fields_road": {
+            "country": 0,
+            "urban": 0
         },
         "cow_dirt road_road_trees": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_polar bear_road": {
+        "dirt road_fields_road_trees": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_polar bear_trees": {
-            "country": 9,
-            "urban": 3
-        },
-        "dirt road_polar bear_road_trees": {
-            "country": 0,
-            "urban": 0
-        },
-        "cow_mountains_road_sheep": {
-            "country": 13,
-            "urban": 2
+        "cow_fields_mountains_sheep": {
+            "country": 24,
+            "urban": 26
         },
         "cow_mountains_sheep_trees": {
-            "country": 29,
-            "urban": 8
+            "country": 22,
+            "urban": 28
         },
-        "cow_mountains_polar bear_sheep": {
-            "country": 29,
-            "urban": 9
-        },
-        "mountains_road_sheep_trees": {
-            "country": 10,
-            "urban": 1
-        },
-        "mountains_polar bear_road_sheep": {
-            "country": 19,
-            "urban": 2
-        },
-        "mountains_polar bear_sheep_trees": {
-            "country": 26,
+        "cow_mountains_road_sheep": {
+            "country": 9,
             "urban": 10
         },
-        "cow_road_sheep_trees": {
-            "country": 17,
-            "urban": 0
+        "fields_mountains_sheep_trees": {
+            "country": 19,
+            "urban": 31
         },
-        "cow_polar bear_road_sheep": {
+        "fields_mountains_road_sheep": {
             "country": 9,
-            "urban": 9
-        },
-        "cow_polar bear_sheep_trees": {
-            "country": 26,
-            "urban": 9
-        },
-        "polar bear_road_sheep_trees": {
-            "country": 13,
-            "urban": 3
-        },
-        "cow_mountains_road_trees": {
-            "country": 9,
-            "urban": 1
-        },
-        "cow_mountains_polar bear_road": {
-            "country": 10,
-            "urban": 2
-        },
-        "cow_mountains_polar bear_trees": {
-            "country": 26,
             "urban": 15
         },
-        "mountains_polar bear_road_trees": {
-            "country": 13,
-            "urban": 3
-        },
-        "cow_polar bear_road_trees": {
-            "country": 14,
+        "mountains_road_sheep_trees": {
+            "country": 17,
             "urban": 6
+        },
+        "cow_fields_mountains_trees": {
+            "country": 28,
+            "urban": 22
+        },
+        "cow_fields_mountains_road": {
+            "country": 9,
+            "urban": 9
+        },
+        "cow_mountains_road_trees": {
+            "country": 15,
+            "urban": 12
+        },
+        "fields_mountains_road_trees": {
+            "country": 15,
+            "urban": 10
+        },
+        "cow_fields_sheep_trees": {
+            "country": 20,
+            "urban": 30
+        },
+        "cow_fields_road_sheep": {
+            "country": 5,
+            "urban": 27
+        },
+        "cow_road_sheep_trees": {
+            "country": 12,
+            "urban": 17
+        },
+        "fields_road_sheep_trees": {
+            "country": 8,
+            "urban": 15
+        },
+        "cow_fields_road_trees": {
+            "country": 10,
+            "urban": 13
+        },
+        "cow_dirt road_fields_mountains_sheep": {
+            "country": 12,
+            "urban": 14
+        },
+        "cow_dirt road_mountains_sheep_trees": {
+            "country": 11,
+            "urban": 10
         },
         "cow_dirt road_mountains_road_sheep": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_mountains_sheep_trees": {
+        "dirt road_fields_mountains_sheep_trees": {
             "country": 14,
-            "urban": 3
+            "urban": 10
         },
-        "cow_dirt road_mountains_polar bear_sheep": {
-            "country": 8,
-            "urban": 5
+        "dirt road_fields_mountains_road_sheep": {
+            "country": 0,
+            "urban": 0
         },
         "dirt road_mountains_road_sheep_trees": {
             "country": 0,
             "urban": 0
         },
-        "dirt road_mountains_polar bear_road_sheep": {
-            "country": 0,
-            "urban": 0
-        },
-        "dirt road_mountains_polar bear_sheep_trees": {
-            "country": 11,
-            "urban": 2
-        },
-        "cow_dirt road_road_sheep_trees": {
-            "country": 0,
-            "urban": 0
-        },
-        "cow_dirt road_polar bear_road_sheep": {
-            "country": 0,
-            "urban": 0
-        },
-        "cow_dirt road_polar bear_sheep_trees": {
-            "country": 18,
+        "cow_dirt road_fields_mountains_trees": {
+            "country": 17,
             "urban": 8
         },
-        "dirt road_polar bear_road_sheep_trees": {
+        "cow_dirt road_fields_mountains_road": {
             "country": 0,
             "urban": 0
         },
@@ -1458,75 +554,83 @@
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_mountains_polar bear_road": {
+        "dirt road_fields_mountains_road_trees": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_mountains_polar bear_trees": {
-            "country": 9,
-            "urban": 5
+        "cow_dirt road_fields_sheep_trees": {
+            "country": 11,
+            "urban": 9
         },
-        "dirt road_mountains_polar bear_road_trees": {
+        "cow_dirt road_fields_road_sheep": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_polar bear_road_trees": {
+        "cow_dirt road_road_sheep_trees": {
             "country": 0,
             "urban": 0
+        },
+        "dirt road_fields_road_sheep_trees": {
+            "country": 0,
+            "urban": 0
+        },
+        "cow_dirt road_fields_road_trees": {
+            "country": 0,
+            "urban": 0
+        },
+        "cow_fields_mountains_sheep_trees": {
+            "country": 29,
+            "urban": 21
+        },
+        "cow_fields_mountains_road_sheep": {
+            "country": 10,
+            "urban": 14
         },
         "cow_mountains_road_sheep_trees": {
-            "country": 15,
-            "urban": 0
-        },
-        "cow_mountains_polar bear_road_sheep": {
             "country": 16,
-            "urban": 4
+            "urban": 13
         },
-        "cow_mountains_polar bear_sheep_trees": {
-            "country": 20,
-            "urban": 6
-        },
-        "mountains_polar bear_road_sheep_trees": {
+        "fields_mountains_road_sheep_trees": {
             "country": 14,
-            "urban": 2
+            "urban": 12
         },
-        "cow_polar bear_road_sheep_trees": {
+        "cow_fields_mountains_road_trees": {
+            "country": 17,
+            "urban": 8
+        },
+        "cow_fields_road_sheep_trees": {
+            "country": 13,
+            "urban": 17
+        },
+        "cow_dirt road_fields_mountains_sheep_trees": {
             "country": 10,
-            "urban": 4
+            "urban": 16
         },
-        "cow_mountains_polar bear_road_trees": {
-            "country": 12,
-            "urban": 4
+        "cow_dirt road_fields_mountains_road_sheep": {
+            "country": 0,
+            "urban": 0
         },
         "cow_dirt road_mountains_road_sheep_trees": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_mountains_polar bear_road_sheep": {
+        "dirt road_fields_mountains_road_sheep_trees": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_mountains_polar bear_sheep_trees": {
-            "country": 10,
-            "urban": 3
-        },
-        "dirt road_mountains_polar bear_road_sheep_trees": {
+        "cow_dirt road_fields_mountains_road_trees": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_polar bear_road_sheep_trees": {
+        "cow_dirt road_fields_road_sheep_trees": {
             "country": 0,
             "urban": 0
         },
-        "cow_dirt road_mountains_polar bear_road_trees": {
-            "country": 0,
-            "urban": 0
+        "cow_fields_mountains_road_sheep_trees": {
+            "country": 15,
+            "urban": 9
         },
-        "cow_mountains_polar bear_road_sheep_trees": {
-            "country": 11,
-            "urban": 1
-        },
-        "cow_dirt road_mountains_polar bear_road_sheep_trees": {
+        "cow_dirt road_fields_mountains_road_sheep_trees": {
             "country": 0,
             "urban": 0
         }
