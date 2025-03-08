@@ -9,6 +9,8 @@ import {
     Checkbox,
     FormControlLabel,
     Divider,
+    Alert,
+    Snackbar,
 } from '@mui/material';
 import _ from 'lodash';
 import { ImageMask, getMaskPathFromKeywords } from './ImageMask';
@@ -42,8 +44,10 @@ const InpaintBlock = ({
     label,
 }) => {
     const [invert, setInvert] = useState(false);
+    const [numImages, setNumImages] = useState(solution[0]);
     const [finished, setFinished] = useState(false);
     const [drawModalOpen, setDrawModalOpen] = useState(false);
+    const [alert, setAlert] = useState({severity: 'success', content: '', open: false});
     const seemQueryRef = useRef(null);
     const queryRef = useRef(null);
 
@@ -110,6 +114,15 @@ const InpaintBlock = ({
     }
 
     const inpaint = function (e) {
+        if (selectedKeywords.size === 0) {
+            setAlert({
+                content: 'You haven\'t mave any mask yet...',
+                severity: 'error',
+                open: true,
+            });
+            return;
+        }
+
         updateModal(
             true,
             'Recording inpaint command..., please wait',
@@ -126,8 +139,8 @@ const InpaintBlock = ({
             }),
             keywords: Array.from(selectedKeywords),
             invert,
-            solution: solution[0],
-            solution_query: generateQuery(solution),
+            solution: numImages,
+            solution_query: queryRef.current.value,
             dataset: dataset,
             class_name: label,
         })
@@ -142,8 +155,8 @@ const InpaintBlock = ({
                 <Typography sx={{ mb: 1 }} variant="subtitle1" gutterBottom>
                     Generate <TextField
                         variant="standard"
-                        value={solution[0]}
-                        // onChange={e => setNumImages(parseInt(e.target.value) || 0)}
+                        value={numImages}
+                        onChange={e => setNumImages(parseInt(e.target.value) || 0)}
                     /> images {generateQuery(solution)}
                 </Typography>
 
@@ -186,7 +199,7 @@ const InpaintBlock = ({
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mt: 2 }}>
                     <TextField
                         variant="standard"
-                        ref={queryRef}
+                        inputRef={queryRef}
                         fullWidth
                         defaultValue={`A picture ${generateQuery(solution)}`}
                         label="Query for inpainter"
@@ -209,6 +222,14 @@ const InpaintBlock = ({
                 updateModal={updateModal}
                 updatePanoptic={updatePanoptic}
             />
+            <Snackbar
+                open={alert.open}
+                autoHideDuration={1000}
+                onClose={() => setAlert({...alert, open: false})}
+                anchorOrigin={{ vertical: "top", horizontal: "center" }}
+            >
+                <Alert severity={alert.severity}>{alert.content}</Alert>
+            </Snackbar>
         </Paper>
     );
 };

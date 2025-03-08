@@ -131,11 +131,30 @@ export default function Dashboard() {
   const [modalOpen, setModalOpen] = useState(false);
   const modalContent = useRef('');
 
-  const registerManualKeyword = function (isCanel) { // User add new keyword
+  // Ref for adding the selected image to the keyword select
+  const updatingImagesToKeywordsRef = useRef(undefined);
+
+  const registerManualKeyword = function (isCanel, expectedMode, updatingFunction) { // User add new keyword
     if (!!isCanel) {
       setSelectedImages({});
       setKeywordMode(false);
       return;
+    }
+
+    if (keywordMode == false) {
+      setKeywordMode(expectedMode);
+      if (updatingFunction) {
+        updatingImagesToKeywordsRef.current = updatingFunction;
+      }
+      return;
+    }
+
+    if (keywordMode == 'Adding' || keywordMode == 'Deleting') {
+      // Adding the image to current keyword
+      const images = Object.entries(selectedImages).filter(([key, value]) => value).map(([key, value]) => key);
+      updatingImagesToKeywordsRef.current?.(images);
+      updatingImagesToKeywordsRef.current = undefined;
+      setKeywordMode(false);
     }
 
     if (keywordMode == "Manual") {
@@ -172,8 +191,6 @@ export default function Dashboard() {
            modalContent.current = '';
           })
       }
-    } else if (keywordMode == false) {
-      setKeywordMode("Manual")
     }
   }
 
@@ -229,6 +246,7 @@ export default function Dashboard() {
                   setSelectedImages={setSelectedImages}
                   setPopover={setPopover}
                   keywords={keywords}
+                  registerManualKeyword={registerManualKeyword}
                 />
 
                 {/* PopoverPanel */}

@@ -22,8 +22,8 @@ import * as d3 from "d3";
 import RevertedImage from './RevertedImage';
 import LinkOffIcon from '@mui/icons-material/LinkOff';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import CancelIcon from '@mui/icons-material/Cancel';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import IndeterminateCheckBoxIcon from '@mui/icons-material/IndeterminateCheckBox';
 
 /**
  * Calculate compachness
@@ -50,6 +50,15 @@ const avgLimeCoefficient = function (data) {
   return _.sum(filteredCoefficient) / filteredCoefficient.length;
 }
 
+/**
+ * Find if two keywords are equal
+ */
+const equalKeywords = (keyword1, keyword2) => {
+  if(keyword1 === undefined || keyword2 === undefined) return false;
+
+  return keyword1.length === keyword2.length && keyword1.every((val, index) => val === keyword2[index]);
+};
+
 const Keywords = ({
   keywords,
   label,
@@ -74,6 +83,7 @@ const Keywords = ({
   const [orderBy, setOrderBy] = useState('score');
   const [useLimeKeyword, setUseLimeKeyword] = useState(false);
   const [fixedLimeKeyword, setFixedLimeKeyword] = useState(undefined);
+  const [hoveredData, setHoveredData] = useState(undefined);
 
   useEffect(() => {
     const limeKeyword = keywords?.filter((data) => data?.coefficient?.[0] !== undefined)
@@ -101,6 +111,9 @@ const Keywords = ({
     const images = data.images.flat()
     setHoveredImages(images)
     setFocusKeyword(data.keyword)
+    
+    // Show the adding icon
+    setHoveredData(data)
   }
 
   /**
@@ -109,6 +122,9 @@ const Keywords = ({
   const onMouseOut = function (e) {
     setHoveredImages(null)
     setFocusKeyword("")
+
+    // Disable the adding icon
+    setHoveredData(undefined);
   }
 
   /**
@@ -202,6 +218,49 @@ const Keywords = ({
     setKeywords([...keywordAfterDelete, remainKeyword, restoredKeyword]);
   };
 
+  /**
+   * On adding the image to keyword
+   */
+  const onAddingImageToKeyword = (currentIndex) => {
+    const cloneKeywords = _.cloneDeep(keywords);
+    
+    const addingFunction = (images) => {
+      // Update current images list
+      const currentKeywords = cloneKeywords[currentIndex];
+      currentKeywords.images = currentKeywords.images?.map((img_list) => {
+        return img_list.concat(images);
+      })
+      cloneKeywords[currentIndex] = currentKeywords;
+      setKeywords(cloneKeywords);
+    }
+
+    return addingFunction;
+  }
+
+  /**
+   * On deleting the image to keyword
+   */
+  const onDeletingImageToKeyword = (currentIndex) => {
+    const cloneKeywords = _.cloneDeep(keywords);
+
+    const deletingFunction = (images) => {
+      const imagesSet = new Set(images);
+
+      // Update current images list
+      const currentKeywords = cloneKeywords[currentIndex];
+      currentKeywords.images = currentKeywords.images?.map((img_list) => {
+        const result = img_list.filter(url => !imagesSet.has(url));
+        return Array.from(result);
+      });
+
+      cloneKeywords[currentIndex] = currentKeywords;
+      setKeywords(cloneKeywords);
+    }
+
+    return deletingFunction;
+  }
+
+
   const distanceFromCentroid = (images) => {
     const points = images.map(i => coordinates[i].tsne)
     const centroid = calculateCentroid(points);
@@ -266,6 +325,7 @@ const Keywords = ({
       });
   }, [keywords, order, orderBy, useLimeKeyword]);
 
+
   return (
     <Grid item lg={popoverCollapsed ? 5.8 : 4}>
       <Paper
@@ -290,7 +350,7 @@ const Keywords = ({
               width: "100%",
               height: "100%",
               backgroundColor: "rgba(0, 0, 0, 0.4)",
-              pointerEvents: "none",
+              pointerEvents: "auto",
               zIndex: 100,
             }}
           />
@@ -327,20 +387,9 @@ const Keywords = ({
                     <TableCell sx={{ fontWeight: 'bold' }}>
                       <Button>
                         {
-                          keywordMode === false ? (
-                            <Tooltip title={'Add Keyword'}>
-                              <AddCircleOutlineIcon onClick={() => registerManualKeyword(false)}/>
-                            </Tooltip>
-                          ) : (
-                            <Stack direction='row'>
-                              <Tooltip title={'Select Images Done'}>
-                                <CheckCircleOutlineIcon onClick={() => registerManualKeyword(false)}/>
-                              </Tooltip>
-                              <Tooltip title={'Cancel Adding Keyword'}>
-                                <CancelIcon onClick={() => registerManualKeyword(true)}/>
-                              </Tooltip>
-                            </Stack>
-                          )
+                          <Tooltip title={'Add Keyword'}>
+                            <AddCircleOutlineIcon onClick={() => registerManualKeyword(false, 'Manual')}/>
+                          </Tooltip>
                         }
                       </Button>
                       <TableSortLabel
@@ -387,6 +436,7 @@ const Keywords = ({
                   {sortedIndices?.map((sortedIndex) => {
                     const data = keywords[sortedIndex];
                     const index = keywords.indexOf(data);
+
                     return <TableRow
                       key={index}
                       draggable
@@ -402,33 +452,65 @@ const Keywords = ({
                         backgroundColor: focus(data),
                         // border: 1,
                         borderColor: "gray",
-    
                       }}
                     >
                       {/* Keyword */}
                       <TableCell component="th" scope="row" sx={{padding: '10px 0px 10px 10px'}}>
-                        {data.keyword.map((k, index2) => (
-                          <Stack direction='row' sx={{alignItems: 'center', justifyContent: 'space-between'}}>
-                            <TextField
-                              key={index2}
-                              variant="standard"
-                              value={k}
-                              onChange={(e) => onKeywordChange(e, index, index2)}
-                              onClick={(e) => e.stopPropagation()}
-                              sx={{ width: "100%" }}
+                      <Stack direction='row' alignItems='center'>
+                        { equalKeywords(data?.keyword, hoveredData?.keyword) && 
+                          <Stack direction='column'>
+                            <AddBoxIcon 
+                              sx={{position: 'relative', ml: -3}}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                registerManualKeyword(
+                                  false,
+                                  'Adding',
+                                  onAddingImageToKeyword(index),
+                                )
+                              }}
                             />
-                            {
-                              (index2 > 0) && <LinkOffIcon
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  e.stopPropagation();
-                                  onDecoupling(data, index2, index);
-                                }}
-                                sx={{fontSize: '15px', cursor: 'pointer'}}
-                              />
-                            }
+                            <IndeterminateCheckBoxIcon 
+                              sx={{position: 'relative', ml: -3}}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                registerManualKeyword(
+                                  false,
+                                  'Deleting',
+                                  onDeletingImageToKeyword(index),
+                                )
+                              }}
+                            />
                           </Stack>
-                        ))}
+                        }
+                        <Stack direction='column'>
+                          {data.keyword.map((k, index2) => (
+                                <Stack direction='row' sx={{alignItems: 'center', justifyContent: 'space-between'}}>
+                                  <TextField
+                                    key={index2}
+                                    variant="standard"
+                                    value={k}
+                                    onChange={(e) => onKeywordChange(e, index, index2)}
+                                    onClick={(e) => e.stopPropagation()}
+                                    sx={{ width: "100%" }}
+                                  />
+                                  {
+                                    (index2 > 0) && <LinkOffIcon
+                                      onClick={(e) => {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        onDecoupling(data, index2, index);
+                                      }}
+                                      sx={{fontSize: '15px', cursor: 'pointer'}}
+                                    />
+                                  }
+                                </Stack>
+                            ))
+                          }
+                        </Stack>
+                      </Stack>
                       </TableCell>
                       {/* Score */}
                       <TableCell sx={{ backgroundColor: scoreColor(weightedSumScore(data)) }} align="right">

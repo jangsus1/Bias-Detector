@@ -1,9 +1,22 @@
 import React, { useRef, useEffect, useState, useMemo, useCallback } from "react";
-import { Box, Grid, Paper, Typography, CircularProgress, IconButton, Divider } from '@mui/material';
+import {
+  Box,
+  Grid,
+  Paper,
+  Typography,
+  CircularProgress,
+  IconButton,
+  Divider,
+  Stack,
+  Button,
+  Tooltip,
+} from '@mui/material';
 import _, { range, set } from 'lodash';
 import * as d3 from "d3";
-import { PieChart, Pie, Tooltip, Cell } from "recharts";
+import { PieChart, Pie, Cell } from "recharts";
 import textures from 'textures';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const scoreColor = d3.scaleDiverging([2, 0, -2], d3.interpolateRdBu);
 const red = scoreColor(1);
@@ -67,6 +80,7 @@ const Images = ({
   keywordMode,
   setPopover,
   keywords,
+  registerManualKeyword,
 }) => {
   // Use an SVG ref instead of a canvas ref
   const svgRef = useRef(null);
@@ -241,7 +255,7 @@ const Images = ({
         return data.opacity;
       } else if (type === "rect") {
         if (viewToggle === "image") return data.opacity;
-        if (keywordMode === "Manual") return 1;
+        if (!!keywordMode) return 1;
         if (clickedImage) return clickedImage.image === data.image ? 1 : 0.1;
         if (!allImagesLoaded) return 0;
         return data.opacity;
@@ -443,7 +457,7 @@ const Images = ({
   }, [scale, gridDict, clickedObj, setPopover, keywordMode, coordinates, selectedImages, fullData, calculateDistanceGroup, highlightKeywords, keywords, clickedImage]);
 
   return (
-    <Grid item lg={6}>
+    <Grid item lg={6} position='relative'>
       {!allImagesLoaded && (
         <div
           style={{
@@ -467,63 +481,91 @@ const Images = ({
           borderRadius: "12px"
         }}
       >
-        <Box
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            position: "relative",
-            width: "100%",
-            height: "40px",
-            borderBottom: "2px solid #ddd"
-          }}
-        >
-          <IconButton
-            onClick={toggle}
-            sx={{
-              position: "absolute",
-              left: "10px",
-              padding: "8px 12px",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer"
+        <Stack direction={'row'} sx={{ borderBottom: "2px solid #ddd", position: 'relative '}}>
+          <Box
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "relative",
+              width: "100%",
+              height: "40px",
             }}
           >
-            {viewToggle === "prediction" ? (
-              <img src="/fill.png" alt="icon" width="24" height="24" />
-            ) : (
-              <img src="/border.png" alt="icon" width="24" height="24" />
-            )}
-          </IconButton>
-          <Typography variant="h6">Explore Panel</Typography>
-          <PieChart style={{ marginLeft: 10 }} width={40} height={40}>
-            <Pie
-              data={[
-                {
-                  name: `Correct (${parseInt((totalCorrect / (totalCorrect + totalWrong)) * 100)}%)`,
-                  value: totalCorrect,
-                  color: "#C9C9C9"
-                },
-                {
-                  name: `Wrong (${parseInt((totalWrong / (totalCorrect + totalWrong)) * 100)}%)`,
-                  value: totalWrong,
-                  color: pattern
-                }
-              ]}
-              dataKey="value"
-              nameKey="name"
-              cx="50%"
-              cy="50%"
-              outerRadius={15}
-              stroke="black" // Adds black border
-              strokeWidth={1}
+            <IconButton
+              onClick={toggle}
+              sx={{
+                position: "absolute",
+                left: "10px",
+                padding: "8px 12px",
+                border: "none",
+                borderRadius: "5px",
+                cursor: "pointer"
+              }}
             >
-              <Cell key="cell0" fill="#C9C9C9" />
-              <Cell key="cell1" fill={pattern} />
-            </Pie>
-            <Tooltip />
-          </PieChart>
-        </Box>
+              {viewToggle === "prediction" ? (
+                <img src="/fill.png" alt="icon" width="24" height="24" />
+              ) : (
+                <img src="/border.png" alt="icon" width="24" height="24" />
+              )}
+            </IconButton>
+            <Typography variant="h6">Explore Panel</Typography>
+            <PieChart style={{ marginLeft: 10 }} width={40} height={40}>
+              <Pie
+                data={[
+                  {
+                    name: `Correct (${parseInt((totalCorrect / (totalCorrect + totalWrong)) * 100)}%)`,
+                    value: totalCorrect,
+                    color: "#C9C9C9"
+                  },
+                  {
+                    name: `Wrong (${parseInt((totalWrong / (totalCorrect + totalWrong)) * 100)}%)`,
+                    value: totalWrong,
+                    color: pattern
+                  }
+                ]}
+                dataKey="value"
+                nameKey="name"
+                cx="50%"
+                cy="50%"
+                outerRadius={15}
+                stroke="black" // Adds black border
+                strokeWidth={1}
+              >
+                <Cell key="cell0" fill="#C9C9C9" />
+                <Cell key="cell1" fill={pattern} />
+              </Pie>
+              <Tooltip />
+            </PieChart>
+          </Box>
+
+          {/* TODO: Show in register manual keyword mode */}
+          {
+            keywordMode && (
+              <Box ml={'auto'} right={0} sx={{position: 'absolute', }}> 
+                {
+                  <Stack direction='row'>
+                      <Tooltip title={'Select Images Done'}>
+                        <Button onClick={() => registerManualKeyword(false)}>
+                          < CheckCircleOutlineIcon/>
+                        </Button>
+                      </Tooltip>
+                      <Tooltip title={
+                        keywordMode === 'Manual' ?
+                        'Cancel Adding Keyword'
+                        : 'Cancel Updating Images to Keyword'
+                      }>
+                        <Button onClick={() => registerManualKeyword(true)}>
+                          <CancelIcon sx={{}}/>
+                        </Button>
+                      </Tooltip>
+                  </Stack>
+                }
+              </Box>
+            )
+          }
+        </Stack>
+
         <Divider />
         <svg
           ref={svgRef}
