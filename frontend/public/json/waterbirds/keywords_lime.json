@@ -6,7 +6,7 @@
             "accuracy": 0.0,
             "bias": "S",
             "sepcificity": -4.78,
-            "coefficient": 0.1283183227187818,
+            "coefficient": 0.128318322718726,
             "images": [
                 "val/landbird/land_O_Cerulean_Warbler_0067_797220.jpg"
             ]
@@ -18,7 +18,7 @@
             "bias": "S",
             "sepcificity": -1.047,
             "class": 7,
-            "coefficient": 0.1220433117309272,
+            "coefficient": 0.1220433117309607,
             "images": [
                 "val/landbird/land_O_Whip_Poor_Will_0027_796441.jpg"
             ]
@@ -30,7 +30,7 @@
             "bias": "S",
             "sepcificity": -1.156,
             "class": 7,
-            "coefficient": 0.0580478166355869,
+            "coefficient": 0.058047816635603,
             "images": [
                 "val/landbird/land_X_Evening_Grosbeak_0063_37409.jpg",
                 "val/landbird/water_X_White_Eyed_Vireo_0135_158955.jpg",
@@ -65,7 +65,7 @@
             "bias": "S",
             "sepcificity": -0.5938,
             "class": 1,
-            "coefficient": 0.0512377734654249,
+            "coefficient": 0.051237773465386,
             "images": [
                 "val/landbird/land_X_Grasshopper_Sparrow_0043_115880.jpg",
                 "val/landbird/land_X_Northern_Flicker_0127_28411.jpg",
@@ -82,7 +82,7 @@
             "bias": "S",
             "sepcificity": -3.438,
             "class": 2,
-            "coefficient": 0.0784425839384404,
+            "coefficient": 0.0784425839384429,
             "images": [
                 "val/landbird/land_X_Black_Billed_Cuckoo_0091_26246.jpg",
                 "val/landbird/water_X_White_Eyed_Vireo_0135_158955.jpg",
@@ -97,7 +97,7 @@
             "bias": "S",
             "sepcificity": -4.22,
             "class": 6,
-            "coefficient": -0.036406817575118,
+            "coefficient": -0.0364068175751862,
             "images": [
                 "val/landbird/water_X_White_Throated_Sparrow_0014_129148.jpg",
                 "val/landbird/water_X_Red_Headed_Woodpecker_0073_182784.jpg",
@@ -117,7 +117,7 @@
             "bias": "S",
             "sepcificity": -3.375,
             "class": 6,
-            "coefficient": 0.0502150179638355,
+            "coefficient": 0.0502150179639196,
             "images": [
                 "val/landbird/water_X_Red_Bellied_Woodpecker_0074_180936.jpg",
                 "val/landbird/water_X_Tree_Swallow_0075_136081.jpg",
@@ -146,7 +146,7 @@
             "bias": "S",
             "sepcificity": -0.672,
             "class": 3,
-            "coefficient": -0.122347545436594,
+            "coefficient": -0.1223475454365835,
             "images": [
                 "val/landbird/land_X_Florida_Jay_0026_64938.jpg",
                 "val/landbird/land_X_Florida_Jay_0004_65042.jpg",
@@ -171,7 +171,7 @@
             "bias": "S",
             "sepcificity": -2.062,
             "class": 6,
-            "coefficient": 0.0758228786086052,
+            "coefficient": 0.0758228786085682,
             "images": [
                 "val/landbird/water_X_Tree_Swallow_0075_136081.jpg",
                 "val/landbird/land_X_Chuck_Will_Widow_0039_797000.jpg",
@@ -193,7 +193,7 @@
             "bias": "S",
             "sepcificity": -2.39,
             "class": 6,
-            "coefficient": 0.060984482287235,
+            "coefficient": 0.060984482287175,
             "images": [
                 "val/landbird/land_X_Pied_Kingfisher_0059_72492.jpg",
                 "val/landbird/land_X_Common_Yellowthroat_0025_190547.jpg",
@@ -245,7 +245,7 @@
             "bias": "S",
             "sepcificity": -1.344,
             "class": 4,
-            "coefficient": 0.1803673006360126,
+            "coefficient": 0.1803673006360131,
             "images": [
                 "val/landbird/water_X_Red_Winged_Blackbird_0039_4285.jpg"
             ]
@@ -257,7 +257,7 @@
             "bias": "",
             "sepcificity": -0.4531,
             "class": 5,
-            "coefficient": -0.0357661490034376,
+            "coefficient": -0.0357661490034351,
             "images": [
                 "val/landbird/land_O_Lazuli_Bunting_0097_14617.jpg",
                 "val/landbird/land_X_Yellow_Bellied_Flycatcher_0066_795514.jpg",
@@ -318,7 +318,7 @@
             "bias": "S",
             "sepcificity": -0.7188,
             "class": 2,
-            "coefficient": -0.2358832731705999,
+            "coefficient": -0.2358832731704256,
             "images": [
                 "val/waterbird/water_O_Red_Faced_Cormorant_0066_796333.jpg",
                 "val/waterbird/water_O_Pied_Billed_Grebe_0106_35418.jpg",
@@ -334,7 +334,7 @@
             "bias": "S",
             "sepcificity": -1.359,
             "class": 2,
-            "coefficient": -0.0715150347989924,
+            "coefficient": -0.0715150347990917,
             "images": [
                 "val/waterbird/water_O_Gadwall_0065_31659.jpg",
                 "val/waterbird/water_X_Caspian_Tern_0010_145667.jpg",
@@ -368,7 +368,7 @@
             "accuracy": 0.6666666666666666,
             "bias": "S",
             "sepcificity": -1.156,
-            "coefficient": -0.200901887074461,
+            "coefficient": -0.200901887073902,
             "images": [
                 "val/waterbird/water_O_Western_Wood_Pewee_0017_795041.jpg",
                 "val/waterbird/water_O_Hooded_Merganser_0072_78973.jpg",
@@ -385,7 +385,7 @@
             "bias": "S",
             "sepcificity": -0.547,
             "class": 1,
-            "coefficient": -0.2417041914928364,
+            "coefficient": -0.2417041914925262,
             "images": [
                 "val/waterbird/water_X_Pigeon_Guillemot_0007_40313.jpg"
             ]
@@ -397,7 +397,7 @@
             "bias": "S",
             "sepcificity": -2.422,
             "class": 3,
-            "coefficient": -0.0663222531902442,
+            "coefficient": -0.0663222531902254,
             "images": [
                 "val/waterbird/water_O_Ring_Billed_Gull_0083_51407.jpg",
                 "val/waterbird/water_O_Common_Tern_0040_147973.jpg",
@@ -447,7 +447,7 @@
             "bias": "",
             "sepcificity": -2.672,
             "class": 3,
-            "coefficient": -0.0392361983720259,
+            "coefficient": -0.0392361983730028,
             "images": [
                 "val/waterbird/water_X_Artic_Tern_0024_143268.jpg",
                 "val/waterbird/water_O_Horned_Puffin_0047_100967.jpg",
@@ -522,7 +522,7 @@
             "bias": "",
             "sepcificity": -0.2656,
             "class": 2,
-            "coefficient": -0.0422329600204389,
+            "coefficient": -0.0422329600204645,
             "images": [
                 "val/waterbird/water_O_Brown_Pelican_0127_93700.jpg",
                 "val/waterbird/water_O_Forsters_Tern_0082_151937.jpg",
@@ -551,7 +551,7 @@
             "bias": "",
             "sepcificity": -0.953,
             "class": 3,
-            "coefficient": 0.0536983709351332,
+            "coefficient": 0.0536983709351171,
             "images": [
                 "val/waterbird/land_O_Western_Gull_0099_53670.jpg",
                 "val/waterbird/land_O_Eared_Grebe_0047_34204.jpg",
@@ -559,14 +559,27 @@
             ]
         },
         {
-            "keyword": "bamboo_forest",
+            "keyword": "bamboo forest",
             "score": -3.969,
             "accuracy": 0.0,
             "bias": "",
             "sepcificity": -0.9844,
             "class": 3,
-            "coefficient": 0.0485058309452675,
-            "images": []
+            "coefficient": 0.0485058309452443,
+            "images": [
+                "val/waterbird/land_O_White_Pelican_0031_97064.jpg",
+                "val/waterbird/land_O_Western_Gull_0099_53670.jpg",
+                "val/waterbird/land_O_Brown_Pelican_0018_94432.jpg",
+                "val/waterbird/land_O_Long_Tailed_Jaeger_0034_797102.jpg",
+                "val/waterbird/land_O_Red_Breasted_Merganser_0031_79372.jpg",
+                "val/waterbird/land_O_Ring_Billed_Gull_0107_51306.jpg",
+                "val/waterbird/land_O_Mallard_0004_76958.jpg",
+                "val/waterbird/land_O_Red_Faced_Cormorant_0047_796330.jpg",
+                "val/waterbird/land_O_Northern_Fulmar_0053_43843.jpg",
+                "val/waterbird/land_O_Caspian_Tern_0048_145672.jpg",
+                "val/waterbird/land_O_Eastern_Towhee_0105_22675.jpg",
+                "val/waterbird/land_O_White_Pelican_0036_96863.jpg"
+            ]
         }
     ]
 }

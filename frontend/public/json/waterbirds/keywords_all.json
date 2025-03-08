@@ -3026,20 +3026,38 @@
             ]
         },
         {
-            "keyword": "city_skyline",
-            "score": -1.9375,
-            "accuracy": 0.0,
+            "keyword": "city skyline",
+            "score": -1.234,
+            "accuracy": 0.75,
             "bias": "",
-            "sepcificity": 3.453,
-            "images": []
+            "sepcificity": 2.89,
+            "images": [
+                "val/waterbird/water_O_Horned_Puffin_0061_100845.jpg",
+                "val/waterbird/water_O_Eastern_Towhee_0049_22357.jpg",
+                "val/waterbird/water_X_Pacific_Loon_0033_75571.jpg",
+                "val/waterbird/water_O_Red_Legged_Kittiwake_0058_795417.jpg"
+            ]
         },
         {
-            "keyword": "bamboo_forest",
-            "score": -3.969,
-            "accuracy": 0.0,
+            "keyword": "bamboo forest",
+            "score": -3.594,
+            "accuracy": 0.8333333333333334,
             "bias": "",
-            "sepcificity": -0.9844,
-            "images": []
+            "sepcificity": -1.781,
+            "images": [
+                "val/waterbird/land_O_White_Pelican_0031_97064.jpg",
+                "val/waterbird/land_O_Western_Gull_0099_53670.jpg",
+                "val/waterbird/land_O_Brown_Pelican_0018_94432.jpg",
+                "val/waterbird/land_O_Long_Tailed_Jaeger_0034_797102.jpg",
+                "val/waterbird/land_O_Red_Breasted_Merganser_0031_79372.jpg",
+                "val/waterbird/land_O_Ring_Billed_Gull_0107_51306.jpg",
+                "val/waterbird/land_O_Mallard_0004_76958.jpg",
+                "val/waterbird/land_O_Red_Faced_Cormorant_0047_796330.jpg",
+                "val/waterbird/land_O_Northern_Fulmar_0053_43843.jpg",
+                "val/waterbird/land_O_Caspian_Tern_0048_145672.jpg",
+                "val/waterbird/land_O_Eastern_Towhee_0105_22675.jpg",
+                "val/waterbird/land_O_White_Pelican_0036_96863.jpg"
+            ]
         }
     ]
 }

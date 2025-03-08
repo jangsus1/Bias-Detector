@@ -16414,7 +16414,7 @@
             "landbird": 59,
             "waterbird": 0
         },
-        "bamboo_forest": {
+        "bamboo forest": {
             "landbird": 44,
             "waterbird": 0
         },
@@ -16446,7 +16446,7 @@
             "landbird": 18,
             "waterbird": 0
         },
-        "bamboo_forest_reeds": {
+        "bamboo forest_reeds": {
             "landbird": 16,
             "waterbird": 0
         },
@@ -16474,7 +16474,7 @@
             "landbird": 13,
             "waterbird": 0
         },
-        "bamboo_forest_grass": {
+        "bamboo forest_grass": {
             "landbird": 14,
             "waterbird": 1
         },
@@ -16498,7 +16498,7 @@
             "landbird": 50,
             "waterbird": 0
         },
-        "bamboo_forest_fence": {
+        "bamboo forest_fence": {
             "landbird": 50,
             "waterbird": 0
         },
@@ -16518,7 +16518,7 @@
             "landbird": 33,
             "waterbird": 2
         },
-        "bamboo_forest_gazebo": {
+        "bamboo forest_gazebo": {
             "landbird": 56,
             "waterbird": 1
         },
@@ -16534,7 +16534,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch": {
+        "bamboo forest_branch": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16546,7 +16546,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_trees": {
+        "bamboo forest_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16554,11 +16554,11 @@
             "landbird": 9,
             "waterbird": 0
         },
-        "bamboo_forest_field": {
+        "bamboo forest_field": {
             "landbird": 24,
             "waterbird": 0
         },
-        "bamboo_forest_leaves": {
+        "bamboo forest_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16586,7 +16586,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_grass_reeds": {
+        "bamboo forest_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16610,7 +16610,7 @@
             "landbird": 18,
             "waterbird": 0
         },
-        "bamboo_forest_fence_reeds": {
+        "bamboo forest_fence_reeds": {
             "landbird": 9,
             "waterbird": 0
         },
@@ -16630,7 +16630,7 @@
             "landbird": 21,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_reeds": {
+        "bamboo forest_gazebo_reeds": {
             "landbird": 20,
             "waterbird": 0
         },
@@ -16646,7 +16646,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_reeds": {
+        "bamboo forest_branch_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16658,7 +16658,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_reeds_trees": {
+        "bamboo forest_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16666,11 +16666,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_reeds": {
+        "bamboo forest_field_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_leaves_reeds": {
+        "bamboo forest_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16694,7 +16694,7 @@
             "landbird": 21,
             "waterbird": 1
         },
-        "bamboo_forest_fence_grass": {
+        "bamboo forest_fence_grass": {
             "landbird": 25,
             "waterbird": 0
         },
@@ -16714,7 +16714,7 @@
             "landbird": 19,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_grass": {
+        "bamboo forest_gazebo_grass": {
             "landbird": 10,
             "waterbird": 0
         },
@@ -16730,7 +16730,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_grass": {
+        "bamboo forest_branch_grass": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16742,7 +16742,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_grass_trees": {
+        "bamboo forest_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16750,11 +16750,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_grass": {
+        "bamboo forest_field_grass": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_grass_leaves": {
+        "bamboo forest_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16774,7 +16774,7 @@
             "landbird": 48,
             "waterbird": 1
         },
-        "bamboo_forest_fence_gazebo": {
+        "bamboo forest_fence_gazebo": {
             "landbird": 48,
             "waterbird": 0
         },
@@ -16790,7 +16790,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence": {
+        "bamboo forest_branch_fence": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16802,7 +16802,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_trees": {
+        "bamboo forest_fence_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16810,11 +16810,11 @@
             "landbird": 16,
             "waterbird": 1
         },
-        "bamboo_forest_fence_field": {
+        "bamboo forest_fence_field": {
             "landbird": 9,
             "waterbird": 1
         },
-        "bamboo_forest_fence_leaves": {
+        "bamboo forest_fence_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16830,7 +16830,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo": {
+        "bamboo forest_branch_gazebo": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16842,7 +16842,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_trees": {
+        "bamboo forest_gazebo_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16850,11 +16850,11 @@
             "landbird": 20,
             "waterbird": 2
         },
-        "bamboo_forest_field_gazebo": {
+        "bamboo forest_field_gazebo": {
             "landbird": 11,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_leaves": {
+        "bamboo forest_gazebo_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16866,7 +16866,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_trees": {
+        "bamboo forest_branch_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16874,11 +16874,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field": {
+        "bamboo forest_branch_field": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_leaves": {
+        "bamboo forest_branch_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16886,15 +16886,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_trees": {
+        "bamboo forest_field_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_leaves_trees": {
+        "bamboo forest_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_leaves": {
+        "bamboo forest_field_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16918,7 +16918,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_grass_reeds": {
+        "bamboo forest_fence_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16938,7 +16938,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_grass_reeds": {
+        "bamboo forest_gazebo_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16954,7 +16954,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_grass_reeds": {
+        "bamboo forest_branch_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16966,7 +16966,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_grass_reeds_trees": {
+        "bamboo forest_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16974,11 +16974,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_grass_reeds": {
+        "bamboo forest_field_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_grass_leaves_reeds": {
+        "bamboo forest_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -16998,7 +16998,7 @@
             "landbird": 20,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_reeds": {
+        "bamboo forest_fence_gazebo_reeds": {
             "landbird": 15,
             "waterbird": 0
         },
@@ -17014,7 +17014,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_reeds": {
+        "bamboo forest_branch_fence_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17026,7 +17026,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_reeds_trees": {
+        "bamboo forest_fence_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17034,11 +17034,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_reeds": {
+        "bamboo forest_fence_field_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_leaves_reeds": {
+        "bamboo forest_fence_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17054,7 +17054,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_reeds": {
+        "bamboo forest_branch_gazebo_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17066,7 +17066,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_reeds_trees": {
+        "bamboo forest_gazebo_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17074,11 +17074,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_reeds": {
+        "bamboo forest_field_gazebo_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_leaves_reeds": {
+        "bamboo forest_gazebo_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17090,7 +17090,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_reeds_trees": {
+        "bamboo forest_branch_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17098,11 +17098,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_reeds": {
+        "bamboo forest_branch_field_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_leaves_reeds": {
+        "bamboo forest_branch_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17110,15 +17110,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_reeds_trees": {
+        "bamboo forest_field_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_leaves_reeds_trees": {
+        "bamboo forest_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_leaves_reeds": {
+        "bamboo forest_field_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17138,7 +17138,7 @@
             "landbird": 11,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_grass": {
+        "bamboo forest_fence_gazebo_grass": {
             "landbird": 16,
             "waterbird": 0
         },
@@ -17154,7 +17154,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_grass": {
+        "bamboo forest_branch_fence_grass": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17166,7 +17166,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_grass_trees": {
+        "bamboo forest_fence_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17174,11 +17174,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_grass": {
+        "bamboo forest_fence_field_grass": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_grass_leaves": {
+        "bamboo forest_fence_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17194,7 +17194,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_grass": {
+        "bamboo forest_branch_gazebo_grass": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17206,7 +17206,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_grass_trees": {
+        "bamboo forest_gazebo_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17214,11 +17214,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_grass": {
+        "bamboo forest_field_gazebo_grass": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_grass_leaves": {
+        "bamboo forest_gazebo_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17230,7 +17230,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_grass_trees": {
+        "bamboo forest_branch_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17238,11 +17238,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_grass": {
+        "bamboo forest_branch_field_grass": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_grass_leaves": {
+        "bamboo forest_branch_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17250,15 +17250,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_grass_trees": {
+        "bamboo forest_field_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_grass_leaves_trees": {
+        "bamboo forest_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_grass_leaves": {
+        "bamboo forest_field_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17274,7 +17274,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo": {
+        "bamboo forest_branch_fence_gazebo": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17286,7 +17286,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_trees": {
+        "bamboo forest_fence_gazebo_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17294,11 +17294,11 @@
             "landbird": 11,
             "waterbird": 1
         },
-        "bamboo_forest_fence_field_gazebo": {
+        "bamboo forest_fence_field_gazebo": {
             "landbird": 17,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_leaves": {
+        "bamboo forest_fence_gazebo_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17310,7 +17310,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_trees": {
+        "bamboo forest_branch_fence_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17318,11 +17318,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field": {
+        "bamboo forest_branch_fence_field": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_leaves": {
+        "bamboo forest_branch_fence_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17330,15 +17330,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_trees": {
+        "bamboo forest_fence_field_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_leaves_trees": {
+        "bamboo forest_fence_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_leaves": {
+        "bamboo forest_fence_field_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17350,7 +17350,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_trees": {
+        "bamboo forest_branch_gazebo_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17358,11 +17358,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo": {
+        "bamboo forest_branch_field_gazebo": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_leaves": {
+        "bamboo forest_branch_gazebo_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17370,15 +17370,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_trees": {
+        "bamboo forest_field_gazebo_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_leaves_trees": {
+        "bamboo forest_gazebo_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_leaves": {
+        "bamboo forest_field_gazebo_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17386,19 +17386,19 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_trees": {
+        "bamboo forest_branch_field_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_leaves_trees": {
+        "bamboo forest_branch_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_leaves": {
+        "bamboo forest_branch_field_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_leaves_trees": {
+        "bamboo forest_field_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17418,7 +17418,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_grass_reeds": {
+        "bamboo forest_fence_gazebo_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17434,7 +17434,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_grass_reeds": {
+        "bamboo forest_branch_fence_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17446,7 +17446,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_grass_reeds_trees": {
+        "bamboo forest_fence_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17454,11 +17454,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_grass_reeds": {
+        "bamboo forest_fence_field_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_grass_leaves_reeds": {
+        "bamboo forest_fence_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17474,7 +17474,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_grass_reeds": {
+        "bamboo forest_branch_gazebo_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17486,7 +17486,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_grass_reeds_trees": {
+        "bamboo forest_gazebo_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17494,11 +17494,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_grass_reeds": {
+        "bamboo forest_field_gazebo_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_grass_leaves_reeds": {
+        "bamboo forest_gazebo_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17510,7 +17510,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_grass_reeds_trees": {
+        "bamboo forest_branch_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17518,11 +17518,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_grass_reeds": {
+        "bamboo forest_branch_field_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_grass_leaves_reeds": {
+        "bamboo forest_branch_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17530,15 +17530,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_grass_reeds_trees": {
+        "bamboo forest_field_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_grass_leaves_reeds_trees": {
+        "bamboo forest_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_grass_leaves_reeds": {
+        "bamboo forest_field_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17554,7 +17554,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_reeds": {
+        "bamboo forest_branch_fence_gazebo_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17566,7 +17566,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_reeds_trees": {
+        "bamboo forest_fence_gazebo_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17574,11 +17574,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_reeds": {
+        "bamboo forest_fence_field_gazebo_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_leaves_reeds": {
+        "bamboo forest_fence_gazebo_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17590,7 +17590,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_reeds_trees": {
+        "bamboo forest_branch_fence_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17598,11 +17598,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_reeds": {
+        "bamboo forest_branch_fence_field_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_leaves_reeds": {
+        "bamboo forest_branch_fence_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17610,15 +17610,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_reeds_trees": {
+        "bamboo forest_fence_field_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_leaves_reeds_trees": {
+        "bamboo forest_fence_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_leaves_reeds": {
+        "bamboo forest_fence_field_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17630,7 +17630,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_reeds_trees": {
+        "bamboo forest_branch_gazebo_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17638,11 +17638,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_reeds": {
+        "bamboo forest_branch_field_gazebo_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_leaves_reeds": {
+        "bamboo forest_branch_gazebo_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17650,15 +17650,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_reeds_trees": {
+        "bamboo forest_field_gazebo_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_leaves_reeds_trees": {
+        "bamboo forest_gazebo_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_leaves_reeds": {
+        "bamboo forest_field_gazebo_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17666,19 +17666,19 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_reeds_trees": {
+        "bamboo forest_branch_field_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_leaves_reeds_trees": {
+        "bamboo forest_branch_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_leaves_reeds": {
+        "bamboo forest_branch_field_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_leaves_reeds_trees": {
+        "bamboo forest_field_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17694,7 +17694,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_grass": {
+        "bamboo forest_branch_fence_gazebo_grass": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17706,7 +17706,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_grass_trees": {
+        "bamboo forest_fence_gazebo_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17714,11 +17714,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_grass": {
+        "bamboo forest_fence_field_gazebo_grass": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_grass_leaves": {
+        "bamboo forest_fence_gazebo_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17730,7 +17730,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_grass_trees": {
+        "bamboo forest_branch_fence_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17738,11 +17738,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_grass": {
+        "bamboo forest_branch_fence_field_grass": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_grass_leaves": {
+        "bamboo forest_branch_fence_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17750,15 +17750,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_grass_trees": {
+        "bamboo forest_fence_field_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_grass_leaves_trees": {
+        "bamboo forest_fence_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_grass_leaves": {
+        "bamboo forest_fence_field_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17770,7 +17770,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_grass_trees": {
+        "bamboo forest_branch_gazebo_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17778,11 +17778,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_grass": {
+        "bamboo forest_branch_field_gazebo_grass": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_grass_leaves": {
+        "bamboo forest_branch_gazebo_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17790,15 +17790,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_grass_trees": {
+        "bamboo forest_field_gazebo_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_grass_leaves_trees": {
+        "bamboo forest_gazebo_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_grass_leaves": {
+        "bamboo forest_field_gazebo_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17806,19 +17806,19 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_grass_trees": {
+        "bamboo forest_branch_field_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_grass_leaves_trees": {
+        "bamboo forest_branch_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_grass_leaves": {
+        "bamboo forest_branch_field_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_grass_leaves_trees": {
+        "bamboo forest_field_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17830,7 +17830,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_trees": {
+        "bamboo forest_branch_fence_gazebo_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17838,11 +17838,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo": {
+        "bamboo forest_branch_fence_field_gazebo": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_leaves": {
+        "bamboo forest_branch_fence_gazebo_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17850,15 +17850,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_trees": {
+        "bamboo forest_fence_field_gazebo_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_leaves_trees": {
+        "bamboo forest_fence_gazebo_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_leaves": {
+        "bamboo forest_fence_field_gazebo_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17866,19 +17866,19 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_trees": {
+        "bamboo forest_branch_fence_field_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_leaves_trees": {
+        "bamboo forest_branch_fence_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_leaves": {
+        "bamboo forest_branch_fence_field_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_leaves_trees": {
+        "bamboo forest_fence_field_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17886,23 +17886,23 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_trees": {
+        "bamboo forest_branch_field_gazebo_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_leaves_trees": {
+        "bamboo forest_branch_gazebo_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_leaves": {
+        "bamboo forest_branch_field_gazebo_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_leaves_trees": {
+        "bamboo forest_field_gazebo_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_leaves_trees": {
+        "bamboo forest_branch_field_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17918,7 +17918,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_grass_reeds": {
+        "bamboo forest_branch_fence_gazebo_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17930,7 +17930,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_grass_reeds_trees": {
+        "bamboo forest_fence_gazebo_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17938,11 +17938,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_grass_reeds": {
+        "bamboo forest_fence_field_gazebo_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_grass_leaves_reeds": {
+        "bamboo forest_fence_gazebo_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17954,7 +17954,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_grass_reeds_trees": {
+        "bamboo forest_branch_fence_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17962,11 +17962,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_grass_reeds": {
+        "bamboo forest_branch_fence_field_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_grass_leaves_reeds": {
+        "bamboo forest_branch_fence_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17974,15 +17974,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_grass_reeds_trees": {
+        "bamboo forest_fence_field_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_grass_leaves_reeds_trees": {
+        "bamboo forest_fence_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_grass_leaves_reeds": {
+        "bamboo forest_fence_field_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -17994,7 +17994,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_grass_reeds_trees": {
+        "bamboo forest_branch_gazebo_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18002,11 +18002,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_grass_reeds": {
+        "bamboo forest_branch_field_gazebo_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_grass_leaves_reeds": {
+        "bamboo forest_branch_gazebo_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18014,15 +18014,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_grass_reeds_trees": {
+        "bamboo forest_field_gazebo_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_gazebo_grass_leaves_reeds_trees": {
+        "bamboo forest_gazebo_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_grass_leaves_reeds": {
+        "bamboo forest_field_gazebo_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18030,19 +18030,19 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_grass_reeds_trees": {
+        "bamboo forest_branch_field_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_grass_leaves_reeds_trees": {
+        "bamboo forest_branch_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_grass_leaves_reeds": {
+        "bamboo forest_branch_field_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_grass_leaves_reeds_trees": {
+        "bamboo forest_field_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18054,7 +18054,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_reeds_trees": {
+        "bamboo forest_branch_fence_gazebo_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18062,11 +18062,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_reeds": {
+        "bamboo forest_branch_fence_field_gazebo_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_leaves_reeds": {
+        "bamboo forest_branch_fence_gazebo_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18074,15 +18074,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_reeds_trees": {
+        "bamboo forest_fence_field_gazebo_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_leaves_reeds_trees": {
+        "bamboo forest_fence_gazebo_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_leaves_reeds": {
+        "bamboo forest_fence_field_gazebo_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18090,19 +18090,19 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_reeds_trees": {
+        "bamboo forest_branch_fence_field_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_leaves_reeds_trees": {
+        "bamboo forest_branch_fence_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_leaves_reeds": {
+        "bamboo forest_branch_fence_field_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_leaves_reeds_trees": {
+        "bamboo forest_fence_field_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18110,23 +18110,23 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_reeds_trees": {
+        "bamboo forest_branch_field_gazebo_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_leaves_reeds_trees": {
+        "bamboo forest_branch_gazebo_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_leaves_reeds": {
+        "bamboo forest_branch_field_gazebo_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_leaves_reeds_trees": {
+        "bamboo forest_field_gazebo_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_leaves_reeds_trees": {
+        "bamboo forest_branch_field_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18138,7 +18138,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_grass_trees": {
+        "bamboo forest_branch_fence_gazebo_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18146,11 +18146,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_grass": {
+        "bamboo forest_branch_fence_field_gazebo_grass": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_grass_leaves": {
+        "bamboo forest_branch_fence_gazebo_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18158,15 +18158,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_grass_trees": {
+        "bamboo forest_fence_field_gazebo_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_grass_leaves_trees": {
+        "bamboo forest_fence_gazebo_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_grass_leaves": {
+        "bamboo forest_fence_field_gazebo_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18174,19 +18174,19 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_grass_trees": {
+        "bamboo forest_branch_fence_field_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_grass_leaves_trees": {
+        "bamboo forest_branch_fence_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_grass_leaves": {
+        "bamboo forest_branch_fence_field_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_grass_leaves_trees": {
+        "bamboo forest_fence_field_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18194,23 +18194,23 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_grass_trees": {
+        "bamboo forest_branch_field_gazebo_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_grass_leaves_trees": {
+        "bamboo forest_branch_gazebo_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_grass_leaves": {
+        "bamboo forest_branch_field_gazebo_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_grass_leaves_trees": {
+        "bamboo forest_field_gazebo_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_grass_leaves_trees": {
+        "bamboo forest_branch_field_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18218,27 +18218,27 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_trees": {
+        "bamboo forest_branch_fence_field_gazebo_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_leaves_trees": {
+        "bamboo forest_branch_fence_gazebo_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_leaves": {
+        "bamboo forest_branch_fence_field_gazebo_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_leaves_trees": {
+        "bamboo forest_fence_field_gazebo_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_leaves_trees": {
+        "bamboo forest_branch_fence_field_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_leaves_trees": {
+        "bamboo forest_branch_field_gazebo_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18250,7 +18250,7 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_grass_reeds_trees": {
+        "bamboo forest_branch_fence_gazebo_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18258,11 +18258,11 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_grass_reeds": {
+        "bamboo forest_branch_fence_field_gazebo_grass_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_grass_leaves_reeds": {
+        "bamboo forest_branch_fence_gazebo_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18270,15 +18270,15 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_grass_reeds_trees": {
+        "bamboo forest_fence_field_gazebo_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_gazebo_grass_leaves_reeds_trees": {
+        "bamboo forest_fence_gazebo_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_grass_leaves_reeds": {
+        "bamboo forest_fence_field_gazebo_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18286,19 +18286,19 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_grass_reeds_trees": {
+        "bamboo forest_branch_fence_field_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_grass_leaves_reeds_trees": {
+        "bamboo forest_branch_fence_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_grass_leaves_reeds": {
+        "bamboo forest_branch_fence_field_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_grass_leaves_reeds_trees": {
+        "bamboo forest_fence_field_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18306,23 +18306,23 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_grass_reeds_trees": {
+        "bamboo forest_branch_field_gazebo_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_gazebo_grass_leaves_reeds_trees": {
+        "bamboo forest_branch_gazebo_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_grass_leaves_reeds": {
+        "bamboo forest_branch_field_gazebo_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_field_gazebo_grass_leaves_reeds_trees": {
+        "bamboo forest_field_gazebo_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_grass_leaves_reeds_trees": {
+        "bamboo forest_branch_field_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18330,27 +18330,27 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_reeds_trees": {
+        "bamboo forest_branch_fence_field_gazebo_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_leaves_reeds_trees": {
+        "bamboo forest_branch_fence_gazebo_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_leaves_reeds": {
+        "bamboo forest_branch_fence_field_gazebo_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_leaves_reeds_trees": {
+        "bamboo forest_fence_field_gazebo_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_leaves_reeds_trees": {
+        "bamboo forest_branch_fence_field_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_leaves_reeds_trees": {
+        "bamboo forest_branch_field_gazebo_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18358,31 +18358,31 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_grass_trees": {
+        "bamboo forest_branch_fence_field_gazebo_grass_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_grass_leaves_trees": {
+        "bamboo forest_branch_fence_gazebo_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_grass_leaves": {
+        "bamboo forest_branch_fence_field_gazebo_grass_leaves": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_grass_leaves_trees": {
+        "bamboo forest_fence_field_gazebo_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_grass_leaves_trees": {
+        "bamboo forest_branch_fence_field_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_grass_leaves_trees": {
+        "bamboo forest_branch_field_gazebo_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_leaves_trees": {
+        "bamboo forest_branch_fence_field_gazebo_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
@@ -18390,39 +18390,39 @@
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_grass_reeds_trees": {
+        "bamboo forest_branch_fence_field_gazebo_grass_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_gazebo_grass_leaves_reeds_trees": {
+        "bamboo forest_branch_fence_gazebo_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_grass_leaves_reeds": {
+        "bamboo forest_branch_fence_field_gazebo_grass_leaves_reeds": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_fence_field_gazebo_grass_leaves_reeds_trees": {
+        "bamboo forest_fence_field_gazebo_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_grass_leaves_reeds_trees": {
+        "bamboo forest_branch_fence_field_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_field_gazebo_grass_leaves_reeds_trees": {
+        "bamboo forest_branch_field_gazebo_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_leaves_reeds_trees": {
+        "bamboo forest_branch_fence_field_gazebo_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_grass_leaves_trees": {
+        "bamboo forest_branch_fence_field_gazebo_grass_leaves_trees": {
             "landbird": 0,
             "waterbird": 0
         },
-        "bamboo_forest_branch_fence_field_gazebo_grass_leaves_reeds_trees": {
+        "bamboo forest_branch_fence_field_gazebo_grass_leaves_reeds_trees": {
             "landbird": 0,
             "waterbird": 0
         }
